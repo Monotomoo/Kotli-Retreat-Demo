@@ -1,0 +1,505 @@
+{
+  "meta": {
+    "title": "Soil & Soul Istria — Kulinarska grupna putovanja Istrom",
+    "description": "5-dnevno all-inclusive gastronomsko putovanje: lov na tartufe, degustacija vina, najbolje maslinovo ulje na svijetu, Michelin večera. 10–34 osobe. Od €1.090/osobi."
+  },
+  "header": {
+    "cta": "Pošaljite upit",
+    "nav": {
+      "accommodation": "Kamene kuće",
+      "hosts": "Naši domaćini",
+      "agenda": "Plan putovanja",
+      "pricing": "Cijene",
+      "destinations": "Rovinj · Motovun · Hum",
+      "contact": "Kontakt"
+    },
+    "slogan": "Originalna iskustva, lokalne priče."
+  },
+  "hero": {
+    "title": "Soil & Soul Istria",
+    "subtitle": "Kulinarsko putovanje kroz dušu Istre",
+    "cta": "Odaberite termin",
+    "ctaSecondary": "Što je uključeno",
+    "days": "5",
+    "daysLabel": "dana",
+    "allInclusive": "ALL-INCLUSIVE",
+    "price": "Od €1.090",
+    "pricePer": "po osobi",
+    "people": "10 – 34 osobe po grupi",
+    "tags": ["Lov na tartufe", "Vino i najbolje maslinovo ulje na svijetu", "Michelin oproštajna večera"],
+    "hooks": ["Lov na tartufe", "Putevima istarskog vina", "Od masline do stola", "Michelin večera u Rovinju"]
+  },
+  "quickFacts": {
+    "duration": "5 dana",
+    "durationLabel": "Trajanje",
+    "groupSize": "10–34",
+    "groupSizeLabel": "Veličina grupe",
+    "newLabel": "Novo!",
+    "season": "Sezona 2026",
+    "difficulty": "Lagano",
+    "difficultyLabel": "Težina",
+    "nextDate": "Ruj–Stu",
+    "nextDateLabel": "Sljedeći termin"
+  },
+  "why": {
+    "label": "Zašto ovo putovanje?",
+    "title": "5 razloga zašto je Istra vaša sljedeća gastronomska destinacija",
+    "points": [
+      {
+        "title": "Tartuf — svježe nariban preko vaše tjestenine",
+        "text": "Tragate s obitelji Karlić i njihovim dresiranim psima za istarskim tartufima cijenjenim širom svijeta — vrhunski primjerci dosežu i do €4.000/kg. Zatim zajedno kuhajte i uživajte u menu od 3 slijeda."
+      },
+      {
+        "title": "Maslinovo ulje iz 9 puta najbolje regije na svijetu",
+        "text": "Istra je 9 puta zaredom proglašena najboljom regijom za maslinovo ulje na svijetu prema Flos Olei. Degustirajte ulja Chiavalon, Flos Olei ‘Proizvođač godine’."
+      },
+      {
+        "title": "Vina iz ‘4 zemlje’ — jedna Malvazija, četiri okusa",
+        "text": "Koncept ‘4 zemlje’ (crvena, bijela, siva, crna zemlja) stvara četiri različita karaktera Malvazije. Kod Kozlović, vinara od 1904., osjetit ćete tu razliku."
+      },
+      {
+        "title": "Oproštajna večera u prvom Michelin restoranu u Hrvatskoj",
+        "text": "Vaša posljednja večer: večera u Michelin zvjezdanom restoranu u Rovinju — s pogledom na Jadran i menijem koji suvremeno interpretira istarske tradicije."
+      },
+      {
+        "title": "Napušteno kameno selo kao vaša privatna baza",
+        "text": "Kotli — potpuno restaurirano srednjovjekovno selo u dolini rijeke Mirna. 8 kamenih kuća, bazen, panoramska terasa. Bez susjeda. Samo vaša grupa."
+      }
+    ],
+    "photoAlt": "Degustacijski stol u masliniku pri zalazu sunca"
+  },
+  "hosts": {
+    "label": "Vaši domaćini",
+    "title": "Ljudi iza doživljaja",
+    "subtitle": "Bez anonimnih vodiča — upoznat ćete obitelji koje generacijama oblikuju istarsku gastronomiju.",
+    "cards": [
+      {
+        "name": "Obitelj Karlić",
+        "role": "Tartufari · 3 generacije",
+        "bio": "Najpoznatija tartufarska obitelj u Istri vodi vas kroz muzej, šumu i kuhinju.",
+        "quote": "Tartuf bira kada će se pokazati. Mi samo slijedimo pse."
+      },
+      {
+        "name": "Obitelj Kozlović",
+        "role": "Vinari od 1904.",
+        "bio": "Pioniri istarske vinske renesanse. Njihova Malvazija s crvene zemlje je klasik.",
+        "quote": "Svaka od naše četiri zemlje priča drugačiju priču u čaši."
+      },
+      {
+        "name": "Sandi Chiavalon",
+        "role": "Flos Olei · Proizvođač godine",
+        "bio": "Jedan od najboljih proizvođača maslinovog ulja na svijetu. Njegova ulja godinama osvajaju vrhunske međunarodne nagrade.",
+        "quote": "Istarsko ulje je tekuće zlato — čišće od svakog toskanskog."
+      },
+      {
+        "name": "Obiteljske konobe",
+        "role": "Lokalna kuhinja · Tradicija",
+        "bio": "U konobama obitelji kuhaju prema receptima koji se prenose stoljećima.",
+        "quote": "Kod nas baka još uvijek kuha s nama — i to se osjeti."
+      }
+    ]
+  },
+  "agenda": {
+    "label": "Dan po dan",
+    "title": "5 dana lokalne gastronomije — Istra · vaš plan putovanja",
+    "subtitle": "Svaki dan je pažljivo isplaniran. Vi samo uživajte.",
+    "dayLabel": "DAN",
+    "days": [
+      {
+        "number": "1",
+        "theme": "Dolazak",
+        "title": "Dobrodošli u Kotli",
+        "narrative": "Stižete u napušteno kameno selo koje je ponovno oživjelo. Na terasi vas čeka Biska — tradicionalni istarski liker od imele — uz Pršut, sir i čašu Teran.",
+        "schedule": [
+          { "time": "15:00", "text": "Prijava u kamene kuće" },
+          { "time": "16:30", "text": "Aperitiv dobrodošlice na panoramskoj terasi" },
+          { "time": "18:00", "text": "Večera u konobi — Fuži s tartufima, Teran vino" }
+        ],
+        "meals": ["Aperitiv", "Večera"],
+        "host": ""
+      },
+      {
+        "number": "2",
+        "theme": "Tartufi",
+        "title": "Zlato Istre",
+        "narrative": "Cijeli dan s obitelji Karlić — od muzeja tartufa preko lova u šumi do zajedničkog kuhanja. Ribit ćete tartuf preko domaće tjestenine.",
+        "schedule": [
+          { "time": "08:00", "text": "Košara za doručak na kućni prag" },
+          { "time": "09:30", "text": "Karlić Tartufi: Muzej → Lov na tartufe → Tečaj kuhanja → Menu od 3 slijeda" },
+          { "time": "16:30", "text": "Boćanje i aktivnosti u dvorištu" },
+          { "time": "19:00", "text": "Večera u konobi" }
+        ],
+        "meals": ["Doručak", "Ručak", "Večera"],
+        "host": "Obitelj Karlić — tartufari već 3 generacije"
+      },
+      {
+        "number": "3",
+        "theme": "Ulje i vino",
+        "title": "Okusi Istre",
+        "narrative": "Degustirate maslinova ulja kojima se divi cijeli svijet i otkrivate ‘4 zemlje’ istarske Malvazije u dva vinarska posjeta. Za kraj: najmanji grad na svijetu.",
+        "schedule": [
+          { "time": "08:00", "text": "Košara za doručak" },
+          { "time": "09:30", "text": "Degustacija maslinovog ulja (Chiavalon / nagrađivani proizvođač)" },
+          { "time": "11:00", "text": "Vinarija Kozlović — Malvazija s crvene zemlje, od 1904." },
+          { "time": "13:00", "text": "Roxanich (Motovun) — degustacija + ručak s uparivanjem vina" },
+          { "time": "18:00", "text": "Obilazak Huma — najmanjeg grada na svijetu (23 stanovnika)" },
+          { "time": "18:45", "text": "Večera Konoba Hum + degustacija Biska" }
+        ],
+        "meals": ["Doručak", "Ručak", "Večera"],
+        "host": "Obitelj Kozlović · Sandi Chiavalon"
+      },
+      {
+        "number": "4",
+        "theme": "Kultura + Rovinj",
+        "title": "Od brežuljaka do mora",
+        "narrative": "Grožnjan — selo umjetnika. Motovun — tvrđava iznad tartufovih šuma. A onda: Rovinj. Vaša oproštajna večera u prvom Michelin restoranu u Hrvatskoj.",
+        "schedule": [
+          { "time": "08:00", "text": "Košara za doručak" },
+          { "time": "09:00", "text": "Grožnjan — selo umjetnika, galerije, ateljei" },
+          { "time": "10:15", "text": "Motovun — tvrđava, tartufove šume, panorama" },
+          { "time": "12:00", "text": "Ručak u Motovunu" },
+          { "time": "15:00", "text": "Rovinj — obilazak starog grada, luka, slobodno vrijeme" },
+          { "time": "18:30", "text": "Oproštajna večera — Michelin zvjezdani restoran ⭐" }
+        ],
+        "meals": ["Doručak", "Ručak", "Michelin Dinner"],
+        "host": ""
+      },
+      {
+        "number": "5",
+        "theme": "Odlazak",
+        "title": "Kraj, ali ne i zbogom",
+        "narrative": "",
+        "schedule": [
+          { "time": "08:00", "text": "Posljednji zajednički doručak" },
+          { "time": "09:00", "text": "Poklon paket — vino, tartufi, maslinovo ulje iz Istre" },
+          { "time": "09:30", "text": "Grupna fotografija na terasi" },
+          { "time": "10:00", "text": "Odjava — Doviđenja!" }
+        ],
+        "meals": ["Doručak", "Poklon"],
+        "host": ""
+      }
+    ]
+  },
+  "destinations": {
+    "label": "Mjesta koja ćete posjetiti",
+    "title": "Rovinj · Motovun · Hum",
+    "subtitle": "Tri istarska dragulja — od najromantičnije luke Jadrana preko tvrđave tartufa do najmanjeg grada na svijetu.",
+    "cards": [
+      {
+        "badge": "Michelin Dinner",
+        "name": "Rovinj",
+        "desc": "Najromantičniji istarski obalni gradić. Pastelne kuće strše nad morem. Ovdje ćete uživati u oproštajnoj večeri u Michelin zvjezdanom restoranu — uz zalazak sunca nad Jadranom.",
+        "detail": "Rovinj — hrvatska prijestolnica Michelin zvjezdica"
+      },
+      {
+        "badge": "Tartufove šume",
+        "name": "Motovun",
+        "desc": "Srednjovjekovna tvrđava na brežuljku, okružena najpoznatijim tartufovim šumama Europe. U jutarnjoj magli rijeke Mirne skriva se zlato Istre.",
+        "detail": "Domovina istarskog tartufa"
+      },
+      {
+        "badge": "23 stanovnika",
+        "name": "Hum",
+        "desc": "Najmanji grad na svijetu — 23 stanovnika, jedna ulica, jedna konoba. Ovdje ćete degustirati Biska, mistični istarski liker od imele.",
+        "detail": "Aleja Glagoljaša — Roč do Huma"
+      }
+    ]
+  },
+  "includes": {
+    "label": "Što je uključeno",
+    "title": "All-inclusive — bez skrivenih troškova",
+    "subtitle": "Obroci, kućno vino, doživljaji, prijevoz — sve je organizirano za vas.",
+    "yesTitle": "Uključeno",
+    "yesSubtitle": "Sve u cijeni paketa Duh Sela (od €1.090)",
+    "noTitle": "Nije uključeno",
+    "noSubtitle": "Trebate sami osigurati",
+    "upgradeTitle": "Nadogradite na Duh Istre",
+    "upgradeSubtitle": "+€200/osobi za 6 dodatnih doživljaja",
+    "yes": [
+      "4 noćenja u kamenim kućama (80–140 m²) s bazenom i kaminom",
+      "Svi obroci: doručak, ručak, večera + kućno vino i voda",
+      "Aperitiv dobrodošlice — Biska, pršut i domaći sir",
+      "Lov na tartufe s obitelji Karlić + tartuf menu",
+      "Degustacija nagrađivanog maslinovog ulja (Chiavalon)",
+      "Posjet vinariji Kozlović + ručak u konobi",
+      "Posjet Humu — najmanjem gradu na svijetu",
+      "Organizirani shuttle prijevoz svih 5 dana",
+      "Dvojezični vodič (njemački + hrvatski)",
+      "Oproštajni poklon paket (vino + tartufi + ulje)"
+    ],
+    "no": [
+      "Dolazak do smještaja u Kotlima (auto, let, vlak) — dalje sve vozimo mi",
+      "Premium pića i kokteli izvan kućnog vina",
+      "Putno osiguranje od otkaza (preporučeno)",
+      "Osobni troškovi i napojnice"
+    ],
+    "upgrade": [
+      "Rovinj — stari grad + Michelin večera",
+      "Druga vinarija + ručak s uparivanjem",
+      "Grožnjan — selo umjetnika",
+      "Motovun — tvrđava nad tartufima",
+      "Konoba Hum + degustacija Biske",
+      "Premium poklon paket"
+    ]
+  },
+  "accommodation": {
+    "label": "Vaš smještaj",
+    "title": "Kamene kuće u Kotlima",
+    "subtitle": "Napušteno kameno selo, oživljeno kao jedinstveno utočište u srcu Istre.",
+    "intro": "Kotli su malo kameno selo u srcu Istre, tamo gdje rijeka Mirna pada u slapovima i urezuje kotlaste udubine po kojima je selo dobilo ime. Nekad glavno mlinarsko selo na Humštini, danas stari mlin još odolijeva vremenu, a kamene kuće čuvaju toplinu istarskog načina života.",
+    "features": [
+      {
+        "icon": "house",
+        "title": "8 autentičnih kamenih kuća",
+        "text": "Kuće od 80–140 m² s dnevnim boravkom, kuhinjom, spavaćom sobom i kupaonicom. Za 2–5 osoba. Kamin, Wi-Fi, TV, vlastiti parking."
+      },
+      {
+        "icon": "pool",
+        "title": "Bazen, roštilj i panoramska terasa",
+        "text": "Zajednički vanjski bazen, veliko roštilj mjesto i terasa s pogledom na zelenu dolinu rijeke Mirna."
+      },
+      {
+        "icon": "pet",
+        "title": "Dopušteni kućni ljubimci",
+        "text": "Psi i mačke su dobrodošli (€10/dan). Savršene šetnje direktno ispred vrata."
+      },
+      {
+        "icon": "location",
+        "title": "Dolazak",
+        "text": "Zračna luka Pula 1h · Trst 1,5h · Ljubljana 2h · München 5h · Beč 7h · Zürich 8h. Shuttle na upit."
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Paketi",
+    "title": "Odaberite svoj doživljaj",
+    "subtitle": "",
+    "cards": [
+      {
+        "variant": "standard",
+        "badge": "Lokalni doživljaj",
+        "name": "Duh Sela",
+        "slogan": "Gdje se vrijeme mjeri obrocima.",
+        "price": "Od €1.090",
+        "info": "po osobi · 5 dana / 4 noći",
+        "minNote": "Min. 10 osoba",
+        "includes": [
+          "Kamene kućice s bazenom i kaminom",
+          "Svi obroci + kućno vino",
+          "Lov na tartufe s Karlićima + tartuf menu",
+          "Degustacija maslinovog ulja",
+          "Vinarija Kozlović + ručak u konobi",
+          "Posjet Humu — najmanji grad na svijetu",
+          "Poklon paket za ponijeti",
+          "Shuttle prijevoz svih dana"
+        ],
+        "cta": "Rezervirajte termin",
+        "featured": false
+      },
+      {
+        "variant": "standard",
+        "badge": "Najpopularniji",
+        "name": "Duh Istre",
+        "slogan": "Od lova na tartufe do Michelin zvjezdice.",
+        "price": "Od €1.290",
+        "info": "po osobi · 5 dana / 4 noći",
+        "minNote": "Min. 10 osoba",
+        "includesLabel": "Sve iz Duh Sela, plus:",
+        "includes": [
+          "Rovinj — stari grad + Michelin večera",
+          "Vinarija + ručak s uparivanjem",
+          "Grožnjan — selo umjetnika",
+          "Motovun — tvrđava nad tartufima",
+          "Konoba Hum + Biska degustacija",
+          "Premium poklon paket"
+        ],
+        "cta": "Rezervirajte termin",
+        "featured": true
+      },
+      {
+        "variant": "custom",
+        "badge": "Individualno",
+        "name": "Vaša Priča",
+        "slogan": "Svaka grupa ima svoj razlog. Ispričajte nam svoj.",
+        "price": "Cijena na upit",
+        "info": "na temelju Duh Sela ili Duh Istre",
+        "minNote": "Min. 10 osoba",
+        "steps": [
+          "Javite nam tko dolazi i zašto",
+          "Dizajniramo program po mjeri",
+          "Vi uživate, mi brinemo o svemu"
+        ],
+        "tags": ["Teambuilding", "Proslava", "Aktivan odmor", "Gastro putovanje", "Vlastiti prijevoz"],
+        "cta": "Započnite razgovor",
+        "featured": false
+      }
+    ],
+    "footerNote": "Cijene po osobi. Vlastiti dolazak do smještaja — let nije uključen."
+  },
+  "trust": {
+    "label": "Kvaliteta i povjerenje",
+    "title": "Zašto Istra? Brojke govore same za sebe.",
+    "cards": [
+      {
+        "emoji": "trophy",
+        "title": "9× najbolja regija na svijetu",
+        "text": "Istra je 9 godina zaredom prema Flos Olei proglašena najboljom regijom za maslinovo ulje na svijetu — ispred Toskane, Andaluzije i Krete.",
+        "source": "FLOS OLEI GUIDE"
+      },
+      {
+        "emoji": "star",
+        "title": "Prva Michelin zvjezdica",
+        "text": "Rovinj je hrvatska prijestolnica Michelin zvjezdanih restorana. Vaša oproštajna večera održava se u jednom od njih — uz zalazak sunca nad Jadranom.",
+        "source": "MICHELIN GUIDE"
+      },
+      {
+        "emoji": "truffle",
+        "title": "Zlato Istre: €4.000/kg",
+        "text": "Istarski tartuf jedan je od najvrjednijih namirnica na svijetu. Obitelj Karlić lovi ga već 3 generacije.",
+        "source": "KARLIĆ TARTUFI"
+      }
+    ],
+    "badges": ["Flos Olei · 9× prvak svijeta", "Michelin Guide Croatia", "Kozlović · od 1904.", "Karlić · 3 generacije"],
+    "note": ""
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Isplanirajte svoje putovanje",
+    "subtitle": "Pišite nam — javit ćemo vam se unutar 24 sata s individualnom ponudom.",
+    "form": {
+      "firstName": "Ime",
+      "firstNamePlaceholder": "Ivan",
+      "lastName": "Prezime",
+      "lastNamePlaceholder": "Horvat",
+      "email": "E-mail",
+      "emailPlaceholder": "ivan@primjer.hr",
+      "groupSize": "Veličina grupe",
+      "groupSizeOptions": ["10–15 osoba", "16–24 osobe", "25–34 osobe"],
+      "date": "Željeni termin",
+      "dateOptions": ["Rujan 2026.", "Listopad 2026.", "Studeni 2026.", "Proljeće 2027.", "Fleksibilno"],
+      "package": "Koji paket vas zanima?",
+      "packageOptions": ["Duh Sela", "Duh Istre", "Vaša Priča (custom)", "Samo smještaj", "Još razmišljam"],
+      "dietary": "Prehrambene posebnosti",
+      "dietaryOptions": ["Nema", "Vegetarijansko", "Vegansko", "Bez glutena", "Ostalo (navedite dolje)"],
+      "message": "Vaša poruka",
+      "messagePlaceholder": "Recite nam nešto o svojoj grupi...",
+      "submit": "Pošaljite neobvezujući upit",
+      "disclaimer": "Odgovaramo unutar 24 sata. Bez automatskih rezervacija."
+    },
+    "whatsapp": "WhatsApp (preferirano)",
+    "whatsappCta": "Pošaljite WhatsApp poruku",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Telefon",
+    "trustItems": ["SSL", "Trusted Shops", "SEPA", "Kreditna kartica"]
+  },
+  "faq": {
+    "label": "Česta pitanja",
+    "title": "Imate pitanja?",
+    "items": [
+      {
+        "q": "Može li se putovanje rezervirati i za pojedince?",
+        "a": "Soil & Soul Istria je grupni doživljaj za 10–34 osobe. Možete putovati kao voditelj grupe sa svojom grupom (od 10 osoba putujete besplatno!) — idealno za vinske klubove, gastronomske grupe ili teambuilding. Na upit vas možemo pridružiti i postojećoj grupi."
+      },
+      {
+        "q": "Kako doći do Kotli?",
+        "a": "Najčešće se dolazi automobilom: Zagreb 3h, Rijeka 1,5h, Ljubljana 2h. Alternativno: let do Pule (1h transfer), Trsta (1,5h) ili Ljubljane (2h). Na želju organiziramo shuttle od zračne luke."
+      },
+      {
+        "q": "Što ako je loše vrijeme?",
+        "a": "Sve glavne aktivnosti funkcioniraju i po kiši: tečaj kuhanja s tartufima, degustacije vina, degustacija maslinovog ulja i posjeti konobama su u zatvorenom prostoru. Samo se lov na tartufe u šumi po jakoj kiši premješta na drugi dan ili zamjenjuje proširenom sesijom kuhanja."
+      },
+      {
+        "q": "Postoje li vegetarijanske / veganske opcije?",
+        "a": "Da! Istarska kuhinja bogata je vegetarijanskim jelima: tjestenina s tartufima, Maneštra od povrća, grilovano povrće, domaći sir. Veganske i bezglutenske opcije organiziraju se na upit u svim restoranima. Molimo vas da nam javite svoje prehrambene zahtjeve pri rezervaciji."
+      },
+      {
+        "q": "Kakvi su uvjeti otkazivanja?",
+        "a": "Besplatno otkazivanje do 60 dana prije dolaska (puni povrat predujma). 30–59 dana: 50% povrata. Manje od 30 dana: bez povrata. Preporučujemo putno osiguranje od otkaza. Predujam: 30% pri rezervaciji, ostatak 30 dana prije dolaska."
+      },
+      {
+        "q": "Koje načine plaćanja prihvaćate?",
+        "a": "SEPA bankovni prijenos i kreditna kartica (Visa, Mastercard). Sve cijene uključuju PDV. Bez skrivenih naknada."
+      },
+      {
+        "q": "Mogu li povesti svog psa?",
+        "a": "Da! Kamene kuće primaju kućne ljubimce (€10/dan). Vlastiti vrtovi, savršene šetnje. Molimo navedite pri rezervaciji kako bismo vam dodijelili odgovarajuću kuću."
+      },
+      {
+        "q": "Može li se svako putovanje rezervirati privatno?",
+        "a": "Da — svako planirano putovanje može se rezervirati kao privatno grupno putovanje. Vaš termin, vaša grupa, vaše prilagodbe. Kontaktirajte nas za individualnu ponudu."
+      }
+    ]
+  },
+  "footer": {
+    "brand": "Original experiences, local stories. Autentična gastronomska putovanja kroz najbolje regije Hrvatske.",
+    "byline": "by Prava Croatia · Creative idea d.o.o.",
+    "cols": {
+      "experience": "Doživljaj",
+      "accommodation": "Smještaj",
+      "contact": "Kontakt"
+    },
+    "links": {
+      "whyIstria": "Zašto Istra",
+      "hosts": "Domaćini",
+      "agenda": "Plan putovanja",
+      "pricing": "Cijene",
+      "stoneHouses": "Kamene kuće Kotli",
+      "bookDirect": "Rezervirajte direktno (bez Bookinga)",
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "facebook": "Facebook"
+    },
+    "copyright": "© 2026 Creative idea d.o.o. (Prava Croatia) · OIB: 39151678424 · Zagreb, Hrvatska. Sva prava pridržana.",
+    "legal": {
+      "impressum": "Impressum",
+      "privacy": "Privatnost",
+      "terms": "Opći uvjeti",
+      "travel": "Uvjeti putovanja"
+    }
+  },
+  "whatsappFloat": "Pitanja? Pišite nam!",
+  "stickyMobile": "Pošaljite upit — Od €1.090/osobi",
+  "cookies": {
+    "title": "Vaša privatnost",
+    "text": "Koristimo nužne kolačiće za rad stranice i, uz vaš pristanak, analitičke kolačiće za poboljšanje sadržaja. Više u ",
+    "policyLink": "Pravilima privatnosti",
+    "accept": "Prihvati sve",
+    "decline": "Samo nužni",
+    "settings": "Postavke"
+  },
+  "gdpr": {
+    "consent": "Slanjem upita pristajem na obradu osobnih podataka u svrhu odgovora na upit.",
+    "policyLink": "Pravila privatnosti"
+  },
+  "privacy": {
+    "title": "Pravila privatnosti",
+    "lastUpdated": "Zadnja izmjena: svibanj 2026.",
+    "intro": "Ova pravila opisuju kako Creative idea d.o.o. (Prava Croatia) prikuplja i obrađuje vaše osobne podatke u skladu s Općom uredbom o zaštiti podataka (GDPR / DSGVO).",
+    "sections": [
+      {
+        "h": "1. Voditelj obrade",
+        "p": "Creative idea d.o.o. (Prava Croatia), Zagreb, Hrvatska. OIB: 39151678424. Email: info@pravacroatia.com. Telefon: +385 99 256 3862."
+      },
+      {
+        "h": "2. Koje podatke prikupljamo",
+        "p": "Kada ispunite kontakt formu prikupljamo: ime, prezime, e-mail adresu, veličinu grupe, željeni termin, paket koji vas zanima, prehrambene posebnosti i sadržaj poruke. Web stranica koristi nužne kolačiće za rad i, uz vaš pristanak, analitičke kolačiće."
+      },
+      {
+        "h": "3. Svrha i pravna osnova obrade",
+        "p": "Vaše podatke obrađujemo isključivo radi odgovora na vaš upit i pripreme individualne ponude (legitimni interes / izvršenje predugovornih radnji prema čl. 6. st. 1. b GDPR-a). Ne koristimo ih u marketinške svrhe bez vašeg izričitog pristanka."
+      },
+      {
+        "h": "4. Razdoblje čuvanja",
+        "p": "Podatke iz upita čuvamo najdulje 24 mjeseca, nakon čega se brišu. Ugovorni podaci čuvaju se u skladu sa zakonskim rokovima (porezna evidencija — 11 godina)."
+      },
+      {
+        "h": "5. Vaša prava",
+        "p": "Imate pravo na pristup, ispravak, brisanje, ograničenje obrade, prenosivost podataka i prigovor. Pristanak za analitičke kolačiće možete povući u svako doba. Zahtjeve šaljite na info@pravacroatia.com. Imate i pravo žalbe nadležnom tijelu (AZOP, Agencija za zaštitu osobnih podataka, Zagreb)."
+      },
+      {
+        "h": "6. Sigurnost",
+        "p": "Komunikacija je zaštićena SSL enkripcijom. Podatke ne dijelimo s trećim stranama osim kada je nužno za izvršenje usluge (npr. partnerski domaćini koji vam pružaju doživljaj) ili kada to nalaže zakon."
+      }
+    ]
+  }
+}

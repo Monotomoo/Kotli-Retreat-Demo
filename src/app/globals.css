@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-green: #7ab040;
+  --color-green-dark: #2d4a1a;
+  --color-green-light: #e8f2da;
+  --color-black: #111111;
+  --color-white: #ffffff;
+  --color-cream: #f8f6f1;
+  --color-warm-gray: #e8e4dd;
+  --color-text-dark: #1a1a1a;
+  --color-text-muted: #6b6b6b;
+  --color-text-light: #999999;
+  --color-gold: #c4a35a;
+  --color-coral: #d4715e;
+  --font-serif: 'EB Garamond', Georgia, serif;
+  --font-sans: 'DM Sans', -apple-system, sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text-dark);
+  background: var(--color-white);
+  line-height: 1.6;
+}
+
+::selection {
+  background: rgba(122, 176, 64, 0.25);
+  color: #1a1a1a;
+}
+
+/* Offset for sticky header when clicking anchor links — small so section title sits close to header edge */
+section[id],
+div[id] {
+  scroll-margin-top: 60px;
+}
+
+/* Hide scrollbar for horizontal scroll sections */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

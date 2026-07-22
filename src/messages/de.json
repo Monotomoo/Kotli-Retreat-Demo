@@ -1,0 +1,505 @@
+{
+  "meta": {
+    "title": "Trüffeljagd, Wein & Michelin in Istrien — Soil & Soul Istria",
+    "description": "5 Tage all-inclusive Genussreise durch Istrien. Trüffeljagd, Weingüter, prämiertes Olivenöl, Michelin-Sternerestaurant. Für Gruppen 10–34 Personen. Ab €1.090/Person."
+  },
+  "header": {
+    "cta": "Anfrage senden",
+    "nav": {
+      "accommodation": "Steinhäuser",
+      "hosts": "Unsere Gastgeber",
+      "agenda": "Reiseplan",
+      "pricing": "Preise",
+      "destinations": "Rovinj · Motovun · Hum",
+      "contact": "Kontakt"
+    },
+    "slogan": "Originalna iskustva, lokalne priče."
+  },
+  "hero": {
+    "title": "Soil & Soul Istria",
+    "subtitle": "Kulinarische Reise durch Istriens Seele",
+    "cta": "Termin auswählen",
+    "ctaSecondary": "Reise beinhaltet",
+    "days": "5",
+    "daysLabel": "Tage",
+    "allInclusive": "ALL-INCLUSIVE",
+    "price": "Ab €1.090",
+    "pricePer": "pro Person",
+    "people": "10 – 34 Personen pro Gruppe",
+    "tags": ["Trüffeljagd", "Wein & weltbestes Olivenöl", "Michelin-Abschiedsessen"],
+    "hooks": ["Trüffeljagd", "Auf istrischen Weinstraßen", "Von der Olive zum Tisch", "Michelin-Dinner in Rovinj"]
+  },
+  "quickFacts": {
+    "duration": "5 Tage",
+    "durationLabel": "Dauer",
+    "groupSize": "10–34",
+    "groupSizeLabel": "Gruppengröße",
+    "newLabel": "Neu!",
+    "season": "Saison 2026",
+    "difficulty": "Leicht",
+    "difficultyLabel": "Schwierigkeit",
+    "nextDate": "Sept–Nov",
+    "nextDateLabel": "Nächster Termin"
+  },
+  "why": {
+    "label": "Warum diese Reise?",
+    "title": "5 Gründe, warum Istrien Ihr nächstes Genussziel ist",
+    "points": [
+      {
+        "title": "Trüffel — frisch über Ihre Pasta gehobelt",
+        "text": "Suchen Sie mit der Familie Karlić und ihren dressierten Hunden nach weltweit geschätzten istrischen Trüffeln — Spitzenexemplare erreichen bis zu €4.000/kg. Anschließend kochen und genießen Sie gemeinsam ein 3-Gänge-Menü."
+      },
+      {
+        "title": "Olivenöl aus der 9-fach weltbesten Region",
+        "text": "Istrien wurde 9× hintereinander von Flos Olei zur besten Olivenölregion der Welt gekürt. Verkosten Sie die Öle von Chiavalon, dem Flos Olei \u201EProducer of the Year\u201C."
+      },
+      {
+        "title": "Weine aus \u201E4 Erden\u201C \u2014 eine Malvazija, vier Geschm\u00E4cker",
+        "text": "Das Konzept der \u201E4 Erden\u201C (rote, wei\u00DFe, graue, schwarze Erde) erzeugt vier verschiedene Malvazija-Charaktere. Bei Kozlović, Winzern seit 1904, erleben Sie den Unterschied."
+      },
+      {
+        "title": "Abschiedsessen im ersten Michelin-Restaurant Kroatiens",
+        "text": "Ihr letzter Abend: ein Dinner in einem Michelin-Sterne-Restaurant in Rovinj — mit Blick auf die Adria und einem Menü, das istrische Traditionen modern interpretiert."
+      },
+      {
+        "title": "Ein verlassenes Steindorf als Ihre private Basis",
+        "text": "Kotli — ein komplett restauriertes mittelalterliches Dorf im Tal der Mirna. 8 Steinhäuser, Pool, Panoramaterrasse. Keine Nachbarn. Nur Ihre Gruppe."
+      }
+    ],
+    "photoAlt": "Degustacijski stol u masliniku pri zalazu sunca"
+  },
+  "hosts": {
+    "label": "Ihre Gastgeber",
+    "title": "Die Menschen hinter dem Erlebnis",
+    "subtitle": "Keine anonymen Guides — Sie treffen die Familien, die Istriens Gastronomie seit Generationen prägen.",
+    "cards": [
+      {
+        "name": "Familie Karlić",
+        "role": "Trüffeljäger · 3 Generationen",
+        "bio": "Die bekannteste Trüffeljäger-Familie Istriens führt Sie durch Museum, Wald und Küche.",
+        "quote": "Der Trüffel wählt, wann er sich zeigt. Wir folgen nur den Hunden."
+      },
+      {
+        "name": "Familie Kozlović",
+        "role": "Winzer seit 1904",
+        "bio": "Pioniere der istrischen Weinrenaissance. Ihre Malvazija aus roter Erde ist ein Klassiker.",
+        "quote": "Jede unserer vier Erden erzählt eine andere Geschichte im Glas."
+      },
+      {
+        "name": "Sandi Chiavalon",
+        "role": "Flos Olei · Producer of the Year",
+        "bio": "Einer der weltbesten Olivenölproduzenten. Seine Öle gewinnen seit Jahren internationale Top-Preise.",
+        "quote": "Istrisches Öl ist flüssiges Gold — reiner als jedes toskanische."
+      },
+      {
+        "name": "Familien-Konobas",
+        "role": "Lokale Küche · Tradition",
+        "bio": "In den Konobas kochen Familien nach Rezepten, die seit Jahrhunderten weitergegeben werden.",
+        "quote": "Bei uns kocht die Großmutter noch mit — und das schmeckt man."
+      }
+    ]
+  },
+  "agenda": {
+    "label": "Tag für Tag",
+    "title": "5 Tage istrische Kulinarik — Ihr Reiseplan",
+    "subtitle": "Jeder Tag ist sorgfältig geplant. Sie müssen nur genießen.",
+    "dayLabel": "TAG",
+    "days": [
+      {
+        "number": "1",
+        "theme": "Ankunft",
+        "title": "Willkommen in Kotli",
+        "narrative": "Sie kommen in einem verlassenen Steindorf an, das zum Leben erwacht ist. Auf der Terrasse wartet Biska — der traditionelle istrische Mistelschnaps — dazu Pršut, Käse und ein Glas Teran.",
+        "schedule": [
+          { "time": "15:00", "text": "Check-in in den Steinhäusern" },
+          { "time": "16:30", "text": "Willkommens-Aperitif auf der Panoramaterrasse" },
+          { "time": "18:00", "text": "Abendessen in der Konoba — Fuži mit Trüffeln, Teran-Wein" }
+        ],
+        "meals": ["Aperitif", "Abendessen"],
+        "host": ""
+      },
+      {
+        "number": "2",
+        "theme": "Trüffel",
+        "title": "Das Gold Istriens",
+        "narrative": "Ein ganzer Tag mit der Familie Karlić — vom Trüffelmuseum über die Jagd im Wald bis zum gemeinsamen Kochen. Sie hobeln frischen Trüffel über selbstgemachte Pasta.",
+        "schedule": [
+          { "time": "08:00", "text": "Frühstückskorb an die Haustür" },
+          { "time": "09:30", "text": "Karlić Tartufi: Museum → Trüffeljagd → Kochkurs → 3-Gänge-Menü" },
+          { "time": "16:30", "text": "Boccia und Aktivitäten im Hof" },
+          { "time": "19:00", "text": "Abendessen in der Konoba" }
+        ],
+        "meals": ["Frühstück", "Mittagessen", "Abendessen"],
+        "host": "Familie Karlić — Trüffeljäger seit 3 Generationen"
+      },
+      {
+        "number": "3",
+        "theme": "Öl & Wein",
+        "title": "Die Aromen Istriens",
+        "narrative": "Sie verkosten Olivenöle, die die Welt begeistern, und entdecken die \u201E4 Erden\u201C der istrischen Malvazija bei zwei Weingütern. Zum Abschluss: die kleinste Stadt der Welt.",
+        "schedule": [
+          { "time": "08:00", "text": "Frühstückskorb" },
+          { "time": "09:30", "text": "Olivenöl-Verkostung (Chiavalon / preisgekrönter Produzent)" },
+          { "time": "11:00", "text": "Weingut Kozlović — Malvazija aus roter Erde, seit 1904" },
+          { "time": "13:00", "text": "Roxanich (Motovun) — Verkostung + Mittagessen mit Weinpairing" },
+          { "time": "18:00", "text": "Rundgang Hum — die kleinste Stadt der Welt (23 Einwohner)" },
+          { "time": "18:45", "text": "Abendessen Konoba Hum + Biska-Verkostung" }
+        ],
+        "meals": ["Frühstück", "Mittagessen", "Abendessen"],
+        "host": "Familie Kozlović · Sandi Chiavalon"
+      },
+      {
+        "number": "4",
+        "theme": "Kultur + Rovinj",
+        "title": "Von Hilltop-Dörfern zum Meer",
+        "narrative": "Grožnjan — das Künstlerdorf. Motovun — die Festung über den Trüffelwäldern. Und dann: Rovinj. Ihr Abschiedsessen im ersten Michelin-Stern-Restaurant Kroatiens.",
+        "schedule": [
+          { "time": "08:00", "text": "Frühstückskorb" },
+          { "time": "09:00", "text": "Grožnjan — Künstlerdorf, Galerien, Ateliers" },
+          { "time": "10:15", "text": "Motovun — Festung, Trüffelwälder, Panorama" },
+          { "time": "12:00", "text": "Mittagessen in Motovun" },
+          { "time": "15:00", "text": "Rovinj — Altstadtbesichtigung, Hafen, Freizeit" },
+          { "time": "18:30", "text": "Abschiedsessen — Michelin-Sterne-Restaurant ⭐" }
+        ],
+        "meals": ["Frühstück", "Mittagessen", "Michelin Dinner"],
+        "host": ""
+      },
+      {
+        "number": "5",
+        "theme": "Abschied",
+        "title": "Ein Ende, aber kein Abschied",
+        "narrative": "",
+        "schedule": [
+          { "time": "08:00", "text": "Letztes gemeinsames Frühstück" },
+          { "time": "09:00", "text": "Geschenkpaket — Wein, Trüffel, Olivenöl aus Istrien" },
+          { "time": "09:30", "text": "Gruppenfoto auf der Terrasse" },
+          { "time": "10:00", "text": "Check-out — Doviđenja!" }
+        ],
+        "meals": ["Frühstück", "Geschenk"],
+        "host": ""
+      }
+    ]
+  },
+  "destinations": {
+    "label": "Orte, die Sie besuchen",
+    "title": "Rovinj · Motovun · Hum",
+    "subtitle": "Drei istrische Juwelen — vom romantischsten Hafen der Adria über die Trüffelfestung bis zur kleinsten Stadt der Welt.",
+    "cards": [
+      {
+        "badge": "Michelin Dinner",
+        "name": "Rovinj",
+        "desc": "Istriens romantischste Küstenstadt. Pastellfarbene Häuser ragen ins Meer. Hier genießen Sie Ihr Abschiedsessen in einem Michelin-Sterne-Restaurant — bei Sonnenuntergang über der Adria.",
+        "detail": "Rovinj — Kroatiens Michelin-Stern-Hauptstadt"
+      },
+      {
+        "badge": "Trüffelwälder",
+        "name": "Motovun",
+        "desc": "Mittelalterliche Festung auf einem Hügel, umgeben von den berühmtesten Trüffelwäldern Europas. Im Morgennebel der Mirna versteckt sich das Gold Istriens.",
+        "detail": "Heimat des istrischen Trüffels"
+      },
+      {
+        "badge": "23 Einwohner",
+        "name": "Hum",
+        "desc": "Die kleinste Stadt der Welt — 23 Einwohner, eine Gasse, eine Konoba. Hier verkosten Sie Biska, den mystischen Mistelschnaps Istriens.",
+        "detail": "Aleja Glagoljaša — Roč bis Hum"
+      }
+    ]
+  },
+  "includes": {
+    "label": "Was ist inbegriffen",
+    "title": "All-inclusive — keine versteckten Kosten",
+    "subtitle": "Mahlzeiten, Hauswein, Erlebnisse, Transport — alles ist für Sie arrangiert.",
+    "yesTitle": "Inbegriffen",
+    "yesSubtitle": "Alles im Paket Geist des Dorfes (ab 1.090 €)",
+    "noTitle": "Nicht inbegriffen",
+    "noSubtitle": "Bitte selbst organisieren",
+    "upgradeTitle": "Upgrade auf Geist Istriens",
+    "upgradeSubtitle": "+200 €/Person für 6 zusätzliche Erlebnisse",
+    "yes": [
+      "4 Nächte in Steinhäusern (80–140 m²) mit Pool und Kamin",
+      "Alle Mahlzeiten: Frühstück, Mittag-, Abendessen + Hauswein und Wasser",
+      "Willkommens-Aperitif — Biska, Pršut und lokaler Käse",
+      "Trüffeljagd mit Familie Karlić + Trüffelmenü",
+      "Verkostung des preisgekrönten Olivenöls (Chiavalon)",
+      "Besuch des Weinguts Kozlović + Mittagessen in der Konoba",
+      "Besuch von Hum — kleinste Stadt der Welt",
+      "Organisierter Shuttle-Transport an allen 5 Tagen",
+      "Zweisprachiger Reiseleiter (Deutsch + Kroatisch)",
+      "Abschieds-Geschenkpaket (Wein + Trüffel + Öl)"
+    ],
+    "no": [
+      "Anreise zur Unterkunft in Kotli (Auto, Flug, Zug) — ab dort übernehmen wir den Transport",
+      "Premium-Getränke und Cocktails über den Hauswein hinaus",
+      "Reiserücktrittsversicherung (empfohlen)",
+      "Persönliche Ausgaben und Trinkgelder"
+    ],
+    "upgrade": [
+      "Rovinj — Altstadt + Michelin-Dinner",
+      "Zweites Weingut + Mittagessen mit Pairing",
+      "Grožnjan — Künstlerdorf",
+      "Motovun — Festung über den Trüffelwäldern",
+      "Konoba Hum + Biska-Verkostung",
+      "Premium-Geschenkpaket"
+    ]
+  },
+  "accommodation": {
+    "label": "Ihre Unterkunft",
+    "title": "Steinhäuser in Kotli",
+    "subtitle": "Ein verlassenes Steindorf, wiederbelebt als einzigartiger Rückzugsort im Herzen Istriens.",
+    "intro": "Kotli ist ein kleines Steindorf im Herzen Istriens, dort, wo die Mirna in Wasserfällen fällt und jene kesselförmigen Mulden formt, denen das Dorf seinen Namen verdankt. Einst das wichtigste Müllerdorf der Hum-Region, heute trotzt die alte Mühle noch der Zeit, und die Steinhäuser bewahren die Wärme istrischen Lebens.",
+    "features": [
+      {
+        "icon": "house",
+        "title": "8 authentische Steinhäuser",
+        "text": "80–140 m² große Häuser mit Wohnzimmer, Küche, Schlafzimmer und Bad. Für 2–5 Personen. Kamin, WLAN, TV, eigener Parkplatz."
+      },
+      {
+        "icon": "pool",
+        "title": "Pool, Grillplatz & Panoramaterrasse",
+        "text": "Gemeinsamer Außenpool, großer Grillplatz und Terrasse mit Blick über das grüne Tal der Mirna."
+      },
+      {
+        "icon": "pet",
+        "title": "Haustierfreundlich",
+        "text": "Hunde und Katzen willkommen (€10/Tag). Perfekte Spazierwege direkt vor der Tür."
+      },
+      {
+        "icon": "location",
+        "title": "Anreise",
+        "text": "Flughafen Pula 1h · Triest 1,5h · Ljubljana 2h · München 5h · Wien 7h · Zürich 8h. Shuttle auf Anfrage."
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Pakete",
+    "title": "Wählen Sie Ihr Erlebnis",
+    "subtitle": "",
+    "cards": [
+      {
+        "variant": "standard",
+        "badge": "Lokales Erlebnis",
+        "name": "Geist des Dorfes",
+        "slogan": "Wo die Zeit in Mahlzeiten gemessen wird.",
+        "price": "ab 1.090 €",
+        "info": "pro Person · 5 Tage / 4 Nächte",
+        "minNote": "Min. 10 Personen",
+        "includes": [
+          "Steinhäuser mit Pool und Kamin",
+          "Alle Mahlzeiten + Hauswein",
+          "Trüffeljagd mit Familie Karlić + Trüffelmenü",
+          "Olivenöl-Verkostung",
+          "Weingut Kozlović + Mittagessen in der Konoba",
+          "Besuch von Hum — kleinste Stadt der Welt",
+          "Geschenkpaket zum Mitnehmen",
+          "Shuttle-Transport an allen Tagen"
+        ],
+        "cta": "Termin reservieren",
+        "featured": false
+      },
+      {
+        "variant": "standard",
+        "badge": "Beliebteste",
+        "name": "Geist Istriens",
+        "slogan": "Von der Trüffeljagd bis zum Michelin-Stern.",
+        "price": "ab 1.290 €",
+        "info": "pro Person · 5 Tage / 4 Nächte",
+        "minNote": "Min. 10 Personen",
+        "includesLabel": "Alles aus Geist des Dorfes, plus:",
+        "includes": [
+          "Rovinj — Altstadt + Michelin-Dinner",
+          "Weingut + Mittagessen mit Pairing",
+          "Grožnjan — Künstlerdorf",
+          "Motovun — Festung über den Trüffelwäldern",
+          "Konoba Hum + Biska-Verkostung",
+          "Premium-Geschenkpaket"
+        ],
+        "cta": "Termin reservieren",
+        "featured": true
+      },
+      {
+        "variant": "custom",
+        "badge": "Individuell",
+        "name": "Ihre Geschichte",
+        "slogan": "Jede Gruppe hat ihren Grund. Erzählen Sie uns Ihren.",
+        "price": "Preis auf Anfrage",
+        "info": "auf Basis von Geist des Dorfes oder Geist Istriens",
+        "minNote": "Min. 10 Personen",
+        "steps": [
+          "Sagen Sie uns, wer kommt und warum",
+          "Wir gestalten ein massgeschneidertes Programm",
+          "Sie geniessen, wir kümmern uns um alles"
+        ],
+        "tags": ["Teambuilding", "Feier", "Aktivurlaub", "Gastro-Reise", "Eigene Anreise"],
+        "cta": "Gespräch beginnen",
+        "featured": false
+      }
+    ],
+    "footerNote": "Preise pro Person. Eigene Anreise zur Unterkunft — Flug nicht inbegriffen."
+  },
+  "trust": {
+    "label": "Qualität & Vertrauen",
+    "title": "Warum Istrien? Die Zahlen sprechen für sich.",
+    "cards": [
+      {
+        "emoji": "trophy",
+        "title": "9× Weltbeste Region",
+        "text": "Istrien wurde 9 Jahre in Folge von Flos Olei zur besten Olivenölregion der Welt gekürt — vor der Toskana, Andalusien und Kreta.",
+        "source": "FLOS OLEI GUIDE"
+      },
+      {
+        "emoji": "star",
+        "title": "Erster Michelin-Stern",
+        "text": "Rovinj ist Kroatiens Hauptstadt der Michelin-Sterne-Restaurants. Ihr Abschiedsessen findet in einem davon statt — bei Sonnenuntergang über der Adria.",
+        "source": "MICHELIN GUIDE"
+      },
+      {
+        "emoji": "truffle",
+        "title": "Gold Istriens: €4.000/kg",
+        "text": "Der istrische Trüffel zählt zu den wertvollsten Lebensmitteln der Welt. Die Familie Karlić jagt ihn seit 3 Generationen.",
+        "source": "KARLIĆ TARTUFI"
+      }
+    ],
+    "badges": ["Flos Olei · 9× Weltmeister", "Michelin Guide Croatia", "Kozlović · seit 1904", "Karlić · 3 Generationen"],
+    "note": ""
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Planen Sie Ihre Reise",
+    "subtitle": "Schreiben Sie uns — wir melden uns innerhalb von 24 Stunden mit einem individuellen Angebot.",
+    "form": {
+      "firstName": "Vorname",
+      "firstNamePlaceholder": "Max",
+      "lastName": "Nachname",
+      "lastNamePlaceholder": "Mustermann",
+      "email": "E-Mail",
+      "emailPlaceholder": "max@beispiel.de",
+      "groupSize": "Gruppengröße",
+      "groupSizeOptions": ["10–15 Personen", "16–24 Personen", "25–34 Personen"],
+      "date": "Wunschtermin",
+      "dateOptions": ["September 2026", "Oktober 2026", "November 2026", "Frühling 2027", "Flexibel"],
+      "package": "Welches Paket interessiert Sie?",
+      "packageOptions": ["Geist des Dorfes", "Geist Istriens", "Ihre Geschichte (individuell)", "Nur Unterkunft", "Noch unentschlossen"],
+      "dietary": "Ernährungsbesonderheiten",
+      "dietaryOptions": ["Keine", "Vegetarisch", "Vegan", "Glutenfrei", "Sonstiges (bitte unten angeben)"],
+      "message": "Ihre Nachricht",
+      "messagePlaceholder": "Erzählen Sie uns von Ihrer Gruppe...",
+      "submit": "Unverbindliche Anfrage senden",
+      "disclaimer": "Wir antworten innerhalb von 24 Stunden. Keine automatischen Buchungen."
+    },
+    "whatsapp": "WhatsApp (bevorzugt)",
+    "whatsappCta": "WhatsApp-Nachricht senden",
+    "emailLabel": "E-Mail",
+    "phoneLabel": "Telefon",
+    "trustItems": ["SSL", "Trusted Shops", "SEPA", "Kreditkarte"]
+  },
+  "faq": {
+    "label": "Häufige Fragen",
+    "title": "Noch Fragen?",
+    "items": [
+      {
+        "q": "Ist die Reise auch für Einzelpersonen buchbar?",
+        "a": "Soil & Soul Istria ist ein Gruppenerlebnis für 10–34 Personen. Sie können als Gruppenleiter mit Ihrer eigenen Gruppe reisen (ab 10 Personen reisen Sie kostenlos!) — ideal für Wine-Klubs, Genussreise-Gruppen oder Teambuilding. Auf Anfrage können wir Sie auch einer bestehenden Gruppe zuordnen."
+      },
+      {
+        "q": "Wie komme ich nach Kotli?",
+        "a": "Die meisten DACH-Gäste reisen mit dem Auto an: München 5h, Wien 7h, Zürich 8h. Alternativ: Flug nach Pula (1h Transfer), Triest (1,5h) oder Ljubljana (2h). Auf Wunsch organisieren wir einen Shuttle-Service vom Flughafen."
+      },
+      {
+        "q": "Was passiert bei schlechtem Wetter?",
+        "a": "Alle Hauptaktivitäten funktionieren auch bei Regen: Trüffel-Kochkurs, Weinverkostungen, Olivenöl-Degustation und Konoba-Besuche sind indoor. Nur die Trüffeljagd im Wald wird bei starkem Regen auf einen anderen Tag verschoben oder durch eine erweiterte Kochsession ersetzt."
+      },
+      {
+        "q": "Gibt es vegetarische / vegane Optionen?",
+        "a": "Ja! Istrische Küche ist reich an vegetarischen Gerichten: Trüffel-Pasta, Gemüse-Maneštra, gegrilltes Gemüse, lokaler Käse. Vegane und glutenfreie Optionen werden auf Anfrage bei allen Restaurants organisiert. Bitte teilen Sie uns Ihre Ernährungsanforderungen bei der Buchung mit."
+      },
+      {
+        "q": "Wie ist die Stornierungspolitik?",
+        "a": "Kostenlose Stornierung bis 60 Tage vor Anreise (volle Rückerstattung der Anzahlung). 30–59 Tage: 50% Erstattung. Unter 30 Tage: keine Erstattung. Wir empfehlen eine Reiserücktrittsversicherung. Anzahlung: 30% bei Buchung, Restzahlung 30 Tage vor Anreise."
+      },
+      {
+        "q": "Welche Zahlungsmethoden akzeptieren Sie?",
+        "a": "SEPA-Überweisung und Kreditkarte (Visa, Mastercard). Alle Preise verstehen sich inklusive MwSt. Keine versteckten Gebühren."
+      },
+      {
+        "q": "Kann ich meinen Hund mitbringen?",
+        "a": "Ja! Die Steinhäuser sind haustierfreundlich (€10/Tag). Eigene Gärten, perfekte Spazierwege. Bitte bei der Buchung angeben, damit wir das passende Haus zuweisen können."
+      },
+      {
+        "q": "Kann jede Reise auch privat gebucht werden?",
+        "a": "Ja — jede geplante Reise kann als private Gruppenreise gebucht werden. Ihr Termin, Ihre Gruppe, Ihre Anpassungen. Kontaktieren Sie uns für ein individuelles Angebot."
+      }
+    ]
+  },
+  "footer": {
+    "brand": "Original experiences, local stories. Authentische Genussreisen durch die besten Regionen Kroatiens.",
+    "byline": "by Prava Croatia · Creative idea d.o.o.",
+    "cols": {
+      "experience": "Erlebnis",
+      "accommodation": "Unterkunft",
+      "contact": "Kontakt"
+    },
+    "links": {
+      "whyIstria": "Warum Istrien",
+      "hosts": "Gastgeber",
+      "agenda": "Reiseplan",
+      "pricing": "Preise",
+      "stoneHouses": "Steinhäuser Kotli",
+      "bookDirect": "Direkt buchen (ohne Booking)",
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "facebook": "Facebook"
+    },
+    "copyright": "© 2026 Creative idea d.o.o. (Prava Croatia) · OIB: 39151678424 · Zagreb, Hrvatska. Alle Rechte vorbehalten.",
+    "legal": {
+      "impressum": "Impressum",
+      "privacy": "Datenschutz",
+      "terms": "AGB",
+      "travel": "Reisebedingungen"
+    }
+  },
+  "whatsappFloat": "Fragen? Schreiben Sie uns!",
+  "stickyMobile": "Anfrage senden — Ab €1.090/Person",
+  "cookies": {
+    "title": "Ihre Privatsphäre",
+    "text": "Wir verwenden notwendige Cookies für den Betrieb der Seite und mit Ihrer Einwilligung Analyse-Cookies zur Verbesserung der Inhalte. Mehr in unserer ",
+    "policyLink": "Datenschutzerklärung",
+    "accept": "Alle akzeptieren",
+    "decline": "Nur notwendige",
+    "settings": "Einstellungen"
+  },
+  "gdpr": {
+    "consent": "Mit dem Absenden der Anfrage willige ich in die Verarbeitung meiner personenbezogenen Daten zur Beantwortung meiner Anfrage ein.",
+    "policyLink": "Datenschutzerklärung"
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "lastUpdated": "Letzte Aktualisierung: Mai 2026",
+    "intro": "Diese Erklärung beschreibt, wie Creative idea d.o.o. (Prava Croatia) Ihre personenbezogenen Daten gemäß der Datenschutz-Grundverordnung (DSGVO) erhebt und verarbeitet.",
+    "sections": [
+      {
+        "h": "1. Verantwortlicher",
+        "p": "Creative idea d.o.o. (Prava Croatia), Zagreb, Kroatien. UID: 39151678424. E-Mail: info@pravacroatia.com. Telefon: +385 99 256 3862."
+      },
+      {
+        "h": "2. Welche Daten wir erheben",
+        "p": "Beim Ausfüllen des Kontaktformulars erheben wir: Vor- und Nachname, E-Mail-Adresse, Gruppengröße, Wunschtermin, gewünschtes Paket, Ernährungsbesonderheiten und Inhalt der Nachricht. Die Website verwendet notwendige Cookies und mit Ihrer Einwilligung Analyse-Cookies."
+      },
+      {
+        "h": "3. Zweck und Rechtsgrundlage",
+        "p": "Wir verarbeiten Ihre Daten ausschließlich zur Beantwortung Ihrer Anfrage und zur Vorbereitung eines individuellen Angebots (berechtigtes Interesse / vorvertragliche Maßnahmen, Art. 6 Abs. 1 lit. b DSGVO). Eine Nutzung zu Marketingzwecken erfolgt nur mit Ihrer ausdrücklichen Einwilligung."
+      },
+      {
+        "h": "4. Speicherdauer",
+        "p": "Anfragedaten werden maximal 24 Monate gespeichert und danach gelöscht. Vertragsdaten werden nach den gesetzlichen Fristen aufbewahrt (Steuerunterlagen — 11 Jahre)."
+      },
+      {
+        "h": "5. Ihre Rechte",
+        "p": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Die Einwilligung für Analyse-Cookies können Sie jederzeit widerrufen. Anfragen senden Sie bitte an info@pravacroatia.com. Sie haben außerdem das Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde (AZOP, kroatische Datenschutzbehörde, Zagreb)."
+      },
+      {
+        "h": "6. Sicherheit",
+        "p": "Die Kommunikation ist durch SSL-Verschlüsselung geschützt. Wir geben Ihre Daten nur an Dritte weiter, wenn dies zur Erbringung der Leistung notwendig ist (z. B. Partner-Gastgeber für Ihr Erlebnis) oder wenn dies gesetzlich vorgeschrieben ist."
+      }
+    ]
+  }
+}
