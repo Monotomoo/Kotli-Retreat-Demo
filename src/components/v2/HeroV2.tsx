@@ -38,7 +38,12 @@ export default function HeroV2() {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
 
   return (
-    <section className="relative h-screen min-h-[720px] overflow-hidden flex items-end" style={{ backgroundColor: INK }}>
+    /* Mobile uses min-height only, so tall content grows the section instead of
+       being clipped by items-end + overflow-hidden. Desktop keeps the full-viewport frame. */
+    <section
+      className="relative min-h-[100svh] md:h-screen md:min-h-[720px] overflow-hidden flex items-end"
+      style={{ backgroundColor: INK }}
+    >
       {/* Video background with parallax */}
       <motion.div className="absolute inset-0 w-full h-full" style={{ y: videoY }}>
         <video
@@ -110,7 +115,7 @@ export default function HeroV2() {
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-10 w-full px-5 md:px-[6vw] pb-16 md:pb-20 flex flex-col-reverse md:flex-row md:items-end justify-between gap-10 md:gap-14">
+      <div className="relative z-10 w-full px-5 md:px-[6vw] pt-28 md:pt-0 pb-14 md:pb-20 flex flex-col md:flex-row md:items-end justify-between gap-8 md:gap-14">
         {/* Left — editorial title block */}
         <div className="max-w-[680px]">
           <motion.div
@@ -211,10 +216,10 @@ export default function HeroV2() {
             </div>
 
             {/* Main row: days + price */}
-            <div className="px-6 py-5" style={{ borderBottom: '1px solid rgba(246,243,236,0.09)' }}>
+            <div className="px-5 md:px-6 py-4 md:py-5" style={{ borderBottom: '1px solid rgba(246,243,236,0.09)' }}>
               <div className="flex items-end justify-between">
                 <div className="flex items-baseline gap-2.5">
-                  <span className="font-display font-light text-[62px] leading-[0.85]" style={{ color: IVORY }}>
+                  <span className="font-display font-light text-[46px] md:text-[62px] leading-[0.85]" style={{ color: IVORY }}>
                     {t('days')}
                   </span>
                   <span className="text-[11px] uppercase tracking-[3px] font-semibold" style={{ color: 'rgba(246,243,236,0.8)' }}>
@@ -230,17 +235,17 @@ export default function HeroV2() {
                   </div>
                 </div>
               </div>
-              <div className="mt-4 text-[9px] uppercase tracking-[2px]" style={{ color: 'rgba(246,243,236,0.5)' }}>
+              <div className="mt-3 md:mt-4 text-[9px] uppercase tracking-[2px]" style={{ color: 'rgba(246,243,236,0.5)' }}>
                 {t('allInclusive')} · {t('people')}
               </div>
             </div>
 
             {/* Tasting-menu style hooks */}
-            <div className="px-6 py-2">
+            <div className="px-5 md:px-6 py-1 md:py-2">
               {hooks.map((hook, i) => (
                 <motion.div
                   key={i}
-                  className="flex items-baseline gap-4 py-2.5"
+                  className="flex items-baseline gap-4 py-2 md:py-2.5"
                   style={i > 0 ? { borderTop: '1px solid rgba(246,243,236,0.06)' } : undefined}
                   initial={{ opacity: 0, x: 18 }}
                   animate={{ opacity: 1, x: 0 }}

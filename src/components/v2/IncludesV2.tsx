@@ -91,7 +91,8 @@ export default function IncludesV2() {
               }}
             >
               {/* Rotating stamp */}
-              <div className="ssv2-spin absolute -top-9 -right-7 w-[112px] h-[112px] pointer-events-none">
+              {/* Sits inside the card on mobile — overhanging it widened the document */}
+              <div className="ssv2-spin absolute -top-4 right-2 w-[72px] h-[72px] md:-top-9 md:-right-7 md:w-[112px] md:h-[112px] pointer-events-none">
                 <svg viewBox="0 0 100 100" className="w-full h-full">
                   <defs>
                     <path id="ssv2-stamp-circle" d="M50,50 m-36,0 a36,36 0 1,1 72,0 a36,36 0 1,1 -72,0" />
@@ -108,7 +109,7 @@ export default function IncludesV2() {
               </div>
 
               {/* Card header */}
-              <div className="pr-20">
+              <div className="pr-24 md:pr-20">
                 <div className="text-[10px] uppercase tracking-[3.5px] font-semibold" style={{ color: BRASS_DARK }}>
                   {t('yesTitle')}
                 </div>
