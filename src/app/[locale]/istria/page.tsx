@@ -1,4 +1,7 @@
+import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
+import { SITE_URL } from '@/lib/site';
+import { buildJsonLd } from '@/lib/jsonLd';
 import HeaderV2 from '@/components/v2/HeaderV2';
 import HeroV2 from '@/components/v2/HeroV2';
 import WhyV2 from '@/components/v2/WhyV2';
@@ -14,18 +17,40 @@ import FooterV2 from '@/components/v2/FooterV2';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
 import StickyMobileCta from '@/components/StickyMobileCta';
 
-// V2 redesign playground — original stays untouched at /istria.
-// Sections are swapped to v2 components one by one as the redesign progresses.
-export default async function IstriaV2Page({
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    alternates: {
+      canonical: `${SITE_URL}/${locale}/istria`,
+      languages: {
+        'de-DE': `${SITE_URL}/de/istria`,
+        en: `${SITE_URL}/en/istria`,
+        'hr-HR': `${SITE_URL}/hr/istria`,
+        'x-default': `${SITE_URL}/de/istria`,
+      },
+    },
+  };
+}
+
+export default async function IstriaPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const jsonLd = await buildJsonLd(locale);
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <HeaderV2 />
       <main>
         <HeroV2 />

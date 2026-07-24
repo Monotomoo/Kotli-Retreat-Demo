@@ -28,6 +28,12 @@ export default function CookieBanner() {
     } catch {
       // ignore
     }
+    // Notify the Analytics component so Consent Mode updates immediately.
+    try {
+      window.dispatchEvent(new Event('ss-consent-change'));
+    } catch {
+      // ignore
+    }
     setShow(false);
   };
 

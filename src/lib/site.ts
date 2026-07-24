@@ -1,0 +1,29 @@
+// Central site constants — single source of truth for SEO, sitemap, robots,
+// structured data and canonical URLs.
+
+export const SITE_URL = 'https://kotliretreat.com';
+export const SITE_NAME = 'Kotli Retreat';
+
+export const LOCALES = ['de', 'en', 'hr'] as const;
+export const DEFAULT_LOCALE = 'de';
+
+// The primary marketing landing path (per locale).
+export const LANDING_PATH = 'istria';
+
+// Open Graph locale codes
+export const OG_LOCALE: Record<string, string> = {
+  de: 'de_DE',
+  en: 'en_US',
+  hr: 'hr_HR',
+};
+
+// hreflang codes — de/hr get region, en stays generic
+export const HREFLANG: Record<string, string> = {
+  de: 'de-DE',
+  en: 'en',
+  hr: 'hr-HR',
+};
+
+// Contact — matches the printed business details
+export const CONTACT_EMAIL = 'info@pravacroatia.com';
+export const CONTACT_PHONE = '+385 99 256 3862';
