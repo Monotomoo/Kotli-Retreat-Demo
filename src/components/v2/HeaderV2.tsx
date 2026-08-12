@@ -162,7 +162,7 @@ export default function HeaderV2() {
 
           {/* Right cluster */}
           <div className="flex items-center gap-5 md:gap-6 shrink-0">
-            <div className="hidden sm:flex items-center gap-1">
+            <div className="flex items-center gap-1">
               {['de', 'en', 'hr'].map((l) => (
                 <button
                   key={l}
