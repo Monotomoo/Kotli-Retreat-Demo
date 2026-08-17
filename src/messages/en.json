@@ -432,7 +432,7 @@
   },
   "footer": {
     "brand": "Original experiences, local stories. Authentic gourmet journeys through Croatia's finest regions.",
-    "byline": "by Prava Croatia · Creative idea d.o.o.",
+    "byline": "by Creative idea d.o.o.",
     "cols": {
       "experience": "Experience",
       "accommodation": "Accommodation",
@@ -449,7 +449,7 @@
       "instagram": "Instagram",
       "facebook": "Facebook"
     },
-    "copyright": "© 2026 Creative idea d.o.o. (Prava Croatia) · OIB: 39151678424 · Zagreb, Hrvatska. All rights reserved.",
+    "copyright": "© 2026 Creative idea d.o.o. · OIB: 39151678424 · Zagreb, Hrvatska. All rights reserved.",
     "legal": {
       "impressum": "Legal Notice",
       "privacy": "Privacy Policy",
@@ -474,11 +474,11 @@
   "privacy": {
     "title": "Privacy Policy",
     "lastUpdated": "Last updated: May 2026",
-    "intro": "This policy describes how Creative idea d.o.o. (Prava Croatia) collects and processes your personal data in accordance with the General Data Protection Regulation (GDPR).",
+    "intro": "This policy describes how Creative idea d.o.o. collects and processes your personal data in accordance with the General Data Protection Regulation (GDPR).",
     "sections": [
       {
         "h": "1. Data Controller",
-        "p": "Creative idea d.o.o. (Prava Croatia), Zagreb, Croatia. VAT ID: 39151678424. Email: info@kotliretreat.com. Phone: +385 99 256 3862."
+        "p": "Creative idea d.o.o., Zagreb, Croatia. VAT ID: 39151678424. Email: info@kotliretreat.com. Phone: +385 99 256 3862."
       },
       {
         "h": "2. Data we collect",
