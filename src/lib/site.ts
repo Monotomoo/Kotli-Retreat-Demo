@@ -25,5 +25,5 @@ export const HREFLANG: Record<string, string> = {
 };
 
 // Contact — matches the printed business details
-export const CONTACT_EMAIL = 'info@pravacroatia.com';
+export const CONTACT_EMAIL = 'info@kotliretreat.com';
 export const CONTACT_PHONE = '+385 99 256 3862';

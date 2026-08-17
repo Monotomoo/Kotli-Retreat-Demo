@@ -151,11 +151,11 @@ export default function FooterV2() {
               {t('cols.contact')}
             </h4>
             <a
-              href="mailto:info@pravacroatia.com"
+              href="mailto:info@kotliretreat.com"
               className="block text-[13.5px] mb-2.5 no-underline transition-all duration-300 hover:translate-x-1"
               style={{ color: 'rgba(246,243,236,0.65)' }}
             >
-              info@pravacroatia.com
+              info@kotliretreat.com
             </a>
             {(['whatsapp', 'instagram', 'facebook'] as const).map((key) => {
               const href = key === 'whatsapp' ? 'https://wa.me/385992563862' : '#';

@@ -14,7 +14,7 @@ const BRASS_DARK = '#8a6b3f';
 
 const PORTRAITS = [
   { src: '/images/hosts/host-1.png', position: 'center' },
-  { src: '/images/hosts/host-2.png', position: '0% center' },
+  { src: '/images/hosts/host-2.png', position: '100% center' },
   { src: '/images/hosts/host-3.jpg', position: 'center' },
   { src: '/images/hosts/host-4.jpg', position: 'center' },
 ];

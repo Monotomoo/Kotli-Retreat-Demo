@@ -267,11 +267,11 @@ export default function HeaderV2() {
                 transition={{ delay: 0.45 }}
               >
                 <a
-                  href="mailto:info@pravacroatia.com"
+                  href="mailto:info@kotliretreat.com"
                   className="text-sm no-underline"
                   style={{ color: 'rgba(246,243,236,0.6)' }}
                 >
-                  info@pravacroatia.com
+                  info@kotliretreat.com
                 </a>
                 <a
                   href="https://wa.me/385992563862"

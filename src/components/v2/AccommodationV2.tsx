@@ -1,15 +1,16 @@
 'use client';
 
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { Home, Waves, PawPrint, MapPin } from 'lucide-react';
+import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
+import { Home, Waves, PawPrint, MapPin, ChevronLeft, ChevronRight, X, ZoomIn } from 'lucide-react';
 
 // V2 Accommodation — "The Estate Spread". Light editorial magazine layout
 // directly below the dark hero: giant headline, the village hero photo LARGE
 // with inner parallax, an overlapping interior accent, features beside it,
-// slim infinite filmstrip underneath.
+// slim infinite filmstrip underneath. Filmstrip photos open a lightbox with
+// left/right navigation.
 const IVORY = '#f6f3ec';
 const INK = '#1c1a15';
 const BRASS = '#b08d57';
@@ -48,6 +49,39 @@ export default function AccommodationV2() {
   const { scrollYProgress } = useScroll({ target: sectionRef, offset: ['start end', 'end start'] });
   const photoInnerY = useTransform(scrollYProgress, [0, 1], [-38, 38]);
   const accentY = useTransform(scrollYProgress, [0, 1], [30, -30]);
+
+  // ---- Lightbox ----
+  const [lightbox, setLightbox] = useState<number | null>(null);
+  const touchX = useRef<number | null>(null);
+  const close = () => setLightbox(null);
+  const prev = () => setLightbox((i) => (i === null ? i : (i - 1 + STRIP.length) % STRIP.length));
+  const next = () => setLightbox((i) => (i === null ? i : (i + 1) % STRIP.length));
+
+  useEffect(() => {
+    if (lightbox === null) return;
+    document.body.style.overflow = 'hidden';
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') close();
+      else if (e.key === 'ArrowLeft') prev();
+      else if (e.key === 'ArrowRight') next();
+    };
+    window.addEventListener('keydown', onKey);
+    return () => {
+      window.removeEventListener('keydown', onKey);
+      document.body.style.overflow = '';
+    };
+  }, [lightbox]);
+
+  const onTouchStart = (e: React.TouchEvent) => {
+    touchX.current = e.touches[0].clientX;
+  };
+  const onTouchEnd = (e: React.TouchEvent) => {
+    if (touchX.current === null) return;
+    const dx = e.changedTouches[0].clientX - touchX.current;
+    if (dx > 50) prev();
+    else if (dx < -50) next();
+    touchX.current = null;
+  };
 
   const title = t('title');
   const titleWords = title.split(' ');
@@ -196,7 +230,7 @@ export default function AccommodationV2() {
         </div>
       </div>
 
-      {/* Slim infinite filmstrip */}
+      {/* Slim infinite filmstrip — click any photo to open the lightbox */}
       <motion.div
         className="relative mt-6 md:mt-10 pb-14 md:pb-16"
         initial={{ opacity: 0, y: 26 }}
@@ -207,9 +241,11 @@ export default function AccommodationV2() {
         <div className="overflow-hidden">
           <div className="ssv2-marquee flex w-max">
             {[...STRIP, ...STRIP].map((item, i) => (
-              <div
+              <button
                 key={i}
-                className="group relative shrink-0 mr-3.5 h-[160px] md:h-[210px] rounded-[4px] overflow-hidden"
+                onClick={() => setLightbox(i % STRIP.length)}
+                aria-label="Open photo"
+                className="group relative shrink-0 mr-3.5 h-[160px] md:h-[210px] rounded-[4px] overflow-hidden cursor-zoom-in border-none bg-transparent p-0"
                 style={{ width: `${Math.round(item.w * 0.62)}px` }}
               >
                 <Image
@@ -219,7 +255,19 @@ export default function AccommodationV2() {
                   className="object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.05]"
                   sizes="300px"
                 />
-              </div>
+                {/* Hover affordance */}
+                <span
+                  className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  style={{ backgroundColor: 'rgba(13,18,12,0.22)' }}
+                >
+                  <span
+                    className="w-9 h-9 rounded-full flex items-center justify-center"
+                    style={{ backgroundColor: 'rgba(246,243,236,0.92)' }}
+                  >
+                    <ZoomIn className="w-4 h-4" style={{ color: INK }} strokeWidth={1.75} />
+                  </span>
+                </span>
+              </button>
             ))}
           </div>
         </div>
@@ -227,6 +275,82 @@ export default function AccommodationV2() {
 
       {/* Bottom hairline before the next ivory section */}
       <div className="mx-5 md:mx-[6vw] h-px" style={{ backgroundColor: 'rgba(28,26,21,0.1)' }} />
+
+      {/* ===== Lightbox ===== */}
+      <AnimatePresence>
+        {lightbox !== null && (
+          <motion.div
+            className="fixed inset-0 z-[2000] flex items-center justify-center px-4"
+            style={{ backgroundColor: 'rgba(10,14,9,0.94)' }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            onClick={close}
+            onTouchStart={onTouchStart}
+            onTouchEnd={onTouchEnd}
+          >
+            {/* Close */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                close();
+              }}
+              aria-label="Close"
+              className="absolute top-4 right-4 md:top-6 md:right-6 w-11 h-11 rounded-full flex items-center justify-center cursor-pointer transition-colors duration-200"
+              style={{ backgroundColor: 'rgba(246,243,236,0.1)', border: '1px solid rgba(246,243,236,0.2)' }}
+            >
+              <X className="w-5 h-5" style={{ color: IVORY }} />
+            </button>
+
+            {/* Prev */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                prev();
+              }}
+              aria-label="Previous photo"
+              className="absolute left-2 md:left-8 w-11 h-11 md:w-14 md:h-14 rounded-full flex items-center justify-center cursor-pointer transition-colors duration-200 z-10"
+              style={{ backgroundColor: 'rgba(246,243,236,0.1)', border: '1px solid rgba(246,243,236,0.2)' }}
+            >
+              <ChevronLeft className="w-6 h-6 md:w-7 md:h-7" style={{ color: IVORY }} />
+            </button>
+
+            {/* Image */}
+            <motion.div
+              key={lightbox}
+              className="relative w-[92vw] h-[80vh]"
+              initial={{ opacity: 0, scale: 0.98 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Image src={STRIP[lightbox].src} alt="Kotli" fill className="object-contain" sizes="92vw" priority />
+            </motion.div>
+
+            {/* Next */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                next();
+              }}
+              aria-label="Next photo"
+              className="absolute right-2 md:right-8 w-11 h-11 md:w-14 md:h-14 rounded-full flex items-center justify-center cursor-pointer transition-colors duration-200 z-10"
+              style={{ backgroundColor: 'rgba(246,243,236,0.1)', border: '1px solid rgba(246,243,236,0.2)' }}
+            >
+              <ChevronRight className="w-6 h-6 md:w-7 md:h-7" style={{ color: IVORY }} />
+            </button>
+
+            {/* Counter */}
+            <div
+              className="absolute bottom-5 left-1/2 -translate-x-1/2 text-[11px] uppercase tracking-[3px] font-semibold"
+              style={{ color: 'rgba(246,243,236,0.7)' }}
+            >
+              <span style={{ color: BRASS_LIGHT }}>{lightbox + 1}</span> / {STRIP.length}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }

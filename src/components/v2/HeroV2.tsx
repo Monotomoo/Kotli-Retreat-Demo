@@ -155,8 +155,16 @@ export default function HeroV2() {
             </div>
           </div>
         </div>
-        <div className="mt-3 md:mt-4 text-[9px] uppercase tracking-[2px]" style={{ color: 'rgba(246,243,236,0.5)' }}>
-          {t('allInclusive')} · {t('people')}
+        <div className="mt-3.5 md:mt-4 flex items-center gap-2.5">
+          <span
+            className="text-[8.5px] font-bold uppercase tracking-[2px] px-2.5 py-1 rounded-[2px]"
+            style={{ backgroundColor: BRASS_LIGHT, color: '#141a12' }}
+          >
+            {t('allInclusive')}
+          </span>
+          <span className="text-[9px] uppercase tracking-[2px]" style={{ color: 'rgba(246,243,236,0.55)' }}>
+            {t('people')}
+          </span>
         </div>
       </div>
 

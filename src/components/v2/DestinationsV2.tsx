@@ -15,7 +15,7 @@ const BRASS_LIGHT = '#d3b787';
 
 const PLACES = [
   { src: '/images/destinations/rovinj-sunset.jpg', coords: '45°05′N · 13°38′E' },
-  { src: '/images/destinations/motovun-hilltop.jpg', coords: '45°20′N · 13°50′E' },
+  { src: '/images/destinations/motovun-b.jpg', coords: '45°20′N · 13°50′E' },
   { src: '/images/destinations/hum-stone.jpg', coords: '45°21′N · 14°03′E' },
 ];
 

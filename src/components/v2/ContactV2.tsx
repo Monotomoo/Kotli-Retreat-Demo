@@ -134,7 +134,7 @@ export default function ContactV2() {
       String(data.get('message') ?? ''),
     ].join('\n');
     const subject = `Kotli Retreat — ${data.get('firstName') ?? ''} ${data.get('lastName') ?? ''}`;
-    window.location.href = `mailto:info@pravacroatia.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:info@kotliretreat.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (
@@ -230,8 +230,8 @@ export default function ContactV2() {
                   <span className="text-[9px] uppercase tracking-[2.5px] font-semibold w-16 shrink-0" style={{ color: 'rgba(246,243,236,0.4)' }}>
                     {t('emailLabel')}
                   </span>
-                  <a href="mailto:info@pravacroatia.com" className="text-[14px] no-underline" style={{ color: 'rgba(246,243,236,0.85)' }}>
-                    info@pravacroatia.com
+                  <a href="mailto:info@kotliretreat.com" className="text-[14px] no-underline" style={{ color: 'rgba(246,243,236,0.85)' }}>
+                    info@kotliretreat.com
                   </a>
                 </div>
                 <div className="flex items-baseline gap-3">
