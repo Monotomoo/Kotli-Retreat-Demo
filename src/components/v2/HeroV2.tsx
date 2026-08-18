@@ -44,6 +44,10 @@ export default function HeroV2() {
   const scrollToIncludes = () =>
     document.getElementById('includes')?.scrollIntoView({ behavior: 'smooth' });
 
+  // Hold the hero content back so the video's own "Kotli Istra" intro title
+  // has time to clear before the site text fades in. Tune this one number.
+  const REVEAL_DELAY = 1.2;
+
   // ---- Reusable content pieces (fresh JSX per call → safe to place twice) ----
   const renderIntro = () => (
     <>
@@ -51,7 +55,7 @@ export default function HeroV2() {
         className="flex items-center gap-4 mb-5"
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
+        transition={{ duration: 0.6, delay: REVEAL_DELAY + 0.2, ease: 'easeOut' }}
       >
         <span className="w-10 h-px" style={{ backgroundColor: BRASS }} />
         <span
@@ -76,7 +80,7 @@ export default function HeroV2() {
               style={isLast ? { color: BRASS_LIGHT } : isAmp ? { color: BRASS } : undefined}
               initial={{ opacity: 0, y: 28 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.35 + i * 0.09, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.6, delay: REVEAL_DELAY + 0.35 + i * 0.09, ease: [0.22, 1, 0.36, 1] }}
             >
               {word}
             </motion.span>
@@ -89,7 +93,7 @@ export default function HeroV2() {
         style={{ color: 'rgba(246,243,236,0.78)' }}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.75, ease: 'easeOut' }}
+        transition={{ duration: 0.6, delay: REVEAL_DELAY + 0.75, ease: 'easeOut' }}
       >
         {poetic}
       </motion.p>
@@ -298,7 +302,7 @@ export default function HeroV2() {
             className="flex items-center gap-7 mt-9"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.95, ease: 'easeOut' }}
+            transition={{ duration: 0.5, delay: REVEAL_DELAY + 0.95, ease: 'easeOut' }}
           >
             {renderActions()}
           </motion.div>
@@ -308,7 +312,7 @@ export default function HeroV2() {
           className="w-[372px] shrink-0"
           initial={{ opacity: 0, y: 36 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.9, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.7, delay: REVEAL_DELAY + 0.9, ease: [0.22, 1, 0.36, 1] }}
         >
           {renderTicket()}
         </motion.div>
