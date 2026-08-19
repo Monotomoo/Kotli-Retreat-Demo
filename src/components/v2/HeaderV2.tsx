@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations, useLocale } from 'next-intl';
-import { useRouter, usePathname } from 'next/navigation';
+import { usePathname, useRouter } from '@/i18n/navigation';
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -62,8 +62,7 @@ export default function HeaderV2() {
   }, [open]);
 
   const switchLocale = (newLocale: string) => {
-    const path = pathname.replace(`/${locale}`, `/${newLocale}`);
-    router.push(path);
+    router.replace(pathname, { locale: newLocale });
   };
 
   const goTo = (id: string) => {
@@ -163,7 +162,7 @@ export default function HeaderV2() {
           {/* Right cluster */}
           <div className="flex items-center gap-5 md:gap-6 shrink-0">
             <div className="flex items-center gap-1">
-              {['de', 'en', 'hr', 'sl'].map((l) => (
+              {['en', 'de', 'hr', 'sl'].map((l) => (
                 <button
                   key={l}
                   onClick={() => switchLocale(l)}
@@ -283,7 +282,7 @@ export default function HeaderV2() {
                   +385 99 256 3862
                 </a>
                 <div className="flex gap-3 mt-2">
-                  {['de', 'en', 'hr', 'sl'].map((l) => (
+                  {['en', 'de', 'hr', 'sl'].map((l) => (
                     <button
                       key={l}
                       onClick={() => switchLocale(l)}
