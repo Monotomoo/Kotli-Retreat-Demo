@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
-import { SITE_URL } from '@/lib/site';
+import { localeUrl, DEFAULT_LOCALE } from '@/lib/site';
 
 export async function generateMetadata({
   params,
@@ -13,7 +13,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'privacy' });
   return {
     title: t('title'),
-    alternates: { canonical: `${SITE_URL}/${locale}/privacy` },
+    alternates: { canonical: localeUrl(locale, 'privacy') },
   };
 }
 
@@ -31,7 +31,7 @@ export default async function PrivacyPage({
     <main className="bg-white min-h-screen">
       <div className="max-w-[760px] mx-auto px-5 md:px-8 py-12 md:py-16">
         <Link
-          href={`/${locale}/istria`}
+          href={locale === DEFAULT_LOCALE ? '/' : `/${locale}`}
           className="inline-flex items-center gap-1.5 text-[13px] text-green hover:text-green-dark mb-8"
         >
           <ArrowLeft className="w-4 h-4" /> Kotli Retreat

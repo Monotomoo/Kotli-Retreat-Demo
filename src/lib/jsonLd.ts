@@ -1,11 +1,11 @@
-import { SITE_URL, SITE_NAME, CONTACT_EMAIL, CONTACT_PHONE } from './site';
+import { SITE_URL, SITE_NAME, CONTACT_EMAIL, CONTACT_PHONE, localeUrl } from './site';
 
 // Build schema.org JSON-LD for the landing page from the locale's messages.
 // Emits Organization (TravelAgency) + TouristTrip + FAQPage → eligible for
 // rich results (especially the FAQ accordion) in Google.
 export async function buildJsonLd(locale: string) {
   const messages = (await import(`../messages/${locale}.json`)).default as Record<string, unknown>;
-  const url = `${SITE_URL}/${locale}/istria`;
+  const url = localeUrl(locale);
 
   const meta = (messages.meta ?? {}) as { title?: string; description?: string };
   const hero = (messages.hero ?? {}) as { people?: string };

@@ -27,3 +27,15 @@ export const HREFLANG: Record<string, string> = {
 // Contact — matches the printed business details
 export const CONTACT_EMAIL = 'info@kotliretreat.com';
 export const CONTACT_PHONE = '+385 99 256 3862';
+
+// Build a canonical URL for a locale + optional sub-path, honoring the
+// "as-needed" prefix: the default locale (de) has NO prefix, others do.
+//   localeUrl('de')            → https://kotliretreat.com
+//   localeUrl('en')            → https://kotliretreat.com/en
+//   localeUrl('de', 'privacy') → https://kotliretreat.com/privacy
+//   localeUrl('en', 'privacy') → https://kotliretreat.com/en/privacy
+export function localeUrl(locale: string, path = ''): string {
+  const seg = locale === DEFAULT_LOCALE ? '' : `/${locale}`;
+  const sub = path ? `/${path}` : '';
+  return `${SITE_URL}${seg}${sub}`;
+}
