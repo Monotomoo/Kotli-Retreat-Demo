@@ -23,6 +23,7 @@ const POETIC: Record<string, string> = {
   de: 'Trüffel im Morgennebel. Wein aus vier Erden. Ein Steindorf nur für Sie.',
   en: 'Truffles in morning mist. Wine from four soils. A stone village all to yourselves.',
   hr: 'Tartufi u jutarnjoj magli. Vino iz četiri zemlje. Kameno selo samo za vas.',
+  sl: 'Tartufi v jutranji megli. Vino iz štirih zemelj. Kamnita vas samo za vas.',
 };
 
 // Subtle film grain (inline SVG noise)

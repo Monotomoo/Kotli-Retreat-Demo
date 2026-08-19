@@ -65,6 +65,15 @@ const LOCAL_UI: Record<
     thankBody: 'Primili smo vašu poruku i javit ćemo se unutar 24 sata s osobnom ponudom.',
     errorText: 'Nešto je pošlo po zlu. Pišite nam izravno na info@kotliretreat.com ili putem WhatsAppa.',
   },
+  sl: {
+    caption: 'Vidimo se v Kotlih.',
+    stepsLabel: 'Kako poteka',
+    steps: ['Pošljite povpraševanje — brez obveznosti', 'Odgovor v 24 urah', 'Osebna ponudba in termin'],
+    sending: 'Pošiljanje…',
+    thankTitle: 'Hvala za povpraševanje!',
+    thankBody: 'Prejeli smo vaše sporočilo in javili se vam bomo v 24 urah z osebno ponudbo.',
+    errorText: 'Nekaj je šlo narobe. Pišite nam neposredno na info@kotliretreat.com ali prek WhatsAppa.',
+  },
 };
 
 const inputCls =

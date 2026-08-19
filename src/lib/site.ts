@@ -4,7 +4,7 @@
 export const SITE_URL = 'https://kotliretreat.com';
 export const SITE_NAME = 'Kotli Retreat';
 
-export const LOCALES = ['de', 'en', 'hr'] as const;
+export const LOCALES = ['de', 'en', 'hr', 'sl'] as const;
 export const DEFAULT_LOCALE = 'de';
 
 // The primary marketing landing path (per locale).
@@ -15,6 +15,7 @@ export const OG_LOCALE: Record<string, string> = {
   de: 'de_DE',
   en: 'en_US',
   hr: 'hr_HR',
+  sl: 'sl_SI',
 };
 
 // hreflang codes — de/hr get region, en stays generic
@@ -22,6 +23,7 @@ export const HREFLANG: Record<string, string> = {
   de: 'de-DE',
   en: 'en',
   hr: 'hr-HR',
+  sl: 'sl-SI',
 };
 
 // Contact — matches the printed business details

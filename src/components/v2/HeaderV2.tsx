@@ -163,7 +163,7 @@ export default function HeaderV2() {
           {/* Right cluster */}
           <div className="flex items-center gap-5 md:gap-6 shrink-0">
             <div className="flex items-center gap-1">
-              {['de', 'en', 'hr'].map((l) => (
+              {['de', 'en', 'hr', 'sl'].map((l) => (
                 <button
                   key={l}
                   onClick={() => switchLocale(l)}
@@ -283,7 +283,7 @@ export default function HeaderV2() {
                   +385 99 256 3862
                 </a>
                 <div className="flex gap-3 mt-2">
-                  {['de', 'en', 'hr'].map((l) => (
+                  {['de', 'en', 'hr', 'sl'].map((l) => (
                     <button
                       key={l}
                       onClick={() => switchLocale(l)}

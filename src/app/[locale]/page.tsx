@@ -31,6 +31,7 @@ export async function generateMetadata({
         'de-DE': localeUrl('de'),
         en: localeUrl('en'),
         'hr-HR': localeUrl('hr'),
+        'sl-SI': localeUrl('sl'),
         'x-default': localeUrl('de'),
       },
     },
