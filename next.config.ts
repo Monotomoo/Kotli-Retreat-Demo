@@ -14,10 +14,11 @@ const nextConfig: NextConfig = {
   // new clean structure, so anything Google already indexed follows cleanly.
   async redirects() {
     return [
-      { source: '/de/istria', destination: '/', permanent: true },
-      { source: '/en/istria', destination: '/en', permanent: true },
+      // English is now the default (bare domain); German moved to /de.
+      { source: '/en/istria', destination: '/', permanent: true },
+      { source: '/de/istria', destination: '/de', permanent: true },
       { source: '/hr/istria', destination: '/hr', permanent: true },
-      { source: '/de/privacy', destination: '/privacy', permanent: true },
+      { source: '/en/privacy', destination: '/privacy', permanent: true },
     ];
   },
 };

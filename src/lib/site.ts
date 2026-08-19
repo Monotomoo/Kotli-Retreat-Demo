@@ -5,7 +5,7 @@ export const SITE_URL = 'https://kotliretreat.com';
 export const SITE_NAME = 'Kotli Retreat';
 
 export const LOCALES = ['de', 'en', 'hr', 'sl'] as const;
-export const DEFAULT_LOCALE = 'de';
+export const DEFAULT_LOCALE = 'en';
 
 // The primary marketing landing path (per locale).
 export const LANDING_PATH = 'istria';

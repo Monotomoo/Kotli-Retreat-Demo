@@ -32,7 +32,7 @@ export async function generateMetadata({
         en: localeUrl('en'),
         'hr-HR': localeUrl('hr'),
         'sl-SI': localeUrl('sl'),
-        'x-default': localeUrl('de'),
+        'x-default': localeUrl('en'),
       },
     },
   };
