@@ -384,7 +384,7 @@
       "groupSize": "Velikost skupine",
       "groupSizeOptions": ["10–15 oseb", "16–24 oseb", "25–34 oseb"],
       "date": "Želeni termin",
-      "dateOptions": ["April 2027", "Maj 2027", "Junij 2027", "September 2027", "Oktober 2027", "November 2027", "Fleksibilno"],
+      "dateOptions": ["December 2026", "Januar 2027", "Februar 2027", "Marec 2027", "April 2027", "Maj 2027", "Junij 2027", "September 2027", "Oktober 2027", "November 2027", "Fleksibilno"],
       "package": "Kateri paket vas zanima?",
       "packageOptions": ["Duh vasi", "Duh Istre", "Vaša zgodba (po meri)", "Samo nastanitev", "Še razmišljam"],
       "dietary": "Prehranske posebnosti",

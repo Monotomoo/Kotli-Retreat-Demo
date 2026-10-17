@@ -384,7 +384,7 @@
       "groupSize": "Group Size",
       "groupSizeOptions": ["10–15 guests", "16–24 guests", "25–34 guests"],
       "date": "Preferred Date",
-      "dateOptions": ["April 2027", "May 2027", "June 2027", "September 2027", "October 2027", "November 2027", "Flexible"],
+      "dateOptions": ["December 2026", "January 2027", "February 2027", "March 2027", "April 2027", "May 2027", "June 2027", "September 2027", "October 2027", "November 2027", "Flexible"],
       "package": "Which package interests you?",
       "packageOptions": ["Spirit of the Village", "Spirit of Istria", "Your Story (custom)", "Accommodation only", "Still deciding"],
       "dietary": "Dietary Requirements",

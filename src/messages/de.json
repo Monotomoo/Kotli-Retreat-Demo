@@ -384,7 +384,7 @@
       "groupSize": "Gruppengröße",
       "groupSizeOptions": ["10–15 Personen", "16–24 Personen", "25–34 Personen"],
       "date": "Wunschtermin",
-      "dateOptions": ["April 2027", "Mai 2027", "Juni 2027", "September 2027", "Oktober 2027", "November 2027", "Flexibel"],
+      "dateOptions": ["Dezember 2026", "Januar 2027", "Februar 2027", "März 2027", "April 2027", "Mai 2027", "Juni 2027", "September 2027", "Oktober 2027", "November 2027", "Flexibel"],
       "package": "Welches Paket interessiert Sie?",
       "packageOptions": ["Geist des Dorfes", "Geist Istriens", "Ihre Geschichte (individuell)", "Nur Unterkunft", "Noch unentschlossen"],
       "dietary": "Ernährungsbesonderheiten",

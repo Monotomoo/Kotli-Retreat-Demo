@@ -384,7 +384,7 @@
       "groupSize": "Veličina grupe",
       "groupSizeOptions": ["10–15 osoba", "16–24 osobe", "25–34 osobe"],
       "date": "Željeni termin",
-      "dateOptions": ["Travanj 2027.", "Svibanj 2027.", "Lipanj 2027.", "Rujan 2027.", "Listopad 2027.", "Studeni 2027.", "Fleksibilno"],
+      "dateOptions": ["Prosinac 2026.", "Siječanj 2027.", "Veljača 2027.", "Ožujak 2027.", "Travanj 2027.", "Svibanj 2027.", "Lipanj 2027.", "Rujan 2027.", "Listopad 2027.", "Studeni 2027.", "Fleksibilno"],
       "package": "Koji paket vas zanima?",
       "packageOptions": ["Duh Sela", "Duh Istre", "Vaša Priča (custom)", "Samo smještaj", "Još razmišljam"],
       "dietary": "Prehrambene posebnosti",
