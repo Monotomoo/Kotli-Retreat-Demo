@@ -1,8 +1,10 @@
 'use client';
 
+import { Fragment } from 'react';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { SEASON } from '@/lib/site';
 
 // V2 Hero — Editorial × Dark, with soul: film grain, warm brass glow,
 // poetic serif line, coordinates rail. Luxury "trip ticket" card.
@@ -71,20 +73,25 @@ export default function HeroV2() {
         className="font-display font-light text-[clamp(46px,7vw,92px)] leading-[0.98] mb-5"
         style={{ color: IVORY }}
       >
+        {/* Words are separate animated spans; the real space between them keeps
+            the heading's text "Soil and Soul Istria" for search engines and
+            screen readers (a CSS margin alone yields "SoilandSoulIstria"). */}
         {titleWords.map((word, i) => {
           const isLast = i === titleWords.length - 1;
           const isAmp = word === '&';
           return (
-            <motion.span
-              key={i}
-              className={`inline-block mr-[0.28em] ${isLast || isAmp ? 'italic' : ''} ${isAmp ? 'font-serif text-[0.82em]' : ''}`}
-              style={isLast ? { color: BRASS_LIGHT } : isAmp ? { color: BRASS } : undefined}
-              initial={{ opacity: 0, y: 28 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: REVEAL_DELAY + 0.35 + i * 0.09, ease: [0.22, 1, 0.36, 1] }}
-            >
-              {word}
-            </motion.span>
+            <Fragment key={i}>
+              <motion.span
+                className={`inline-block ${isLast || isAmp ? 'italic' : ''} ${isAmp ? 'font-serif text-[0.82em]' : ''}`}
+                style={isLast ? { color: BRASS_LIGHT } : isAmp ? { color: BRASS } : undefined}
+                initial={{ opacity: 0, y: 28 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: REVEAL_DELAY + 0.35 + i * 0.09, ease: [0.22, 1, 0.36, 1] }}
+              >
+                {word}
+              </motion.span>
+              {!isLast && ' '}
+            </Fragment>
           );
         })}
       </h1>
@@ -136,7 +143,7 @@ export default function HeroV2() {
           Kotli Retreat — Istria
         </span>
         <span className="text-[9px] uppercase tracking-[3.5px]" style={{ color: 'rgba(246,243,236,0.45)' }}>
-          2026
+          {SEASON}
         </span>
       </div>
 

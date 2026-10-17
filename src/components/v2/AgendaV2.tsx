@@ -27,6 +27,7 @@ const DAY_IMAGES = [
 interface ScheduleItem {
   time: string;
   text: string;
+  plus?: boolean; // only in the Spirit of Istria package — marked ✦
 }
 interface DayData {
   number: string;
@@ -96,6 +97,13 @@ export default function AgendaV2() {
           >
             {t('title')}
           </h2>
+          <p
+            className="font-serif italic text-[15px] md:text-[16px] leading-relaxed mt-5 max-w-[620px]"
+            style={{ color: 'rgba(246,243,236,0.6)' }}
+          >
+            <span className="not-italic mr-1.5" style={{ color: BRASS_LIGHT }}>✦</span>
+            {t('upgradeNote')}
+          </p>
         </motion.div>
 
         {/* Body: sticky rail + day chapters */}
@@ -284,6 +292,11 @@ export default function AgendaV2() {
                         </span>
                         <span className="text-[13.5px] leading-snug" style={{ color: 'rgba(246,243,236,0.82)' }}>
                           {item.text}
+                          {item.plus && (
+                            <span className="ml-2 text-[11px]" style={{ color: BRASS_LIGHT }} aria-label="Spirit of Istria">
+                              ✦
+                            </span>
+                          )}
                         </span>
                       </div>
                     ))}

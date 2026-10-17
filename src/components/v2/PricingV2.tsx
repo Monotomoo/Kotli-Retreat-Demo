@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
+import { CONTACT_EMAIL } from '@/lib/site';
 
 // V2 Pricing — "Choose your experience". Stone bed, three editorial package
 // cards: the featured one is a dark jewel with a breathing brass glow, the
@@ -265,6 +266,44 @@ export default function PricingV2() {
         <p className="font-serif italic text-[12.5px] mt-8" style={{ color: 'rgba(28,26,21,0.45)' }}>
           {t('footerNote')}
         </p>
+
+        {/* Trade band — agencies, clubs and companies. Anchor is linkable
+            from outreach emails: kotliretreat.com/de#agencies */}
+        <motion.div
+          id="agencies"
+          className="mt-12 rounded-[6px] p-7 md:p-9 flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-12"
+          style={{ backgroundColor: '#fbf9f3', borderTop: `2px solid ${BRASS}`, boxShadow: '0 18px 45px rgba(28,26,21,0.08)' }}
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+        >
+          <div className="max-w-[640px]">
+            <div className="text-[10px] uppercase tracking-[3.5px] font-semibold" style={{ color: BRASS_DARK }}>
+              {t('b2b.label')}
+            </div>
+            <h3 className="font-display text-[24px] md:text-[28px] leading-tight mt-2.5" style={{ color: INK }}>
+              {t('b2b.title')}
+            </h3>
+            <p className="text-[14px] leading-relaxed mt-2.5" style={{ color: 'rgba(28,26,21,0.65)' }}>
+              {t('b2b.text')}
+            </p>
+          </div>
+          <div className="shrink-0 flex flex-col items-start md:items-end gap-2.5">
+            <a
+              href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(t('b2b.subject'))}`}
+              className="px-7 py-3.5 text-[10px] font-semibold uppercase tracking-[2.5px] no-underline rounded-[3px] transition-colors duration-300"
+              style={{ backgroundColor: INK, color: IVORY }}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = BRASS_DARK)}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = INK)}
+            >
+              {t('b2b.cta')} →
+            </a>
+            <span className="text-[12px]" style={{ color: 'rgba(28,26,21,0.5)' }}>
+              {CONTACT_EMAIL}
+            </span>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

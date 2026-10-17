@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Kotli Retreat — Soil and Soul Istria | Tartufi, vino, Michelin",
-    "description": "5-dnevno all-inclusive gastronomsko putovanje: lov na tartufe, degustacija vina, najbolje maslinovo ulje na svijetu, Michelin večera. 10–34 osobe. Od €1.090/osobi."
+    "description": "5-dnevno all-inclusive gastronomsko putovanje: lov na tartufe, degustacija vina, najbolje maslinovo ulje na svijetu, opcionalna oproštajna Michelin večera. 10–34 osobe. Od €1.090/osobi."
   },
   "header": {
     "cta": "Pošaljite upit",
@@ -27,7 +27,7 @@
     "pricePer": "po osobi",
     "people": "10 – 34 osobe po grupi",
     "tags": ["Lov na tartufe", "Vino i najbolje maslinovo ulje na svijetu", "Michelin oproštajna večera"],
-    "hooks": ["Lov na tartufe", "Putevima istarskog vina", "Od masline do stola", "Michelin večera u Rovinju"]
+    "hooks": ["Lov na tartufe", "Putevima istarskog vina", "Od masline do stola", "Kameno selo samo za vas"]
   },
   "quickFacts": {
     "duration": "5 dana",
@@ -35,7 +35,7 @@
     "groupSize": "10–34",
     "groupSizeLabel": "Veličina grupe",
     "newLabel": "Novo!",
-    "season": "Sezona 2026",
+    "season": "Sezona 2027",
     "difficulty": "Lagano",
     "difficultyLabel": "Težina",
     "nextDate": "Ruj–Stu",
@@ -59,7 +59,7 @@
       },
       {
         "title": "Oproštajna večera u prvom Michelin restoranu u Hrvatskoj",
-        "text": "Vaša posljednja večer: večera u Michelin zvjezdanom restoranu u Rovinju — s pogledom na Jadran i menijem koji suvremeno interpretira istarske tradicije."
+        "text": "Vaša posljednja večer: večera u Michelin zvjezdanom restoranu u Rovinju — s pogledom na Jadran i menijem koji suvremeno interpretira istarske tradicije. Uključeno u paket Duh Istre."
       },
       {
         "title": "Napušteno kameno selo kao vaša privatna baza",
@@ -141,9 +141,9 @@
           { "time": "08:00", "text": "Košara za doručak" },
           { "time": "09:30", "text": "Degustacija maslinovog ulja (Chiavalon / nagrađivani proizvođač)" },
           { "time": "11:00", "text": "Vinarija Kozlović — Malvazija s crvene zemlje, od 1904." },
-          { "time": "13:00", "text": "Roxanich (Motovun) — degustacija + ručak s uparivanjem vina" },
+          { "time": "13:00", "text": "Roxanich (Motovun) — degustacija + ručak s uparivanjem vina", "plus": true },
           { "time": "18:00", "text": "Obilazak Huma — najmanjeg grada na svijetu (23 stanovnika)" },
-          { "time": "18:45", "text": "Večera Konoba Hum + degustacija Biska" }
+          { "time": "18:45", "text": "Večera Konoba Hum + degustacija Biska", "plus": true }
         ],
         "meals": ["Doručak", "Ručak", "Večera"],
         "host": "Obitelj Kozlović · Sandi Chiavalon"
@@ -155,13 +155,13 @@
         "narrative": "Grožnjan — selo umjetnika. Motovun — tvrđava iznad tartufovih šuma. A onda: Rovinj. Vaša oproštajna večera u prvom Michelin restoranu u Hrvatskoj.",
         "schedule": [
           { "time": "08:00", "text": "Košara za doručak" },
-          { "time": "09:00", "text": "Grožnjan — selo umjetnika, galerije, ateljei" },
-          { "time": "10:15", "text": "Motovun — tvrđava, tartufove šume, panorama" },
-          { "time": "12:00", "text": "Ručak u Motovunu" },
-          { "time": "15:00", "text": "Rovinj — obilazak starog grada, luka, slobodno vrijeme" },
-          { "time": "18:30", "text": "Oproštajna večera — Michelin zvjezdani restoran ⭐" }
+          { "time": "09:00", "text": "Grožnjan — selo umjetnika, galerije, ateljei", "plus": true },
+          { "time": "10:15", "text": "Motovun — tvrđava, tartufove šume, panorama", "plus": true },
+          { "time": "12:00", "text": "Ručak u Motovunu", "plus": true },
+          { "time": "15:00", "text": "Rovinj — obilazak starog grada, luka, slobodno vrijeme", "plus": true },
+          { "time": "18:30", "text": "Oproštajna večera — Michelin zvjezdani restoran", "plus": true }
         ],
-        "meals": ["Doručak", "Ručak", "Michelin Dinner"],
+        "meals": ["Doručak", "Ručak", "Michelin večera ✦"],
         "host": ""
       },
       {
@@ -178,12 +178,13 @@
         "meals": ["Doručak", "Poklon"],
         "host": ""
       }
-    ]
+    ],
+    "upgradeNote": "Označene stavke dio su paketa Duh Istre (od €1.290). Duh Sela (od €1.090) uključuje sve ostalo."
   },
   "destinations": {
     "label": "Mjesta koja ćete posjetiti",
     "title": "Rovinj · Motovun · Hum",
-    "subtitle": "Tri istarska dragulja — od najromantičnije luke Jadrana preko tvrđave tartufa do najmanjeg grada na svijetu.",
+    "subtitle": "Tri istarska dragulja — od najromantičnije luke Jadrana preko tvrđave tartufa do najmanjeg grada na svijetu. Rovinj i Motovun dio su paketa Duh Istre; Hum je uključen u oba paketa.",
     "cards": [
       {
         "badge": "Michelin Dinner",
@@ -207,8 +208,8 @@
   },
   "includes": {
     "label": "Što je uključeno",
-    "title": "All-inclusive — bez skrivenih troškova",
-    "subtitle": "Obroci, kućno vino, doživljaji, prijevoz — sve je organizirano za vas.",
+    "title": "All-inclusive od dolaska do rastanka",
+    "subtitle": "Obroci, kućno vino, doživljaji i dnevni prijevoz uključeni su svih pet dana. Što nije uključeno, navodimo ispod — bez skrivenih troškova.",
     "yesTitle": "Uključeno",
     "yesSubtitle": "Sve u cijeni paketa Duh Sela (od €1.090)",
     "noTitle": "Nije uključeno",
@@ -223,7 +224,7 @@
       "Degustacija nagrađivanog maslinovog ulja (Chiavalon)",
       "Posjet vinariji Kozlović + ručak u konobi",
       "Posjet Humu — najmanjem gradu na svijetu",
-      "Organizirani shuttle prijevoz svih 5 dana",
+      "Dnevni prijevoz do svih doživljaja, svih 5 dana",
       "Dvojezični vodič (njemački + hrvatski)",
       "Oproštajni poklon paket (vino + tartufi + ulje)"
     ],
@@ -266,7 +267,7 @@
       {
         "icon": "location",
         "title": "Dolazak",
-        "text": "Zračna luka Pula 1h · Trst 1,5h · Ljubljana 2h · München 5h · Beč 7h · Zürich 8h. Shuttle na upit."
+        "text": "Zračna luka Pula 1h · Trst 1,5h · Ljubljana 2h · München 5h · Beč 7h · Zürich 8h. Transfer iz zračne luke na upit."
       }
     ]
   },
@@ -291,7 +292,7 @@
           "Vinarija Kozlović + ručak u konobi",
           "Posjet Humu — najmanji grad na svijetu",
           "Poklon paket za ponijeti",
-          "Shuttle prijevoz svih dana"
+          "Dnevni prijevoz do svih doživljaja"
         ],
         "cta": "Rezervirajte termin",
         "featured": false
@@ -334,7 +335,14 @@
         "featured": false
       }
     ],
-    "footerNote": "Cijene po osobi. Vlastiti dolazak do smještaja — let nije uključen."
+    "footerNote": "Cijene po osobi. Vlastiti dolazak do smještaja — let nije uključen.",
+    "b2b": {
+      "label": "Za agencije i tvrtke",
+      "title": "Neto uvjeti na upit",
+      "text": "Turoperatori, agencije, udruge i tvrtke: šaljemo neto uvjete i podatke za fakturiranje za grupe od 10 osoba, s odgovorom unutar 24 sata.",
+      "cta": "Zatražite neto uvjete",
+      "subject": "Upit za neto uvjete (agencija / tvrtka)"
+    }
   },
   "trust": {
     "label": "Kvaliteta i povjerenje",
@@ -376,7 +384,7 @@
       "groupSize": "Veličina grupe",
       "groupSizeOptions": ["10–15 osoba", "16–24 osobe", "25–34 osobe"],
       "date": "Željeni termin",
-      "dateOptions": ["Rujan 2026.", "Listopad 2026.", "Studeni 2026.", "Proljeće 2027.", "Fleksibilno"],
+      "dateOptions": ["Travanj 2027.", "Svibanj 2027.", "Lipanj 2027.", "Rujan 2027.", "Listopad 2027.", "Studeni 2027.", "Fleksibilno"],
       "package": "Koji paket vas zanima?",
       "packageOptions": ["Duh Sela", "Duh Istre", "Vaša Priča (custom)", "Samo smještaj", "Još razmišljam"],
       "dietary": "Prehrambene posebnosti",
@@ -402,7 +410,7 @@
       },
       {
         "q": "Kako doći do Kotli?",
-        "a": "Najčešće se dolazi automobilom: Zagreb 3h, Rijeka 1,5h, Ljubljana 2h. Alternativno: let do Pule (1h transfer), Trsta (1,5h) ili Ljubljane (2h). Na želju organiziramo shuttle od zračne luke."
+        "a": "Najčešće se dolazi automobilom: Zagreb 3h, Rijeka 1,5h, Ljubljana 2h. Alternativno: let do Pule (1h transfer), Trsta (1,5h) ili Ljubljane (2h). Na želju organiziramo transfer iz zračne luke."
       },
       {
         "q": "Što ako je loše vrijeme?",
@@ -453,8 +461,7 @@
     "legal": {
       "impressum": "Impressum",
       "privacy": "Privatnost",
-      "terms": "Opći uvjeti",
-      "travel": "Uvjeti putovanja"
+      "terms": "Uvjeti rezervacije"
     }
   },
   "whatsappFloat": "Pitanja? Pišite nam!",
@@ -501,5 +508,35 @@
         "p": "Komunikacija je zaštićena SSL enkripcijom. Podatke ne dijelimo s trećim stranama osim kada je nužno za izvršenje usluge (npr. partnerski domaćini koji vam pružaju doživljaj) ili kada to nalaže zakon."
       }
     ]
+  },
+  "impressum": {
+    "label": "Pravne informacije",
+    "title": "Impressum",
+    "country": "Hrvatska",
+    "intro": "Kotli Retreat i putovanja „Soil and Soul Istria“ nude dvije hrvatske tvrtke.",
+    "organiserTitle": "Organizator putovanja",
+    "organiserRole": "Delmata Travel je turistička agencija koja organizira grupna putovanja „Soil and Soul Istria“.",
+    "operatorTitle": "Smještaj i web stranica",
+    "operatorRole": "Creative idea d.o.o. vlasnik je kamenih kuća u Kotlima i upravlja ovom web stranicom.",
+    "fields": {
+      "company": "Tvrtka",
+      "address": "Adresa",
+      "oib": "OIB",
+      "agencyId": "ID kod agencije",
+      "register": "Registar",
+      "director": "Direktor",
+      "email": "E-mail",
+      "phone": "Telefon"
+    },
+    "conditionsTitle": "Uvjeti rezervacije",
+    "conditions": [
+      "Grupna putovanja za 10 do 34 osobe. Sve cijene su po osobi i uključuju PDV.",
+      "Upiti su neobvezujući; rezervacija vrijedi tek uz našu pisanu potvrdu.",
+      "Predujam: 30 % pri rezervaciji. Ostatak se plaća 30 dana prije dolaska.",
+      "Otkaz: besplatno do 60 dana prije dolaska (puni povrat predujma); 30–59 dana prije dolaska: povrat 50 %; manje od 30 dana: bez povrata.",
+      "Plaćanje SEPA bankovnim prijenosom ili kreditnom karticom (Visa, Mastercard).",
+      "Preporučujemo putno osiguranje od otkaza."
+    ],
+    "conditionsNote": "Potpune uvjete putovanja dobivate uz pisanu ponudu, prije rezervacije."
   }
 }

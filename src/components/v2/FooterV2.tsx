@@ -1,8 +1,9 @@
 'use client';
 
 import { useRef } from 'react';
-import { useLocale, useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { motion, useScroll, useTransform, useMotionTemplate } from 'framer-motion';
+import { Link } from '@/i18n/navigation';
 
 // V2 Footer — the closing act. CTA band, editorial link columns, legal bar,
 // and the wow: a giant "Soil & Soul" wordmark that fills with brass as you
@@ -12,13 +13,19 @@ const IVORY = '#f6f3ec';
 const BRASS = '#b08d57';
 const BRASS_LIGHT = '#d3b787';
 
+// Booking terms live as a section of the Impressum page.
+const LEGAL_LINKS = [
+  { key: 'impressum', href: '/impressum' },
+  { key: 'privacy', href: '/privacy' },
+  { key: 'terms', href: '/impressum#conditions' },
+] as const;
+
 const GRAIN =
   "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E\")";
 
 export default function FooterV2() {
   const t = useTranslations('footer');
   const tHeader = useTranslations('header');
-  const locale = useLocale();
 
   const footerRef = useRef<HTMLElement | null>(null);
   const { scrollYProgress } = useScroll({ target: footerRef, offset: ['start end', 'end end'] });
@@ -157,21 +164,15 @@ export default function FooterV2() {
             >
               info@kotliretreat.com
             </a>
-            {(['whatsapp', 'instagram', 'facebook'] as const).map((key) => {
-              const href = key === 'whatsapp' ? 'https://wa.me/385992563862' : '#';
-              const external = key === 'whatsapp';
-              return (
-                <a
-                  key={key}
-                  href={href}
-                  {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                  className="block text-[13.5px] mb-2.5 no-underline transition-all duration-300 hover:translate-x-1"
-                  style={{ color: 'rgba(246,243,236,0.65)' }}
-                >
-                  {t(`links.${key}`)}
-                </a>
-              );
-            })}
+            <a
+              href="https://wa.me/385992563862"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-[13.5px] mb-2.5 no-underline transition-all duration-300 hover:translate-x-1"
+              style={{ color: 'rgba(246,243,236,0.65)' }}
+            >
+              {t('links.whatsapp')}
+            </a>
           </div>
         </div>
 
@@ -189,17 +190,17 @@ export default function FooterV2() {
             </span>
           </span>
           <div className="flex flex-wrap gap-5">
-            {(['impressum', 'privacy', 'terms', 'travel'] as const).map((key) => (
-              <a
+            {LEGAL_LINKS.map(({ key, href }) => (
+              <Link
                 key={key}
-                href={key === 'privacy' ? `/${locale}/privacy` : '#'}
+                href={href}
                 className="text-[11px] no-underline transition-colors duration-300"
-                style={{ color: 'rgba(246,243,236,0.3)' }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = 'rgba(246,243,236,0.6)')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(246,243,236,0.3)')}
+                style={{ color: 'rgba(246,243,236,0.45)' }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = 'rgba(246,243,236,0.75)')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(246,243,236,0.45)')}
               >
                 {t(`legal.${key}`)}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

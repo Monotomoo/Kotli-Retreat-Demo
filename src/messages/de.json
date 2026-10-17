@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Kotli Retreat — Soil and Soul Istria | Trüffel, Wein, Michelin",
-    "description": "5 Tage all-inclusive Genussreise durch Istrien. Trüffeljagd, Weingüter, prämiertes Olivenöl, Michelin-Sternerestaurant. Für Gruppen 10–34 Personen. Ab €1.090/Person."
+    "description": "5 Tage all-inclusive Genussreise durch Istrien. Trüffeljagd, Weingüter, prämiertes Olivenöl, optionales Abschiedsdinner im Michelin-Sternerestaurant. Für Gruppen 10–34 Personen. Ab €1.090/Person."
   },
   "header": {
     "cta": "Anfrage senden",
@@ -27,7 +27,7 @@
     "pricePer": "pro Person",
     "people": "10 – 34 Personen pro Gruppe",
     "tags": ["Trüffeljagd", "Wein & weltbestes Olivenöl", "Michelin-Abschiedsessen"],
-    "hooks": ["Trüffeljagd", "Auf istrischen Weinstraßen", "Von der Olive zum Tisch", "Michelin-Dinner in Rovinj"]
+    "hooks": ["Trüffeljagd", "Auf istrischen Weinstraßen", "Von der Olive zum Tisch", "Ein ganzes Steindorf nur für Sie"]
   },
   "quickFacts": {
     "duration": "5 Tage",
@@ -35,7 +35,7 @@
     "groupSize": "10–34",
     "groupSizeLabel": "Gruppengröße",
     "newLabel": "Neu!",
-    "season": "Saison 2026",
+    "season": "Saison 2027",
     "difficulty": "Leicht",
     "difficultyLabel": "Schwierigkeit",
     "nextDate": "Sept–Nov",
@@ -59,7 +59,7 @@
       },
       {
         "title": "Abschiedsessen im ersten Michelin-Restaurant Kroatiens",
-        "text": "Ihr letzter Abend: ein Dinner in einem Michelin-Sterne-Restaurant in Rovinj — mit Blick auf die Adria und einem Menü, das istrische Traditionen modern interpretiert."
+        "text": "Ihr letzter Abend: ein Dinner in einem Michelin-Sterne-Restaurant in Rovinj — mit Blick auf die Adria und einem Menü, das istrische Traditionen modern interpretiert. Im Paket Geist Istriens enthalten."
       },
       {
         "title": "Ein verlassenes Steindorf als Ihre private Basis",
@@ -141,9 +141,9 @@
           { "time": "08:00", "text": "Frühstückskorb" },
           { "time": "09:30", "text": "Olivenöl-Verkostung (Chiavalon / preisgekrönter Produzent)" },
           { "time": "11:00", "text": "Weingut Kozlović — Malvazija aus roter Erde, seit 1904" },
-          { "time": "13:00", "text": "Roxanich (Motovun) — Verkostung + Mittagessen mit Weinpairing" },
+          { "time": "13:00", "text": "Roxanich (Motovun) — Verkostung + Mittagessen mit Weinpairing", "plus": true },
           { "time": "18:00", "text": "Rundgang Hum — die kleinste Stadt der Welt (23 Einwohner)" },
-          { "time": "18:45", "text": "Abendessen Konoba Hum + Biska-Verkostung" }
+          { "time": "18:45", "text": "Abendessen Konoba Hum + Biska-Verkostung", "plus": true }
         ],
         "meals": ["Frühstück", "Mittagessen", "Abendessen"],
         "host": "Familie Kozlović · Sandi Chiavalon"
@@ -155,13 +155,13 @@
         "narrative": "Grožnjan — das Künstlerdorf. Motovun — die Festung über den Trüffelwäldern. Und dann: Rovinj. Ihr Abschiedsessen im ersten Michelin-Stern-Restaurant Kroatiens.",
         "schedule": [
           { "time": "08:00", "text": "Frühstückskorb" },
-          { "time": "09:00", "text": "Grožnjan — Künstlerdorf, Galerien, Ateliers" },
-          { "time": "10:15", "text": "Motovun — Festung, Trüffelwälder, Panorama" },
-          { "time": "12:00", "text": "Mittagessen in Motovun" },
-          { "time": "15:00", "text": "Rovinj — Altstadtbesichtigung, Hafen, Freizeit" },
-          { "time": "18:30", "text": "Abschiedsessen — Michelin-Sterne-Restaurant ⭐" }
+          { "time": "09:00", "text": "Grožnjan — Künstlerdorf, Galerien, Ateliers", "plus": true },
+          { "time": "10:15", "text": "Motovun — Festung, Trüffelwälder, Panorama", "plus": true },
+          { "time": "12:00", "text": "Mittagessen in Motovun", "plus": true },
+          { "time": "15:00", "text": "Rovinj — Altstadtbesichtigung, Hafen, Freizeit", "plus": true },
+          { "time": "18:30", "text": "Abschiedsessen — Michelin-Sterne-Restaurant", "plus": true }
         ],
-        "meals": ["Frühstück", "Mittagessen", "Michelin Dinner"],
+        "meals": ["Frühstück", "Mittagessen", "Michelin-Dinner ✦"],
         "host": ""
       },
       {
@@ -178,12 +178,13 @@
         "meals": ["Frühstück", "Geschenk"],
         "host": ""
       }
-    ]
+    ],
+    "upgradeNote": "Markierte Programmpunkte gehören zum Paket Geist Istriens (ab 1.290 €). Geist des Dorfes (ab 1.090 €) enthält alles andere."
   },
   "destinations": {
     "label": "Orte, die Sie besuchen",
     "title": "Rovinj · Motovun · Hum",
-    "subtitle": "Drei istrische Juwelen — vom romantischsten Hafen der Adria über die Trüffelfestung bis zur kleinsten Stadt der Welt.",
+    "subtitle": "Drei istrische Juwelen — vom romantischsten Hafen der Adria über die Trüffelfestung bis zur kleinsten Stadt der Welt. Rovinj und Motovun gehören zum Paket Geist Istriens; Hum ist in beiden Paketen enthalten.",
     "cards": [
       {
         "badge": "Michelin Dinner",
@@ -207,8 +208,8 @@
   },
   "includes": {
     "label": "Was ist inbegriffen",
-    "title": "All-inclusive — keine versteckten Kosten",
-    "subtitle": "Mahlzeiten, Hauswein, Erlebnisse, Transport — alles ist für Sie arrangiert.",
+    "title": "All-inclusive von der Ankunft bis zum Abschied",
+    "subtitle": "Mahlzeiten, Hauswein, Erlebnisse und der tägliche Transport sind an allen fünf Tagen inklusive. Was nicht enthalten ist, steht unten — keine versteckten Kosten.",
     "yesTitle": "Inbegriffen",
     "yesSubtitle": "Alles im Paket Geist des Dorfes (ab 1.090 €)",
     "noTitle": "Nicht inbegriffen",
@@ -223,7 +224,7 @@
       "Verkostung des preisgekrönten Olivenöls (Chiavalon)",
       "Besuch des Weinguts Kozlović + Mittagessen in der Konoba",
       "Besuch von Hum — kleinste Stadt der Welt",
-      "Organisierter Shuttle-Transport an allen 5 Tagen",
+      "Täglicher Transport zu allen Programmpunkten, alle 5 Tage",
       "Zweisprachiger Reiseleiter (Deutsch + Kroatisch)",
       "Abschieds-Geschenkpaket (Wein + Trüffel + Öl)"
     ],
@@ -266,7 +267,7 @@
       {
         "icon": "location",
         "title": "Anreise",
-        "text": "Flughafen Pula 1h · Triest 1,5h · Ljubljana 2h · München 5h · Wien 7h · Zürich 8h. Shuttle auf Anfrage."
+        "text": "Flughafen Pula 1h · Triest 1,5h · Ljubljana 2h · München 5h · Wien 7h · Zürich 8h. Flughafentransfer auf Anfrage."
       }
     ]
   },
@@ -291,7 +292,7 @@
           "Weingut Kozlović + Mittagessen in der Konoba",
           "Besuch von Hum — kleinste Stadt der Welt",
           "Geschenkpaket zum Mitnehmen",
-          "Shuttle-Transport an allen Tagen"
+          "Täglicher Transport zu allen Programmpunkten"
         ],
         "cta": "Termin reservieren",
         "featured": false
@@ -334,7 +335,14 @@
         "featured": false
       }
     ],
-    "footerNote": "Preise pro Person. Eigene Anreise zur Unterkunft — Flug nicht inbegriffen."
+    "footerNote": "Preise pro Person. Eigene Anreise zur Unterkunft — Flug nicht inbegriffen.",
+    "b2b": {
+      "label": "Für Agenturen & Firmen",
+      "title": "Netto-Konditionen auf Anfrage",
+      "text": "Reiseveranstalter, Agenturen, Vereine und Firmen: Wir senden Ihnen Netto-Konditionen und Rechnungsdetails für Gruppen ab 10 Personen – Antwort innerhalb von 24 Stunden.",
+      "cta": "Netto-Konditionen anfragen",
+      "subject": "Anfrage Netto-Konditionen (Agentur / Firma)"
+    }
   },
   "trust": {
     "label": "Qualität & Vertrauen",
@@ -376,7 +384,7 @@
       "groupSize": "Gruppengröße",
       "groupSizeOptions": ["10–15 Personen", "16–24 Personen", "25–34 Personen"],
       "date": "Wunschtermin",
-      "dateOptions": ["September 2026", "Oktober 2026", "November 2026", "Frühling 2027", "Flexibel"],
+      "dateOptions": ["April 2027", "Mai 2027", "Juni 2027", "September 2027", "Oktober 2027", "November 2027", "Flexibel"],
       "package": "Welches Paket interessiert Sie?",
       "packageOptions": ["Geist des Dorfes", "Geist Istriens", "Ihre Geschichte (individuell)", "Nur Unterkunft", "Noch unentschlossen"],
       "dietary": "Ernährungsbesonderheiten",
@@ -402,7 +410,7 @@
       },
       {
         "q": "Wie komme ich nach Kotli?",
-        "a": "Die meisten DACH-Gäste reisen mit dem Auto an: München 5h, Wien 7h, Zürich 8h. Alternativ: Flug nach Pula (1h Transfer), Triest (1,5h) oder Ljubljana (2h). Auf Wunsch organisieren wir einen Shuttle-Service vom Flughafen."
+        "a": "Die meisten DACH-Gäste reisen mit dem Auto an: München 5h, Wien 7h, Zürich 8h. Alternativ: Flug nach Pula (1h Transfer), Triest (1,5h) oder Ljubljana (2h). Auf Wunsch organisieren wir den Flughafentransfer."
       },
       {
         "q": "Was passiert bei schlechtem Wetter?",
@@ -453,8 +461,7 @@
     "legal": {
       "impressum": "Impressum",
       "privacy": "Datenschutz",
-      "terms": "AGB",
-      "travel": "Reisebedingungen"
+      "terms": "AGB & Reisebedingungen"
     }
   },
   "whatsappFloat": "Fragen? Schreiben Sie uns!",
@@ -501,5 +508,35 @@
         "p": "Die Kommunikation ist durch SSL-Verschlüsselung geschützt. Wir geben Ihre Daten nur an Dritte weiter, wenn dies zur Erbringung der Leistung notwendig ist (z. B. Partner-Gastgeber für Ihr Erlebnis) oder wenn dies gesetzlich vorgeschrieben ist."
       }
     ]
+  },
+  "impressum": {
+    "label": "Rechtliches",
+    "title": "Impressum",
+    "country": "Kroatien",
+    "intro": "Kotli Retreat und die Reisen „Soil and Soul Istria“ werden von zwei kroatischen Unternehmen angeboten.",
+    "organiserTitle": "Reiseveranstalter",
+    "organiserRole": "Delmata Travel ist die Reiseagentur, die die Gruppenreisen „Soil and Soul Istria“ organisiert.",
+    "operatorTitle": "Unterkunft & Website",
+    "operatorRole": "Creative idea d.o.o. ist Eigentümerin der Steinhäuser in Kotli und Betreiberin dieser Website.",
+    "fields": {
+      "company": "Firma",
+      "address": "Anschrift",
+      "oib": "OIB (Steuernr.)",
+      "agencyId": "ID-Code der Agentur",
+      "register": "Handelsregister",
+      "director": "Geschäftsführung",
+      "email": "E-Mail",
+      "phone": "Telefon"
+    },
+    "conditionsTitle": "AGB & Reisebedingungen",
+    "conditions": [
+      "Gruppenreisen für 10 bis 34 Personen. Alle Preise verstehen sich pro Person inkl. MwSt.",
+      "Anfragen sind unverbindlich; eine Buchung wird erst mit unserer schriftlichen Bestätigung gültig.",
+      "Anzahlung: 30 % bei Buchung. Der Restbetrag ist 30 Tage vor Anreise fällig.",
+      "Stornierung: kostenlos bis 60 Tage vor Anreise (volle Rückerstattung der Anzahlung); 30–59 Tage vor Anreise: 50 % Erstattung; unter 30 Tagen: keine Erstattung.",
+      "Zahlung per SEPA-Überweisung oder Kreditkarte (Visa, Mastercard).",
+      "Wir empfehlen eine Reiserücktrittsversicherung."
+    ],
+    "conditionsNote": "Die vollständigen Reisebedingungen erhalten Sie mit Ihrem schriftlichen Angebot – vor der Buchung."
   }
 }

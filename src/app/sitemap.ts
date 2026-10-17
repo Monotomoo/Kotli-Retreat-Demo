@@ -6,6 +6,7 @@ import { LOCALES, localeUrl } from '@/lib/site';
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages: { path: string; priority: number; changeFrequency: 'weekly' | 'yearly' }[] = [
     { path: '', priority: 1.0, changeFrequency: 'weekly' },
+    { path: 'impressum', priority: 0.3, changeFrequency: 'yearly' },
     { path: 'privacy', priority: 0.3, changeFrequency: 'yearly' },
   ];
 
