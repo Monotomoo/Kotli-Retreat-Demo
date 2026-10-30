@@ -11,7 +11,11 @@
       "agenda": "Itinerary",
       "pricing": "Prices",
       "destinations": "Rovinj · Motovun · Hum",
-      "contact": "Contact"
+      "contact": "Contact",
+      "packages": "Packages",
+      "included": "Included",
+      "allPackages": "All packages",
+      "faq": "FAQ"
     },
     "slogan": "Originalna iskustva, lokalne priče."
   },
@@ -386,7 +390,7 @@
       "date": "Preferred Date",
       "dateOptions": ["December 2026", "January 2027", "February 2027", "March 2027", "April 2027", "May 2027", "June 2027", "September 2027", "October 2027", "November 2027", "Flexible"],
       "package": "Which package interests you?",
-      "packageOptions": ["Spirit of the Village", "Spirit of Istria", "Your Story (custom)", "Accommodation only", "Still deciding"],
+      "packageOptions": ["Spirit of the Village", "Spirit of Istria", "Winter at Kotli", "Your Story (custom)", "Accommodation only", "Still deciding"],
       "dietary": "Dietary Requirements",
       "dietaryOptions": ["None", "Vegetarian", "Vegan", "Gluten-Free", "Other (please specify below)"],
       "message": "Your Message",
@@ -538,5 +542,187 @@
       "We recommend travel cancellation insurance."
     ],
     "conditionsNote": "The complete travel conditions are sent with your written offer, before you book."
+  },
+  "home": {
+    "meta": {
+      "title": "Kotli Retreat — A Private Stone Village in Istria for Groups",
+      "description": "Eight restored stone houses in the Mirna valley, Istria. All-inclusive culinary journeys and winter truffle weekends for groups, with the families behind Istria's truffles, wine and olive oil."
+    },
+    "hero": {
+      "eyebrow": "Istria · Croatia",
+      "title": "Kotli Retreat",
+      "poetic": "Eight stone houses in the Mirna valley, yours alone — for a culinary journey, a winter weekend or a company offsite.",
+      "cta": "See the packages",
+      "ctaSecondary": "Send inquiry",
+      "facts": ["8 stone houses", "10–34 guests", "Open all year"]
+    },
+    "packages": {
+      "label": "Packages",
+      "title": "Choose how you'll spend your days at Kotli",
+      "otherTitle": "More ways to stay at Kotli",
+      "subtitle": "Every package includes the village, all meals and the hosts who made Istria a gourmet destination.",
+      "view": "View package",
+      "cards": {
+        "soilAndSoul": {
+          "badge": "Spring & autumn",
+          "name": "Soil and Soul Istria",
+          "tagline": "Truffles, wine, olive oil and a Michelin farewell.",
+          "length": "5 days · 4 nights",
+          "group": "Groups of 10–34",
+          "price": "from €1,090"
+        },
+        "winter": {
+          "badge": "December – March",
+          "name": "Winter at Kotli",
+          "tagline": "Truffles, two winemakers and a fire in every house.",
+          "length": "3 days · 2 nights",
+          "group": "Groups & individuals",
+          "price": "from €490"
+        }
+      },
+      "soon": {
+        "badge": "Coming in 2027",
+        "title": "Cycling and hiking",
+        "text": "Two active programmes from the same village: Istrian trails by day, the konoba table at night.",
+        "cta": "Get notified"
+      }
+    }
+  },
+  "winter": {
+    "meta": {
+      "title": "Winter at Kotli — Truffle & Wine Weekend in Istria | Kotli Retreat",
+      "description": "3 days, 2 nights in a private Istrian stone village: winter truffle hunt with the Karlić family, two winemakers, fireside dinners. December to March, for groups and individuals."
+    },
+    "hero": {
+      "subtitle": "A winter weekend in Istria",
+      "title": "Winter at Kotli",
+      "poetic": "Frost on the stone. Truffles in the forest. Wine by the fire.",
+      "cta": "Choose a date",
+      "ctaSecondary": "What's included",
+      "daysLabel": "Days",
+      "price": "From €490",
+      "pricePer": "per person",
+      "people": "2 nights · December – March",
+      "hooks": ["Truffle hunt in the winter forest", "Two winemakers, one weekend", "A fireplace in every house", "Dinner in Hum, the smallest town"],
+      "days": "3",
+      "allInclusive": "ALL-INCLUSIVE"
+    },
+    "agenda": {
+      "label": "Day by Day",
+      "title": "3 Days of Winter in Istria — Your Weekend",
+      "dayLabel": "DAY",
+      "days": [
+        {
+          "number": "1",
+          "theme": "Arrival",
+          "title": "Fire in the Hearth",
+          "narrative": "The fireplaces are already lit when you arrive. Biska, pršut and Istrian cheese by the fire, then dinner at the konoba.",
+          "schedule": [
+            { "time": "15:00", "text": "Check-in at the stone houses — fireplaces lit" },
+            { "time": "17:00", "text": "Welcome by the fire: Biska, pršut and local cheese" },
+            { "time": "19:30", "text": "Dinner at the konoba — fuži with truffles, Teran wine" }
+          ],
+          "meals": ["Aperitif", "Dinner"],
+          "host": ""
+        },
+        {
+          "number": "2",
+          "theme": "Truffles & Wine",
+          "title": "The Winter Truffle",
+          "narrative": "A morning in the forest with the Karlić family and their dogs, then you cook what you found. In the afternoon, Malvazija from four soils in the Kozlović cellar.",
+          "schedule": [
+            { "time": "08:30", "text": "Breakfast basket" },
+            { "time": "09:30", "text": "Karlić Tartufi: truffle hunt → cooking class → truffle lunch" },
+            { "time": "15:30", "text": "Kozlović winery — cellar tasting, Malvazija from four soils" },
+            { "time": "19:30", "text": "Dinner at Konoba Hum + Biska tasting" }
+          ],
+          "meals": ["Breakfast", "Lunch", "Dinner"],
+          "host": "The Karlić Family · The Kozlović Family"
+        },
+        {
+          "number": "3",
+          "theme": "Farewell",
+          "title": "Above the Truffle Forests",
+          "narrative": "A last walk on the walls of Motovun, a tasting at Roxanich, and a gift package of wine, truffle and oil for the road home.",
+          "schedule": [
+            { "time": "09:00", "text": "Breakfast basket" },
+            { "time": "10:00", "text": "Motovun — walk on the town walls above the truffle forests" },
+            { "time": "11:30", "text": "Roxanich winery — tasting" },
+            { "time": "13:30", "text": "Departure with your gift package" }
+          ],
+          "meals": ["Breakfast", "Gift"],
+          "host": ""
+        }
+      ]
+    },
+    "pricing": {
+      "label": "Packages",
+      "title": "Two ways to spend a winter weekend",
+      "cards": [
+        {
+          "variant": "standard",
+          "badge": "Mixed group",
+          "name": "Open Winter Weekend",
+          "slogan": "Join a fixed date — couples and friends welcome.",
+          "price": "from €590",
+          "info": "per person · 3 days / 2 nights",
+          "minNote": "Fixed dates · runs from 8 guests",
+          "includes": [
+            "2 nights in a stone house with fireplace",
+            "All meals + house wine",
+            "Truffle hunt and cooking class (Karlić)",
+            "Two winemakers: Kozlović and Roxanich",
+            "Dinner in Hum + Biska tasting",
+            "Transport and farewell gift"
+          ],
+          "cta": "Join a date",
+          "featured": false
+        },
+        {
+          "variant": "standard",
+          "badge": "Private group",
+          "name": "Private Winter Weekend",
+          "slogan": "The whole village for your group, on your dates.",
+          "price": "from €490",
+          "info": "per person · 3 days / 2 nights",
+          "minNote": "Min. 10 guests",
+          "includesLabel": "Everything in the Open Weekend, plus:",
+          "includes": [
+            "Your own dates, December to March",
+            "The whole village for your group",
+            "Programme adjusted to your group"
+          ],
+          "cta": "Request your dates",
+          "featured": true
+        }
+      ],
+      "footerNote": "Prices per person in a shared house. Own arrival to Kotli. Winter dates December 2026 – March 2027."
+    },
+    "includes": {
+      "label": "What's Included",
+      "title": "All-inclusive from the first fire to the last tasting",
+      "subtitle": "Two nights, every meal, two winemakers and the truffle hunt. What isn't included is listed below.",
+      "yesTitle": "Included",
+      "yesSubtitle": "In both winter packages",
+      "noTitle": "Not Included",
+      "noSubtitle": "Please arrange yourself",
+      "yes": [
+        "2 nights in stone houses with fireplace",
+        "Breakfast, truffle lunch and two dinners, with house wine and water",
+        "Welcome by the fire: Biska, pršut and local cheese",
+        "Truffle hunt and cooking class with the Karlić family",
+        "Cellar tasting at Kozlović",
+        "Tasting at Roxanich, Motovun",
+        "Dinner at Konoba Hum + Biska tasting",
+        "Transport to every experience",
+        "Farewell gift package (wine + truffle + oil)"
+      ],
+      "no": [
+        "Travel to Kotli (car, flight, train)",
+        "Premium drinks beyond house wine",
+        "Travel cancellation insurance (recommended)",
+        "Personal expenses and gratuities"
+      ]
+    }
   }
 }

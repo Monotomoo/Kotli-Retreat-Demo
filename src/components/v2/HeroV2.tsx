@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { SEASON } from '@/lib/site';
+import { tNs } from '@/lib/packages';
 
 // V2 Hero — Editorial × Dark, with soul: film grain, warm brass glow,
 // poetic serif line, coordinates rail. Luxury "trip ticket" card.
@@ -32,15 +33,23 @@ const POETIC: Record<string, string> = {
 const GRAIN =
   "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E\")";
 
-export default function HeroV2() {
-  const t = useTranslations('hero');
+export default function HeroV2({
+  ns = '',
+  image = '/images/kotli/village-street.jpg',
+  video = true,
+}: {
+  ns?: string;
+  image?: string;
+  video?: boolean;
+} = {}) {
+  const t = useTranslations(tNs(ns, 'hero'));
   const locale = useLocale();
   const { scrollY } = useScroll();
   const videoY = useTransform(scrollY, [0, 500], ['0%', '20%']);
 
   const titleWords = (t('title') as string).split(' ');
   const hooks = t.raw('hooks') as string[];
-  const poetic = POETIC[locale] ?? POETIC.de;
+  const poetic = t.has('poetic') ? t('poetic') : POETIC[locale] ?? POETIC.de;
 
   const scrollToContact = () =>
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
@@ -237,7 +246,7 @@ export default function HeroV2() {
       <div className="absolute top-0 left-0 right-0 h-[100svh] md:h-full overflow-hidden">
         {/* Fallback image (paints under the video) */}
         <Image
-          src="/images/kotli/village-street.jpg"
+          src={image}
           alt="Kotli stone village"
           fill
           className="object-cover"
@@ -245,18 +254,18 @@ export default function HeroV2() {
           sizes="100vw"
         />
         {/* Video with parallax */}
-        <motion.div className="absolute inset-0 w-full h-full" style={{ y: videoY }}>
+        {video && <motion.div className="absolute inset-0 w-full h-full" style={{ y: videoY }}>
           <video
             autoPlay
             muted
             loop
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
-            poster="/images/kotli/village-street.jpg"
+            poster={image}
           >
             <source src="/images/hero/kotli-hero-web.mp4" type="video/mp4" />
           </video>
-        </motion.div>
+        </motion.div>}
 
         {/* Cinematic overlays */}
         <div className="absolute inset-x-0 top-0 h-44 bg-gradient-to-b from-black/60 to-transparent" />

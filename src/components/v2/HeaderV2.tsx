@@ -13,7 +13,7 @@ const BRASS = '#b08d57';
 const BRASS_LIGHT = '#d3b787';
 const DARK_TEXT = '#1c1a15';
 
-export default function HeaderV2() {
+export default function HeaderV2({ variant = 'home' }: { variant?: 'home' | 'package' } = {}) {
   const t = useTranslations('header');
   const locale = useLocale();
   const router = useRouter();
@@ -30,7 +30,7 @@ export default function HeaderV2() {
 
   // Scroll-spy: brass-mark the section currently in view
   useEffect(() => {
-    const ids = ['hosts', 'agenda', 'accommodation', 'pricing'];
+    const ids = ['packages', 'hosts', 'agenda', 'accommodation', 'pricing', 'includes'];
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -65,26 +65,40 @@ export default function HeaderV2() {
     router.replace(pathname, { locale: newLocale });
   };
 
+  // A section on this page scrolls; one that only exists on the homepage
+  // (e.g. "all packages" from a package page) navigates there.
   const goTo = (id: string) => {
     setOpen(false);
-    setTimeout(
-      () => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }),
-      open ? 350 : 0
-    );
+    const el = document.getElementById(id);
+    if (!el) {
+      router.push(`/#${id}`);
+      return;
+    }
+    setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), open ? 350 : 0);
   };
 
-  const navItems = [
-    { id: 'accommodation', label: t('nav.accommodation') },
-    { id: 'hosts', label: t('nav.hosts') },
-    { id: 'agenda', label: t('nav.agenda') },
-    { id: 'pricing', label: t('nav.pricing') },
-  ];
+  const goHome = () => {
+    setOpen(false);
+    if (pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' });
+    else router.push('/');
+  };
 
-  const overlayItems = [
-    ...navItems,
-    { id: 'destinations', label: t('nav.destinations') },
-    { id: 'contact', label: t('nav.contact') },
-  ];
+  const navItems =
+    variant === 'home'
+      ? [
+          { id: 'packages', label: t('nav.packages') },
+          { id: 'accommodation', label: t('nav.accommodation') },
+          { id: 'hosts', label: t('nav.hosts') },
+          { id: 'faq', label: t('nav.faq') },
+        ]
+      : [
+          { id: 'agenda', label: t('nav.agenda') },
+          { id: 'pricing', label: t('nav.pricing') },
+          { id: 'includes', label: t('nav.included') },
+          { id: 'packages', label: t('nav.allPackages') },
+        ];
+
+  const overlayItems = [...navItems, { id: 'contact', label: t('nav.contact') }];
 
   const light = !scrolled || open;
   const ink = light ? IVORY : DARK_TEXT;
@@ -105,10 +119,7 @@ export default function HeaderV2() {
         <div className="relative flex items-center justify-between px-5 md:px-[4vw] py-4">
           {/* Wordmark */}
           <button
-            onClick={() => {
-              setOpen(false);
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
+            onClick={goHome}
             className="text-left cursor-pointer bg-transparent border-none shrink-0"
           >
             <span

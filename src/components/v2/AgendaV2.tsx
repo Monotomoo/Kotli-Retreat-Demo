@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import { tNs } from '@/lib/packages';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // V2 Agenda — "The Evening Itinerary". Dark ink act: sticky day rail left,
@@ -39,9 +40,15 @@ interface DayData {
   host: string;
 }
 
-export default function AgendaV2() {
-  const t = useTranslations('agenda');
-  const tHero = useTranslations('hero');
+export default function AgendaV2({
+  ns = '',
+  images = DAY_IMAGES,
+}: {
+  ns?: string;
+  images?: { src: string; alt: string }[];
+} = {}) {
+  const t = useTranslations(tNs(ns, 'agenda'));
+  const tHero = useTranslations(tNs(ns, 'hero'));
   const days = t.raw('days') as DayData[];
   const [activeDay, setActiveDay] = useState(0);
 
@@ -97,13 +104,15 @@ export default function AgendaV2() {
           >
             {t('title')}
           </h2>
-          <p
-            className="font-serif italic text-[15px] md:text-[16px] leading-relaxed mt-5 max-w-[620px]"
-            style={{ color: 'rgba(246,243,236,0.6)' }}
-          >
-            <span className="not-italic mr-1.5" style={{ color: BRASS_LIGHT }}>✦</span>
-            {t('upgradeNote')}
-          </p>
+          {t.has('upgradeNote') && (
+            <p
+              className="font-serif italic text-[15px] md:text-[16px] leading-relaxed mt-5 max-w-[620px]"
+              style={{ color: 'rgba(246,243,236,0.6)' }}
+            >
+              <span className="not-italic mr-1.5" style={{ color: BRASS_LIGHT }}>✦</span>
+              {t('upgradeNote')}
+            </p>
+          )}
         </motion.div>
 
         {/* Body: sticky rail + day chapters */}
@@ -230,8 +239,8 @@ export default function AgendaV2() {
                 <div className="md:col-span-5">
                   <div className="group relative h-[230px] md:h-[340px] rounded-[4px] overflow-hidden shadow-[0_26px_60px_rgba(0,0,0,0.45)]">
                     <Image
-                      src={DAY_IMAGES[i % DAY_IMAGES.length].src}
-                      alt={DAY_IMAGES[i % DAY_IMAGES.length].alt}
+                      src={images[i % images.length].src}
+                      alt={images[i % images.length].alt}
                       fill
                       className="object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.045]"
                       sizes="(max-width: 768px) 100vw, 38vw"

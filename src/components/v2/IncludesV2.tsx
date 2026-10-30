@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { tNs } from '@/lib/packages';
 import { motion } from 'framer-motion';
 
 // V2 Includes — "The Manifest". Light editorial trust section: the 10 included
@@ -32,12 +33,12 @@ function DrawnCheck({ delay }: { delay: number }) {
   );
 }
 
-export default function IncludesV2() {
-  const t = useTranslations('includes');
+export default function IncludesV2({ ns = '' }: { ns?: string } = {}) {
+  const t = useTranslations(tNs(ns, 'includes'));
   const tNav = useTranslations('header');
   const yes = t.raw('yes') as string[];
   const no = t.raw('no') as string[];
-  const upgrade = t.raw('upgrade') as string[];
+  const upgrade = t.has('upgrade') ? (t.raw('upgrade') as string[]) : [];
 
   return (
     <section id="includes" className="relative" style={{ backgroundColor: IVORY }}>
@@ -142,7 +143,8 @@ export default function IncludesV2() {
 
           {/* Right column — upgrade jewel + fine print */}
           <div className="lg:col-span-5 flex flex-col gap-8">
-            {/* Upgrade card */}
+            {/* Upgrade card — only for packages that have one */}
+            {upgrade.length > 0 && (
             <motion.div
               className="relative rounded-[6px] p-7 md:p-8 transition-transform duration-500 hover:-translate-y-1"
               style={{ backgroundColor: DARK, boxShadow: '0 26px 60px rgba(13,18,12,0.35)' }}
@@ -197,6 +199,7 @@ export default function IncludesV2() {
                 </button>
               </div>
             </motion.div>
+            )}
 
             {/* Not included — honest fine print */}
             <motion.div

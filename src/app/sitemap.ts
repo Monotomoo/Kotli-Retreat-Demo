@@ -1,11 +1,13 @@
 import type { MetadataRoute } from 'next';
 import { LOCALES, localeUrl } from '@/lib/site';
+import { PACKAGES } from '@/lib/packages';
 
 // Generates /sitemap.xml with all locale + page combinations and hreflang
 // alternates. Landing lives at the locale root (path ''); privacy at /privacy.
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages: { path: string; priority: number; changeFrequency: 'weekly' | 'yearly' }[] = [
     { path: '', priority: 1.0, changeFrequency: 'weekly' },
+    ...PACKAGES.map((p) => ({ path: p.slug, priority: 0.9, changeFrequency: 'weekly' as const })),
     { path: 'impressum', priority: 0.3, changeFrequency: 'yearly' },
     { path: 'privacy', priority: 0.3, changeFrequency: 'yearly' },
   ];

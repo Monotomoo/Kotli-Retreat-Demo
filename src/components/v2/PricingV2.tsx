@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { tNs } from '@/lib/packages';
 import { motion } from 'framer-motion';
 import { CONTACT_EMAIL } from '@/lib/site';
 
@@ -44,8 +45,9 @@ interface CustomCard {
 }
 type PackageCard = StandardCard | CustomCard;
 
-export default function PricingV2() {
-  const t = useTranslations('pricing');
+export default function PricingV2({ ns = '' }: { ns?: string } = {}) {
+  const t = useTranslations(tNs(ns, 'pricing'));
+  const tB2b = useTranslations('pricing.b2b');
   const cards = t.raw('cards') as PackageCard[];
 
   const scrollToContact = () =>
@@ -280,24 +282,24 @@ export default function PricingV2() {
         >
           <div className="max-w-[640px]">
             <div className="text-[10px] uppercase tracking-[3.5px] font-semibold" style={{ color: BRASS_DARK }}>
-              {t('b2b.label')}
+              {tB2b('label')}
             </div>
             <h3 className="font-display text-[24px] md:text-[28px] leading-tight mt-2.5" style={{ color: INK }}>
-              {t('b2b.title')}
+              {tB2b('title')}
             </h3>
             <p className="text-[14px] leading-relaxed mt-2.5" style={{ color: 'rgba(28,26,21,0.65)' }}>
-              {t('b2b.text')}
+              {tB2b('text')}
             </p>
           </div>
           <div className="shrink-0 flex flex-col items-start md:items-end gap-2.5">
             <a
-              href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(t('b2b.subject'))}`}
+              href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(tB2b('subject'))}`}
               className="px-7 py-3.5 text-[10px] font-semibold uppercase tracking-[2.5px] no-underline rounded-[3px] transition-colors duration-300"
               style={{ backgroundColor: INK, color: IVORY }}
               onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = BRASS_DARK)}
               onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = INK)}
             >
-              {t('b2b.cta')} →
+              {tB2b('cta')} →
             </a>
             <span className="text-[12px]" style={{ color: 'rgba(28,26,21,0.5)' }}>
               {CONTACT_EMAIL}

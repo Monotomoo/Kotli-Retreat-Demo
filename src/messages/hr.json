@@ -11,7 +11,11 @@
       "agenda": "Plan putovanja",
       "pricing": "Cijene",
       "destinations": "Rovinj · Motovun · Hum",
-      "contact": "Kontakt"
+      "contact": "Kontakt",
+      "packages": "Paketi",
+      "included": "Uključeno",
+      "allPackages": "Svi paketi",
+      "faq": "Pitanja"
     },
     "slogan": "Originalna iskustva, lokalne priče."
   },
@@ -386,7 +390,7 @@
       "date": "Željeni termin",
       "dateOptions": ["Prosinac 2026.", "Siječanj 2027.", "Veljača 2027.", "Ožujak 2027.", "Travanj 2027.", "Svibanj 2027.", "Lipanj 2027.", "Rujan 2027.", "Listopad 2027.", "Studeni 2027.", "Fleksibilno"],
       "package": "Koji paket vas zanima?",
-      "packageOptions": ["Duh Sela", "Duh Istre", "Vaša Priča (custom)", "Samo smještaj", "Još razmišljam"],
+      "packageOptions": ["Duh Sela", "Duh Istre", "Zima u Kotlima", "Vaša Priča (custom)", "Samo smještaj", "Još razmišljam"],
       "dietary": "Prehrambene posebnosti",
       "dietaryOptions": ["Nema", "Vegetarijansko", "Vegansko", "Bez glutena", "Ostalo (navedite dolje)"],
       "message": "Vaša poruka",
@@ -538,5 +542,187 @@
       "Preporučujemo putno osiguranje od otkaza."
     ],
     "conditionsNote": "Potpune uvjete putovanja dobivate uz pisanu ponudu, prije rezervacije."
+  },
+  "home": {
+    "meta": {
+      "title": "Kotli Retreat — privatno kameno selo u Istri za grupe",
+      "description": "Osam obnovljenih kamenih kuća u dolini Mirne, Istra. All-inclusive gastronomska putovanja i zimski vikendi s tartufima za grupe — s obiteljima iza istarskih tartufa, vina i maslinova ulja."
+    },
+    "hero": {
+      "eyebrow": "Istra · Hrvatska",
+      "title": "Kotli Retreat",
+      "poetic": "Osam kamenih kuća u dolini Mirne, samo za vas — za gastronomsko putovanje, zimski vikend ili firmin offsite.",
+      "cta": "Pogledajte pakete",
+      "ctaSecondary": "Pošaljite upit",
+      "facts": ["8 kamenih kuća", "10–34 gosta", "Otvoreno cijele godine"]
+    },
+    "packages": {
+      "label": "Paketi",
+      "title": "Odaberite kako ćete provesti dane u Kotlima",
+      "otherTitle": "Još načina za boravak u Kotlima",
+      "subtitle": "Svaki paket uključuje selo, sve obroke i domaćine koji su Istru učinili gastronomskom destinacijom.",
+      "view": "Pogledajte paket",
+      "cards": {
+        "soilAndSoul": {
+          "badge": "Proljeće i jesen",
+          "name": "Soil and Soul Istria",
+          "tagline": "Tartufi, vino, maslinovo ulje i oproštajna Michelin večera.",
+          "length": "5 dana · 4 noći",
+          "group": "Grupe od 10–34",
+          "price": "od €1.090"
+        },
+        "winter": {
+          "badge": "Prosinac – ožujak",
+          "name": "Zima u Kotlima",
+          "tagline": "Tartufi, dva vinara i vatra u svakoj kući.",
+          "length": "3 dana · 2 noći",
+          "group": "Grupe i pojedinci",
+          "price": "od €490"
+        }
+      },
+      "soon": {
+        "badge": "Uskoro 2027.",
+        "title": "Bicikl i pješačenje",
+        "text": "Dva aktivna programa iz istog sela: danju istarske staze, navečer stol u konobi.",
+        "cta": "Obavijestite me"
+      }
+    }
+  },
+  "winter": {
+    "meta": {
+      "title": "Zima u Kotlima — vikend s tartufima i vinom u Istri | Kotli Retreat",
+      "description": "3 dana, 2 noći u privatnom kamenom selu u Istri: zimski lov na tartufe s obitelji Karlić, dva vinara, večeri uz kamin. Od prosinca do ožujka, za grupe i pojedince."
+    },
+    "hero": {
+      "subtitle": "Zimski vikend u Istri",
+      "title": "Zima u Kotlima",
+      "poetic": "Inje na kamenu. Tartufi u šumi. Vino uz vatru.",
+      "cta": "Odaberite termin",
+      "ctaSecondary": "Što je uključeno",
+      "daysLabel": "Dana",
+      "price": "Od €490",
+      "pricePer": "po osobi",
+      "people": "2 noći · prosinac – ožujak",
+      "hooks": ["Lov na tartufe u zimskoj šumi", "Dva vinara, jedan vikend", "Kamin u svakoj kući", "Večera u Humu, najmanjem gradu"],
+      "days": "3",
+      "allInclusive": "ALL-INCLUSIVE"
+    },
+    "agenda": {
+      "label": "Dan po dan",
+      "title": "3 zimska dana u Istri — vaš vikend",
+      "dayLabel": "DAN",
+      "days": [
+        {
+          "number": "1",
+          "theme": "Dolazak",
+          "title": "Vatra u kaminu",
+          "narrative": "Kad stignete, kamin već gori. Biska, pršut i istarski sir uz vatru, zatim večera u konobi.",
+          "schedule": [
+            { "time": "15:00", "text": "Prijava u kamene kuće — kamini upaljeni" },
+            { "time": "17:00", "text": "Doček uz vatru: biska, pršut i domaći sir" },
+            { "time": "19:30", "text": "Večera u konobi — fuži s tartufima, teran" }
+          ],
+          "meals": ["Aperitiv", "Večera"],
+          "host": ""
+        },
+        {
+          "number": "2",
+          "theme": "Tartufi i vino",
+          "title": "Zimski tartuf",
+          "narrative": "Jutro u šumi s obitelji Karlić i njihovim psima, zatim kuhate ono što ste pronašli. Poslijepodne malvazija s četiri zemlje u podrumu Kozlović.",
+          "schedule": [
+            { "time": "08:30", "text": "Košara za doručak" },
+            { "time": "09:30", "text": "Karlić Tartufi: lov na tartufe → tečaj kuhanja → ručak s tartufima" },
+            { "time": "15:30", "text": "Vinarija Kozlović — degustacija u podrumu, malvazija s četiri zemlje" },
+            { "time": "19:30", "text": "Večera Konoba Hum + degustacija biske" }
+          ],
+          "meals": ["Doručak", "Ručak", "Večera"],
+          "host": "Obitelj Karlić · Obitelj Kozlović"
+        },
+        {
+          "number": "3",
+          "theme": "Rastanak",
+          "title": "Iznad tartufovih šuma",
+          "narrative": "Posljednja šetnja zidinama Motovuna, degustacija kod Roxanicha i poklon-paket vina, tartufa i ulja za put kući.",
+          "schedule": [
+            { "time": "09:00", "text": "Košara za doručak" },
+            { "time": "10:00", "text": "Motovun — šetnja gradskim zidinama iznad tartufovih šuma" },
+            { "time": "11:30", "text": "Vinarija Roxanich — degustacija" },
+            { "time": "13:30", "text": "Odlazak s poklon-paketom" }
+          ],
+          "meals": ["Doručak", "Poklon"],
+          "host": ""
+        }
+      ]
+    },
+    "pricing": {
+      "label": "Paketi",
+      "title": "Dva načina za zimski vikend",
+      "cards": [
+        {
+          "variant": "standard",
+          "badge": "Mješovita grupa",
+          "name": "Otvoreni zimski vikend",
+          "slogan": "Fiksni termini — parovi i prijatelji dobrodošli.",
+          "price": "od €590",
+          "info": "po osobi · 3 dana / 2 noći",
+          "minNote": "Fiksni termini · od 8 gostiju",
+          "includes": [
+            "2 noći u kamenoj kući s kaminom",
+            "Svi obroci + kućno vino",
+            "Lov na tartufe i tečaj kuhanja (Karlić)",
+            "Dva vinara: Kozlović i Roxanich",
+            "Večera u Humu + degustacija biske",
+            "Prijevoz i oproštajni poklon"
+          ],
+          "cta": "Prijavite se na termin",
+          "featured": false
+        },
+        {
+          "variant": "standard",
+          "badge": "Privatna grupa",
+          "name": "Privatni zimski vikend",
+          "slogan": "Cijelo selo za vašu grupu, u vašim terminima.",
+          "price": "od €490",
+          "info": "po osobi · 3 dana / 2 noći",
+          "minNote": "Min. 10 gostiju",
+          "includesLabel": "Sve iz otvorenog vikenda, plus:",
+          "includes": [
+            "Vaši termini, od prosinca do ožujka",
+            "Cijelo selo samo za vašu grupu",
+            "Program prilagođen vašoj grupi"
+          ],
+          "cta": "Zatražite termine",
+          "featured": true
+        }
+      ],
+      "footerNote": "Cijene po osobi u dijeljenoj kući. Vlastiti dolazak do Kotli. Zimski termini prosinac 2026. – ožujak 2027."
+    },
+    "includes": {
+      "label": "Što je uključeno",
+      "title": "All-inclusive od prve vatre do posljednje degustacije",
+      "subtitle": "Dvije noći, svi obroci, dva vinara i lov na tartufe. Što nije uključeno, navodimo ispod.",
+      "yesTitle": "Uključeno",
+      "yesSubtitle": "U oba zimska paketa",
+      "noTitle": "Nije uključeno",
+      "noSubtitle": "Molimo organizirajte sami",
+      "yes": [
+        "2 noći u kamenim kućama s kaminom",
+        "Doručak, ručak s tartufima i dvije večere, uz kućno vino i vodu",
+        "Doček uz vatru: biska, pršut i domaći sir",
+        "Lov na tartufe i tečaj kuhanja s obitelji Karlić",
+        "Degustacija u podrumu Kozlović",
+        "Degustacija kod Roxanicha, Motovun",
+        "Večera Konoba Hum + degustacija biske",
+        "Prijevoz do svih doživljaja",
+        "Oproštajni poklon-paket (vino + tartuf + ulje)"
+      ],
+      "no": [
+        "Dolazak do Kotli (auto, let, vlak)",
+        "Premium pića osim kućnog vina",
+        "Putno osiguranje od otkaza (preporučeno)",
+        "Osobni troškovi i napojnice"
+      ]
+    }
   }
 }

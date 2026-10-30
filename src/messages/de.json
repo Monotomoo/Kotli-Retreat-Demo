@@ -11,7 +11,11 @@
       "agenda": "Reiseplan",
       "pricing": "Preise",
       "destinations": "Rovinj · Motovun · Hum",
-      "contact": "Kontakt"
+      "contact": "Kontakt",
+      "packages": "Pakete",
+      "included": "Leistungen",
+      "allPackages": "Alle Pakete",
+      "faq": "FAQ"
     },
     "slogan": "Originalna iskustva, lokalne priče."
   },
@@ -386,7 +390,7 @@
       "date": "Wunschtermin",
       "dateOptions": ["Dezember 2026", "Januar 2027", "Februar 2027", "März 2027", "April 2027", "Mai 2027", "Juni 2027", "September 2027", "Oktober 2027", "November 2027", "Flexibel"],
       "package": "Welches Paket interessiert Sie?",
-      "packageOptions": ["Geist des Dorfes", "Geist Istriens", "Ihre Geschichte (individuell)", "Nur Unterkunft", "Noch unentschlossen"],
+      "packageOptions": ["Geist des Dorfes", "Geist Istriens", "Winter in Kotli", "Ihre Geschichte (individuell)", "Nur Unterkunft", "Noch unentschlossen"],
       "dietary": "Ernährungsbesonderheiten",
       "dietaryOptions": ["Keine", "Vegetarisch", "Vegan", "Glutenfrei", "Sonstiges (bitte unten angeben)"],
       "message": "Ihre Nachricht",
@@ -538,5 +542,187 @@
       "Wir empfehlen eine Reiserücktrittsversicherung."
     ],
     "conditionsNote": "Die vollständigen Reisebedingungen erhalten Sie mit Ihrem schriftlichen Angebot – vor der Buchung."
+  },
+  "home": {
+    "meta": {
+      "title": "Kotli Retreat — Ein privates Steindorf in Istrien für Gruppen",
+      "description": "Acht restaurierte Steinhäuser im Mirna-Tal, Istrien. All-inclusive Genussreisen und Winter-Trüffelwochenenden für Gruppen – mit den Familien hinter Istriens Trüffeln, Wein und Olivenöl."
+    },
+    "hero": {
+      "eyebrow": "Istrien · Kroatien",
+      "title": "Kotli Retreat",
+      "poetic": "Acht Steinhäuser im Mirna-Tal, nur für Sie – für eine Genussreise, ein Winterwochenende oder ein Firmen-Offsite.",
+      "cta": "Zu den Paketen",
+      "ctaSecondary": "Anfrage senden",
+      "facts": ["8 Steinhäuser", "10–34 Gäste", "Ganzjährig geöffnet"]
+    },
+    "packages": {
+      "label": "Pakete",
+      "title": "Wählen Sie Ihre Tage in Kotli",
+      "otherTitle": "Weitere Aufenthalte in Kotli",
+      "subtitle": "Jedes Paket umfasst das Dorf, alle Mahlzeiten und die Gastgeber, die Istrien zur Genussregion gemacht haben.",
+      "view": "Zum Paket",
+      "cards": {
+        "soilAndSoul": {
+          "badge": "Frühling & Herbst",
+          "name": "Soil and Soul Istria",
+          "tagline": "Trüffel, Wein, Olivenöl und ein Michelin-Abschied.",
+          "length": "5 Tage · 4 Nächte",
+          "group": "Gruppen von 10–34",
+          "price": "ab 1.090 €"
+        },
+        "winter": {
+          "badge": "Dezember – März",
+          "name": "Winter in Kotli",
+          "tagline": "Trüffel, zwei Winzer und ein Kaminfeuer in jedem Haus.",
+          "length": "3 Tage · 2 Nächte",
+          "group": "Gruppen & Einzelgäste",
+          "price": "ab 490 €"
+        }
+      },
+      "soon": {
+        "badge": "Ab 2027",
+        "title": "Rad und Wandern",
+        "text": "Zwei aktive Programme aus demselben Dorf: tagsüber istrische Wege, abends der Tisch in der Konoba.",
+        "cta": "Benachrichtigen"
+      }
+    }
+  },
+  "winter": {
+    "meta": {
+      "title": "Winter in Kotli — Trüffel- & Weinwochenende in Istrien | Kotli Retreat",
+      "description": "3 Tage, 2 Nächte in einem privaten Steindorf in Istrien: Winter-Trüffeljagd mit der Familie Karlić, zwei Winzer, Abende am Kamin. Dezember bis März, für Gruppen und Einzelgäste."
+    },
+    "hero": {
+      "subtitle": "Ein Winterwochenende in Istrien",
+      "title": "Winter in Kotli",
+      "poetic": "Raureif auf dem Stein. Trüffel im Wald. Wein am Kamin.",
+      "cta": "Termin wählen",
+      "ctaSecondary": "Leistungen",
+      "daysLabel": "Tage",
+      "price": "Ab 490 €",
+      "pricePer": "pro Person",
+      "people": "2 Nächte · Dezember – März",
+      "hooks": ["Trüffeljagd im Winterwald", "Zwei Winzer, ein Wochenende", "Ein Kamin in jedem Haus", "Abendessen in Hum, der kleinsten Stadt"],
+      "days": "3",
+      "allInclusive": "ALL-INCLUSIVE"
+    },
+    "agenda": {
+      "label": "Tag für Tag",
+      "title": "3 Wintertage in Istrien — Ihr Wochenende",
+      "dayLabel": "TAG",
+      "days": [
+        {
+          "number": "1",
+          "theme": "Ankunft",
+          "title": "Feuer im Kamin",
+          "narrative": "Wenn Sie ankommen, brennt der Kamin schon. Biska, Pršut und istrischer Käse am Feuer, danach Abendessen in der Konoba.",
+          "schedule": [
+            { "time": "15:00", "text": "Check-in in den Steinhäusern — die Kamine brennen" },
+            { "time": "17:00", "text": "Empfang am Kamin: Biska, Pršut und regionaler Käse" },
+            { "time": "19:30", "text": "Abendessen in der Konoba — Fuži mit Trüffeln, Teran-Wein" }
+          ],
+          "meals": ["Aperitif", "Abendessen"],
+          "host": ""
+        },
+        {
+          "number": "2",
+          "theme": "Trüffel & Wein",
+          "title": "Der Wintertrüffel",
+          "narrative": "Ein Vormittag im Wald mit der Familie Karlić und ihren Hunden, danach kochen Sie, was Sie gefunden haben. Am Nachmittag Malvazija aus vier Erden im Keller von Kozlović.",
+          "schedule": [
+            { "time": "08:30", "text": "Frühstückskorb" },
+            { "time": "09:30", "text": "Karlić Tartufi: Trüffeljagd → Kochkurs → Trüffel-Mittagessen" },
+            { "time": "15:30", "text": "Weingut Kozlović — Kellerverkostung, Malvazija aus vier Erden" },
+            { "time": "19:30", "text": "Abendessen Konoba Hum + Biska-Verkostung" }
+          ],
+          "meals": ["Frühstück", "Mittagessen", "Abendessen"],
+          "host": "Familie Karlić · Familie Kozlović"
+        },
+        {
+          "number": "3",
+          "theme": "Abschied",
+          "title": "Über den Trüffelwäldern",
+          "narrative": "Ein letzter Spaziergang auf den Mauern von Motovun, eine Verkostung bei Roxanich und ein Geschenkpaket mit Wein, Trüffel und Öl für die Heimreise.",
+          "schedule": [
+            { "time": "09:00", "text": "Frühstückskorb" },
+            { "time": "10:00", "text": "Motovun — Spaziergang auf der Stadtmauer über den Trüffelwäldern" },
+            { "time": "11:30", "text": "Weingut Roxanich — Verkostung" },
+            { "time": "13:30", "text": "Abreise mit Ihrem Geschenkpaket" }
+          ],
+          "meals": ["Frühstück", "Geschenk"],
+          "host": ""
+        }
+      ]
+    },
+    "pricing": {
+      "label": "Pakete",
+      "title": "Zwei Arten, ein Winterwochenende zu verbringen",
+      "cards": [
+        {
+          "variant": "standard",
+          "badge": "Gemischte Gruppe",
+          "name": "Offenes Winterwochenende",
+          "slogan": "Feste Termine — Paare und Freunde willkommen.",
+          "price": "ab 590 €",
+          "info": "pro Person · 3 Tage / 2 Nächte",
+          "minNote": "Feste Termine · ab 8 Gästen",
+          "includes": [
+            "2 Nächte im Steinhaus mit Kamin",
+            "Alle Mahlzeiten + Hauswein",
+            "Trüffeljagd und Kochkurs (Karlić)",
+            "Zwei Winzer: Kozlović und Roxanich",
+            "Abendessen in Hum + Biska-Verkostung",
+            "Transport und Abschiedsgeschenk"
+          ],
+          "cta": "Termin buchen",
+          "featured": false
+        },
+        {
+          "variant": "standard",
+          "badge": "Private Gruppe",
+          "name": "Privates Winterwochenende",
+          "slogan": "Das ganze Dorf für Ihre Gruppe, zu Ihren Terminen.",
+          "price": "ab 490 €",
+          "info": "pro Person · 3 Tage / 2 Nächte",
+          "minNote": "Ab 10 Gästen",
+          "includesLabel": "Alles aus dem offenen Wochenende, plus:",
+          "includes": [
+            "Ihre eigenen Termine, Dezember bis März",
+            "Das ganze Dorf für Ihre Gruppe",
+            "Programm angepasst an Ihre Gruppe"
+          ],
+          "cta": "Termine anfragen",
+          "featured": true
+        }
+      ],
+      "footerNote": "Preise pro Person im geteilten Haus. Eigene Anreise nach Kotli. Wintertermine Dezember 2026 – März 2027."
+    },
+    "includes": {
+      "label": "Leistungen",
+      "title": "All-inclusive vom ersten Feuer bis zur letzten Verkostung",
+      "subtitle": "Zwei Nächte, alle Mahlzeiten, zwei Winzer und die Trüffeljagd. Was nicht enthalten ist, steht unten.",
+      "yesTitle": "Inklusive",
+      "yesSubtitle": "In beiden Winterpaketen",
+      "noTitle": "Nicht inklusive",
+      "noSubtitle": "Bitte selbst organisieren",
+      "yes": [
+        "2 Nächte in Steinhäusern mit Kamin",
+        "Frühstück, Trüffel-Mittagessen und zwei Abendessen, mit Hauswein und Wasser",
+        "Empfang am Kamin: Biska, Pršut und regionaler Käse",
+        "Trüffeljagd und Kochkurs mit der Familie Karlić",
+        "Kellerverkostung bei Kozlović",
+        "Verkostung bei Roxanich, Motovun",
+        "Abendessen Konoba Hum + Biska-Verkostung",
+        "Transport zu allen Programmpunkten",
+        "Abschiedsgeschenk (Wein + Trüffel + Öl)"
+      ],
+      "no": [
+        "Anreise nach Kotli (Auto, Flug, Zug)",
+        "Premium-Getränke über den Hauswein hinaus",
+        "Reiserücktrittsversicherung (empfohlen)",
+        "Persönliche Ausgaben und Trinkgelder"
+      ]
+    }
   }
 }
