@@ -5,6 +5,10 @@ import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { Link } from '@/i18n/navigation';
 import { PACKAGES, tNs, type PackageDef } from '@/lib/packages';
+import { Clock, CalendarDays, Users, Dog, Wine, Droplets, Star, Euro, Sparkles, Check, Minus } from 'lucide-react';
+
+// One icon per comparison row, in the order of packagesPage.compare.rows.
+const ROW_ICONS = [Clock, CalendarDays, Users, Dog, Wine, Droplets, Star, Euro];
 
 // /packages — one editorial spread per package (alternating sides), then a
 // comparison table and a "help me choose" band. All text comes from the
@@ -231,75 +235,154 @@ export default function PackageShowcaseV2() {
         </div>
       </section>
 
-      {/* Comparison */}
-      <section id="compare" className="scroll-mt-28" style={{ backgroundColor: STONE }}>
-        <div className="px-5 md:px-[6vw] py-16 md:py-24">
+      {/* Comparison — each package is a tall card; rows line up across cards via subgrid */}
+      <section id="compare" className="scroll-mt-28 relative overflow-hidden" style={{ backgroundColor: DARK }}>
+        <div
+          className="absolute -top-48 left-1/3 w-[700px] h-[700px] rounded-full pointer-events-none"
+          style={{ background: 'radial-gradient(circle, rgba(176,141,87,0.14), transparent 65%)' }}
+        />
+        <div className="relative px-5 md:px-[6vw] py-16 md:py-24">
           <div className="flex items-center gap-4 mb-4">
             <span className="w-10 h-px" style={{ backgroundColor: BRASS }} />
-            <span className="text-[10px] uppercase tracking-[4px] font-semibold" style={{ color: BRASS_DARK }}>
+            <span className="text-[10px] uppercase tracking-[4px] font-semibold" style={{ color: BRASS_LIGHT }}>
               {t('compare.label')}
             </span>
           </div>
-          <h2 className="font-display font-light text-[clamp(30px,3.6vw,48px)] leading-[1.05]" style={{ color: INK }}>
+          <h2 className="font-display font-light text-[clamp(30px,3.6vw,50px)] leading-[1.05]" style={{ color: IVORY }}>
             {t('compare.title')}
           </h2>
 
-          <div className="mt-10 overflow-x-auto rounded-[6px]" style={{ boxShadow: '0 22px 55px rgba(28,26,21,0.1)' }}>
-            <table className="w-full min-w-[560px] border-collapse text-left" style={{ backgroundColor: '#fbf9f3' }}>
-              <thead>
-                <tr style={{ backgroundColor: DARK }}>
-                  <th className="px-5 py-4" />
-                  {PACKAGES.map((p) => (
-                    <th key={p.slug} className="px-5 py-4 font-display font-normal text-[19px]" style={{ color: IVORY }}>
-                      {(tCard.raw(p.cardKey) as CardText).name}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {rows.map((r, i) => (
-                  <tr key={i} style={{ borderTop: '1px solid rgba(28,26,21,0.08)' }}>
-                    <th className="px-5 py-3.5 text-[10px] uppercase tracking-[2px] font-semibold align-top" style={{ color: BRASS_DARK }}>
-                      {r.label}
-                    </th>
-                    {PACKAGES.map((p) => (
-                      <td key={p.slug} className="px-5 py-3.5 text-[14px] leading-snug align-top" style={{ color: 'rgba(28,26,21,0.8)' }}>
-                        {r.values[p.cardKey] ?? '—'}
-                      </td>
-                    ))}
-                  </tr>
-                ))}
-                <tr style={{ borderTop: '1px solid rgba(28,26,21,0.08)' }}>
-                  <th />
-                  {PACKAGES.map((p) => (
-                    <td key={p.slug} className="px-5 py-5">
-                      <Link href={`/${p.slug}`} className="text-[10px] uppercase tracking-[2.5px] font-semibold no-underline pb-1 border-b" style={{ color: BRASS_DARK, borderColor: 'rgba(138,107,63,0.4)' }}>
+          <div className="mt-12 overflow-x-auto pb-4 -mx-5 px-5 md:mx-0 md:px-0">
+            <div
+              className="grid min-w-[720px] gap-x-5"
+              style={{
+                gridTemplateColumns: `minmax(170px, 0.8fr) repeat(${PACKAGES.length}, minmax(240px, 1fr))`,
+                gridTemplateRows: `auto repeat(${rows.length}, auto) auto`,
+              }}
+            >
+              {/* Label column */}
+              <div className="grid" style={{ gridRow: `span ${rows.length + 2}`, gridTemplateRows: 'subgrid' }}>
+                <div />
+                {rows.map((r, i) => {
+                  const Icon = ROW_ICONS[i] ?? Sparkles;
+                  return (
+                    <div key={i} className="flex items-center gap-3 py-4" style={{ borderTop: '1px solid rgba(246,243,236,0.08)' }}>
+                      <span
+                        className="w-8 h-8 rounded-full flex items-center justify-center shrink-0"
+                        style={{ backgroundColor: 'rgba(211,183,135,0.1)', color: BRASS_LIGHT }}
+                      >
+                        <Icon size={15} strokeWidth={1.6} />
+                      </span>
+                      <span className="text-[10.5px] uppercase tracking-[2px] font-semibold" style={{ color: 'rgba(246,243,236,0.7)' }}>
+                        {r.label}
+                      </span>
+                    </div>
+                  );
+                })}
+                <div />
+              </div>
+
+              {/* One card per package */}
+              {PACKAGES.map((p, pi) => {
+                const c = tCard.raw(p.cardKey) as CardText;
+                return (
+                  <motion.div
+                    key={p.slug}
+                    className="grid rounded-[8px] overflow-hidden"
+                    style={{
+                      gridRow: `span ${rows.length + 2}`,
+                      gridTemplateRows: 'subgrid',
+                      backgroundColor: '#fbf9f3',
+                      boxShadow: '0 30px 70px rgba(0,0,0,0.35)',
+                    }}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.15 }}
+                    transition={{ duration: 0.7, delay: pi * 0.12, ease: [0.22, 1, 0.36, 1] }}
+                  >
+                    {/* Card head */}
+                    <div className="relative min-h-[170px] flex flex-col justify-end p-5">
+                      <Image src={p.image} alt={c.name} fill sizes="25vw" className="object-cover" />
+                      <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(13,18,12,0.92), rgba(13,18,12,0.15))' }} />
+                      <div className="relative">
+                        <span className="text-[9px] uppercase tracking-[2.5px] font-semibold" style={{ color: BRASS_LIGHT }}>
+                          {c.badge}
+                        </span>
+                        <div className="font-display text-[24px] leading-tight mt-1" style={{ color: IVORY }}>
+                          {c.name}
+                        </div>
+                      </div>
+                    </div>
+
+                    {rows.map((r, i) => {
+                      const v = r.values[p.cardKey] ?? '—';
+                      const none = v.trim() === '—';
+                      const isPrice = i === rows.length - 1;
+                      return (
+                        <div
+                          key={i}
+                          className="flex items-center gap-3 px-5 py-4"
+                          style={{ borderTop: '1px solid rgba(28,26,21,0.07)', backgroundColor: i % 2 ? 'rgba(237,231,218,0.35)' : undefined }}
+                        >
+                          {isPrice ? (
+                            <span className="font-display text-[26px] leading-none" style={{ color: INK }}>
+                              {v}
+                            </span>
+                          ) : none ? (
+                            <>
+                              <span className="w-5 h-5 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: 'rgba(28,26,21,0.06)', color: 'rgba(28,26,21,0.3)' }}>
+                                <Minus size={12} strokeWidth={2} />
+                              </span>
+                              <span className="text-[13px]" style={{ color: 'rgba(28,26,21,0.35)' }}>
+                                {t('compare.notIncluded')}
+                              </span>
+                            </>
+                          ) : (
+                            <>
+                              <span className="w-5 h-5 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: BRASS, color: '#fff' }}>
+                                <Check size={12} strokeWidth={2.5} />
+                              </span>
+                              <span className="text-[13.5px] leading-snug" style={{ color: 'rgba(28,26,21,0.82)' }}>
+                                {v}
+                              </span>
+                            </>
+                          )}
+                        </div>
+                      );
+                    })}
+
+                    <div className="px-5 py-5" style={{ borderTop: '1px solid rgba(28,26,21,0.07)' }}>
+                      <Link
+                        href={`/${p.slug}`}
+                        className="flex items-center justify-center gap-2 w-full py-3 text-[10px] uppercase tracking-[2.5px] font-semibold no-underline rounded-[4px] transition-colors duration-300"
+                        style={{ backgroundColor: INK, color: IVORY }}
+                      >
                         {t('labels.view')} →
                       </Link>
-                    </td>
-                  ))}
-                </tr>
-              </tbody>
-            </table>
+                    </div>
+                  </motion.div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>
 
       {/* Help me choose */}
-      <section style={{ backgroundColor: DARK }}>
+      <section style={{ backgroundColor: STONE }}>
         <div className="px-5 md:px-[6vw] py-16 md:py-20 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
           <div className="max-w-[640px]">
-            <h2 className="font-display font-light text-[clamp(28px,3.2vw,42px)] leading-[1.08]" style={{ color: IVORY }}>
+            <h2 className="font-display font-light text-[clamp(28px,3.2vw,42px)] leading-[1.08]" style={{ color: INK }}>
               {t('help.title')}
             </h2>
-            <p className="font-serif italic text-[17px] leading-relaxed mt-3" style={{ color: 'rgba(246,243,236,0.65)' }}>
+            <p className="font-serif italic text-[17px] leading-relaxed mt-3" style={{ color: 'rgba(28,26,21,0.6)' }}>
               {t('help.text')}
             </p>
           </div>
           <Link
             href="/contact"
             className="shrink-0 self-start md:self-auto px-8 py-4 text-[11px] font-semibold uppercase tracking-[2.5px] no-underline rounded-[2px]"
-            style={{ backgroundColor: BRASS_LIGHT, color: '#141a12' }}
+            style={{ backgroundColor: INK, color: IVORY }}
           >
             {t('help.cta')} →
           </Link>

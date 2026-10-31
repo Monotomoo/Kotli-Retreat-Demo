@@ -390,6 +390,9 @@
       "groupSize": "Velikost skupine",
       "groupSizeOptions": ["10–15 oseb", "16–24 oseb", "25–34 oseb"],
       "date": "Želeni termin",
+      "arrival": "Prihod",
+      "departure": "Odhod",
+      "flexibleDates": "Moji termini so prilagodljivi",
       "dateOptions": ["December 2026", "Januar 2027", "Februar 2027", "Marec 2027", "April 2027", "Maj 2027", "Junij 2027", "September 2027", "Oktober 2027", "November 2027", "Fleksibilno"],
       "package": "Kateri paket vas zanima?",
       "packageOptions": ["Duh vasi", "Duh Istre", "Zima v Kotlih", "Vaša zgodba (po meri)", "Samo nastanitev", "Še razmišljam"],
@@ -563,6 +566,7 @@
       "title": "Izberite, kako boste preživeli dneve v Kotlih",
       "otherTitle": "Še več načinov za bivanje v Kotlih",
       "subtitle": "Vsak paket vključuje vas, vse obroke in gostitelje, ki so Istro naredili za gastronomsko destinacijo.",
+      "compare": "Primerjajte pakete",
       "view": "Oglejte si paket",
       "cards": {
         "soilAndSoul": {
@@ -753,6 +757,7 @@
     },
     "compare": {
       "label": "Primerjava",
+      "notIncluded": "Ni vključeno",
       "title": "Paketi drug ob drugem",
       "rows": [
         {
@@ -895,27 +900,29 @@
     "around": {
       "label": "Okoli Kotli",
       "title": "Mesteca na gričih, tartufovi gozdovi in najmanjše mesto na svetu",
+      "intro": "Kotli ležijo v dolini Mirne, le nekaj minut od mesteca na gričih, po katerih je znana notranjost Istre.",
       "places": [
         {
           "name": "Hum",
-          "text": "Najmanjše mesto na svetu: ena ulica, ena konoba, 23 prebivalcev in dom biske."
+          "tag": "Najmanjše mesto na svetu",
+          "text": "Ena ulica, ena konoba, 23 prebivalcev — in dom biske, žganja iz bele omele."
         },
         {
           "name": "Buzet",
-          "text": "Istrsko mesto tartufov, visoko nad dolino Mirne."
+          "tag": "Mesto tartufov",
+          "text": "Istrska prestolnica tartufov nad Mirno, kjer družina Karlić išče tartufe s svojimi psi."
         },
         {
           "name": "Motovun",
-          "text": "Srednjeveška trdnjava na griču, obdana s tartufovimi gozdovi Mirne."
+          "tag": "Trdnjava na griču",
+          "text": "Srednjeveško obzidano mesto na griču, obdano s tartufovimi gozdovi Mirne."
         },
         {
-          "name": "Roč",
-          "text": "Začetek Aleje glagoljašev, pohodne poti s kamnitimi spomeniki do Huma."
+          "name": "Dolina Mirne",
+          "tag": "Tartufovi gozdovi",
+          "text": "Hrastovi gozdovi ob reki, v megli jesenskih in zimskih juter — pokrajina okoli Kotli."
         }
-      ],
-      "travelTitle": "Kako do nas",
-      "travel": ["Pulj|1 h", "Trst|1,5 h", "Ljubljana|2 h", "München|5 h", "Dunaj|7 h", "Zürich|8 h"],
-      "travelNote": "Večina skupin pride z avtomobilom. Letališki prevoz na povpraševanje."
+      ]
     },
     "cta": {
       "title": "Izberite, kako boste preživeli dneve v Kotlih.",

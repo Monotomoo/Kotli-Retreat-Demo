@@ -48,9 +48,15 @@ export default function HeaderV2() {
   };
 
   // Site pages. A package page (/soil-and-soul, …) counts as "Packages".
-  const navItems = [
+  const tCards = useTranslations('home.packages.cards');
+  const packageLinks = PACKAGES.map((p) => ({
+    href: `/${p.slug}`,
+    label: tCards(`${p.cardKey}.name`),
+    meta: `${tCards(`${p.cardKey}.length`)} · ${tCards(`${p.cardKey}.price`)}`,
+  }));
+  const navItems: { href: string; label: string; children?: typeof packageLinks }[] = [
     { href: '/', label: t('nav.home') },
-    { href: '/packages', label: t('nav.packages') },
+    { href: '/packages', label: t('nav.packages'), children: packageLinks },
     { href: '/about', label: t('nav.about') },
     { href: '/contact', label: t('nav.contact') },
   ];
@@ -118,9 +124,10 @@ export default function HeaderV2() {
             {navItems.map((item, i) => {
               const active = isActive(item.href);
               return (
+                <div key={item.href} className="relative group/dd">
                 <button
-                  key={item.href}
                   onClick={() => goTo(item.href)}
+                  aria-haspopup={item.children ? 'true' : undefined}
                   className="group relative flex items-baseline gap-1.5 cursor-pointer bg-transparent border-none py-1"
                 >
                   <span
@@ -142,7 +149,48 @@ export default function HeaderV2() {
                     }`}
                     style={{ backgroundColor: light ? BRASS_LIGHT : BRASS }}
                   />
+                  {item.children && (
+                    <span className="text-[8px] ml-0.5 transition-transform duration-300 group-hover/dd:rotate-180" style={{ color: light ? BRASS_LIGHT : BRASS }}>
+                      ▾
+                    </span>
+                  )}
                 </button>
+                {item.children && (
+                  <div className="absolute left-1/2 -translate-x-1/2 top-full pt-4 invisible opacity-0 translate-y-1 group-hover/dd:visible group-hover/dd:opacity-100 group-hover/dd:translate-y-0 group-focus-within/dd:visible group-focus-within/dd:opacity-100 transition-all duration-300">
+                    <div
+                      className="w-[330px] rounded-[6px] p-2.5 shadow-[0_24px_60px_rgba(0,0,0,0.35)]"
+                      style={{ backgroundColor: INK, border: '1px solid rgba(211,183,135,0.22)' }}
+                    >
+                      {item.children.map((c, j) => (
+                        <button
+                          key={c.href}
+                          onClick={() => goTo(c.href)}
+                          className="w-full flex items-baseline gap-3 text-left px-4 py-3 rounded-[4px] cursor-pointer bg-transparent border-none transition-colors duration-200 hover:bg-[#f6f3ec]/[0.06]"
+                        >
+                          <span className="font-serif italic text-[12px]" style={{ color: BRASS }}>
+                            0{j + 1}
+                          </span>
+                          <span className="flex-1">
+                            <span className="block font-display text-[17px] leading-tight" style={{ color: IVORY }}>
+                              {c.label}
+                            </span>
+                            <span className="block text-[9.5px] uppercase tracking-[2px] mt-1" style={{ color: 'rgba(246,243,236,0.5)' }}>
+                              {c.meta}
+                            </span>
+                          </span>
+                        </button>
+                      ))}
+                      <button
+                        onClick={() => goTo('/packages')}
+                        className="w-full text-left px-4 pt-3 pb-2 mt-1 text-[10px] uppercase tracking-[2.5px] font-semibold cursor-pointer bg-transparent border-0 border-t"
+                        style={{ color: BRASS_LIGHT, borderColor: 'rgba(246,243,236,0.08)' }}
+                      >
+                        {t('nav.allPackages')} →
+                      </button>
+                    </div>
+                  </div>
+                )}
+                </div>
               );
             })}
           </nav>
@@ -228,8 +276,8 @@ export default function HeaderV2() {
           >
             <div className="h-full flex flex-col justify-center px-8 pt-16">
               {overlayItems.map((item, i) => (
+                <div key={item.href}>
                 <motion.button
-                  key={item.href}
                   onClick={() => goTo(item.href)}
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -245,6 +293,25 @@ export default function HeaderV2() {
                     {item.label}
                   </span>
                 </motion.button>
+                {item.children && (
+                  <div className="pl-10 pb-2">
+                    {item.children.map((c) => (
+                      <button
+                        key={c.href}
+                        onClick={() => goTo(c.href)}
+                        className="block w-full text-left py-2 cursor-pointer bg-transparent border-none"
+                      >
+                        <span className="font-display text-[19px]" style={{ color: 'rgba(246,243,236,0.8)' }}>
+                          {c.label}
+                        </span>
+                        <span className="block text-[9.5px] uppercase tracking-[2px] mt-0.5" style={{ color: 'rgba(211,183,135,0.7)' }}>
+                          {c.meta}
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                )}
+                </div>
               ))}
 
               <motion.div

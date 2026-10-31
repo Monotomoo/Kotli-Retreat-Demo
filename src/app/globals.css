@@ -60,3 +60,10 @@ div[id] {
     scroll-behavior: auto !important;
   }
 }
+
+/* Date inputs on the dark inquiry form: light calendar icon */
+input[type='date']::-webkit-calendar-picker-indicator {
+  filter: invert(0.85);
+  opacity: 0.7;
+  cursor: pointer;
+}

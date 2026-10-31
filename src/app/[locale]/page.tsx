@@ -56,8 +56,8 @@ export default async function HomePage({
       <HeaderV2 />
       <main>
         <HomeHeroV2 />
-        <PackagesV2 />
         <AccommodationV2 />
+        <PackagesV2 />
         <HostsV2 />
         <ContactV2 />
         <FaqV2 />

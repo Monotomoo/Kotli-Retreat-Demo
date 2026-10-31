@@ -390,6 +390,9 @@
       "groupSize": "Gruppengröße",
       "groupSizeOptions": ["10–15 Personen", "16–24 Personen", "25–34 Personen"],
       "date": "Wunschtermin",
+      "arrival": "Anreise",
+      "departure": "Abreise",
+      "flexibleDates": "Meine Termine sind flexibel",
       "dateOptions": ["Dezember 2026", "Januar 2027", "Februar 2027", "März 2027", "April 2027", "Mai 2027", "Juni 2027", "September 2027", "Oktober 2027", "November 2027", "Flexibel"],
       "package": "Welches Paket interessiert Sie?",
       "packageOptions": ["Geist des Dorfes", "Geist Istriens", "Winter in Kotli", "Ihre Geschichte (individuell)", "Nur Unterkunft", "Noch unentschlossen"],
@@ -563,6 +566,7 @@
       "title": "Wählen Sie Ihre Tage in Kotli",
       "otherTitle": "Weitere Aufenthalte in Kotli",
       "subtitle": "Jedes Paket umfasst das Dorf, alle Mahlzeiten und die Gastgeber, die Istrien zur Genussregion gemacht haben.",
+      "compare": "Pakete vergleichen",
       "view": "Zum Paket",
       "cards": {
         "soilAndSoul": {
@@ -753,6 +757,7 @@
     },
     "compare": {
       "label": "Vergleich",
+      "notIncluded": "Nicht enthalten",
       "title": "Die Pakete im Vergleich",
       "rows": [
         {
@@ -895,27 +900,29 @@
     "around": {
       "label": "Rund um Kotli",
       "title": "Bergstädtchen, Trüffelwälder und die kleinste Stadt der Welt",
+      "intro": "Kotli liegt im Mirna-Tal, nur wenige Minuten von den Bergstädtchen, die Istriens Hinterland berühmt machen.",
       "places": [
         {
           "name": "Hum",
-          "text": "Die kleinste Stadt der Welt: eine Gasse, eine Konoba, 23 Einwohner und die Heimat des Biska-Schnapses."
+          "tag": "Kleinste Stadt der Welt",
+          "text": "Eine Gasse, eine Konoba, 23 Einwohner — und die Heimat des Biska, des Mistelschnapses."
         },
         {
           "name": "Buzet",
-          "text": "Istriens Trüffelstadt, hoch über dem Mirna-Tal."
+          "tag": "Trüffelstadt",
+          "text": "Istriens Trüffelhauptstadt über der Mirna, wo die Familie Karlić mit ihren Hunden sucht."
         },
         {
           "name": "Motovun",
-          "text": "Eine mittelalterliche Bergfestung, umgeben von den Trüffelwäldern der Mirna."
+          "tag": "Bergfestung",
+          "text": "Eine mittelalterliche, ummauerte Stadt auf dem Hügel, umgeben von den Trüffelwäldern der Mirna."
         },
         {
-          "name": "Roč",
-          "text": "Der Beginn der Glagolitischen Allee, eines Wanderwegs mit Steindenkmälern bis nach Hum."
+          "name": "Mirna-Tal",
+          "tag": "Trüffelwälder",
+          "text": "Eichenwälder am Fluss, an Herbst- und Wintermorgen im Nebel — das Land rund um Kotli."
         }
-      ],
-      "travelTitle": "Anreise",
-      "travel": ["Pula|1 h", "Triest|1,5 h", "Ljubljana|2 h", "München|5 h", "Wien|7 h", "Zürich|8 h"],
-      "travelNote": "Die meisten Gruppen reisen mit dem Auto an. Flughafentransfer auf Anfrage."
+      ]
     },
     "cta": {
       "title": "Wählen Sie, wie Sie Ihre Tage in Kotli verbringen.",

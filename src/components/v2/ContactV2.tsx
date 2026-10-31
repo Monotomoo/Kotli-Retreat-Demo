@@ -142,20 +142,30 @@ export default function ContactV2() {
   const ui = LOCAL_UI[locale] ?? LOCAL_UI.de;
 
   const groupSizes = t.raw('form.groupSizeOptions') as string[];
-  const dates = t.raw('form.dateOptions') as string[];
   const packages = t.raw('form.packageOptions') as string[];
   const dietary = t.raw('form.dietaryOptions') as string[];
 
   // Friendly defaults: smallest group, flexible date, undecided package, no dietary needs
   const [choices, setChoices] = useState(() => ({
     groupSize: groupSizes[0] ?? '',
-    date: dates[dates.length - 1] ?? '',
     package: packages[packages.length - 1] ?? '',
     dietary: dietary[0] ?? '',
   }));
 
   const setChoice = (key: keyof typeof choices) => (v: string) =>
     setChoices((c) => ({ ...c, [key]: v }));
+
+  // Exact dates (arrival → departure), or "flexible". Flexible is the default
+  // so an inquiry never stalls on a date the guest hasn't settled yet.
+  const today = new Date().toISOString().slice(0, 10);
+  const [arrival, setArrival] = useState('');
+  const [departure, setDeparture] = useState('');
+  const [flexible, setFlexible] = useState(true);
+  const fmt = (iso: string) =>
+    iso ? new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(iso + 'T12:00:00')) : '';
+  const dateText = flexible
+    ? t('form.flexibleDates') + (arrival ? ` (${fmt(arrival)}${departure ? ' – ' + fmt(departure) : ''})` : '')
+    : `${fmt(arrival)} – ${fmt(departure)}`;
 
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
 
@@ -176,7 +186,7 @@ export default function ContactV2() {
         `${t('form.lastName')}: ${last}`,
         `${t('form.email')}: ${email}`,
         `${t('form.groupSize')}: ${choices.groupSize}`,
-        `${t('form.date')}: ${choices.date}`,
+        `${t('form.date')}: ${dateText}`,
         `${t('form.package')}: ${choices.package}`,
         `${t('form.dietary')}: ${choices.dietary}`,
         '',
@@ -206,7 +216,7 @@ export default function ContactV2() {
           [t('form.lastName')]: last,
           [t('form.email')]: email,
           [t('form.groupSize')]: choices.groupSize,
-          [t('form.date')]: choices.date,
+          [t('form.date')]: dateText,
           [t('form.package')]: choices.package,
           [t('form.dietary')]: choices.dietary,
           [t('form.message')]: message,
@@ -445,7 +455,51 @@ export default function ContactV2() {
                   value={choices.groupSize}
                   onChange={setChoice('groupSize')}
                 />
-                <ChipGroup label={t('form.date')} options={dates} value={choices.date} onChange={setChoice('date')} />
+                {/* Dates — exact arrival and departure, or flexible */}
+                <div>
+                  <span className={labelCls}>{t('form.date')}</span>
+                  <div className="grid grid-cols-2 gap-x-6">
+                    <div className="group">
+                      <label className={labelCls} htmlFor="arrival">{t('form.arrival')}</label>
+                      <input
+                        id="arrival"
+                        type="date"
+                        min={today}
+                        value={arrival}
+                        required={!flexible}
+                        onChange={(e) => {
+                          setArrival(e.target.value);
+                          if (departure && departure <= e.target.value) setDeparture('');
+                        }}
+                        className={inputCls}
+                        style={{ color: IVORY, colorScheme: 'dark' }}
+                      />
+                    </div>
+                    <div className="group">
+                      <label className={labelCls} htmlFor="departure">{t('form.departure')}</label>
+                      <input
+                        id="departure"
+                        type="date"
+                        min={arrival || today}
+                        value={departure}
+                        required={!flexible}
+                        onChange={(e) => setDeparture(e.target.value)}
+                        className={inputCls}
+                        style={{ color: IVORY, colorScheme: 'dark' }}
+                      />
+                    </div>
+                  </div>
+                  <label className="flex items-center gap-3 mt-4 cursor-pointer select-none text-[12.5px]" style={{ color: 'rgba(246,243,236,0.7)' }}>
+                    <input
+                      type="checkbox"
+                      checked={flexible}
+                      onChange={(e) => setFlexible(e.target.checked)}
+                      className="w-4 h-4 cursor-pointer"
+                      style={{ accentColor: BRASS_LIGHT }}
+                    />
+                    {t('form.flexibleDates')}
+                  </label>
+                </div>
                 <ChipGroup
                   label={t('form.package')}
                   options={packages}

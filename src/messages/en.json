@@ -390,6 +390,9 @@
       "groupSize": "Group Size",
       "groupSizeOptions": ["10–15 guests", "16–24 guests", "25–34 guests"],
       "date": "Preferred Date",
+      "arrival": "Arrival",
+      "departure": "Departure",
+      "flexibleDates": "My dates are flexible",
       "dateOptions": ["December 2026", "January 2027", "February 2027", "March 2027", "April 2027", "May 2027", "June 2027", "September 2027", "October 2027", "November 2027", "Flexible"],
       "package": "Which package interests you?",
       "packageOptions": ["Spirit of the Village", "Spirit of Istria", "Winter at Kotli", "Your Story (custom)", "Accommodation only", "Still deciding"],
@@ -563,6 +566,7 @@
       "title": "Choose how you'll spend your days at Kotli",
       "otherTitle": "More ways to stay at Kotli",
       "subtitle": "Every package includes the village, all meals and the hosts who made Istria a gourmet destination.",
+      "compare": "Compare the packages",
       "view": "View package",
       "cards": {
         "soilAndSoul": {
@@ -753,6 +757,7 @@
     },
     "compare": {
       "label": "Compare",
+      "notIncluded": "Not included",
       "title": "The packages side by side",
       "rows": [
         {
@@ -895,27 +900,29 @@
     "around": {
       "label": "Around Kotli",
       "title": "Hilltop towns, truffle forests and the smallest town in the world",
+      "intro": "Kotli sits in the Mirna valley, minutes from the hilltop towns that make Istria's interior famous.",
       "places": [
         {
           "name": "Hum",
-          "text": "The smallest town in the world: one street, one konoba, 23 residents, and the home of Biska brandy."
+          "tag": "Smallest town in the world",
+          "text": "One street, one konoba, 23 residents — and the home of Biska, the mistletoe brandy."
         },
         {
           "name": "Buzet",
-          "text": "Istria's truffle town, high above the Mirna valley."
+          "tag": "Truffle town",
+          "text": "Istria's truffle capital above the Mirna, where the Karlić family hunts with their dogs."
         },
         {
           "name": "Motovun",
-          "text": "A medieval hilltop fortress ringed by the truffle forests of the Mirna."
+          "tag": "Hilltop fortress",
+          "text": "A medieval walled town on a hill, ringed by the truffle forests of the Mirna."
         },
         {
-          "name": "Roč",
-          "text": "The start of the Glagolitic Alley, a walking path of stone monuments leading to Hum."
+          "name": "Mirna valley",
+          "tag": "Truffle forests",
+          "text": "Oak forests along the river, misty on autumn and winter mornings — the land around Kotli."
         }
-      ],
-      "travelTitle": "Getting here",
-      "travel": ["Pula|1 h", "Trieste|1.5 h", "Ljubljana|2 h", "Munich|5 h", "Vienna|7 h", "Zurich|8 h"],
-      "travelNote": "Most groups drive. We arrange airport transfers on request."
+      ]
     },
     "cta": {
       "title": "Choose how you will spend your days at Kotli.",

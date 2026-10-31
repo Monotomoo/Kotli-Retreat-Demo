@@ -17,6 +17,14 @@ const BRASS = '#b08d57';
 const BRASS_DARK = '#8a6b3f';
 const BRASS_LIGHT = '#d3b787';
 
+// Around Kotli — one photo per place, in the order of aboutPage.around.places.
+const PLACE_IMAGES = [
+  '/images/destinations/hum-b.jpg',
+  '/images/agenda/day2.jpg',
+  '/images/destinations/motovun-b.jpg',
+  '/images/destinations/motovun-hilltop.jpg',
+];
+
 // Mosaic tiles: [image, caption key, grid placement]
 const TILES: [string, string, string][] = [
   ['/images/kotli-gallery/1.jpg', 'exterior', 'md:col-span-2 md:row-span-2'],
@@ -50,8 +58,7 @@ export default function AboutKotliV2() {
   const facts = t.raw('facts') as { value: string; label: string }[];
   const house = t.raw('amenities.house') as string[];
   const shared = t.raw('amenities.shared') as string[];
-  const places = t.raw('around.places') as { name: string; text: string }[];
-  const travel = t.raw('around.travel') as string[];
+  const places = t.raw('around.places') as { name: string; tag: string; text: string }[];
 
   return (
     <>
@@ -188,55 +195,58 @@ export default function AboutKotliV2() {
         </div>
       </section>
 
-      {/* Around Kotli */}
-      <section style={{ backgroundColor: IVORY }}>
-        <div className="px-5 md:px-[6vw] py-16 md:py-24 grid grid-cols-1 lg:grid-cols-12 gap-12">
-          <motion.div className="lg:col-span-7" {...reveal}>
-            <Label>{t('around.label')}</Label>
-            <h2 className="font-display font-light text-[clamp(30px,3.4vw,46px)] leading-[1.05]" style={{ color: INK }}>
-              {t('around.title')}
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-7 mt-10">
-              {places.map((p, i) => (
-                <div key={i} className="pt-4" style={{ borderTop: '1px solid rgba(28,26,21,0.12)' }}>
-                  <h3 className="font-display text-[21px]" style={{ color: INK }}>
-                    {p.name}
-                  </h3>
-                  <p className="text-[14px] leading-relaxed mt-1.5" style={{ color: 'rgba(28,26,21,0.68)' }}>
-                    {p.text}
-                  </p>
-                </div>
-              ))}
+      {/* Around Kotli — four places as tall photo cards */}
+      <section style={{ backgroundColor: DARK }}>
+        <div className="px-5 md:px-[6vw] py-16 md:py-24">
+          <motion.div className="flex flex-col md:flex-row md:items-end md:justify-between gap-5" {...reveal}>
+            <div>
+              <Label light>{t('around.label')}</Label>
+              <h2 className="font-display font-light text-[clamp(30px,3.6vw,50px)] leading-[1.05] max-w-[720px]" style={{ color: IVORY }}>
+                {t('around.title')}
+              </h2>
             </div>
-          </motion.div>
-          <motion.div
-            className="lg:col-span-5 self-start rounded-[6px] p-8 md:p-10"
-            style={{ backgroundColor: DARK }}
-            {...reveal}
-            transition={{ ...reveal.transition, delay: 0.12 }}
-          >
-            <div className="text-[10px] uppercase tracking-[3.5px] font-semibold" style={{ color: BRASS_LIGHT }}>
-              {t('around.travelTitle')}
-            </div>
-            <ul className="list-none p-0 mt-5 flex flex-col">
-              {travel.map((line, i) => {
-                const [place, time] = line.split('|');
-                return (
-                  <li key={i} className="flex items-baseline justify-between gap-4 py-3" style={i > 0 ? { borderTop: '1px solid rgba(246,243,236,0.08)' } : undefined}>
-                    <span className="text-[15px]" style={{ color: 'rgba(246,243,236,0.85)' }}>
-                      {place}
-                    </span>
-                    <span className="font-display text-[20px]" style={{ color: BRASS_LIGHT }}>
-                      {time}
-                    </span>
-                  </li>
-                );
-              })}
-            </ul>
-            <p className="font-serif italic text-[14px] mt-5" style={{ color: 'rgba(246,243,236,0.55)' }}>
-              {t('around.travelNote')}
+            <p className="font-serif italic text-[16px] leading-relaxed max-w-[380px] md:text-right" style={{ color: 'rgba(246,243,236,0.6)' }}>
+              {t('around.intro')}
             </p>
           </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-12">
+            {places.map((p, i) => (
+              <motion.article
+                key={i}
+                className="group"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.7, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
+              >
+                <div className="relative aspect-[3/4] rounded-[6px] overflow-hidden">
+                  <Image
+                    src={PLACE_IMAGES[i] ?? PLACE_IMAGES[0]}
+                    alt={p.name}
+                    fill
+                    sizes="(min-width:1024px) 22vw, (min-width:640px) 45vw, 100vw"
+                    className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.07]"
+                  />
+                  <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(13,18,12,0.9) 0%, rgba(13,18,12,0.1) 55%)' }} />
+                  <span className="absolute top-4 left-4 font-serif italic text-[13px]" style={{ color: BRASS_LIGHT }}>
+                    0{i + 1}
+                  </span>
+                  <div className="absolute inset-x-0 bottom-0 p-5">
+                    <span className="block text-[9px] uppercase tracking-[2.5px] font-semibold" style={{ color: BRASS_LIGHT }}>
+                      {p.tag}
+                    </span>
+                    <h3 className="font-display font-light text-[30px] leading-none mt-2" style={{ color: IVORY }}>
+                      {p.name}
+                    </h3>
+                  </div>
+                </div>
+                <p className="text-[14px] leading-relaxed mt-4 pr-2" style={{ color: 'rgba(246,243,236,0.7)' }}>
+                  {p.text}
+                </p>
+              </motion.article>
+            ))}
+          </div>
         </div>
       </section>
 
