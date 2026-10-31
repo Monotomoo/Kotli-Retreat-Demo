@@ -395,7 +395,7 @@
       "flexibleDates": "Moji termini so prilagodljivi",
       "dateOptions": ["December 2026", "Januar 2027", "Februar 2027", "Marec 2027", "April 2027", "Maj 2027", "Junij 2027", "September 2027", "Oktober 2027", "November 2027", "Fleksibilno"],
       "package": "Kateri paket vas zanima?",
-      "packageOptions": ["Duh vasi", "Duh Istre", "Zima v Kotlih", "Vaša zgodba (po meri)", "Samo nastanitev", "Še razmišljam"],
+      "packageOptions": ["Soil and Soul Istria", "Zima v Kotlih", "Vaša zgodba (po meri)", "Samo nastanitev", "Še razmišljam"],
       "dietary": "Prehranske posebnosti",
       "dietaryOptions": ["Brez", "Vegetarijansko", "Vegansko", "Brez glutena", "Drugo (navedite spodaj)"],
       "message": "Vaše sporočilo",

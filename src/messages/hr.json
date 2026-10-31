@@ -395,7 +395,7 @@
       "flexibleDates": "Termini su mi fleksibilni",
       "dateOptions": ["Prosinac 2026.", "Siječanj 2027.", "Veljača 2027.", "Ožujak 2027.", "Travanj 2027.", "Svibanj 2027.", "Lipanj 2027.", "Rujan 2027.", "Listopad 2027.", "Studeni 2027.", "Fleksibilno"],
       "package": "Koji paket vas zanima?",
-      "packageOptions": ["Duh Sela", "Duh Istre", "Zima u Kotlima", "Vaša Priča (custom)", "Samo smještaj", "Još razmišljam"],
+      "packageOptions": ["Soil and Soul Istria", "Zima u Kotlima", "Vaša Priča (custom)", "Samo smještaj", "Još razmišljam"],
       "dietary": "Prehrambene posebnosti",
       "dietaryOptions": ["Nema", "Vegetarijansko", "Vegansko", "Bez glutena", "Ostalo (navedite dolje)"],
       "message": "Vaša poruka",

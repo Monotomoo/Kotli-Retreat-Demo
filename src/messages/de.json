@@ -395,7 +395,7 @@
       "flexibleDates": "Meine Termine sind flexibel",
       "dateOptions": ["Dezember 2026", "Januar 2027", "Februar 2027", "März 2027", "April 2027", "Mai 2027", "Juni 2027", "September 2027", "Oktober 2027", "November 2027", "Flexibel"],
       "package": "Welches Paket interessiert Sie?",
-      "packageOptions": ["Geist des Dorfes", "Geist Istriens", "Winter in Kotli", "Ihre Geschichte (individuell)", "Nur Unterkunft", "Noch unentschlossen"],
+      "packageOptions": ["Soil and Soul Istria", "Winter in Kotli", "Ihre Geschichte (individuell)", "Nur Unterkunft", "Noch unentschlossen"],
       "dietary": "Ernährungsbesonderheiten",
       "dietaryOptions": ["Keine", "Vegetarisch", "Vegan", "Glutenfrei", "Sonstiges (bitte unten angeben)"],
       "message": "Ihre Nachricht",
