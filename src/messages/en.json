@@ -567,6 +567,11 @@
       "otherTitle": "More ways to stay at Kotli",
       "subtitle": "Every package includes the village, all meals and the hosts who made Istria a gourmet destination.",
       "compare": "Compare the packages",
+      "featured": {
+        "badge": "Now booking · Winter 2026/27",
+        "cta": "Choose your winter dates",
+        "note": "per person · December – March · groups and individuals"
+      },
       "view": "View package",
       "cards": {
         "soilAndSoul": {

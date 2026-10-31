@@ -567,6 +567,11 @@
       "otherTitle": "Još načina za boravak u Kotlima",
       "subtitle": "Svaki paket uključuje selo, sve obroke i domaćine koji su Istru učinili gastronomskom destinacijom.",
       "compare": "Usporedite pakete",
+      "featured": {
+        "badge": "Rezervacije otvorene · zima 2026./27.",
+        "cta": "Odaberite zimski termin",
+        "note": "po osobi · prosinac – ožujak · grupe i pojedinci"
+      },
       "view": "Pogledajte paket",
       "cards": {
         "soilAndSoul": {

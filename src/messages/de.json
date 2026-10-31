@@ -567,6 +567,11 @@
       "otherTitle": "Weitere Aufenthalte in Kotli",
       "subtitle": "Jedes Paket umfasst das Dorf, alle Mahlzeiten und die Gastgeber, die Istrien zur Genussregion gemacht haben.",
       "compare": "Pakete vergleichen",
+      "featured": {
+        "badge": "Jetzt buchbar · Winter 2026/27",
+        "cta": "Wintertermin wählen",
+        "note": "pro Person · Dezember – März · Gruppen und Einzelgäste"
+      },
       "view": "Zum Paket",
       "cards": {
         "soilAndSoul": {

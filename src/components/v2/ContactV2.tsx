@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -154,6 +154,16 @@ export default function ContactV2() {
 
   const setChoice = (key: keyof typeof choices) => (v: string) =>
     setChoices((c) => ({ ...c, [key]: v }));
+
+  // A package CTA elsewhere on the page can preselect its package here.
+  useEffect(() => {
+    const onChoose = (e: Event) => {
+      const name = (e as CustomEvent<string>).detail;
+      if (packages.includes(name)) setChoices((c) => ({ ...c, package: name }));
+    };
+    window.addEventListener('kotli:choose-package', onChoose);
+    return () => window.removeEventListener('kotli:choose-package', onChoose);
+  }, [packages]);
 
   // Exact dates (arrival → departure), or "flexible". Flexible is the default
   // so an inquiry never stalls on a date the guest hasn't settled yet.

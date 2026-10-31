@@ -6,11 +6,12 @@ import { motion } from 'framer-motion';
 import { Link } from '@/i18n/navigation';
 import { PACKAGES, tNs, type PackageDef } from '@/lib/packages';
 
-// Package index (homepage, and "more packages" under a package page).
-// Full-bleed photo cards: name and price always visible, highlights slide in
-// on hover. Adding a package to src/lib/packages.ts adds its card here.
+// Homepage package section. One package is FEATURED (the one we are selling
+// now — Winter at Kotli): a large card with a "now booking" badge and direct
+// booking actions. The others sit beside it as compact photo cards.
+const FEATURED = 'winter-truffles';
+
 const INK = '#1c1a15';
-const DARK = '#0d120c';
 const IVORY = '#f6f3ec';
 const BRASS = '#b08d57';
 const BRASS_DARK = '#8a6b3f';
@@ -20,97 +21,182 @@ interface CardText {
   badge: string;
   name: string;
   tagline: string;
+  intro: string;
   length: string;
   group: string;
   price: string;
 }
 
-function Card({ pkg, index }: { pkg: PackageDef; index: number }) {
+const scrollToContact = () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+
+function FeaturedCard({ pkg }: { pkg: PackageDef }) {
   const t = useTranslations('home.packages');
   const tHero = useTranslations(tNs(pkg.ns, 'hero'));
   const c = t.raw(`cards.${pkg.cardKey}`) as CardText;
-  const hooks = (tHero.raw('hooks') as string[]).slice(0, 3);
+  const hooks = tHero.raw('hooks') as string[];
 
   return (
-    <motion.div
+    <motion.article
+      className="lg:col-span-7 relative min-h-[800px] sm:min-h-[640px] lg:min-h-[680px] rounded-[10px] overflow-hidden flex flex-col justify-end group"
+      style={{ boxShadow: '0 40px 90px rgba(13,18,12,0.35)' }}
       initial={{ opacity: 0, y: 34 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.7, delay: index * 0.12, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+    >
+      <Image
+        src={pkg.image}
+        alt={c.name}
+        fill
+        sizes="(min-width:1024px) 58vw, 100vw"
+        className="object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-[1.04]"
+      />
+      <div
+        className="absolute inset-0"
+        style={{ background: 'linear-gradient(to top, rgba(13,18,12,0.97) 0%, rgba(13,18,12,0.78) 38%, rgba(13,18,12,0.15) 70%, rgba(13,18,12,0.35) 100%)' }}
+      />
+      <div className="absolute -left-24 bottom-0 w-[70%] h-[60%] pointer-events-none" style={{ background: 'radial-gradient(ellipse at bottom left, rgba(176,141,87,0.28), transparent 65%)' }} />
+
+      {/* Now booking */}
+      <div className="absolute top-6 left-6 right-6 flex flex-wrap items-center justify-between gap-3">
+        <span
+          className="flex items-center gap-2.5 text-[10px] uppercase tracking-[2.5px] font-bold px-4 py-2 rounded-full"
+          style={{ backgroundColor: BRASS_LIGHT, color: '#141a12' }}
+        >
+          <span className="relative flex w-2 h-2">
+            <span className="absolute inset-0 rounded-full animate-ping" style={{ backgroundColor: '#141a12', opacity: 0.45 }} />
+            <span className="relative w-2 h-2 rounded-full" style={{ backgroundColor: '#141a12' }} />
+          </span>
+          {t('featured.badge')}
+        </span>
+        <span
+          className="text-[9.5px] uppercase tracking-[2.5px] font-semibold px-3.5 py-2 rounded-full backdrop-blur-md"
+          style={{ backgroundColor: 'rgba(13,18,12,0.45)', border: '1px solid rgba(246,243,236,0.3)', color: IVORY }}
+        >
+          {c.length}
+        </span>
+      </div>
+
+      <div className="relative p-7 md:p-10">
+        <div className="flex items-center gap-3 mb-4">
+          <span className="w-8 h-px" style={{ backgroundColor: BRASS }} />
+          <span className="text-[10px] uppercase tracking-[3px] font-semibold" style={{ color: BRASS_LIGHT }}>
+            {c.badge}
+          </span>
+        </div>
+        <h3 className="font-display font-light text-[clamp(42px,5.2vw,72px)] leading-[0.96]" style={{ color: IVORY }}>
+          {c.name}
+        </h3>
+        <p className="font-serif italic text-[18px] md:text-[21px] leading-snug mt-3 max-w-[560px]" style={{ color: 'rgba(246,243,236,0.82)' }}>
+          {c.tagline}
+        </p>
+
+        <ul className="list-none p-0 m-0 mt-7 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 max-w-[600px]">
+          {hooks.map((h, i) => (
+            <li key={i} className="flex items-center gap-3 text-[14px]" style={{ color: 'rgba(246,243,236,0.88)' }}>
+              <span className="w-1.5 h-1.5 rotate-45 shrink-0" style={{ backgroundColor: BRASS_LIGHT }} />
+              {h}
+            </li>
+          ))}
+        </ul>
+
+        <div
+          className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mt-9 pt-7"
+          style={{ borderTop: '1px solid rgba(246,243,236,0.14)' }}
+        >
+          <div>
+            <div className="font-display text-[38px] leading-none" style={{ color: BRASS_LIGHT }}>
+              {c.price}
+            </div>
+            <div className="text-[10px] uppercase tracking-[2px] mt-2" style={{ color: 'rgba(246,243,236,0.55)' }}>
+              {t('featured.note')}
+            </div>
+          </div>
+          <div className="flex flex-wrap items-center gap-3">
+            <button
+              onClick={() => {
+                // Preselect this package in the inquiry form, then go there.
+                window.dispatchEvent(new CustomEvent('kotli:choose-package', { detail: c.name }));
+                scrollToContact();
+              }}
+              className="px-7 py-4 text-[11px] font-semibold uppercase tracking-[2.5px] cursor-pointer border-none rounded-[3px] transition-colors duration-300"
+              style={{ backgroundColor: BRASS_LIGHT, color: '#141a12' }}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = IVORY)}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = BRASS_LIGHT)}
+            >
+              {t('featured.cta')} →
+            </button>
+            <Link
+              href={`/${pkg.slug}`}
+              className="px-6 py-4 text-[11px] font-semibold uppercase tracking-[2.5px] no-underline rounded-[3px] transition-colors duration-300 hover:bg-[#f6f3ec]/10"
+              style={{ border: '1px solid rgba(246,243,236,0.4)', color: IVORY }}
+            >
+              {t('view')}
+            </Link>
+          </div>
+        </div>
+      </div>
+    </motion.article>
+  );
+}
+
+function SideCard({ pkg, index }: { pkg: PackageDef; index: number }) {
+  const t = useTranslations('home.packages');
+  const c = t.raw(`cards.${pkg.cardKey}`) as CardText;
+
+  return (
+    <motion.div
+      className="flex-1"
+      initial={{ opacity: 0, y: 34 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.8, delay: 0.12 + index * 0.1, ease: [0.22, 1, 0.36, 1] }}
     >
       <Link
         href={`/${pkg.slug}`}
-        className="group relative block aspect-[4/5] lg:aspect-[3/4] rounded-[8px] overflow-hidden no-underline"
-        style={{ boxShadow: '0 30px 70px rgba(13,18,12,0.28)' }}
+        className="group flex flex-col h-full rounded-[10px] overflow-hidden no-underline"
+        style={{ backgroundColor: '#fbf9f3', boxShadow: '0 26px 60px rgba(28,26,21,0.14)' }}
       >
-        <Image
-          src={pkg.image}
-          alt={c.name}
-          fill
-          sizes="(min-width:1024px) 33vw, (min-width:768px) 50vw, 100vw"
-          className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.06]"
-        />
-        <div
-          className="absolute inset-0 transition-opacity duration-500"
-          style={{ background: 'linear-gradient(to top, rgba(13,18,12,0.96) 0%, rgba(13,18,12,0.55) 42%, rgba(13,18,12,0.05) 72%)' }}
-        />
-
-        {/* Top row */}
-        <div className="absolute top-5 left-5 right-5 flex items-start justify-between gap-3">
+        <div className="relative h-[260px] lg:flex-1 lg:min-h-[300px] overflow-hidden">
+          <Image
+            src={pkg.image}
+            alt={c.name}
+            fill
+            sizes="(min-width:1024px) 40vw, 100vw"
+            className="object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.05]"
+          />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(13,18,12,0.55), transparent 50%)' }} />
           <span
-            className="text-[9px] uppercase tracking-[2.5px] font-bold px-3 py-1.5 rounded-full"
+            className="absolute top-5 left-5 text-[9px] uppercase tracking-[2.5px] font-bold px-3 py-1.5 rounded-full"
             style={{ backgroundColor: 'rgba(246,243,236,0.92)', color: '#141a12' }}
           >
             {c.badge}
           </span>
-          <span
-            className="text-right rounded-[4px] px-3.5 py-2 backdrop-blur-md"
-            style={{ backgroundColor: 'rgba(13,18,12,0.45)', border: '1px solid rgba(211,183,135,0.35)' }}
-          >
-            <span className="block font-display text-[19px] leading-none" style={{ color: BRASS_LIGHT }}>
-              {c.price}
-            </span>
+          <span className="absolute bottom-5 left-6 font-display italic text-[20px]" style={{ color: IVORY }}>
+            {c.length}
           </span>
         </div>
-
-        {/* Bottom content */}
-        <div className="absolute inset-x-0 bottom-0 p-6 md:p-7">
-          <div className="flex items-center gap-3 mb-3">
-            <span className="w-6 h-px" style={{ backgroundColor: BRASS }} />
-            <span className="text-[10px] uppercase tracking-[3px] font-semibold" style={{ color: BRASS_LIGHT }}>
-              {c.length}
-            </span>
-          </div>
-          <h3 className="font-display font-light text-[32px] md:text-[36px] leading-[1.02]" style={{ color: IVORY }}>
+        <div className="p-7">
+          <h3 className="font-display font-light text-[32px] leading-[1.02]" style={{ color: INK }}>
             {c.name}
           </h3>
-          <p className="font-serif italic text-[16px] leading-snug mt-2" style={{ color: 'rgba(246,243,236,0.75)' }}>
+          <p className="font-serif italic text-[16px] leading-snug mt-2" style={{ color: 'rgba(28,26,21,0.6)' }}>
             {c.tagline}
           </p>
-
-          {/* Revealed on hover (always shown on touch screens) */}
-          <div className="grid grid-rows-[1fr] lg:grid-rows-[0fr] lg:group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-out">
-            <div className="overflow-hidden">
-              <ul className="list-none p-0 m-0 mt-5 pt-4 flex flex-col gap-2" style={{ borderTop: '1px solid rgba(246,243,236,0.14)' }}>
-                {hooks.map((h, i) => (
-                  <li key={i} className="flex items-center gap-3 text-[13px]" style={{ color: 'rgba(246,243,236,0.85)' }}>
-                    <span className="w-1.5 h-1.5 rotate-45 shrink-0" style={{ backgroundColor: BRASS_LIGHT }} />
-                    {h}
-                  </li>
-                ))}
-              </ul>
+          <div className="flex items-end justify-between gap-4 mt-6 pt-5" style={{ borderTop: '1px solid rgba(28,26,21,0.1)' }}>
+            <div>
+              <div className="font-display text-[26px] leading-none" style={{ color: INK }}>
+                {c.price}
+              </div>
+              <div className="text-[10px] uppercase tracking-[2px] mt-2" style={{ color: 'rgba(28,26,21,0.45)' }}>
+                {c.group}
+              </div>
             </div>
-          </div>
-
-          <div className="flex items-center justify-between mt-5">
-            <span className="text-[10px] uppercase tracking-[2px]" style={{ color: 'rgba(246,243,236,0.55)' }}>
-              {c.group}
-            </span>
             <span
-              className="flex items-center gap-2 text-[10px] uppercase tracking-[2.5px] font-semibold px-4 py-2.5 rounded-full transition-colors duration-300 group-hover:bg-[#d3b787] group-hover:text-[#141a12]"
-              style={{ border: '1px solid rgba(211,183,135,0.5)', color: BRASS_LIGHT }}
+              className="flex items-center gap-2 text-[10px] uppercase tracking-[2.5px] font-semibold px-4 py-2.5 rounded-full transition-colors duration-300 group-hover:bg-[#1c1a15] group-hover:text-[#f6f3ec]"
+              style={{ border: '1px solid rgba(28,26,21,0.3)', color: INK }}
             >
-              {t('view')} <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+              {t('view')} →
             </span>
           </div>
         </div>
@@ -119,15 +205,16 @@ function Card({ pkg, index }: { pkg: PackageDef; index: number }) {
   );
 }
 
-export default function PackagesV2({ exclude }: { exclude?: string } = {}) {
+export default function PackagesV2() {
   const t = useTranslations('home.packages');
-  const items = PACKAGES.filter((p) => p.slug !== exclude);
+  const featured = PACKAGES.find((p) => p.slug === FEATURED) ?? PACKAGES[0];
+  const others = PACKAGES.filter((p) => p !== featured);
 
   return (
     <section id="packages" className="relative scroll-mt-16 overflow-hidden" style={{ backgroundColor: '#ede7da' }}>
       <div
-        className="absolute -top-40 -right-40 w-[520px] h-[520px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(176,141,87,0.16), transparent 65%)' }}
+        className="absolute -top-40 -right-40 w-[560px] h-[560px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(176,141,87,0.18), transparent 65%)' }}
       />
       <div className="relative px-5 md:px-[6vw] pt-16 md:pt-24 pb-16 md:pb-24">
         <motion.div
@@ -145,15 +232,13 @@ export default function PackagesV2({ exclude }: { exclude?: string } = {}) {
               </span>
             </div>
             <h2 className="font-display font-light text-[clamp(32px,4vw,56px)] leading-[1.02] max-w-[680px]" style={{ color: INK }}>
-              {exclude ? t('otherTitle') : t('title')}
+              {t('title')}
             </h2>
           </div>
           <div className="flex flex-col md:items-end gap-4">
-            {!exclude && (
-              <p className="font-serif italic text-[16px] leading-relaxed max-w-[380px] md:text-right" style={{ color: 'rgba(28,26,21,0.6)' }}>
-                {t('subtitle')}
-              </p>
-            )}
+            <p className="font-serif italic text-[16px] leading-relaxed max-w-[380px] md:text-right" style={{ color: 'rgba(28,26,21,0.6)' }}>
+              {t('subtitle')}
+            </p>
             <Link
               href="/packages#compare"
               className="text-[10px] uppercase tracking-[2.5px] font-semibold no-underline pb-1 border-b self-start md:self-auto"
@@ -164,45 +249,13 @@ export default function PackagesV2({ exclude }: { exclude?: string } = {}) {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-7 mt-12">
-          {items.map((p, i) => (
-            <Card key={p.slug} pkg={p} index={i} />
-          ))}
-
-          {/* Coming next */}
-          <motion.div
-            initial={{ opacity: 0, y: 34 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.7, delay: items.length * 0.12, ease: [0.22, 1, 0.36, 1] }}
-            className="relative aspect-[4/5] lg:aspect-[3/4] rounded-[8px] overflow-hidden p-7 md:p-8 flex flex-col justify-between"
-            style={{ backgroundColor: DARK }}
-          >
-            <div
-              className="absolute inset-0 pointer-events-none opacity-[0.07]"
-              style={{ backgroundImage: 'repeating-linear-gradient(135deg, #d3b787 0 1px, transparent 1px 14px)' }}
-            />
-            <div className="relative">
-              <span className="text-[9px] uppercase tracking-[2.5px] font-bold px-3 py-1.5 rounded-full" style={{ border: '1px solid rgba(211,183,135,0.5)', color: BRASS_LIGHT }}>
-                {t('soon.badge')}
-              </span>
-            </div>
-            <div className="relative">
-              <h3 className="font-display font-light text-[32px] md:text-[36px] leading-[1.02]" style={{ color: IVORY }}>
-                {t('soon.title')}
-              </h3>
-              <p className="font-serif italic text-[16px] leading-snug mt-3" style={{ color: 'rgba(246,243,236,0.65)' }}>
-                {t('soon.text')}
-              </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 mt-7 text-[10px] uppercase tracking-[2.5px] font-semibold no-underline px-4 py-2.5 rounded-full"
-                style={{ border: '1px solid rgba(211,183,135,0.5)', color: BRASS_LIGHT }}
-              >
-                {t('soon.cta')} →
-              </Link>
-            </div>
-          </motion.div>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 mt-12">
+          <FeaturedCard pkg={featured} />
+          <div className="lg:col-span-5 flex flex-col gap-6 lg:gap-8">
+            {others.map((p, i) => (
+              <SideCard key={p.slug} pkg={p} index={i} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
