@@ -11,7 +11,6 @@ import AgendaV2 from '@/components/v2/AgendaV2';
 import DestinationsV2 from '@/components/v2/DestinationsV2';
 import PricingV2 from '@/components/v2/PricingV2';
 import IncludesV2 from '@/components/v2/IncludesV2';
-import PackagesV2 from '@/components/v2/PackagesV2';
 import ContactV2 from '@/components/v2/ContactV2';
 import FooterV2 from '@/components/v2/FooterV2';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
@@ -69,7 +68,6 @@ export default async function PackagePage({
         <PricingV2 ns={pkg.ns} />
         <IncludesV2 ns={pkg.ns} />
         <ContactV2 />
-        <PackagesV2 exclude={pkg.slug} />
       </main>
       <FooterV2 />
       <WhatsAppFloat />

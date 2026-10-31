@@ -570,7 +570,7 @@
       "view": "Zum Paket",
       "cards": {
         "soilAndSoul": {
-          "badge": "Frühling & Herbst",
+          "badge": "Ganzjährig",
           "name": "Soil and Soul Istria",
           "tagline": "Trüffel, Wein, Olivenöl und ein Michelin-Abschied.",
           "length": "5 Tage · 4 Nächte",
@@ -770,7 +770,7 @@
         {
           "label": "Saison",
           "values": {
-            "soilAndSoul": "Frühling und Herbst",
+            "soilAndSoul": "Das ganze Jahr",
             "winter": "Dezember – März"
           }
         },

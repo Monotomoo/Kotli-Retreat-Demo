@@ -570,7 +570,7 @@
       "view": "View package",
       "cards": {
         "soilAndSoul": {
-          "badge": "Spring & autumn",
+          "badge": "All year",
           "name": "Soil and Soul Istria",
           "tagline": "Truffles, wine, olive oil and a Michelin farewell.",
           "length": "5 days · 4 nights",
@@ -770,7 +770,7 @@
         {
           "label": "Season",
           "values": {
-            "soilAndSoul": "Spring and autumn",
+            "soilAndSoul": "All year round",
             "winter": "December – March"
           }
         },

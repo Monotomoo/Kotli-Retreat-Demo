@@ -570,7 +570,7 @@
       "view": "Pogledajte paket",
       "cards": {
         "soilAndSoul": {
-          "badge": "Proljeće i jesen",
+          "badge": "Cijele godine",
           "name": "Soil and Soul Istria",
           "tagline": "Tartufi, vino, maslinovo ulje i oproštajna Michelin večera.",
           "length": "5 dana · 4 noći",
@@ -770,7 +770,7 @@
         {
           "label": "Sezona",
           "values": {
-            "soilAndSoul": "Proljeće i jesen",
+            "soilAndSoul": "Tijekom cijele godine",
             "winter": "Prosinac – ožujak"
           }
         },

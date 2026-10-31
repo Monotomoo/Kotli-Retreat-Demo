@@ -235,141 +235,152 @@ export default function PackageShowcaseV2() {
         </div>
       </section>
 
-      {/* Comparison — each package is a tall card; rows line up across cards via subgrid */}
-      <section id="compare" className="scroll-mt-28 relative overflow-hidden" style={{ backgroundColor: DARK }}>
+      {/* Comparison — one self-contained card per package, rows in the same order */}
+      <section id="compare" className="scroll-mt-28 relative overflow-hidden" style={{ backgroundColor: STONE }}>
         <div
-          className="absolute -top-48 left-1/3 w-[700px] h-[700px] rounded-full pointer-events-none"
-          style={{ background: 'radial-gradient(circle, rgba(176,141,87,0.14), transparent 65%)' }}
+          className="absolute -top-56 left-1/2 -translate-x-1/2 w-[900px] h-[700px] rounded-full pointer-events-none"
+          style={{ background: 'radial-gradient(circle, rgba(176,141,87,0.18), transparent 65%)' }}
         />
         <div className="relative px-5 md:px-[6vw] py-16 md:py-24">
-          <div className="flex items-center gap-4 mb-4">
-            <span className="w-10 h-px" style={{ backgroundColor: BRASS }} />
-            <span className="text-[10px] uppercase tracking-[4px] font-semibold" style={{ color: BRASS_LIGHT }}>
-              {t('compare.label')}
-            </span>
+          <div className="text-center max-w-[720px] mx-auto">
+            <div className="flex items-center justify-center gap-4 mb-4">
+              <span className="w-10 h-px" style={{ backgroundColor: BRASS }} />
+              <span className="text-[10px] uppercase tracking-[4px] font-semibold" style={{ color: BRASS_DARK }}>
+                {t('compare.label')}
+              </span>
+              <span className="w-10 h-px" style={{ backgroundColor: BRASS }} />
+            </div>
+            <h2 className="font-display font-light text-[clamp(32px,4vw,54px)] leading-[1.04]" style={{ color: INK }}>
+              {t('compare.title')}
+            </h2>
           </div>
-          <h2 className="font-display font-light text-[clamp(30px,3.6vw,50px)] leading-[1.05]" style={{ color: IVORY }}>
-            {t('compare.title')}
-          </h2>
 
-          <div className="mt-12 overflow-x-auto pb-4 -mx-5 px-5 md:mx-0 md:px-0">
-            <div
-              className="grid min-w-[720px] gap-x-5"
-              style={{
-                gridTemplateColumns: `minmax(170px, 0.8fr) repeat(${PACKAGES.length}, minmax(240px, 1fr))`,
-                gridTemplateRows: `auto repeat(${rows.length}, auto) auto`,
-              }}
-            >
-              {/* Label column */}
-              <div className="grid" style={{ gridRow: `span ${rows.length + 2}`, gridTemplateRows: 'subgrid' }}>
-                <div />
-                {rows.map((r, i) => {
-                  const Icon = ROW_ICONS[i] ?? Sparkles;
-                  return (
-                    <div key={i} className="flex items-center gap-3 py-4" style={{ borderTop: '1px solid rgba(246,243,236,0.08)' }}>
-                      <span
-                        className="w-8 h-8 rounded-full flex items-center justify-center shrink-0"
-                        style={{ backgroundColor: 'rgba(211,183,135,0.1)', color: BRASS_LIGHT }}
-                      >
-                        <Icon size={15} strokeWidth={1.6} />
-                      </span>
-                      <span className="text-[10.5px] uppercase tracking-[2px] font-semibold" style={{ color: 'rgba(246,243,236,0.7)' }}>
-                        {r.label}
-                      </span>
+          <div
+            className="grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-9 mt-14 mx-auto"
+            style={{ maxWidth: PACKAGES.length > 2 ? 1320 : 1080 }}
+          >
+            {PACKAGES.map((p, pi) => {
+              const c = tCard.raw(p.cardKey) as CardText;
+              const priceRow = rows[rows.length - 1];
+              return (
+                <motion.article
+                  key={p.slug}
+                  className="flex flex-col rounded-[10px] overflow-hidden"
+                  style={{ backgroundColor: '#fbf9f3', boxShadow: '0 34px 80px rgba(28,26,21,0.16)' }}
+                  initial={{ opacity: 0, y: 34 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.15 }}
+                  transition={{ duration: 0.75, delay: pi * 0.12, ease: [0.22, 1, 0.36, 1] }}
+                >
+                  {/* Photo header */}
+                  <div className="relative h-[230px]">
+                    <Image src={p.image} alt={c.name} fill sizes="(min-width:768px) 45vw, 100vw" className="object-cover" />
+                    <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(13,18,12,0.88), rgba(13,18,12,0.05) 60%)' }} />
+                    <span
+                      className="absolute top-5 left-5 text-[9px] uppercase tracking-[2.5px] font-bold px-3 py-1.5 rounded-full"
+                      style={{ backgroundColor: 'rgba(246,243,236,0.92)', color: '#141a12' }}
+                    >
+                      {c.badge}
+                    </span>
+                    <div className="absolute inset-x-0 bottom-0 p-6">
+                      <h3 className="font-display font-light text-[32px] leading-none" style={{ color: IVORY }}>
+                        {c.name}
+                      </h3>
+                      <p className="font-serif italic text-[15px] mt-2" style={{ color: 'rgba(246,243,236,0.75)' }}>
+                        {c.tagline}
+                      </p>
                     </div>
-                  );
-                })}
-                <div />
-              </div>
+                  </div>
 
-              {/* One card per package */}
-              {PACKAGES.map((p, pi) => {
-                const c = tCard.raw(p.cardKey) as CardText;
-                return (
-                  <motion.div
-                    key={p.slug}
-                    className="grid rounded-[8px] overflow-hidden"
-                    style={{
-                      gridRow: `span ${rows.length + 2}`,
-                      gridTemplateRows: 'subgrid',
-                      backgroundColor: '#fbf9f3',
-                      boxShadow: '0 30px 70px rgba(0,0,0,0.35)',
-                    }}
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.15 }}
-                    transition={{ duration: 0.7, delay: pi * 0.12, ease: [0.22, 1, 0.36, 1] }}
-                  >
-                    {/* Card head */}
-                    <div className="relative min-h-[170px] flex flex-col justify-end p-5">
-                      <Image src={p.image} alt={c.name} fill sizes="25vw" className="object-cover" />
-                      <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(13,18,12,0.92), rgba(13,18,12,0.15))' }} />
-                      <div className="relative">
-                        <span className="text-[9px] uppercase tracking-[2.5px] font-semibold" style={{ color: BRASS_LIGHT }}>
-                          {c.badge}
-                        </span>
-                        <div className="font-display text-[24px] leading-tight mt-1" style={{ color: IVORY }}>
-                          {c.name}
-                        </div>
+                  {/* Price band */}
+                  <div className="flex items-center justify-between gap-4 px-6 py-5" style={{ backgroundColor: DARK }}>
+                    <div>
+                      <div className="text-[9px] uppercase tracking-[2.5px]" style={{ color: 'rgba(246,243,236,0.5)' }}>
+                        {priceRow.label}
+                      </div>
+                      <div className="font-display text-[23px] sm:text-[28px] leading-none mt-1.5" style={{ color: BRASS_LIGHT }}>
+                        {priceRow.values[p.cardKey]}
                       </div>
                     </div>
+                    <div className="text-right">
+                      <div className="font-display italic text-[19px]" style={{ color: IVORY }}>
+                        {c.length}
+                      </div>
+                      <div className="text-[9px] uppercase tracking-[2px] mt-1" style={{ color: 'rgba(246,243,236,0.5)' }}>
+                        {c.group}
+                      </div>
+                    </div>
+                  </div>
 
-                    {rows.map((r, i) => {
+                  {/* Rows */}
+                  <ul className="list-none m-0 p-0 flex-1">
+                    {rows.slice(0, -1).map((r, i) => {
+                      const Icon = ROW_ICONS[i] ?? Sparkles;
                       const v = r.values[p.cardKey] ?? '—';
                       const none = v.trim() === '—';
-                      const isPrice = i === rows.length - 1;
                       return (
-                        <div
+                        <li
                           key={i}
-                          className="flex items-center gap-3 px-5 py-4"
-                          style={{ borderTop: '1px solid rgba(28,26,21,0.07)', backgroundColor: i % 2 ? 'rgba(237,231,218,0.35)' : undefined }}
+                          className="grid grid-cols-[40px_1fr_auto] items-center gap-3 px-6 py-4"
+                          style={{ borderTop: i ? '1px solid rgba(28,26,21,0.07)' : undefined }}
                         >
-                          {isPrice ? (
-                            <span className="font-display text-[26px] leading-none" style={{ color: INK }}>
-                              {v}
+                          <span
+                            className="w-9 h-9 rounded-full flex items-center justify-center"
+                            style={{
+                              backgroundColor: none ? 'rgba(28,26,21,0.04)' : 'rgba(176,141,87,0.12)',
+                              color: none ? 'rgba(28,26,21,0.25)' : BRASS_DARK,
+                            }}
+                          >
+                            <Icon size={16} strokeWidth={1.6} />
+                          </span>
+                          <span className="min-w-0">
+                            <span className="block text-[9.5px] uppercase tracking-[2px] font-semibold" style={{ color: 'rgba(28,26,21,0.45)' }}>
+                              {r.label}
                             </span>
-                          ) : none ? (
-                            <>
-                              <span className="w-5 h-5 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: 'rgba(28,26,21,0.06)', color: 'rgba(28,26,21,0.3)' }}>
-                                <Minus size={12} strokeWidth={2} />
-                              </span>
-                              <span className="text-[13px]" style={{ color: 'rgba(28,26,21,0.35)' }}>
-                                {t('compare.notIncluded')}
-                              </span>
-                            </>
-                          ) : (
-                            <>
-                              <span className="w-5 h-5 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: BRASS, color: '#fff' }}>
-                                <Check size={12} strokeWidth={2.5} />
-                              </span>
-                              <span className="text-[13.5px] leading-snug" style={{ color: 'rgba(28,26,21,0.82)' }}>
-                                {v}
-                              </span>
-                            </>
-                          )}
-                        </div>
+                            <span
+                              className="block text-[14.5px] leading-snug mt-0.5"
+                              style={{ color: none ? 'rgba(28,26,21,0.35)' : INK }}
+                            >
+                              {none ? t('compare.notIncluded') : v}
+                            </span>
+                          </span>
+                          <span
+                            className="w-6 h-6 rounded-full flex items-center justify-center"
+                            style={none ? { border: '1px solid rgba(28,26,21,0.15)', color: 'rgba(28,26,21,0.3)' } : { backgroundColor: BRASS, color: '#fff' }}
+                          >
+                            {none ? <Minus size={12} strokeWidth={2} /> : <Check size={13} strokeWidth={2.6} />}
+                          </span>
+                        </li>
                       );
                     })}
+                  </ul>
 
-                    <div className="px-5 py-5" style={{ borderTop: '1px solid rgba(28,26,21,0.07)' }}>
-                      <Link
-                        href={`/${p.slug}`}
-                        className="flex items-center justify-center gap-2 w-full py-3 text-[10px] uppercase tracking-[2.5px] font-semibold no-underline rounded-[4px] transition-colors duration-300"
-                        style={{ backgroundColor: INK, color: IVORY }}
-                      >
-                        {t('labels.view')} →
-                      </Link>
-                    </div>
-                  </motion.div>
-                );
-              })}
-            </div>
+                  {/* Actions */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-6" style={{ borderTop: '1px solid rgba(28,26,21,0.08)' }}>
+                    <Link
+                      href={`/${p.slug}`}
+                      className="flex items-center justify-center px-3 py-3.5 text-[10px] uppercase tracking-[2px] font-semibold no-underline rounded-[4px] whitespace-nowrap"
+                      style={{ backgroundColor: INK, color: IVORY }}
+                    >
+                      {t('labels.view')} →
+                    </Link>
+                    <Link
+                      href="/contact"
+                      className="flex items-center justify-center px-3 py-3.5 text-[10px] uppercase tracking-[2px] font-semibold no-underline rounded-[4px] whitespace-nowrap"
+                      style={{ border: `1px solid ${BRASS}`, color: BRASS_DARK }}
+                    >
+                      {t('labels.ask')}
+                    </Link>
+                  </div>
+                </motion.article>
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* Help me choose */}
-      <section style={{ backgroundColor: STONE }}>
+      <section style={{ backgroundColor: IVORY, borderTop: '1px solid rgba(28,26,21,0.08)' }}>
         <div className="px-5 md:px-[6vw] py-16 md:py-20 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
           <div className="max-w-[640px]">
             <h2 className="font-display font-light text-[clamp(28px,3.2vw,42px)] leading-[1.08]" style={{ color: INK }}>
