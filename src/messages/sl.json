@@ -587,7 +587,7 @@
           "group": "Skupine in posamezniki",
           "price": "od €490",
           "bestFor": "Pari · prijatelji · ekipe podjetij",
-          "intro": "Kratek zimski pobeg: dve noči v kamnitih hišah ob prižganem kaminu, lov na tartufe v zimskem gozdu, dva vinarja in večerja v Humu. Pridružite se odprtemu vikendu ali vzemite celo vas za svojo skupino."
+          "intro": "Kratek zimski pobeg: dve noči v kamnitih hišah ob prižganem kaminu, degustacija tartufov pri družini Karlić, dva vinarja in večerja v Humu. Pridružite se odprtemu vikendu ali vzemite celo vas za svojo skupino."
         }
       },
       "soon": {
@@ -601,7 +601,7 @@
   "winter": {
     "meta": {
       "title": "Zima v Kotlih — vikend s tartufi in vinom v Istri | Kotli Retreat",
-      "description": "3 dni, 2 noči v zasebni kamniti vasi v Istri: zimski lov na tartufe z družino Karlić, dva vinarja, večeri ob kaminu. Od decembra do marca, za skupine in posameznike."
+      "description": "3 dni, 2 noči v zasebni kamniti vasi v Istri: degustacija tartufov pri družini Karlić, dva vinarja, večeri ob kaminu. Od decembra do marca, za skupine in posameznike."
     },
     "hero": {
       "subtitle": "Zimski vikend v Istri",
@@ -613,7 +613,7 @@
       "price": "Od €490",
       "pricePer": "na osebo",
       "people": "2 noči · december – marec",
-      "hooks": ["Lov na tartufe v zimskem gozdu", "Dva vinarja, en vikend", "Kamin v vsaki hiši", "Večerja v Humu, najmanjšem mestu"],
+      "hooks": ["Degustacija tartufov pri družini Karlić", "Dva vinarja, en vikend", "Kamin v vsaki hiši", "Večerja v Humu, najmanjšem mestu"],
       "days": "3",
       "allInclusive": "ALL-INCLUSIVE"
     },
@@ -639,14 +639,14 @@
           "number": "2",
           "theme": "Tartufi in vino",
           "title": "Zimski tartuf",
-          "narrative": "Dopoldne v gozdu z družino Karlić in njihovimi psi, nato skuhate, kar ste našli. Popoldne malvazija s štirih zemelj v kleti Kozlović.",
+          "narrative": "Dopoldne pri družini Karlić: zimski tartuf poskusite tako, kot ga strežejo tri generacije iskalcev tartufov. Popoldne malvazija s štirih zemelj v kleti Kozlović.",
           "schedule": [
             { "time": "08:30", "text": "Košara za zajtrk" },
-            { "time": "09:30", "text": "Karlić Tartufi: lov na tartufe → kuharski tečaj → kosilo s tartufi" },
+            { "time": "09:30", "text": "Karlić Tartufi — degustacija tartufov z družino" },
             { "time": "15:30", "text": "Vinarija Kozlović — degustacija v kleti, malvazija s štirih zemelj" },
             { "time": "19:30", "text": "Večerja Konoba Hum + degustacija biske" }
           ],
-          "meals": ["Zajtrk", "Kosilo", "Večerja"],
+          "meals": ["Zajtrk", "Degustacija tartufov", "Večerja"],
           "host": "Družina Karlić · Družina Kozlović"
         },
         {
@@ -680,7 +680,7 @@
           "includes": [
             "2 noči v kamniti hiši s kaminom",
             "Vsi obroki + hišno vino",
-            "Lov na tartufe in kuharski tečaj (Karlić)",
+            "Degustacija tartufov pri družini Karlić",
             "Dva vinarja: Kozlović in Roxanich",
             "Večerja v Humu + degustacija biske",
             "Prevoz in poslovilno darilo"
@@ -711,16 +711,16 @@
     "includes": {
       "label": "Kaj je vključeno",
       "title": "All-inclusive od prvega ognja do zadnje degustacije",
-      "subtitle": "Dve noči, vsi obroki, dva vinarja in lov na tartufe. Kar ni vključeno, navajamo spodaj.",
+      "subtitle": "Dve noči, vsi obroki, dva vinarja in degustacija tartufov. Kar ni vključeno, navajamo spodaj.",
       "yesTitle": "Vključeno",
       "yesSubtitle": "V obeh zimskih paketih",
       "noTitle": "Ni vključeno",
       "noSubtitle": "Prosimo, uredite sami",
       "yes": [
         "2 noči v kamnitih hišah s kaminom",
-        "Zajtrk, kosilo s tartufi in dve večerji, s hišnim vinom in vodo",
+        "Zajtrki in dve večerji, s hišnim vinom in vodo",
         "Sprejem ob ognju: biska, pršut in domači sir",
-        "Lov na tartufe in kuharski tečaj z družino Karlić",
+        "Degustacija tartufov pri družini Karlić",
         "Degustacija v kleti Kozlović",
         "Degustacija pri Roxanichu, Motovun",
         "Večerja Konoba Hum + degustacija biske",
@@ -782,10 +782,10 @@
           }
         },
         {
-          "label": "Lov na tartufe",
+          "label": "Tartufi",
           "values": {
-            "soilAndSoul": "Družina Karlić, s kuharskim tečajem",
-            "winter": "Družina Karlić, s kuharskim tečajem"
+            "soilAndSoul": "Lov z družino Karlić + kuharski tečaj",
+            "winter": "Degustacija pri družini Karlić"
           }
         },
         {

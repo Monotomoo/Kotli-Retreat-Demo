@@ -587,7 +587,7 @@
           "group": "Groups & individuals",
           "price": "from €490",
           "bestFor": "Couples · friends · company teams",
-          "intro": "A short winter escape: two nights in stone houses with the fire lit, a truffle hunt in the winter forest, two winemakers and dinner in Hum. Join an open weekend, or take the whole village for your group."
+          "intro": "A short winter escape: two nights in stone houses with the fire lit, a truffle tasting with the Karlić family, two winemakers and dinner in Hum. Join an open weekend, or take the whole village for your group."
         }
       },
       "soon": {
@@ -601,7 +601,7 @@
   "winter": {
     "meta": {
       "title": "Winter at Kotli — Truffle & Wine Weekend in Istria | Kotli Retreat",
-      "description": "3 days, 2 nights in a private Istrian stone village: winter truffle hunt with the Karlić family, two winemakers, fireside dinners. December to March, for groups and individuals."
+      "description": "3 days, 2 nights in a private Istrian stone village: truffle tasting with the Karlić family, two winemakers, fireside dinners. December to March, for groups and individuals."
     },
     "hero": {
       "subtitle": "A winter weekend in Istria",
@@ -613,7 +613,7 @@
       "price": "From €490",
       "pricePer": "per person",
       "people": "2 nights · December – March",
-      "hooks": ["Truffle hunt in the winter forest", "Two winemakers, one weekend", "A fireplace in every house", "Dinner in Hum, the smallest town"],
+      "hooks": ["Truffle tasting with the Karlić family", "Two winemakers, one weekend", "A fireplace in every house", "Dinner in Hum, the smallest town"],
       "days": "3",
       "allInclusive": "ALL-INCLUSIVE"
     },
@@ -639,14 +639,14 @@
           "number": "2",
           "theme": "Truffles & Wine",
           "title": "The Winter Truffle",
-          "narrative": "A morning in the forest with the Karlić family and their dogs, then you cook what you found. In the afternoon, Malvazija from four soils in the Kozlović cellar.",
+          "narrative": "A morning with the Karlić family, tasting the winter truffle the way three generations of truffle hunters serve it. In the afternoon, Malvazija from four soils in the Kozlović cellar.",
           "schedule": [
             { "time": "08:30", "text": "Breakfast basket" },
-            { "time": "09:30", "text": "Karlić Tartufi: truffle hunt → cooking class → truffle lunch" },
+            { "time": "09:30", "text": "Karlić Tartufi — truffle tasting with the family" },
             { "time": "15:30", "text": "Kozlović winery — cellar tasting, Malvazija from four soils" },
             { "time": "19:30", "text": "Dinner at Konoba Hum + Biska tasting" }
           ],
-          "meals": ["Breakfast", "Lunch", "Dinner"],
+          "meals": ["Breakfast", "Truffle tasting", "Dinner"],
           "host": "The Karlić Family · The Kozlović Family"
         },
         {
@@ -680,7 +680,7 @@
           "includes": [
             "2 nights in a stone house with fireplace",
             "All meals + house wine",
-            "Truffle hunt and cooking class (Karlić)",
+            "Truffle tasting with the Karlić family",
             "Two winemakers: Kozlović and Roxanich",
             "Dinner in Hum + Biska tasting",
             "Transport and farewell gift"
@@ -711,16 +711,16 @@
     "includes": {
       "label": "What's Included",
       "title": "All-inclusive from the first fire to the last tasting",
-      "subtitle": "Two nights, every meal, two winemakers and the truffle hunt. What isn't included is listed below.",
+      "subtitle": "Two nights, every meal, two winemakers and a truffle tasting. What isn't included is listed below.",
       "yesTitle": "Included",
       "yesSubtitle": "In both winter packages",
       "noTitle": "Not Included",
       "noSubtitle": "Please arrange yourself",
       "yes": [
         "2 nights in stone houses with fireplace",
-        "Breakfast, truffle lunch and two dinners, with house wine and water",
+        "Breakfasts and two dinners, with house wine and water",
         "Welcome by the fire: Biska, pršut and local cheese",
-        "Truffle hunt and cooking class with the Karlić family",
+        "Truffle tasting with the Karlić family",
         "Cellar tasting at Kozlović",
         "Tasting at Roxanich, Motovun",
         "Dinner at Konoba Hum + Biska tasting",
@@ -782,10 +782,10 @@
           }
         },
         {
-          "label": "Truffle hunt",
+          "label": "Truffles",
           "values": {
-            "soilAndSoul": "Karlić family, with cooking class",
-            "winter": "Karlić family, with cooking class"
+            "soilAndSoul": "Hunt with the Karlić family + cooking class",
+            "winter": "Tasting with the Karlić family"
           }
         },
         {

@@ -37,7 +37,7 @@ export const PACKAGES: PackageDef[] = [
     inset: '/images/hosts/vineyard.jpg',
     dayImages: [
       { src: '/images/kotli/interior-fireplace.jpg', alt: 'Fireplace in a Kotli stone house' },
-      { src: '/images/agenda/day2.jpg', alt: 'Truffle hunt in the winter forest' },
+      { src: '/images/hosts/host-1.png', alt: 'Truffle tasting with the Karlić family' },
       { src: '/images/hosts/vineyard.jpg', alt: 'Istrian vineyard' },
     ],
   },

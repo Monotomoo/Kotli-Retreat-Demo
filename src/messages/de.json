@@ -587,7 +587,7 @@
           "group": "Gruppen & Einzelgäste",
           "price": "ab 490 €",
           "bestFor": "Paare · Freunde · Firmenteams",
-          "intro": "Eine kurze Winterauszeit: zwei Nächte in Steinhäusern am Kaminfeuer, Trüffeljagd im Winterwald, zwei Winzer und Abendessen in Hum. Buchen Sie ein offenes Wochenende oder das ganze Dorf für Ihre Gruppe."
+          "intro": "Eine kurze Winterauszeit: zwei Nächte in Steinhäusern am Kaminfeuer, Trüffelverkostung bei der Familie Karlić, zwei Winzer und Abendessen in Hum. Buchen Sie ein offenes Wochenende oder das ganze Dorf für Ihre Gruppe."
         }
       },
       "soon": {
@@ -601,7 +601,7 @@
   "winter": {
     "meta": {
       "title": "Winter in Kotli — Trüffel- & Weinwochenende in Istrien | Kotli Retreat",
-      "description": "3 Tage, 2 Nächte in einem privaten Steindorf in Istrien: Winter-Trüffeljagd mit der Familie Karlić, zwei Winzer, Abende am Kamin. Dezember bis März, für Gruppen und Einzelgäste."
+      "description": "3 Tage, 2 Nächte in einem privaten Steindorf in Istrien: Trüffelverkostung bei der Familie Karlić, zwei Winzer, Abende am Kamin. Dezember bis März, für Gruppen und Einzelgäste."
     },
     "hero": {
       "subtitle": "Ein Winterwochenende in Istrien",
@@ -613,7 +613,7 @@
       "price": "Ab 490 €",
       "pricePer": "pro Person",
       "people": "2 Nächte · Dezember – März",
-      "hooks": ["Trüffeljagd im Winterwald", "Zwei Winzer, ein Wochenende", "Ein Kamin in jedem Haus", "Abendessen in Hum, der kleinsten Stadt"],
+      "hooks": ["Trüffelverkostung bei der Familie Karlić", "Zwei Winzer, ein Wochenende", "Ein Kamin in jedem Haus", "Abendessen in Hum, der kleinsten Stadt"],
       "days": "3",
       "allInclusive": "ALL-INCLUSIVE"
     },
@@ -639,14 +639,14 @@
           "number": "2",
           "theme": "Trüffel & Wein",
           "title": "Der Wintertrüffel",
-          "narrative": "Ein Vormittag im Wald mit der Familie Karlić und ihren Hunden, danach kochen Sie, was Sie gefunden haben. Am Nachmittag Malvazija aus vier Erden im Keller von Kozlović.",
+          "narrative": "Ein Vormittag bei der Familie Karlić: Sie verkosten den Wintertrüffel so, wie ihn drei Generationen Trüffeljäger servieren. Am Nachmittag Malvazija aus vier Erden im Keller von Kozlović.",
           "schedule": [
             { "time": "08:30", "text": "Frühstückskorb" },
-            { "time": "09:30", "text": "Karlić Tartufi: Trüffeljagd → Kochkurs → Trüffel-Mittagessen" },
+            { "time": "09:30", "text": "Karlić Tartufi — Trüffelverkostung mit der Familie" },
             { "time": "15:30", "text": "Weingut Kozlović — Kellerverkostung, Malvazija aus vier Erden" },
             { "time": "19:30", "text": "Abendessen Konoba Hum + Biska-Verkostung" }
           ],
-          "meals": ["Frühstück", "Mittagessen", "Abendessen"],
+          "meals": ["Frühstück", "Trüffelverkostung", "Abendessen"],
           "host": "Familie Karlić · Familie Kozlović"
         },
         {
@@ -680,7 +680,7 @@
           "includes": [
             "2 Nächte im Steinhaus mit Kamin",
             "Alle Mahlzeiten + Hauswein",
-            "Trüffeljagd und Kochkurs (Karlić)",
+            "Trüffelverkostung bei der Familie Karlić",
             "Zwei Winzer: Kozlović und Roxanich",
             "Abendessen in Hum + Biska-Verkostung",
             "Transport und Abschiedsgeschenk"
@@ -711,16 +711,16 @@
     "includes": {
       "label": "Leistungen",
       "title": "All-inclusive vom ersten Feuer bis zur letzten Verkostung",
-      "subtitle": "Zwei Nächte, alle Mahlzeiten, zwei Winzer und die Trüffeljagd. Was nicht enthalten ist, steht unten.",
+      "subtitle": "Zwei Nächte, alle Mahlzeiten, zwei Winzer und eine Trüffelverkostung. Was nicht enthalten ist, steht unten.",
       "yesTitle": "Inklusive",
       "yesSubtitle": "In beiden Winterpaketen",
       "noTitle": "Nicht inklusive",
       "noSubtitle": "Bitte selbst organisieren",
       "yes": [
         "2 Nächte in Steinhäusern mit Kamin",
-        "Frühstück, Trüffel-Mittagessen und zwei Abendessen, mit Hauswein und Wasser",
+        "Frühstück und zwei Abendessen, mit Hauswein und Wasser",
         "Empfang am Kamin: Biska, Pršut und regionaler Käse",
-        "Trüffeljagd und Kochkurs mit der Familie Karlić",
+        "Trüffelverkostung bei der Familie Karlić",
         "Kellerverkostung bei Kozlović",
         "Verkostung bei Roxanich, Motovun",
         "Abendessen Konoba Hum + Biska-Verkostung",
@@ -782,10 +782,10 @@
           }
         },
         {
-          "label": "Trüffeljagd",
+          "label": "Trüffel",
           "values": {
-            "soilAndSoul": "Familie Karlić, mit Kochkurs",
-            "winter": "Familie Karlić, mit Kochkurs"
+            "soilAndSoul": "Trüffeljagd mit der Familie Karlić + Kochkurs",
+            "winter": "Verkostung bei der Familie Karlić"
           }
         },
         {
