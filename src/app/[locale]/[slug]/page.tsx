@@ -60,7 +60,7 @@ export default async function PackagePage({
       {jsonLd && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       )}
-      <HeaderV2 variant="package" />
+      <HeaderV2 />
       <main>
         <HeroV2 ns={pkg.ns} image={pkg.image} video={!!pkg.full} />
         {pkg.full && <WhyV2 />}

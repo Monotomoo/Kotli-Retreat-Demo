@@ -7,6 +7,7 @@ export interface PackageDef {
   ns: string; // '' = root namespace (hero, agenda, …)
   cardKey: string; // home.packages.cards.<cardKey>
   image: string; // card + hero fallback image
+  inset: string; // second photo on the /packages spread
   dayImages: { src: string; alt: string }[];
   /** extra Soil-and-Soul-only sections (why, destinations) */
   full?: boolean;
@@ -18,6 +19,7 @@ export const PACKAGES: PackageDef[] = [
     ns: '',
     cardKey: 'soilAndSoul',
     image: '/images/agenda/day3.png',
+    inset: '/images/agenda/day2.jpg',
     full: true,
     dayImages: [
       { src: '/images/agenda/day1.jpg', alt: 'Arrival in Kotli' },
@@ -32,6 +34,7 @@ export const PACKAGES: PackageDef[] = [
     ns: 'winter',
     cardKey: 'winter',
     image: '/images/kotli/interior-fireplace.jpg',
+    inset: '/images/hosts/vineyard.jpg',
     dayImages: [
       { src: '/images/kotli/interior-fireplace.jpg', alt: 'Fireplace in a Kotli stone house' },
       { src: '/images/agenda/day2.jpg', alt: 'Truffle hunt in the winter forest' },

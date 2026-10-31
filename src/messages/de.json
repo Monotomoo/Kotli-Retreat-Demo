@@ -15,7 +15,9 @@
       "packages": "Pakete",
       "included": "Leistungen",
       "allPackages": "Alle Pakete",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "home": "Start",
+      "about": "Über Kotli"
     },
     "slogan": "Originalna iskustva, lokalne priče."
   },
@@ -569,7 +571,9 @@
           "tagline": "Trüffel, Wein, Olivenöl und ein Michelin-Abschied.",
           "length": "5 Tage · 4 Nächte",
           "group": "Gruppen von 10–34",
-          "price": "ab 1.090 €"
+          "price": "ab 1.090 €",
+          "bestFor": "Weinclubs · Genussgruppen · Freunde",
+          "intro": "Fünf Tage mit den Familien, die Istrien zur Genussregion gemacht haben: Trüffeljagd mit der Familie Karlić, Olivenöl bei Chiavalon, Malvazija aus vier Erden bei Kozlović und die Bergstädtchen — im Paket Geist Istriens mit Michelin-Abschied in Rovinj."
         },
         "winter": {
           "badge": "Dezember – März",
@@ -577,7 +581,9 @@
           "tagline": "Trüffel, zwei Winzer und ein Kaminfeuer in jedem Haus.",
           "length": "3 Tage · 2 Nächte",
           "group": "Gruppen & Einzelgäste",
-          "price": "ab 490 €"
+          "price": "ab 490 €",
+          "bestFor": "Paare · Freunde · Firmenteams",
+          "intro": "Eine kurze Winterauszeit: zwei Nächte in Steinhäusern am Kaminfeuer, Trüffeljagd im Winterwald, zwei Winzer und Abendessen in Hum. Buchen Sie ein offenes Wochenende oder das ganze Dorf für Ihre Gruppe."
         }
       },
       "soon": {
@@ -723,6 +729,208 @@
         "Reiserücktrittsversicherung (empfohlen)",
         "Persönliche Ausgaben und Trinkgelder"
       ]
+    }
+  },
+  "packagesPage": {
+    "meta": {
+      "title": "Pakete — Genussreisen und Winterwochenenden in Istrien | Kotli Retreat",
+      "description": "Alle Pakete von Kotli Retreat im Vergleich: die 5-tägige Genussreise Soil and Soul Istria und das 3-tägige Trüffelwochenende Winter in Kotli. Programme, Saisons, Gruppengrößen und Preise."
+    },
+    "hero": {
+      "eyebrow": "Pakete",
+      "title": "Ihr Aufenthalt in Kotli",
+      "intro": "Jedes Paket umfasst das Dorf, alle Mahlzeiten, den Transport und die Familien hinter Istriens Trüffeln, Wein und Olivenöl."
+    },
+    "labels": {
+      "length": "Dauer",
+      "season": "Saison",
+      "group": "Gruppe",
+      "from": "Ab",
+      "highlights": "Höhepunkte",
+      "days": "Tag für Tag",
+      "view": "Zum ganzen Programm",
+      "ask": "Termine anfragen"
+    },
+    "compare": {
+      "label": "Vergleich",
+      "title": "Die Pakete im Vergleich",
+      "rows": [
+        {
+          "label": "Dauer",
+          "values": {
+            "soilAndSoul": "5 Tage · 4 Nächte",
+            "winter": "3 Tage · 2 Nächte"
+          }
+        },
+        {
+          "label": "Saison",
+          "values": {
+            "soilAndSoul": "Frühling und Herbst",
+            "winter": "Dezember – März"
+          }
+        },
+        {
+          "label": "Wer kann buchen",
+          "values": {
+            "soilAndSoul": "Gruppen von 10–34",
+            "winter": "Gruppen ab 10, oder Paare und Einzelgäste am offenen Wochenende"
+          }
+        },
+        {
+          "label": "Trüffeljagd",
+          "values": {
+            "soilAndSoul": "Familie Karlić, mit Kochkurs",
+            "winter": "Familie Karlić, mit Kochkurs"
+          }
+        },
+        {
+          "label": "Weingüter",
+          "values": {
+            "soilAndSoul": "Kozlović; Roxanich im Paket Geist Istriens",
+            "winter": "Kozlović und Roxanich"
+          }
+        },
+        {
+          "label": "Olivenöl",
+          "values": {
+            "soilAndSoul": "Verkostung bei Chiavalon",
+            "winter": "—"
+          }
+        },
+        {
+          "label": "Michelin-Dinner",
+          "values": {
+            "soilAndSoul": "Im Paket Geist Istriens",
+            "winter": "—"
+          }
+        },
+        {
+          "label": "Preis ab",
+          "values": {
+            "soilAndSoul": "1.090 € pro Person",
+            "winter": "490 € pro Person"
+          }
+        }
+      ]
+    },
+    "help": {
+      "title": "Nicht sicher, welches Paket zu Ihrer Gruppe passt?",
+      "text": "Erzählen Sie uns, wer kommt, wann und warum. Wir antworten innerhalb von 24 Stunden mit einem Vorschlag.",
+      "cta": "Gruppe beschreiben"
+    }
+  },
+  "aboutPage": {
+    "meta": {
+      "title": "Über Kotli — Ein Steindorf im Mirna-Tal, Istrien | Kotli Retreat",
+      "description": "Kotli ist ein restauriertes Mühlendorf mit acht Steinhäusern, wo die Mirna durch Felsbecken fällt. Die Häuser, das Dorf, die Gastgeber und die Region."
+    },
+    "hero": {
+      "eyebrow": "Über Kotli",
+      "title": "Ein Dorf am Fluss",
+      "intro": "Acht restaurierte Steinhäuser, wo die Mirna durch Felsbecken fällt — immer nur für eine Gruppe."
+    },
+    "story": {
+      "label": "Das Dorf",
+      "title": "Ein Mühlendorf, das der Fluss geformt hat",
+      "lead": "Kotli ist ein Weiler aus Steinhäusern im Mirna-Tal, im Herzen Istriens, wo der Fluss auf seinem Weg zum Meer durch eine Kette von Felsbecken fällt.",
+      "chapters": [
+        {
+          "title": "Der Fluss",
+          "text": "Kotli kommt von kotao, kroatisch für Kessel — die runden Becken, die die Mirna in den Stein gegraben hat. Das Wasser fällt von einem Becken ins nächste, direkt unterhalb der Häuser."
+        },
+        {
+          "title": "Das Mühlendorf",
+          "text": "Jahrhundertelang war Kotli das wichtigste Mühlendorf der Region Hum. Das Korn kam aus den Hügeln, um hier gemahlen zu werden, und die alte Mühle steht noch am Wasser."
+        },
+        {
+          "title": "Zu neuem Leben erweckt",
+          "text": "Als die Mühlen verstummten, leerte sich das Dorf. Seitdem wurden die Steinhäuser eines nach dem anderen restauriert, und heute empfängt Kotli immer nur eine Gruppe."
+        }
+      ],
+      "caption": "Die Mirna bei Kotli"
+    },
+    "facts": [
+      {
+        "value": "8",
+        "label": "Steinhäuser"
+      },
+      {
+        "value": "80–140",
+        "label": "m² pro Haus"
+      },
+      {
+        "value": "2–5",
+        "label": "Gäste pro Haus"
+      },
+      {
+        "value": "1",
+        "label": "Gruppe zur Zeit"
+      },
+      {
+        "value": "1 h",
+        "label": "Vom Flughafen Pula"
+      }
+    ],
+    "houses": {
+      "label": "Die Steinhäuser",
+      "title": "Acht Häuser, ein Dorf",
+      "text": "Jedes Haus hat eigenes Wohnzimmer, Küche, Schlafzimmer und Bad, mit Kamin für kühle Abende. Ihre Gruppe teilt den Pool, die Terrasse und die Gassen dazwischen.",
+      "captions": {
+        "exterior": "Steinhaus mit Garten",
+        "fireplace": "Wohnzimmer mit Kamin",
+        "dining": "Esszimmer",
+        "bedroom": "Schlafzimmer",
+        "pool": "Pool über dem Tal",
+        "terrace": "Überdachte Terrasse",
+        "tables": "Steintische unter den Bäumen"
+      }
+    },
+    "amenities": {
+      "houseTitle": "In jedem Haus",
+      "house": ["Wohnzimmer mit Kamin", "Voll ausgestattete Küche", "Schlafzimmer und Bad", "2–5 Gäste, 80–140 m²", "WLAN und TV", "Privater Parkplatz"],
+      "sharedTitle": "Für Ihre Gruppe",
+      "shared": ["Außenpool", "Großer Grillplatz", "Panoramaterrasse", "Steintische unter den Bäumen", "Wanderwege ab der Haustür", "Der Fluss und seine Becken"],
+      "note": "Hunde und Katzen sind für 10 € pro Tag willkommen — sagen Sie es uns bei der Buchung, damit wir das passende Haus wählen."
+    },
+    "around": {
+      "label": "Rund um Kotli",
+      "title": "Bergstädtchen, Trüffelwälder und die kleinste Stadt der Welt",
+      "places": [
+        {
+          "name": "Hum",
+          "text": "Die kleinste Stadt der Welt: eine Gasse, eine Konoba, 23 Einwohner und die Heimat des Biska-Schnapses."
+        },
+        {
+          "name": "Buzet",
+          "text": "Istriens Trüffelstadt, hoch über dem Mirna-Tal."
+        },
+        {
+          "name": "Motovun",
+          "text": "Eine mittelalterliche Bergfestung, umgeben von den Trüffelwäldern der Mirna."
+        },
+        {
+          "name": "Roč",
+          "text": "Der Beginn der Glagolitischen Allee, eines Wanderwegs mit Steindenkmälern bis nach Hum."
+        }
+      ],
+      "travelTitle": "Anreise",
+      "travel": ["Pula|1 h", "Triest|1,5 h", "Ljubljana|2 h", "München|5 h", "Wien|7 h", "Zürich|8 h"],
+      "travelNote": "Die meisten Gruppen reisen mit dem Auto an. Flughafentransfer auf Anfrage."
+    },
+    "cta": {
+      "title": "Wählen Sie, wie Sie Ihre Tage in Kotli verbringen.",
+      "button": "Zu den Paketen"
+    }
+  },
+  "contactPage": {
+    "meta": {
+      "title": "Kontakt — Ihren Aufenthalt in Kotli planen | Kotli Retreat",
+      "description": "Senden Sie eine Anfrage für Ihre Gruppe: Termine, Paket und Gruppengröße. Antwort innerhalb von 24 Stunden mit persönlichem Angebot. E-Mail, Telefon und WhatsApp."
+    },
+    "hero": {
+      "eyebrow": "Kontakt",
+      "title": "Sprechen wir",
+      "intro": "Schreiben, anrufen oder per WhatsApp — wir antworten innerhalb von 24 Stunden mit einem persönlichen Angebot."
     }
   }
 }

@@ -15,7 +15,9 @@
       "packages": "Packages",
       "included": "Included",
       "allPackages": "All packages",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "home": "Home",
+      "about": "About Kotli"
     },
     "slogan": "Originalna iskustva, lokalne priče."
   },
@@ -569,7 +571,9 @@
           "tagline": "Truffles, wine, olive oil and a Michelin farewell.",
           "length": "5 days · 4 nights",
           "group": "Groups of 10–34",
-          "price": "from €1,090"
+          "price": "from €1,090",
+          "bestFor": "Wine clubs · gourmet groups · friends",
+          "intro": "Five days with the families who made Istria a gourmet destination: a truffle hunt with the Karlić family, olive oil at Chiavalon, Malvazija from four soils at Kozlović and the hilltop towns — with a Michelin farewell in Rovinj in Spirit of Istria."
         },
         "winter": {
           "badge": "December – March",
@@ -577,7 +581,9 @@
           "tagline": "Truffles, two winemakers and a fire in every house.",
           "length": "3 days · 2 nights",
           "group": "Groups & individuals",
-          "price": "from €490"
+          "price": "from €490",
+          "bestFor": "Couples · friends · company teams",
+          "intro": "A short winter escape: two nights in stone houses with the fire lit, a truffle hunt in the winter forest, two winemakers and dinner in Hum. Join an open weekend, or take the whole village for your group."
         }
       },
       "soon": {
@@ -723,6 +729,208 @@
         "Travel cancellation insurance (recommended)",
         "Personal expenses and gratuities"
       ]
+    }
+  },
+  "packagesPage": {
+    "meta": {
+      "title": "Packages — Culinary Journeys and Winter Weekends in Istria | Kotli Retreat",
+      "description": "All Kotli Retreat packages side by side: the 5-day Soil and Soul Istria culinary journey and the 3-day Winter at Kotli truffle weekend. Programmes, seasons, group sizes and prices."
+    },
+    "hero": {
+      "eyebrow": "Packages",
+      "title": "Ways to stay at Kotli",
+      "intro": "Every package includes the village, all meals, transport and the families behind Istria's truffles, wine and olive oil."
+    },
+    "labels": {
+      "length": "Length",
+      "season": "Season",
+      "group": "Group",
+      "from": "From",
+      "highlights": "Highlights",
+      "days": "Day by day",
+      "view": "View full programme",
+      "ask": "Ask about dates"
+    },
+    "compare": {
+      "label": "Compare",
+      "title": "The packages side by side",
+      "rows": [
+        {
+          "label": "Length",
+          "values": {
+            "soilAndSoul": "5 days · 4 nights",
+            "winter": "3 days · 2 nights"
+          }
+        },
+        {
+          "label": "Season",
+          "values": {
+            "soilAndSoul": "Spring and autumn",
+            "winter": "December – March"
+          }
+        },
+        {
+          "label": "Who can book",
+          "values": {
+            "soilAndSoul": "Groups of 10–34",
+            "winter": "Groups of 10+, or couples and individuals on an open weekend"
+          }
+        },
+        {
+          "label": "Truffle hunt",
+          "values": {
+            "soilAndSoul": "Karlić family, with cooking class",
+            "winter": "Karlić family, with cooking class"
+          }
+        },
+        {
+          "label": "Wineries",
+          "values": {
+            "soilAndSoul": "Kozlović; Roxanich in Spirit of Istria",
+            "winter": "Kozlović and Roxanich"
+          }
+        },
+        {
+          "label": "Olive oil",
+          "values": {
+            "soilAndSoul": "Chiavalon tasting",
+            "winter": "—"
+          }
+        },
+        {
+          "label": "Michelin dinner",
+          "values": {
+            "soilAndSoul": "In Spirit of Istria",
+            "winter": "—"
+          }
+        },
+        {
+          "label": "Price from",
+          "values": {
+            "soilAndSoul": "€1,090 per person",
+            "winter": "€490 per person"
+          }
+        }
+      ]
+    },
+    "help": {
+      "title": "Not sure which package fits your group?",
+      "text": "Tell us who is coming, when and why. We reply within 24 hours with a proposal.",
+      "cta": "Tell us about your group"
+    }
+  },
+  "aboutPage": {
+    "meta": {
+      "title": "About Kotli — A Stone Village in Istria's Mirna Valley | Kotli Retreat",
+      "description": "Kotli is a restored mill village of eight stone houses where the Mirna river falls through rock basins. The houses, the village, the hosts and the region around it."
+    },
+    "hero": {
+      "eyebrow": "About Kotli",
+      "title": "A village by the river",
+      "intro": "Eight restored stone houses where the Mirna falls through rock basins — one group at a time."
+    },
+    "story": {
+      "label": "The village",
+      "title": "A mill village the river made",
+      "lead": "Kotli is a hamlet of stone houses in the Mirna valley, in the heart of Istria, where the river drops through a chain of rock basins on its way to the sea.",
+      "chapters": [
+        {
+          "title": "The river",
+          "text": "Kotli comes from kotao, Croatian for cauldron — the round basins the Mirna has hollowed into the stone. The water falls from one pool into the next, just below the houses."
+        },
+        {
+          "title": "The mill village",
+          "text": "For centuries Kotli was the main mill village of the Hum region. Grain came down from the hills to be ground here, and the old mill still stands by the water."
+        },
+        {
+          "title": "Brought back to life",
+          "text": "When the mills fell silent, the village emptied. Its stone houses have since been restored one by one, and today Kotli welcomes one group at a time."
+        }
+      ],
+      "caption": "The Mirna at Kotli"
+    },
+    "facts": [
+      {
+        "value": "8",
+        "label": "Stone houses"
+      },
+      {
+        "value": "80–140",
+        "label": "m² per house"
+      },
+      {
+        "value": "2–5",
+        "label": "Guests per house"
+      },
+      {
+        "value": "1",
+        "label": "Group at a time"
+      },
+      {
+        "value": "1 h",
+        "label": "From Pula airport"
+      }
+    ],
+    "houses": {
+      "label": "The stone houses",
+      "title": "Eight houses, one village",
+      "text": "Each house has its own living room, kitchen, bedroom and bathroom, with a fireplace for cool evenings. Your group shares the pool, the terrace and the lanes between them.",
+      "captions": {
+        "exterior": "Stone house and garden",
+        "fireplace": "Living room with fireplace",
+        "dining": "Dining room",
+        "bedroom": "Bedroom",
+        "pool": "Pool above the valley",
+        "terrace": "Covered terrace",
+        "tables": "Stone tables under the trees"
+      }
+    },
+    "amenities": {
+      "houseTitle": "In every house",
+      "house": ["Living room with fireplace", "Fully equipped kitchen", "Bedroom and bathroom", "2–5 guests, 80–140 m²", "Wi-Fi and TV", "Private parking"],
+      "sharedTitle": "Shared by your group",
+      "shared": ["Outdoor pool", "Large barbecue area", "Panoramic terrace", "Stone tables under the trees", "Walking trails from the door", "The river and its pools"],
+      "note": "Dogs and cats are welcome at €10 per day — tell us when you book, so we can choose the right house."
+    },
+    "around": {
+      "label": "Around Kotli",
+      "title": "Hilltop towns, truffle forests and the smallest town in the world",
+      "places": [
+        {
+          "name": "Hum",
+          "text": "The smallest town in the world: one street, one konoba, 23 residents, and the home of Biska brandy."
+        },
+        {
+          "name": "Buzet",
+          "text": "Istria's truffle town, high above the Mirna valley."
+        },
+        {
+          "name": "Motovun",
+          "text": "A medieval hilltop fortress ringed by the truffle forests of the Mirna."
+        },
+        {
+          "name": "Roč",
+          "text": "The start of the Glagolitic Alley, a walking path of stone monuments leading to Hum."
+        }
+      ],
+      "travelTitle": "Getting here",
+      "travel": ["Pula|1 h", "Trieste|1.5 h", "Ljubljana|2 h", "Munich|5 h", "Vienna|7 h", "Zurich|8 h"],
+      "travelNote": "Most groups drive. We arrange airport transfers on request."
+    },
+    "cta": {
+      "title": "Choose how you will spend your days at Kotli.",
+      "button": "See the packages"
+    }
+  },
+  "contactPage": {
+    "meta": {
+      "title": "Contact — Plan Your Stay at Kotli | Kotli Retreat",
+      "description": "Send an inquiry for your group: dates, package and group size. We reply within 24 hours with a personal offer. Email, phone and WhatsApp."
+    },
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Let's talk",
+      "intro": "Write, call or send a WhatsApp — we reply within 24 hours with a personal offer."
     }
   }
 }

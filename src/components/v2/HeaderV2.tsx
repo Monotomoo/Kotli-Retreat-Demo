@@ -4,6 +4,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { usePathname, useRouter } from '@/i18n/navigation';
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { PACKAGES } from '@/lib/packages';
 
 // V2 — Editorial masthead with visible numbered nav + scroll-spy.
 // Desktop: wordmark · centered links · languages + CTA. Mobile: burger → ink overlay.
@@ -13,37 +14,18 @@ const BRASS = '#b08d57';
 const BRASS_LIGHT = '#d3b787';
 const DARK_TEXT = '#1c1a15';
 
-export default function HeaderV2({ variant = 'home' }: { variant?: 'home' | 'package' } = {}) {
+export default function HeaderV2() {
   const t = useTranslations('header');
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState<string>('');
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  // Scroll-spy: brass-mark the section currently in view
-  useEffect(() => {
-    const ids = ['packages', 'hosts', 'agenda', 'accommodation', 'pricing', 'includes'];
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) setActive(entry.target.id);
-        });
-      },
-      { rootMargin: '-25% 0px -65% 0px' }
-    );
-    ids.forEach((id) => {
-      const el = document.getElementById(id);
-      if (el) observer.observe(el);
-    });
-    return () => observer.disconnect();
   }, []);
 
   // Lock body scroll while the mobile overlay is open
@@ -65,40 +47,35 @@ export default function HeaderV2({ variant = 'home' }: { variant?: 'home' | 'pac
     router.replace(pathname, { locale: newLocale });
   };
 
-  // A section on this page scrolls; one that only exists on the homepage
-  // (e.g. "all packages" from a package page) navigates there.
-  const goTo = (id: string) => {
+  // Site pages. A package page (/soil-and-soul, …) counts as "Packages".
+  const navItems = [
+    { href: '/', label: t('nav.home') },
+    { href: '/packages', label: t('nav.packages') },
+    { href: '/about', label: t('nav.about') },
+    { href: '/contact', label: t('nav.contact') },
+  ];
+  const isActive = (href: string) =>
+    href === '/'
+      ? pathname === '/'
+      : href === '/packages'
+        ? pathname === '/packages' || PACKAGES.some((p) => pathname === `/${p.slug}`)
+        : pathname === href;
+
+  const goTo = (href: string) => {
     setOpen(false);
-    const el = document.getElementById(id);
-    if (!el) {
-      router.push(`/#${id}`);
-      return;
-    }
-    setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), open ? 350 : 0);
+    if (href === pathname) window.scrollTo({ top: 0, behavior: 'smooth' });
+    else router.push(href);
   };
 
-  const goHome = () => {
+  // The inquiry button scrolls to a form on this page, else opens /contact.
+  const goInquiry = () => {
     setOpen(false);
-    if (pathname === '/') window.scrollTo({ top: 0, behavior: 'smooth' });
-    else router.push('/');
+    const el = document.getElementById('contact');
+    if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), open ? 350 : 0);
+    else router.push('/contact');
   };
 
-  const navItems =
-    variant === 'home'
-      ? [
-          { id: 'packages', label: t('nav.packages') },
-          { id: 'accommodation', label: t('nav.accommodation') },
-          { id: 'hosts', label: t('nav.hosts') },
-          { id: 'faq', label: t('nav.faq') },
-        ]
-      : [
-          { id: 'agenda', label: t('nav.agenda') },
-          { id: 'pricing', label: t('nav.pricing') },
-          { id: 'includes', label: t('nav.included') },
-          { id: 'packages', label: t('nav.allPackages') },
-        ];
-
-  const overlayItems = [...navItems, { id: 'contact', label: t('nav.contact') }];
+  const overlayItems = navItems;
 
   const light = !scrolled || open;
   const ink = light ? IVORY : DARK_TEXT;
@@ -119,7 +96,7 @@ export default function HeaderV2({ variant = 'home' }: { variant?: 'home' | 'pac
         <div className="relative flex items-center justify-between px-5 md:px-[4vw] py-4">
           {/* Wordmark */}
           <button
-            onClick={goHome}
+            onClick={() => goTo('/')}
             className="text-left cursor-pointer bg-transparent border-none shrink-0"
           >
             <span
@@ -139,29 +116,29 @@ export default function HeaderV2({ variant = 'home' }: { variant?: 'home' | 'pac
           {/* Center nav — numbered editorial links with brass underline sweep */}
           <nav className="hidden lg:flex items-center gap-9 absolute left-1/2 -translate-x-1/2">
             {navItems.map((item, i) => {
-              const isActive = active === item.id;
+              const active = isActive(item.href);
               return (
                 <button
-                  key={item.id}
-                  onClick={() => goTo(item.id)}
+                  key={item.href}
+                  onClick={() => goTo(item.href)}
                   className="group relative flex items-baseline gap-1.5 cursor-pointer bg-transparent border-none py-1"
                 >
                   <span
                     className="font-serif italic text-[11px] transition-colors duration-300"
-                    style={{ color: isActive ? BRASS : light ? 'rgba(211,183,135,0.75)' : 'rgba(176,141,87,0.8)' }}
+                    style={{ color: active ? BRASS : light ? 'rgba(211,183,135,0.75)' : 'rgba(176,141,87,0.8)' }}
                   >
                     0{i + 1}
                   </span>
                   <span
                     className="text-[11.5px] uppercase tracking-[2.5px] font-sans font-semibold transition-colors duration-300"
-                    style={{ color: isActive ? (light ? BRASS_LIGHT : BRASS) : ink }}
+                    style={{ color: active ? (light ? BRASS_LIGHT : BRASS) : ink }}
                   >
                     {item.label}
                   </span>
                   {/* Underline sweep */}
                   <span
                     className={`absolute -bottom-0.5 left-4 right-0 h-px origin-left transition-transform duration-300 ${
-                      isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
+                      active ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
                     }`}
                     style={{ backgroundColor: light ? BRASS_LIGHT : BRASS }}
                   />
@@ -192,7 +169,7 @@ export default function HeaderV2({ variant = 'home' }: { variant?: 'home' | 'pac
             </div>
 
             <button
-              onClick={() => goTo('contact')}
+              onClick={goInquiry}
               className="hidden md:block px-5 py-2.5 text-[10px] font-semibold uppercase tracking-[2.5px] font-sans cursor-pointer transition-all duration-300 rounded-[2px] border"
               style={{ borderColor: light ? 'rgba(246,243,236,0.4)' : 'rgba(28,26,21,0.35)', color: ink, backgroundColor: 'transparent' }}
               onMouseEnter={(e) => {
@@ -252,8 +229,8 @@ export default function HeaderV2({ variant = 'home' }: { variant?: 'home' | 'pac
             <div className="h-full flex flex-col justify-center px-8 pt-16">
               {overlayItems.map((item, i) => (
                 <motion.button
-                  key={item.id}
-                  onClick={() => goTo(item.id)}
+                  key={item.href}
+                  onClick={() => goTo(item.href)}
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0 }}

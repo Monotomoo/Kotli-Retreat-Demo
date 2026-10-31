@@ -53,7 +53,7 @@ export default async function HomePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <HeaderV2 variant="home" />
+      <HeaderV2 />
       <main>
         <HomeHeroV2 />
         <PackagesV2 />

@@ -7,6 +7,9 @@ import { PACKAGES } from '@/lib/packages';
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages: { path: string; priority: number; changeFrequency: 'weekly' | 'yearly' }[] = [
     { path: '', priority: 1.0, changeFrequency: 'weekly' },
+    { path: 'packages', priority: 0.9, changeFrequency: 'weekly' },
+    { path: 'about', priority: 0.8, changeFrequency: 'yearly' },
+    { path: 'contact', priority: 0.7, changeFrequency: 'yearly' },
     ...PACKAGES.map((p) => ({ path: p.slug, priority: 0.9, changeFrequency: 'weekly' as const })),
     { path: 'impressum', priority: 0.3, changeFrequency: 'yearly' },
     { path: 'privacy', priority: 0.3, changeFrequency: 'yearly' },

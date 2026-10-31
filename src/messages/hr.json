@@ -15,7 +15,9 @@
       "packages": "Paketi",
       "included": "Uključeno",
       "allPackages": "Svi paketi",
-      "faq": "Pitanja"
+      "faq": "Pitanja",
+      "home": "Početna",
+      "about": "O Kotlima"
     },
     "slogan": "Originalna iskustva, lokalne priče."
   },
@@ -569,7 +571,9 @@
           "tagline": "Tartufi, vino, maslinovo ulje i oproštajna Michelin večera.",
           "length": "5 dana · 4 noći",
           "group": "Grupe od 10–34",
-          "price": "od €1.090"
+          "price": "od €1.090",
+          "bestFor": "Vinski klubovi · gastro grupe · prijatelji",
+          "intro": "Pet dana s obiteljima koje su Istru učinile gastronomskom destinacijom: lov na tartufe s obitelji Karlić, maslinovo ulje kod Chiavalona, malvazija s četiri zemlje kod Kozlovića i gradići na brežuljcima — a u paketu Duh Istre oproštajna Michelin večera u Rovinju."
         },
         "winter": {
           "badge": "Prosinac – ožujak",
@@ -577,7 +581,9 @@
           "tagline": "Tartufi, dva vinara i vatra u svakoj kući.",
           "length": "3 dana · 2 noći",
           "group": "Grupe i pojedinci",
-          "price": "od €490"
+          "price": "od €490",
+          "bestFor": "Parovi · prijatelji · timovi tvrtki",
+          "intro": "Kratki zimski bijeg: dvije noći u kamenim kućama uz upaljen kamin, lov na tartufe u zimskoj šumi, dva vinara i večera u Humu. Pridružite se otvorenom vikendu ili uzmite cijelo selo za svoju grupu."
         }
       },
       "soon": {
@@ -723,6 +729,208 @@
         "Putno osiguranje od otkaza (preporučeno)",
         "Osobni troškovi i napojnice"
       ]
+    }
+  },
+  "packagesPage": {
+    "meta": {
+      "title": "Paketi — gastronomska putovanja i zimski vikendi u Istri | Kotli Retreat",
+      "description": "Svi paketi Kotli Retreata usporedno: 5-dnevno gastronomsko putovanje Soil and Soul Istria i 3-dnevni vikend s tartufima Zima u Kotlima. Programi, sezone, veličine grupa i cijene."
+    },
+    "hero": {
+      "eyebrow": "Paketi",
+      "title": "Načini boravka u Kotlima",
+      "intro": "Svaki paket uključuje selo, sve obroke, prijevoz i obitelji koje stoje iza istarskih tartufa, vina i maslinova ulja."
+    },
+    "labels": {
+      "length": "Trajanje",
+      "season": "Sezona",
+      "group": "Grupa",
+      "from": "Od",
+      "highlights": "Vrhunci",
+      "days": "Dan po dan",
+      "view": "Cijeli program",
+      "ask": "Upit za termine"
+    },
+    "compare": {
+      "label": "Usporedba",
+      "title": "Paketi usporedno",
+      "rows": [
+        {
+          "label": "Trajanje",
+          "values": {
+            "soilAndSoul": "5 dana · 4 noći",
+            "winter": "3 dana · 2 noći"
+          }
+        },
+        {
+          "label": "Sezona",
+          "values": {
+            "soilAndSoul": "Proljeće i jesen",
+            "winter": "Prosinac – ožujak"
+          }
+        },
+        {
+          "label": "Tko može rezervirati",
+          "values": {
+            "soilAndSoul": "Grupe od 10–34",
+            "winter": "Grupe od 10+, ili parovi i pojedinci na otvorenom vikendu"
+          }
+        },
+        {
+          "label": "Lov na tartufe",
+          "values": {
+            "soilAndSoul": "Obitelj Karlić, uz tečaj kuhanja",
+            "winter": "Obitelj Karlić, uz tečaj kuhanja"
+          }
+        },
+        {
+          "label": "Vinarije",
+          "values": {
+            "soilAndSoul": "Kozlović; Roxanich u paketu Duh Istre",
+            "winter": "Kozlović i Roxanich"
+          }
+        },
+        {
+          "label": "Maslinovo ulje",
+          "values": {
+            "soilAndSoul": "Degustacija kod Chiavalona",
+            "winter": "—"
+          }
+        },
+        {
+          "label": "Michelin večera",
+          "values": {
+            "soilAndSoul": "U paketu Duh Istre",
+            "winter": "—"
+          }
+        },
+        {
+          "label": "Cijena od",
+          "values": {
+            "soilAndSoul": "€1.090 po osobi",
+            "winter": "€490 po osobi"
+          }
+        }
+      ]
+    },
+    "help": {
+      "title": "Niste sigurni koji paket odgovara vašoj grupi?",
+      "text": "Recite nam tko dolazi, kada i zašto. Odgovaramo unutar 24 sata s prijedlogom.",
+      "cta": "Opišite svoju grupu"
+    }
+  },
+  "aboutPage": {
+    "meta": {
+      "title": "O Kotlima — kameno selo u dolini Mirne, Istra | Kotli Retreat",
+      "description": "Kotli su obnovljeno mlinarsko selo s osam kamenih kuća, gdje Mirna pada kroz kamene kotlove. Kuće, selo, domaćini i kraj oko njega."
+    },
+    "hero": {
+      "eyebrow": "O Kotlima",
+      "title": "Selo uz rijeku",
+      "intro": "Osam obnovljenih kamenih kuća gdje Mirna pada kroz kamene kotlove — uvijek samo za jednu grupu."
+    },
+    "story": {
+      "label": "Selo",
+      "title": "Mlinarsko selo koje je oblikovala rijeka",
+      "lead": "Kotli su zaselak kamenih kuća u dolini Mirne, u srcu Istre, gdje rijeka na putu prema moru pada kroz niz kamenih kotlova.",
+      "chapters": [
+        {
+          "title": "Rijeka",
+          "text": "Ime Kotli dolazi od riječi kotao — okruglih bazena koje je Mirna izdubila u kamenu. Voda pada iz jednog bazena u drugi, odmah ispod kuća."
+        },
+        {
+          "title": "Mlinarsko selo",
+          "text": "Stoljećima su Kotli bili glavno mlinarsko selo humskog kraja. Žito se s brda donosilo ovamo na mljevenje, a stari mlin i danas stoji uz vodu."
+        },
+        {
+          "title": "Ponovno oživljeno",
+          "text": "Kad su mlinovi utihnuli, selo se ispraznilo. Kamene kuće otad su obnavljane jedna po jedna, a danas Kotli primaju samo jednu grupu u isto vrijeme."
+        }
+      ],
+      "caption": "Mirna u Kotlima"
+    },
+    "facts": [
+      {
+        "value": "8",
+        "label": "Kamenih kuća"
+      },
+      {
+        "value": "80–140",
+        "label": "m² po kući"
+      },
+      {
+        "value": "2–5",
+        "label": "Gostiju po kući"
+      },
+      {
+        "value": "1",
+        "label": "Grupa u isto vrijeme"
+      },
+      {
+        "value": "1 h",
+        "label": "Od zračne luke Pula"
+      }
+    ],
+    "houses": {
+      "label": "Kamene kuće",
+      "title": "Osam kuća, jedno selo",
+      "text": "Svaka kuća ima svoj dnevni boravak, kuhinju, spavaću sobu i kupaonicu, s kaminom za hladnije večeri. Vaša grupa dijeli bazen, terasu i uličice između njih.",
+      "captions": {
+        "exterior": "Kamena kuća s vrtom",
+        "fireplace": "Dnevni boravak s kaminom",
+        "dining": "Blagovaonica",
+        "bedroom": "Spavaća soba",
+        "pool": "Bazen iznad doline",
+        "terrace": "Natkrivena terasa",
+        "tables": "Kameni stolovi pod drvećem"
+      }
+    },
+    "amenities": {
+      "houseTitle": "U svakoj kući",
+      "house": ["Dnevni boravak s kaminom", "Potpuno opremljena kuhinja", "Spavaća soba i kupaonica", "2–5 gostiju, 80–140 m²", "Wi-Fi i TV", "Privatni parking"],
+      "sharedTitle": "Za vašu grupu",
+      "shared": ["Vanjski bazen", "Veliki prostor za roštilj", "Panoramska terasa", "Kameni stolovi pod drvećem", "Pješačke staze od vrata", "Rijeka i njezini kotlovi"],
+      "note": "Psi i mačke su dobrodošli uz €10 dnevno — javite nam pri rezervaciji kako bismo odabrali pravu kuću."
+    },
+    "around": {
+      "label": "Oko Kotli",
+      "title": "Gradići na brežuljcima, tartufove šume i najmanji grad na svijetu",
+      "places": [
+        {
+          "name": "Hum",
+          "text": "Najmanji grad na svijetu: jedna ulica, jedna konoba, 23 stanovnika i dom biske."
+        },
+        {
+          "name": "Buzet",
+          "text": "Istarski grad tartufa, visoko iznad doline Mirne."
+        },
+        {
+          "name": "Motovun",
+          "text": "Srednjovjekovna tvrđava na brijegu, okružena tartufovim šumama Mirne."
+        },
+        {
+          "name": "Roč",
+          "text": "Početak Aleje glagoljaša, pješačke staze s kamenim spomenicima do Huma."
+        }
+      ],
+      "travelTitle": "Kako doći",
+      "travel": ["Pula|1 h", "Trst|1,5 h", "Ljubljana|2 h", "München|5 h", "Beč|7 h", "Zürich|8 h"],
+      "travelNote": "Većina grupa dolazi automobilom. Transfer iz zračne luke na upit."
+    },
+    "cta": {
+      "title": "Odaberite kako ćete provesti dane u Kotlima.",
+      "button": "Pogledajte pakete"
+    }
+  },
+  "contactPage": {
+    "meta": {
+      "title": "Kontakt — isplanirajte boravak u Kotlima | Kotli Retreat",
+      "description": "Pošaljite upit za svoju grupu: termini, paket i veličina grupe. Odgovaramo unutar 24 sata s osobnom ponudom. E-mail, telefon i WhatsApp."
+    },
+    "hero": {
+      "eyebrow": "Kontakt",
+      "title": "Razgovarajmo",
+      "intro": "Pišite, nazovite ili pošaljite WhatsApp — odgovaramo unutar 24 sata s osobnom ponudom."
     }
   }
 }

@@ -3,7 +3,8 @@
 import { useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { motion, useScroll, useTransform, useMotionTemplate } from 'framer-motion';
-import { Link } from '@/i18n/navigation';
+import { Link, useRouter } from '@/i18n/navigation';
+import { PACKAGES } from '@/lib/packages';
 
 // V2 Footer — the closing act. CTA band, editorial link columns, legal bar,
 // and the wow: a giant "Soil & Soul" wordmark that fills with brass as you
@@ -32,14 +33,18 @@ export default function FooterV2() {
   const fill = useTransform(scrollYProgress, [0.35, 0.95], [0, 100]);
   const wordmarkBg = useMotionTemplate`linear-gradient(90deg, ${BRASS_LIGHT} ${fill}%, rgba(246,243,236,0.13) ${fill}%)`;
 
-  const scrollToContact = () =>
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  const router = useRouter();
+  const scrollToContact = () => {
+    const el = document.getElementById('contact');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+    else router.push('/contact');
+  };
 
+  const tNav = useTranslations('header.nav');
+  const tCards = useTranslations('home.packages.cards');
   const experienceLinks = [
-    { key: 'whyIstria', href: '#why' },
-    { key: 'hosts', href: '#hosts' },
-    { key: 'agenda', href: '#agenda' },
-    { key: 'pricing', href: '#pricing' },
+    ...PACKAGES.map((p) => ({ href: `/${p.slug}`, label: tCards(`${p.cardKey}.name`) })),
+    { href: '/packages', label: tNav('allPackages') },
   ];
 
   return (
@@ -121,15 +126,15 @@ export default function FooterV2() {
             <h4 className="text-[9.5px] uppercase tracking-[3px] font-semibold mb-4" style={{ color: BRASS_LIGHT }}>
               {t('cols.experience')}
             </h4>
-            {experienceLinks.map(({ key, href }) => (
-              <a
-                key={key}
+            {experienceLinks.map(({ href, label }) => (
+              <Link
+                key={href}
                 href={href}
                 className="block text-[13.5px] mb-2.5 no-underline transition-all duration-300 hover:translate-x-1"
                 style={{ color: 'rgba(246,243,236,0.65)' }}
               >
-                {t(`links.${key}`)}
-              </a>
+                {label}
+              </Link>
             ))}
           </div>
 
@@ -137,20 +142,27 @@ export default function FooterV2() {
             <h4 className="text-[9.5px] uppercase tracking-[3px] font-semibold mb-4" style={{ color: BRASS_LIGHT }}>
               {t('cols.accommodation')}
             </h4>
-            <a
-              href="#accommodation"
+            <Link
+              href="/about"
+              className="block text-[13.5px] mb-2.5 no-underline transition-all duration-300 hover:translate-x-1"
+              style={{ color: 'rgba(246,243,236,0.65)' }}
+            >
+              {tNav('about')}
+            </Link>
+            <Link
+              href="/about#houses"
               className="block text-[13.5px] mb-2.5 no-underline transition-all duration-300 hover:translate-x-1"
               style={{ color: 'rgba(246,243,236,0.65)' }}
             >
               {t('links.stoneHouses')}
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              href="/contact"
               className="block text-[13.5px] mb-2.5 no-underline transition-all duration-300 hover:translate-x-1"
               style={{ color: 'rgba(246,243,236,0.65)' }}
             >
               {t('links.bookDirect')}
-            </a>
+            </Link>
           </div>
 
           <div>
