@@ -570,7 +570,7 @@
       "featured": {
         "badge": "Now booking · Winter 2026/27",
         "cta": "Choose your winter dates",
-        "note": "per person · December – March · groups and individuals"
+        "note": "per person · November – March · groups and individuals"
       },
       "view": "View package",
       "cards": {
@@ -585,14 +585,14 @@
           "intro": "Five days with the families who made Istria a gourmet destination: a truffle hunt with the Karlić family, olive oil at Chiavalon, Malvazija from four soils at Kozlović and the hilltop towns — with a Michelin farewell in Rovinj in Spirit of Istria."
         },
         "winter": {
-          "badge": "December – March",
+          "badge": "November – March",
           "name": "Winter at Kotli",
-          "tagline": "Truffles, two winemakers and a fire in every house.",
+          "tagline": "Truffles, Malvazija and a fire in every house.",
           "length": "3 days · 2 nights",
           "group": "Groups & individuals",
           "price": "from €490",
           "bestFor": "Couples · friends · company teams",
-          "intro": "A short winter escape: two nights in stone houses with the fire lit, a truffle tasting with the Karlić family, two winemakers and dinner in Hum. Join an open weekend, or take the whole village for your group."
+          "intro": "A short winter escape: two nights in stone houses with the fire lit, a truffle tasting with the Karlić family, Malvazija at Kozlović, dinner in Roč and lunch in Hum. Join an open weekend, or take the whole village for your group."
         }
       },
       "soon": {
@@ -606,7 +606,7 @@
   "winter": {
     "meta": {
       "title": "Winter at Kotli — Truffle & Wine Weekend in Istria | Kotli Retreat",
-      "description": "3 days, 2 nights in a private Istrian stone village: truffle tasting with the Karlić family, two winemakers, fireside dinners. December to March, for groups and individuals."
+      "description": "3 days, 2 nights in a private Istrian stone village: truffle tasting with the Karlić family, Malvazija at Kozlović, Motovun, Roč and Hum, fireside dinners. November to March, for groups and individuals."
     },
     "hero": {
       "subtitle": "A winter weekend in Istria",
@@ -617,8 +617,8 @@
       "daysLabel": "Days",
       "price": "From €490",
       "pricePer": "per person",
-      "people": "2 nights · December – March",
-      "hooks": ["Truffle tasting with the Karlić family", "Two winemakers, one weekend", "A fireplace in every house", "Dinner in Hum, the smallest town"],
+      "people": "2 nights · November – March",
+      "hooks": ["Truffle tasting with the Karlić family", "Malvazija in the Kozlović cellar", "A fireplace in every house", "Motovun, Roč and Hum"],
       "days": "3",
       "allInclusive": "ALL-INCLUSIVE"
     },
@@ -644,28 +644,29 @@
           "number": "2",
           "theme": "Truffles & Wine",
           "title": "The Winter Truffle",
-          "narrative": "A morning with the Karlić family, tasting the winter truffle the way three generations of truffle hunters serve it. In the afternoon, Malvazija from four soils in the Kozlović cellar.",
+          "narrative": "Late morning with the Karlić family, tasting the winter truffle the way three generations of truffle hunters serve it. Then a walk on the walls of Motovun above the truffle forests, Malvazija in the Kozlović cellar, and dinner by the fire in a konoba in Roč.",
           "schedule": [
-            { "time": "08:30", "text": "Breakfast basket" },
-            { "time": "09:30", "text": "Karlić Tartufi — truffle tasting with the family" },
-            { "time": "15:30", "text": "Kozlović winery — cellar tasting, Malvazija from four soils" },
-            { "time": "19:30", "text": "Dinner at Konoba Hum + Biska tasting" }
+            { "time": "09:30", "text": "Breakfast basket" },
+            { "time": "11:00", "text": "Karlić Tartufi — truffle tasting with the family" },
+            { "time": "12:00", "text": "Motovun — walk on the town walls above the truffle forests" },
+            { "time": "15:00", "text": "Kozlović winery — cellar tasting, Malvazija from four soils" },
+            { "time": "20:00", "text": "Dinner at a konoba in Roč" }
           ],
-          "meals": ["Breakfast", "Truffle tasting", "Dinner"],
+          "meals": ["Breakfast", "Truffle tasting", "Wine tasting", "Dinner"],
           "host": "The Karlić Family · The Kozlović Family"
         },
         {
           "number": "3",
           "theme": "Farewell",
-          "title": "Above the Truffle Forests",
-          "narrative": "A last walk on the walls of Motovun, a tasting at Roxanich, and a gift package of wine, truffle and oil for the road home.",
+          "title": "The Smallest Town",
+          "narrative": "A slow breakfast, then a walk through Hum, the smallest town in the world, and a long farewell lunch with Biska, the town's mistletoe brandy, before the road home.",
           "schedule": [
             { "time": "09:00", "text": "Breakfast basket" },
-            { "time": "10:00", "text": "Motovun — walk on the town walls above the truffle forests" },
-            { "time": "11:30", "text": "Roxanich winery — tasting" },
-            { "time": "13:30", "text": "Departure with your gift package" }
+            { "time": "11:00", "text": "Hum — a walk through the smallest town in the world" },
+            { "time": "13:00", "text": "Farewell lunch in Hum + Biska tasting" },
+            { "time": "15:30", "text": "Departure with your gift package" }
           ],
-          "meals": ["Breakfast", "Gift"],
+          "meals": ["Breakfast", "Lunch", "Gift"],
           "host": ""
         }
       ]
@@ -684,10 +685,10 @@
           "minNote": "Fixed dates · runs from 8 guests",
           "includes": [
             "2 nights in a stone house with fireplace",
-            "All meals + house wine",
+            "Breakfasts, two dinners and lunch in Hum, with house wine",
             "Truffle tasting with the Karlić family",
-            "Two winemakers: Kozlović and Roxanich",
-            "Dinner in Hum + Biska tasting",
+            "Kozlović winery: cellar tasting",
+            "Walks in Motovun and Hum",
             "Transport and farewell gift"
           ],
           "cta": "Join a date",
@@ -703,7 +704,7 @@
           "minNote": "Min. 10 guests",
           "includesLabel": "Everything in the Open Weekend, plus:",
           "includes": [
-            "Your own dates, December to March",
+            "Your own dates, November to March",
             "The whole village for your group",
             "Programme adjusted to your group"
           ],
@@ -711,24 +712,55 @@
           "featured": true
         }
       ],
-      "footerNote": "Prices per person in a shared house. Own arrival to Kotli. Winter dates December 2026 – March 2027."
+      "footerNote": "Prices per person in a shared house. Own arrival to Kotli. Winter season November 2026 – March 2027.",
+      "subtitle": "Join one of the open weekends with other guests, or take the whole village for your own group. Same programme, same hosts.",
+      "facts": [
+        {
+          "value": "3",
+          "label": "Days, Friday to Sunday"
+        },
+        {
+          "value": "2",
+          "label": "Nights by the fire"
+        },
+        {
+          "value": "8",
+          "label": "Meals and tastings"
+        },
+        {
+          "value": "3",
+          "label": "Hill towns: Motovun, Roč, Hum"
+        }
+      ],
+      "datesTitle": "Open dates",
+      "datesNote": "Friday to Sunday · couples, friends and solo guests",
+      "dateStatus": "Booking open",
+      "chooseDate": "Choose",
+      "chosen": "Selected",
+      "stepsTitle": "How booking works",
+      "steps": [
+        "Choose an open date, or ask for your own",
+        "We confirm availability and send the full offer within 24 hours",
+        "Arrive on Friday afternoon. The fire is already lit."
+      ]
     },
     "includes": {
       "label": "What's Included",
       "title": "All-inclusive from the first fire to the last tasting",
-      "subtitle": "Two nights, every meal, two winemakers and a truffle tasting. What isn't included is listed below.",
+      "subtitle": "Two nights, two dinners and a farewell lunch, a truffle tasting and a winery. What isn't included is listed below.",
       "yesTitle": "Included",
       "yesSubtitle": "In both winter packages",
       "noTitle": "Not Included",
       "noSubtitle": "Please arrange yourself",
       "yes": [
         "2 nights in stone houses with fireplace",
-        "Breakfasts and two dinners, with house wine and water",
+        "2 breakfasts, 2 dinners and a farewell lunch, with house wine and water",
         "Welcome by the fire: Biska, pršut and local cheese",
         "Truffle tasting with the Karlić family",
         "Cellar tasting at Kozlović",
-        "Tasting at Roxanich, Motovun",
-        "Dinner at Konoba Hum + Biska tasting",
+        "Walks in Motovun and Hum",
+        "Dinner at a konoba in Roč",
+        "Farewell lunch in Hum + Biska tasting",
         "Transport to every experience",
         "Farewell gift package (wine + truffle + oil)"
       ],
@@ -776,7 +808,7 @@
           "label": "Season",
           "values": {
             "soilAndSoul": "All year round",
-            "winter": "December – March"
+            "winter": "November – March"
           }
         },
         {
@@ -797,7 +829,7 @@
           "label": "Wineries",
           "values": {
             "soilAndSoul": "Kozlović; Roxanich in Spirit of Istria",
-            "winter": "Kozlović and Roxanich"
+            "winter": "Kozlović"
           }
         },
         {

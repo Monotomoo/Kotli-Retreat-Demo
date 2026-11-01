@@ -9,6 +9,8 @@ export interface PackageDef {
   image: string; // card + hero fallback image
   inset: string; // second photo on the /packages spread
   dayImages: { src: string; alt: string }[];
+  /** fixed open dates (ISO, arrival → departure); turns on the dated pricing layout */
+  dates?: { from: string; to: string }[];
   /** extra Soil-and-Soul-only sections (why, destinations) */
   full?: boolean;
 }
@@ -38,7 +40,13 @@ export const PACKAGES: PackageDef[] = [
     dayImages: [
       { src: '/images/kotli/interior-fireplace.jpg', alt: 'Fireplace in a Kotli stone house' },
       { src: '/images/hosts/host-1.png', alt: 'Truffle tasting with the Karlić family' },
-      { src: '/images/hosts/vineyard.jpg', alt: 'Istrian vineyard' },
+      { src: '/images/destinations/hum-b.jpg', alt: 'Hum, the smallest town in the world' },
+    ],
+    dates: [
+      { from: '2026-11-20', to: '2026-11-22' },
+      { from: '2026-11-27', to: '2026-11-29' },
+      { from: '2026-12-11', to: '2026-12-13' },
+      { from: '2026-12-18', to: '2026-12-20' },
     ],
   },
 ];

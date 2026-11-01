@@ -570,7 +570,7 @@
       "featured": {
         "badge": "Rezervacije otvorene · zima 2026./27.",
         "cta": "Odaberite zimski termin",
-        "note": "po osobi · prosinac – ožujak · grupe i pojedinci"
+        "note": "po osobi · studeni – ožujak · grupe i pojedinci"
       },
       "view": "Pogledajte paket",
       "cards": {
@@ -585,14 +585,14 @@
           "intro": "Pet dana s obiteljima koje su Istru učinile gastronomskom destinacijom: lov na tartufe s obitelji Karlić, maslinovo ulje kod Chiavalona, malvazija s četiri zemlje kod Kozlovića i gradići na brežuljcima — a u paketu Duh Istre oproštajna Michelin večera u Rovinju."
         },
         "winter": {
-          "badge": "Prosinac – ožujak",
+          "badge": "Studeni – ožujak",
           "name": "Zima u Kotlima",
-          "tagline": "Tartufi, dva vinara i vatra u svakoj kući.",
+          "tagline": "Tartufi, malvazija i vatra u svakoj kući.",
           "length": "3 dana · 2 noći",
           "group": "Grupe i pojedinci",
           "price": "od €490",
           "bestFor": "Parovi · prijatelji · timovi tvrtki",
-          "intro": "Kratki zimski bijeg: dvije noći u kamenim kućama uz upaljen kamin, degustacija tartufa kod obitelji Karlić, dva vinara i večera u Humu. Pridružite se otvorenom vikendu ili uzmite cijelo selo za svoju grupu."
+          "intro": "Kratki zimski bijeg: dvije noći u kamenim kućama uz upaljen kamin, degustacija tartufa kod obitelji Karlić, malvazija kod Kozlovića, večera u Roču i ručak u Humu. Pridružite se otvorenom vikendu ili uzmite cijelo selo za svoju grupu."
         }
       },
       "soon": {
@@ -606,7 +606,7 @@
   "winter": {
     "meta": {
       "title": "Zima u Kotlima — vikend s tartufima i vinom u Istri | Kotli Retreat",
-      "description": "3 dana, 2 noći u privatnom kamenom selu u Istri: degustacija tartufa kod obitelji Karlić, dva vinara, večeri uz kamin. Od prosinca do ožujka, za grupe i pojedince."
+      "description": "3 dana, 2 noći u privatnom kamenom selu u Istri: degustacija tartufa kod obitelji Karlić, malvazija kod Kozlovića, Motovun, Roč i Hum, večeri uz kamin. Od studenoga do ožujka, za grupe i pojedince."
     },
     "hero": {
       "subtitle": "Zimski vikend u Istri",
@@ -617,8 +617,8 @@
       "daysLabel": "Dana",
       "price": "Od €490",
       "pricePer": "po osobi",
-      "people": "2 noći · prosinac – ožujak",
-      "hooks": ["Degustacija tartufa kod obitelji Karlić", "Dva vinara, jedan vikend", "Kamin u svakoj kući", "Večera u Humu, najmanjem gradu"],
+      "people": "2 noći · studeni – ožujak",
+      "hooks": ["Degustacija tartufa kod obitelji Karlić", "Malvazija u podrumu Kozlović", "Kamin u svakoj kući", "Motovun, Roč i Hum"],
       "days": "3",
       "allInclusive": "ALL-INCLUSIVE"
     },
@@ -644,28 +644,29 @@
           "number": "2",
           "theme": "Tartufi i vino",
           "title": "Zimski tartuf",
-          "narrative": "Jutro kod obitelji Karlić: kušate zimski tartuf onako kako ga poslužuju tri generacije tartufara. Poslijepodne malvazija s četiri zemlje u podrumu Kozlović.",
+          "narrative": "Kasno prijepodne kod obitelji Karlić: kušate zimski tartuf onako kako ga poslužuju tri generacije tartufara. Zatim šetnja zidinama Motovuna iznad tartufarskih šuma, malvazija u podrumu Kozlović i večera uz vatru u konobi u Roču.",
           "schedule": [
-            { "time": "08:30", "text": "Košara za doručak" },
-            { "time": "09:30", "text": "Karlić Tartufi — degustacija tartufa s obitelji" },
-            { "time": "15:30", "text": "Vinarija Kozlović — degustacija u podrumu, malvazija s četiri zemlje" },
-            { "time": "19:30", "text": "Večera Konoba Hum + degustacija biske" }
+            { "time": "09:30", "text": "Košara za doručak" },
+            { "time": "11:00", "text": "Karlić Tartufi — degustacija tartufa s obitelji" },
+            { "time": "12:00", "text": "Motovun — šetnja gradskim zidinama iznad tartufovih šuma" },
+            { "time": "15:00", "text": "Vinarija Kozlović — degustacija u podrumu, malvazija s četiri zemlje" },
+            { "time": "20:00", "text": "Večera u konobi u Roču" }
           ],
-          "meals": ["Doručak", "Degustacija tartufa", "Večera"],
+          "meals": ["Doručak", "Degustacija tartufa", "Degustacija vina", "Večera"],
           "host": "Obitelj Karlić · Obitelj Kozlović"
         },
         {
           "number": "3",
           "theme": "Rastanak",
-          "title": "Iznad tartufovih šuma",
-          "narrative": "Posljednja šetnja zidinama Motovuna, degustacija kod Roxanicha i poklon-paket vina, tartufa i ulja za put kući.",
+          "title": "Najmanji grad",
+          "narrative": "Polagani doručak, zatim šetnja Humom, najmanjim gradom na svijetu, i dugi oproštajni ručak uz biska, humsku rakiju od imele, prije puta kući.",
           "schedule": [
             { "time": "09:00", "text": "Košara za doručak" },
-            { "time": "10:00", "text": "Motovun — šetnja gradskim zidinama iznad tartufovih šuma" },
-            { "time": "11:30", "text": "Vinarija Roxanich — degustacija" },
-            { "time": "13:30", "text": "Odlazak s poklon-paketom" }
+            { "time": "11:00", "text": "Hum — šetnja najmanjim gradom na svijetu" },
+            { "time": "13:00", "text": "Oproštajni ručak u Humu + degustacija biske" },
+            { "time": "15:30", "text": "Odlazak s poklon-paketom" }
           ],
-          "meals": ["Doručak", "Poklon"],
+          "meals": ["Doručak", "Ručak", "Poklon"],
           "host": ""
         }
       ]
@@ -684,10 +685,10 @@
           "minNote": "Fiksni termini · od 8 gostiju",
           "includes": [
             "2 noći u kamenoj kući s kaminom",
-            "Svi obroci + kućno vino",
+            "Doručci, dvije večere i ručak u Humu, uz kućno vino",
             "Degustacija tartufa kod obitelji Karlić",
-            "Dva vinara: Kozlović i Roxanich",
-            "Večera u Humu + degustacija biske",
+            "Vinarija Kozlović: degustacija u podrumu",
+            "Šetnje Motovunom i Humom",
             "Prijevoz i oproštajni poklon"
           ],
           "cta": "Prijavite se na termin",
@@ -703,7 +704,7 @@
           "minNote": "Min. 10 gostiju",
           "includesLabel": "Sve iz otvorenog vikenda, plus:",
           "includes": [
-            "Vaši termini, od prosinca do ožujka",
+            "Vaši termini, od studenoga do ožujka",
             "Cijelo selo samo za vašu grupu",
             "Program prilagođen vašoj grupi"
           ],
@@ -711,24 +712,55 @@
           "featured": true
         }
       ],
-      "footerNote": "Cijene po osobi u dijeljenoj kući. Vlastiti dolazak do Kotli. Zimski termini prosinac 2026. – ožujak 2027."
+      "footerNote": "Cijene po osobi u zajedničkoj kući. Vlastiti dolazak u Kotli. Zimska sezona studeni 2026. – ožujak 2027.",
+      "subtitle": "Pridružite se otvorenom vikendu s drugim gostima ili uzmite cijelo selo za svoju grupu. Isti program, isti domaćini.",
+      "facts": [
+        {
+          "value": "3",
+          "label": "Dana, od petka do nedjelje"
+        },
+        {
+          "value": "2",
+          "label": "Noći uz kamin"
+        },
+        {
+          "value": "8",
+          "label": "Obroka i degustacija"
+        },
+        {
+          "value": "3",
+          "label": "Gradića: Motovun, Roč, Hum"
+        }
+      ],
+      "datesTitle": "Otvoreni termini",
+      "datesNote": "Od petka do nedjelje · parovi, prijatelji i solo gosti",
+      "dateStatus": "Rezervacije otvorene",
+      "chooseDate": "Odaberi",
+      "chosen": "Odabrano",
+      "stepsTitle": "Kako ide rezervacija",
+      "steps": [
+        "Odaberite otvoreni termin ili zatražite svoj",
+        "Potvrđujemo dostupnost i šaljemo cijelu ponudu unutar 24 sata",
+        "Dolazak u petak poslijepodne. Vatra već gori."
+      ]
     },
     "includes": {
       "label": "Što je uključeno",
       "title": "All-inclusive od prve vatre do posljednje degustacije",
-      "subtitle": "Dvije noći, svi obroci, dva vinara i degustacija tartufa. Što nije uključeno, navodimo ispod.",
+      "subtitle": "Dvije noći, dvije večere i oproštajni ručak, degustacija tartufa i vinarija. Što nije uključeno, navedeno je ispod.",
       "yesTitle": "Uključeno",
       "yesSubtitle": "U oba zimska paketa",
       "noTitle": "Nije uključeno",
       "noSubtitle": "Molimo organizirajte sami",
       "yes": [
         "2 noći u kamenim kućama s kaminom",
-        "Doručci i dvije večere, uz kućno vino i vodu",
+        "2 doručka, 2 večere i oproštajni ručak, uz kućno vino i vodu",
         "Doček uz vatru: biska, pršut i domaći sir",
         "Degustacija tartufa kod obitelji Karlić",
         "Degustacija u podrumu Kozlović",
-        "Degustacija kod Roxanicha, Motovun",
-        "Večera Konoba Hum + degustacija biske",
+        "Šetnje Motovunom i Humom",
+        "Večera u konobi u Roču",
+        "Oproštajni ručak u Humu + degustacija biske",
         "Prijevoz do svih doživljaja",
         "Oproštajni poklon-paket (vino + tartuf + ulje)"
       ],
@@ -776,7 +808,7 @@
           "label": "Sezona",
           "values": {
             "soilAndSoul": "Tijekom cijele godine",
-            "winter": "Prosinac – ožujak"
+            "winter": "Studeni – ožujak"
           }
         },
         {
@@ -797,7 +829,7 @@
           "label": "Vinarije",
           "values": {
             "soilAndSoul": "Kozlović; Roxanich u paketu Duh Istre",
-            "winter": "Kozlović i Roxanich"
+            "winter": "Kozlović"
           }
         },
         {

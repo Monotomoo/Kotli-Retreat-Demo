@@ -10,6 +10,7 @@ import WhyV2 from '@/components/v2/WhyV2';
 import AgendaV2 from '@/components/v2/AgendaV2';
 import DestinationsV2 from '@/components/v2/DestinationsV2';
 import PricingV2 from '@/components/v2/PricingV2';
+import DatedPricingV2 from '@/components/v2/DatedPricingV2';
 import IncludesV2 from '@/components/v2/IncludesV2';
 import ContactV2 from '@/components/v2/ContactV2';
 import FooterV2 from '@/components/v2/FooterV2';
@@ -65,7 +66,7 @@ export default async function PackagePage({
         {pkg.full && <WhyV2 />}
         <AgendaV2 ns={pkg.ns} images={pkg.dayImages} />
         {pkg.full && <DestinationsV2 />}
-        <PricingV2 ns={pkg.ns} />
+        {pkg.dates ? <DatedPricingV2 pkg={pkg} /> : <PricingV2 ns={pkg.ns} />}
         <IncludesV2 ns={pkg.ns} />
         <ContactV2 />
       </main>

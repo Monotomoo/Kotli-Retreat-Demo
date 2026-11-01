@@ -570,7 +570,7 @@
       "featured": {
         "badge": "Jetzt buchbar · Winter 2026/27",
         "cta": "Wintertermin wählen",
-        "note": "pro Person · Dezember – März · Gruppen und Einzelgäste"
+        "note": "pro Person · November – März · Gruppen und Einzelgäste"
       },
       "view": "Zum Paket",
       "cards": {
@@ -585,14 +585,14 @@
           "intro": "Fünf Tage mit den Familien, die Istrien zur Genussregion gemacht haben: Trüffeljagd mit der Familie Karlić, Olivenöl bei Chiavalon, Malvazija aus vier Erden bei Kozlović und die Bergstädtchen — im Paket Geist Istriens mit Michelin-Abschied in Rovinj."
         },
         "winter": {
-          "badge": "Dezember – März",
+          "badge": "November – März",
           "name": "Winter in Kotli",
-          "tagline": "Trüffel, zwei Winzer und ein Kaminfeuer in jedem Haus.",
+          "tagline": "Trüffel, Malvazija und ein Kaminfeuer in jedem Haus.",
           "length": "3 Tage · 2 Nächte",
           "group": "Gruppen & Einzelgäste",
           "price": "ab 490 €",
           "bestFor": "Paare · Freunde · Firmenteams",
-          "intro": "Eine kurze Winterauszeit: zwei Nächte in Steinhäusern am Kaminfeuer, Trüffelverkostung bei der Familie Karlić, zwei Winzer und Abendessen in Hum. Buchen Sie ein offenes Wochenende oder das ganze Dorf für Ihre Gruppe."
+          "intro": "Eine kurze Winterauszeit: zwei Nächte in Steinhäusern am Kaminfeuer, Trüffelverkostung bei der Familie Karlić, Malvazija bei Kozlović, Abendessen in Roč und Mittagessen in Hum. Buchen Sie ein offenes Wochenende oder das ganze Dorf für Ihre Gruppe."
         }
       },
       "soon": {
@@ -606,7 +606,7 @@
   "winter": {
     "meta": {
       "title": "Winter in Kotli — Trüffel- & Weinwochenende in Istrien | Kotli Retreat",
-      "description": "3 Tage, 2 Nächte in einem privaten Steindorf in Istrien: Trüffelverkostung bei der Familie Karlić, zwei Winzer, Abende am Kamin. Dezember bis März, für Gruppen und Einzelgäste."
+      "description": "3 Tage, 2 Nächte in einem privaten Steindorf in Istrien: Trüffelverkostung bei der Familie Karlić, Malvazija bei Kozlović, Motovun, Roč und Hum, Abende am Kamin. November bis März, für Gruppen und Einzelgäste."
     },
     "hero": {
       "subtitle": "Ein Winterwochenende in Istrien",
@@ -617,8 +617,8 @@
       "daysLabel": "Tage",
       "price": "Ab 490 €",
       "pricePer": "pro Person",
-      "people": "2 Nächte · Dezember – März",
-      "hooks": ["Trüffelverkostung bei der Familie Karlić", "Zwei Winzer, ein Wochenende", "Ein Kamin in jedem Haus", "Abendessen in Hum, der kleinsten Stadt"],
+      "people": "2 Nächte · November – März",
+      "hooks": ["Trüffelverkostung bei der Familie Karlić", "Malvazija im Keller von Kozlović", "Ein Kamin in jedem Haus", "Motovun, Roč und Hum"],
       "days": "3",
       "allInclusive": "ALL-INCLUSIVE"
     },
@@ -644,28 +644,29 @@
           "number": "2",
           "theme": "Trüffel & Wein",
           "title": "Der Wintertrüffel",
-          "narrative": "Ein Vormittag bei der Familie Karlić: Sie verkosten den Wintertrüffel so, wie ihn drei Generationen Trüffeljäger servieren. Am Nachmittag Malvazija aus vier Erden im Keller von Kozlović.",
+          "narrative": "Am späten Vormittag bei der Familie Karlić: Sie verkosten den Wintertrüffel so, wie ihn drei Generationen Trüffeljäger servieren. Danach ein Spaziergang auf den Mauern von Motovun über den Trüffelwäldern, Malvazija im Keller von Kozlović und ein Abendessen am Feuer in einer Konoba in Roč.",
           "schedule": [
-            { "time": "08:30", "text": "Frühstückskorb" },
-            { "time": "09:30", "text": "Karlić Tartufi — Trüffelverkostung mit der Familie" },
-            { "time": "15:30", "text": "Weingut Kozlović — Kellerverkostung, Malvazija aus vier Erden" },
-            { "time": "19:30", "text": "Abendessen Konoba Hum + Biska-Verkostung" }
+            { "time": "09:30", "text": "Frühstückskorb" },
+            { "time": "11:00", "text": "Karlić Tartufi — Trüffelverkostung mit der Familie" },
+            { "time": "12:00", "text": "Motovun — Spaziergang auf der Stadtmauer über den Trüffelwäldern" },
+            { "time": "15:00", "text": "Weingut Kozlović — Kellerverkostung, Malvazija aus vier Erden" },
+            { "time": "20:00", "text": "Abendessen in einer Konoba in Roč" }
           ],
-          "meals": ["Frühstück", "Trüffelverkostung", "Abendessen"],
+          "meals": ["Frühstück", "Trüffelverkostung", "Weinprobe", "Abendessen"],
           "host": "Familie Karlić · Familie Kozlović"
         },
         {
           "number": "3",
           "theme": "Abschied",
-          "title": "Über den Trüffelwäldern",
-          "narrative": "Ein letzter Spaziergang auf den Mauern von Motovun, eine Verkostung bei Roxanich und ein Geschenkpaket mit Wein, Trüffel und Öl für die Heimreise.",
+          "title": "Die kleinste Stadt",
+          "narrative": "Ein langsames Frühstück, dann ein Spaziergang durch Hum, die kleinste Stadt der Welt, und ein langes Abschiedsmittagessen mit Biska, dem Mistelschnaps des Ortes, bevor es nach Hause geht.",
           "schedule": [
             { "time": "09:00", "text": "Frühstückskorb" },
-            { "time": "10:00", "text": "Motovun — Spaziergang auf der Stadtmauer über den Trüffelwäldern" },
-            { "time": "11:30", "text": "Weingut Roxanich — Verkostung" },
-            { "time": "13:30", "text": "Abreise mit Ihrem Geschenkpaket" }
+            { "time": "11:00", "text": "Hum — Spaziergang durch die kleinste Stadt der Welt" },
+            { "time": "13:00", "text": "Abschiedsmittagessen in Hum + Biska-Verkostung" },
+            { "time": "15:30", "text": "Abreise mit Ihrem Geschenkpaket" }
           ],
-          "meals": ["Frühstück", "Geschenk"],
+          "meals": ["Frühstück", "Mittagessen", "Geschenk"],
           "host": ""
         }
       ]
@@ -683,12 +684,12 @@
           "info": "pro Person · 3 Tage / 2 Nächte",
           "minNote": "Feste Termine · ab 8 Gästen",
           "includes": [
-            "2 Nächte im Steinhaus mit Kamin",
-            "Alle Mahlzeiten + Hauswein",
+            "2 Nächte in einem Steinhaus mit Kamin",
+            "Frühstück, zwei Abendessen und Mittagessen in Hum, mit Hauswein",
             "Trüffelverkostung bei der Familie Karlić",
-            "Zwei Winzer: Kozlović und Roxanich",
-            "Abendessen in Hum + Biska-Verkostung",
-            "Transport und Abschiedsgeschenk"
+            "Weingut Kozlović: Kellerverkostung",
+            "Spaziergänge in Motovun und Hum",
+            "Transfers und Abschiedsgeschenk"
           ],
           "cta": "Termin buchen",
           "featured": false
@@ -703,7 +704,7 @@
           "minNote": "Ab 10 Gästen",
           "includesLabel": "Alles aus dem offenen Wochenende, plus:",
           "includes": [
-            "Ihre eigenen Termine, Dezember bis März",
+            "Ihre eigenen Termine, November bis März",
             "Das ganze Dorf für Ihre Gruppe",
             "Programm angepasst an Ihre Gruppe"
           ],
@@ -711,24 +712,55 @@
           "featured": true
         }
       ],
-      "footerNote": "Preise pro Person im geteilten Haus. Eigene Anreise nach Kotli. Wintertermine Dezember 2026 – März 2027."
+      "footerNote": "Preise pro Person im geteilten Haus. Eigene Anreise nach Kotli. Wintersaison November 2026 – März 2027.",
+      "subtitle": "Schließen Sie sich einem offenen Wochenende mit anderen Gästen an oder buchen Sie das ganze Dorf für Ihre eigene Gruppe. Gleiches Programm, gleiche Gastgeber.",
+      "facts": [
+        {
+          "value": "3",
+          "label": "Tage, Freitag bis Sonntag"
+        },
+        {
+          "value": "2",
+          "label": "Nächte am Kamin"
+        },
+        {
+          "value": "8",
+          "label": "Mahlzeiten und Verkostungen"
+        },
+        {
+          "value": "3",
+          "label": "Bergstädte: Motovun, Roč, Hum"
+        }
+      ],
+      "datesTitle": "Offene Termine",
+      "datesNote": "Freitag bis Sonntag · Paare, Freunde und Alleinreisende",
+      "dateStatus": "Buchbar",
+      "chooseDate": "Wählen",
+      "chosen": "Gewählt",
+      "stepsTitle": "So funktioniert die Buchung",
+      "steps": [
+        "Wählen Sie einen offenen Termin oder fragen Sie Ihren eigenen an",
+        "Wir bestätigen die Verfügbarkeit und senden das vollständige Angebot innerhalb von 24 Stunden",
+        "Anreise am Freitagnachmittag. Das Feuer brennt schon."
+      ]
     },
     "includes": {
       "label": "Leistungen",
       "title": "All-inclusive vom ersten Feuer bis zur letzten Verkostung",
-      "subtitle": "Zwei Nächte, alle Mahlzeiten, zwei Winzer und eine Trüffelverkostung. Was nicht enthalten ist, steht unten.",
+      "subtitle": "Zwei Nächte, zwei Abendessen und ein Abschiedsmittagessen, eine Trüffelverkostung und ein Weingut. Was nicht enthalten ist, steht unten.",
       "yesTitle": "Inklusive",
       "yesSubtitle": "In beiden Winterpaketen",
       "noTitle": "Nicht inklusive",
       "noSubtitle": "Bitte selbst organisieren",
       "yes": [
         "2 Nächte in Steinhäusern mit Kamin",
-        "Frühstück und zwei Abendessen, mit Hauswein und Wasser",
+        "2 Frühstücke, 2 Abendessen und ein Abschiedsmittagessen, mit Hauswein und Wasser",
         "Empfang am Kamin: Biska, Pršut und regionaler Käse",
         "Trüffelverkostung bei der Familie Karlić",
         "Kellerverkostung bei Kozlović",
-        "Verkostung bei Roxanich, Motovun",
-        "Abendessen Konoba Hum + Biska-Verkostung",
+        "Spaziergänge in Motovun und Hum",
+        "Abendessen in einer Konoba in Roč",
+        "Abschiedsmittagessen in Hum + Biska-Verkostung",
         "Transport zu allen Programmpunkten",
         "Abschiedsgeschenk (Wein + Trüffel + Öl)"
       ],
@@ -776,7 +808,7 @@
           "label": "Saison",
           "values": {
             "soilAndSoul": "Das ganze Jahr",
-            "winter": "Dezember – März"
+            "winter": "November – März"
           }
         },
         {
@@ -797,7 +829,7 @@
           "label": "Weingüter",
           "values": {
             "soilAndSoul": "Kozlović; Roxanich im Paket Geist Istriens",
-            "winter": "Kozlović und Roxanich"
+            "winter": "Kozlović"
           }
         },
         {

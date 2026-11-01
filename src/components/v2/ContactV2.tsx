@@ -155,11 +155,18 @@ export default function ContactV2() {
   const setChoice = (key: keyof typeof choices) => (v: string) =>
     setChoices((c) => ({ ...c, [key]: v }));
 
-  // A package CTA elsewhere on the page can preselect its package here.
+  // A package CTA elsewhere on the page can preselect its package here, and a
+  // fixed-date CTA also its dates: detail is a name or { name, arrival, departure }.
   useEffect(() => {
     const onChoose = (e: Event) => {
-      const name = (e as CustomEvent<string>).detail;
+      const detail = (e as CustomEvent<string | { name: string; arrival?: string; departure?: string }>).detail;
+      const { name, arrival, departure } = typeof detail === 'string' ? { name: detail } : detail;
       if (packages.includes(name)) setChoices((c) => ({ ...c, package: name }));
+      if (arrival && departure) {
+        setArrival(arrival);
+        setDeparture(departure);
+        setFlexible(false);
+      }
     };
     window.addEventListener('kotli:choose-package', onChoose);
     return () => window.removeEventListener('kotli:choose-package', onChoose);
