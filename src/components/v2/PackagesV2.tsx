@@ -25,6 +25,7 @@ interface CardText {
   length: string;
   group: string;
   price: string;
+  priceNote?: string;
 }
 
 const scrollToContact = () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
@@ -108,6 +109,11 @@ function FeaturedCard({ pkg }: { pkg: PackageDef }) {
             <div className="font-display text-[38px] leading-none" style={{ color: BRASS_LIGHT }}>
               {c.price}
             </div>
+            {c.priceNote && (
+              <div className="text-[10px] uppercase tracking-[2px] mt-2" style={{ color: BRASS_LIGHT }}>
+                {c.priceNote}
+              </div>
+            )}
             <div className="text-[10px] uppercase tracking-[2px] mt-2" style={{ color: 'rgba(246,243,236,0.55)' }}>
               {t('featured.note')}
             </div>

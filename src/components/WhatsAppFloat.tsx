@@ -25,7 +25,7 @@ export default function WhatsAppFloat() {
           href="https://wa.me/385992563862"
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed bottom-6 right-6 z-[998] w-12 h-12 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-[0_2px_12px_rgba(37,211,102,0.4)] cursor-pointer no-underline group"
+          className="fixed bottom-24 md:bottom-6 right-6 z-[998] w-12 h-12 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-[0_2px_12px_rgba(37,211,102,0.4)] cursor-pointer no-underline group"
           title="WhatsApp"
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}

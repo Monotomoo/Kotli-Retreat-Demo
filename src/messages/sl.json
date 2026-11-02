@@ -32,8 +32,17 @@
     "price": "Od €1.090",
     "pricePer": "na osebo",
     "people": "10 – 34 oseb na skupino",
-    "tags": ["Lov na tartufe", "Vino in najboljše oljčno olje na svetu", "Michelinova poslovilna večerja"],
-    "hooks": ["Lov na tartufe", "Po istrskih vinskih cestah", "Od oljke do mize", "Kamnita vas samo za vas"]
+    "tags": [
+      "Lov na tartufe",
+      "Vino in najboljše oljčno olje na svetu",
+      "Michelinova poslovilna večerja"
+    ],
+    "hooks": [
+      "Lov na tartufe",
+      "Po istrskih vinskih cestah",
+      "Od oljke do mize",
+      "Kamnita vas samo za vas"
+    ]
   },
   "quickFacts": {
     "duration": "5 dni",
@@ -117,11 +126,23 @@
         "title": "Dobrodošli v Kotli",
         "narrative": "Prispete v zapuščeno kamnito vas, ki je znova oživela. Na terasi vas čaka Biska — tradicionalni istrski liker iz omele — ob pršutu, siru in kozarcu Terana.",
         "schedule": [
-          { "time": "15:00", "text": "Prijava v kamnite hiše" },
-          { "time": "16:30", "text": "Aperitiv dobrodošlice na panoramski terasi" },
-          { "time": "18:00", "text": "Večerja v konobi — Fuži s tartufi, vino Teran" }
+          {
+            "time": "15:00",
+            "text": "Prijava v kamnite hiše"
+          },
+          {
+            "time": "16:30",
+            "text": "Aperitiv dobrodošlice na panoramski terasi"
+          },
+          {
+            "time": "18:00",
+            "text": "Večerja v konobi — Fuži s tartufi, vino Teran"
+          }
         ],
-        "meals": ["Aperitiv", "Večerja"],
+        "meals": [
+          "Aperitiv",
+          "Večerja"
+        ],
         "host": ""
       },
       {
@@ -130,12 +151,28 @@
         "title": "Zlato Istre",
         "narrative": "Cel dan z družino Karlić — od muzeja tartufov prek lova v gozdu do skupnega kuhanja. Naribali boste tartuf čez domače testenine.",
         "schedule": [
-          { "time": "08:00", "text": "Košara za zajtrk pred vrata" },
-          { "time": "09:30", "text": "Karlić Tartufi: Muzej → Lov na tartufe → Tečaj kuhanja → Meni s 3 hodi" },
-          { "time": "16:30", "text": "Balinanje in aktivnosti na dvorišču" },
-          { "time": "19:00", "text": "Večerja v konobi" }
+          {
+            "time": "08:00",
+            "text": "Košara za zajtrk pred vrata"
+          },
+          {
+            "time": "09:30",
+            "text": "Karlić Tartufi: Muzej → Lov na tartufe → Tečaj kuhanja → Meni s 3 hodi"
+          },
+          {
+            "time": "16:30",
+            "text": "Balinanje in aktivnosti na dvorišču"
+          },
+          {
+            "time": "19:00",
+            "text": "Večerja v konobi"
+          }
         ],
-        "meals": ["Zajtrk", "Kosilo", "Večerja"],
+        "meals": [
+          "Zajtrk",
+          "Kosilo",
+          "Večerja"
+        ],
         "host": "Družina Karlić — iskalci tartufov že 3 generacije"
       },
       {
@@ -144,14 +181,38 @@
         "title": "Okusi Istre",
         "narrative": "Degustirate oljčna olja, ki jim se čudi ves svet, in odkrivate ‘4 zemlje’ istrske Malvazije v dveh vinarskih obiskih. Za konec: najmanjše mesto na svetu.",
         "schedule": [
-          { "time": "08:00", "text": "Košara za zajtrk" },
-          { "time": "09:30", "text": "Degustacija oljčnega olja (Chiavalon / nagrajeni proizvajalec)" },
-          { "time": "11:00", "text": "Vinarija Kozlović — Malvazija z rdeče zemlje, od leta 1904" },
-          { "time": "13:00", "text": "Roxanich (Motovun) — degustacija + kosilo s spajanjem vin", "plus": true },
-          { "time": "18:00", "text": "Ogled Huma — najmanjšega mesta na svetu (23 prebivalcev)" },
-          { "time": "18:45", "text": "Večerja Konoba Hum + degustacija Biske", "plus": true }
+          {
+            "time": "08:00",
+            "text": "Košara za zajtrk"
+          },
+          {
+            "time": "09:30",
+            "text": "Degustacija oljčnega olja (Chiavalon / nagrajeni proizvajalec)"
+          },
+          {
+            "time": "11:00",
+            "text": "Vinarija Kozlović — Malvazija z rdeče zemlje, od leta 1904"
+          },
+          {
+            "time": "13:00",
+            "text": "Roxanich (Motovun) — degustacija + kosilo s spajanjem vin",
+            "plus": true
+          },
+          {
+            "time": "18:00",
+            "text": "Ogled Huma — najmanjšega mesta na svetu (23 prebivalcev)"
+          },
+          {
+            "time": "18:45",
+            "text": "Večerja Konoba Hum + degustacija Biske",
+            "plus": true
+          }
         ],
-        "meals": ["Zajtrk", "Kosilo", "Večerja"],
+        "meals": [
+          "Zajtrk",
+          "Kosilo",
+          "Večerja"
+        ],
         "host": "Družina Kozlović · Sandi Chiavalon"
       },
       {
@@ -160,14 +221,41 @@
         "title": "Od gričev do morja",
         "narrative": "Grožnjan — vas umetnikov. Motovun — trdnjava nad gozdovi tartufov. In nato: Rovinj. Vaša poslovilna večerja v prvi Michelinovi restavraciji na Hrvaškem.",
         "schedule": [
-          { "time": "08:00", "text": "Košara za zajtrk" },
-          { "time": "09:00", "text": "Grožnjan — vas umetnikov, galerije, ateljeji", "plus": true },
-          { "time": "10:15", "text": "Motovun — trdnjava, gozdovi tartufov, panorama", "plus": true },
-          { "time": "12:00", "text": "Kosilo v Motovunu", "plus": true },
-          { "time": "15:00", "text": "Rovinj — ogled starega mesta, pristanišče, prosti čas", "plus": true },
-          { "time": "18:30", "text": "Poslovilna večerja — Michelinova restavracija z zvezdico", "plus": true }
+          {
+            "time": "08:00",
+            "text": "Košara za zajtrk"
+          },
+          {
+            "time": "09:00",
+            "text": "Grožnjan — vas umetnikov, galerije, ateljeji",
+            "plus": true
+          },
+          {
+            "time": "10:15",
+            "text": "Motovun — trdnjava, gozdovi tartufov, panorama",
+            "plus": true
+          },
+          {
+            "time": "12:00",
+            "text": "Kosilo v Motovunu",
+            "plus": true
+          },
+          {
+            "time": "15:00",
+            "text": "Rovinj — ogled starega mesta, pristanišče, prosti čas",
+            "plus": true
+          },
+          {
+            "time": "18:30",
+            "text": "Poslovilna večerja — Michelinova restavracija z zvezdico",
+            "plus": true
+          }
         ],
-        "meals": ["Zajtrk", "Kosilo", "Michelinova večerja ✦"],
+        "meals": [
+          "Zajtrk",
+          "Kosilo",
+          "Michelinova večerja ✦"
+        ],
         "host": ""
       },
       {
@@ -176,12 +264,27 @@
         "title": "Konec, a ne slovo",
         "narrative": "",
         "schedule": [
-          { "time": "08:00", "text": "Zadnji skupni zajtrk" },
-          { "time": "09:00", "text": "Darilni paket — vino, tartufi, oljčno olje iz Istre" },
-          { "time": "09:30", "text": "Skupinska fotografija na terasi" },
-          { "time": "10:00", "text": "Odjava — Nasvidenje!" }
+          {
+            "time": "08:00",
+            "text": "Zadnji skupni zajtrk"
+          },
+          {
+            "time": "09:00",
+            "text": "Darilni paket — vino, tartufi, oljčno olje iz Istre"
+          },
+          {
+            "time": "09:30",
+            "text": "Skupinska fotografija na terasi"
+          },
+          {
+            "time": "10:00",
+            "text": "Odjava — Nasvidenje!"
+          }
         ],
-        "meals": ["Zajtrk", "Darilo"],
+        "meals": [
+          "Zajtrk",
+          "Darilo"
+        ],
         "host": ""
       }
     ],
@@ -273,7 +376,7 @@
       {
         "icon": "location",
         "title": "Prihod",
-        "text": "Letališče Pulj 1h · Trst 1,5h · Ljubljana 2h · München 5h · Dunaj 7h · Zürich 8h. Letališki prevoz na povpraševanje."
+        "text": "Letališče Pulj 1h · Trst 1,5h · Ljubljana 2h · München 5h · Dunaj 5h · Zürich 8h. Letališki prevoz na povpraševanje."
       }
     ]
   },
@@ -336,7 +439,13 @@
           "Oblikujemo program po meri",
           "Vi uživate, mi poskrbimo za vse"
         ],
-        "tags": ["Teambuilding", "Praznovanje", "Aktiven oddih", "Gastro potovanje", "Lasten prevoz"],
+        "tags": [
+          "Teambuilding",
+          "Praznovanje",
+          "Aktiven oddih",
+          "Gastro potovanje",
+          "Lasten prevoz"
+        ],
         "cta": "Začnite pogovor",
         "featured": false
       }
@@ -373,7 +482,12 @@
         "source": "KARLIĆ TARTUFI"
       }
     ],
-    "badges": ["Flos Olei · 9× svetovni prvak", "Michelin Guide Croatia", "Kozlović · od 1904", "Karlić · 3 generacije"],
+    "badges": [
+      "Flos Olei · 9× svetovni prvak",
+      "Michelin Guide Croatia",
+      "Kozlović · od 1904",
+      "Karlić · 3 generacije"
+    ],
     "note": ""
   },
   "contact": {
@@ -388,16 +502,47 @@
       "email": "E-pošta",
       "emailPlaceholder": "janez@primer.si",
       "groupSize": "Velikost skupine",
-      "groupSizeOptions": ["10–15 oseb", "16–24 oseb", "25–34 oseb"],
+      "groupSizeOptions": [
+        "2 osebi",
+        "3–4 osebe",
+        "5–7 oseb",
+        "8–15 oseb",
+        "16–24 oseb",
+        "25–34 oseb"
+      ],
       "date": "Želeni termin",
       "arrival": "Prihod",
       "departure": "Odhod",
       "flexibleDates": "Moji termini so prilagodljivi",
-      "dateOptions": ["December 2026", "Januar 2027", "Februar 2027", "Marec 2027", "April 2027", "Maj 2027", "Junij 2027", "September 2027", "Oktober 2027", "November 2027", "Fleksibilno"],
+      "dateOptions": [
+        "December 2026",
+        "Januar 2027",
+        "Februar 2027",
+        "Marec 2027",
+        "April 2027",
+        "Maj 2027",
+        "Junij 2027",
+        "September 2027",
+        "Oktober 2027",
+        "November 2027",
+        "Fleksibilno"
+      ],
       "package": "Kateri paket vas zanima?",
-      "packageOptions": ["Soil and Soul Istria", "Zima v Kotlih", "Vaša zgodba (po meri)", "Samo nastanitev", "Še razmišljam"],
+      "packageOptions": [
+        "Soil and Soul Istria",
+        "Zima v Kotlih",
+        "Vaša zgodba (po meri)",
+        "Samo nastanitev",
+        "Še razmišljam"
+      ],
       "dietary": "Prehranske posebnosti",
-      "dietaryOptions": ["Brez", "Vegetarijansko", "Vegansko", "Brez glutena", "Drugo (navedite spodaj)"],
+      "dietaryOptions": [
+        "Brez",
+        "Vegetarijansko",
+        "Vegansko",
+        "Brez glutena",
+        "Drugo (navedite spodaj)"
+      ],
       "message": "Vaše sporočilo",
       "messagePlaceholder": "Povejte nam kaj o svoji skupini...",
       "submit": "Pošljite nezavezujoče povpraševanje",
@@ -406,8 +551,7 @@
     "whatsapp": "WhatsApp (prednostno)",
     "whatsappCta": "Pošljite WhatsApp sporočilo",
     "emailLabel": "E-pošta",
-    "phoneLabel": "Telefon",
-    "trustItems": ["SSL", "Trusted Shops", "SEPA", "Kreditna kartica"]
+    "phoneLabel": "Telefon"
   },
   "faq": {
     "label": "Pogosta vprašanja",
@@ -415,7 +559,7 @@
     "items": [
       {
         "q": "Ali je potovanje mogoče rezervirati tudi za posameznike?",
-        "a": "Soil and Soul Istria je skupinsko doživetje za 10–34 oseb. Potujete lahko kot vodja skupine s svojo skupino (od 10 oseb potujete brezplačno!) — idealno za vinske klube, gastronomske skupine ali teambuilding. Na povpraševanje vas lahko pridružimo tudi obstoječi skupini."
+        "a": "Soil and Soul Istria je skupinsko doživetje za 10–34 oseb. Potujete lahko kot vodja skupine s svojo skupino (od 10 oseb potujete brezplačno!) — idealno za vinske klube, gastronomske skupine ali teambuilding. Na povpraševanje vas lahko pridružimo tudi obstoječi skupini. Za Zimo v Kotlih: da, zimski vikend je na določene termine odprt za pare in posameznike."
       },
       {
         "q": "Kako priti do Kotlov?",
@@ -559,7 +703,11 @@
       "poetic": "Osem kamnitih hiš v dolini Mirne, samo za vas — za gastronomsko potovanje, zimski vikend ali podjetniški offsite.",
       "cta": "Oglejte si pakete",
       "ctaSecondary": "Pošljite povpraševanje",
-      "facts": ["8 kamnitih hiš", "10–34 gostov", "Odprto vse leto"]
+      "facts": [
+        "8 kamnitih hiš",
+        "10–34 gostov",
+        "Odprto vse leto"
+      ]
     },
     "packages": {
       "label": "Paketi",
@@ -590,9 +738,10 @@
           "tagline": "Tartufi, malvazija in ogenj v vsaki hiši.",
           "length": "3 dni · 2 noči",
           "group": "Skupine in posamezniki",
-          "price": "od €490",
+          "price": "€590",
           "bestFor": "Pari · prijatelji · ekipe podjetij",
-          "intro": "Kratek zimski pobeg: dve noči v kamnitih hišah ob prižganem kaminu, degustacija tartufov pri družini Karlić, malvazija pri Kozloviću, večerja v Roču in kosilo v Humu. Pridružite se odprtemu vikendu ali vzemite celo vas za svojo skupino."
+          "intro": "Kratek zimski pobeg: dve noči v kamnitih hišah ob prižganem kaminu, kosilo s tartufi pri družini Karlić, malvazija pri Kozloviću, večerja v Roču in kosilo v Humu. Pridružite se odprtemu vikendu ali vzemite celo vas za svojo skupino.",
+          "priceNote": "Uvodna cena · Zima 2026/27"
         }
       },
       "soon": {
@@ -606,7 +755,7 @@
   "winter": {
     "meta": {
       "title": "Zima v Kotlih — vikend s tartufi in vinom v Istri | Kotli Retreat",
-      "description": "3 dni, 2 noči v zasebni kamniti vasi v Istri: degustacija tartufov pri družini Karlić, malvazija pri Kozloviću, Motovun, Roč in Hum, večeri ob kaminu. Od novembra do marca, za skupine in posameznike."
+      "description": "3 dni, 2 noči v zasebni kamniti vasi v Istri: kosilo s tartufi pri družini Karlić, malvazija pri Kozloviću, Motovun, Roč in Hum, večeri ob kaminu. Od novembra do marca, za skupine in posameznike."
     },
     "hero": {
       "subtitle": "Zimski vikend v Istri",
@@ -615,12 +764,19 @@
       "cta": "Izberite termin",
       "ctaSecondary": "Kaj je vključeno",
       "daysLabel": "Dni",
-      "price": "Od €490",
+      "price": "€590",
       "pricePer": "na osebo",
       "people": "2 noči · november – marec",
-      "hooks": ["Degustacija tartufov pri družini Karlić", "Malvazija v kleti Kozlović", "Kamin v vsaki hiši", "Motovun, Roč in Hum"],
+      "hooks": [
+        "Kosilo s tartufi pri družini Karlić",
+        "Malvazija v kleti Kozlović",
+        "Kamin v vsaki hiši",
+        "Motovun, Roč in Hum"
+      ],
       "days": "3",
-      "allInclusive": "ALL-INCLUSIVE"
+      "allInclusive": "ALL-INCLUSIVE",
+      "priceNote": "Uvodna cena · Zima 2026/27",
+      "season": "Zima 2026/27"
     },
     "agenda": {
       "label": "Dan za dnem",
@@ -633,26 +789,58 @@
           "title": "Ogenj v kaminu",
           "narrative": "Ko prispete, kamin že gori. Biska, pršut in istrski sir ob ognju, nato večerja v konobi.",
           "schedule": [
-            { "time": "15:00", "text": "Prijava v kamnite hiše — kamini prižgani" },
-            { "time": "17:00", "text": "Sprejem ob ognju: biska, pršut in domači sir" },
-            { "time": "19:30", "text": "Večerja v konobi — fuži s tartufi, teran" }
+            {
+              "time": "15:00",
+              "text": "Prijava v kamnite hiše — kamini prižgani"
+            },
+            {
+              "time": "17:00",
+              "text": "Sprejem ob ognju: biska, pršut in domači sir"
+            },
+            {
+              "time": "19:30",
+              "text": "Večerja v konobi — fuži s tartufi, teran"
+            }
           ],
-          "meals": ["Aperitiv", "Večerja"],
+          "meals": [
+            "Aperitiv",
+            "Večerja"
+          ],
           "host": ""
         },
         {
           "number": "2",
           "theme": "Tartufi in vino",
           "title": "Zimski tartuf",
-          "narrative": "Pozno dopoldne pri družini Karlić: zimski tartuf poskusite tako, kot ga strežejo tri generacije iskalcev tartufov. Nato sprehod po obzidju Motovuna nad tartufovimi gozdovi, malvazija v kleti Kozlović in večerja ob ognju v konobi v Roču.",
+          "narrative": "Pozno dopoldne pri družini Karlić: dolgo kosilo z zimskim tartufom, tako kot ga strežejo tri generacije iskalcev tartufov. Nato sprehod po obzidju Motovuna nad tartufovimi gozdovi, malvazija v kleti Kozlović in večerja ob ognju v konobi v Roču.",
           "schedule": [
-            { "time": "09:30", "text": "Košara za zajtrk" },
-            { "time": "11:00", "text": "Karlić Tartufi — degustacija tartufov z družino" },
-            { "time": "12:00", "text": "Motovun — sprehod po mestnem obzidju nad tartufovimi gozdovi" },
-            { "time": "15:00", "text": "Vinarija Kozlović — degustacija v kleti, malvazija s štirih zemelj" },
-            { "time": "20:00", "text": "Večerja v konobi v Roču" }
+            {
+              "time": "09:30",
+              "text": "Košara za zajtrk"
+            },
+            {
+              "time": "11:00",
+              "text": "Karlić Tartufi — kosilo s tartufi pri družini"
+            },
+            {
+              "time": "13:00",
+              "text": "Motovun — sprehod po mestnem obzidju nad tartufovimi gozdovi"
+            },
+            {
+              "time": "15:00",
+              "text": "Vinarija Kozlović — degustacija v kleti, malvazija s štirih zemelj"
+            },
+            {
+              "time": "20:00",
+              "text": "Večerja v konobi v Roču"
+            }
           ],
-          "meals": ["Zajtrk", "Degustacija tartufov", "Degustacija vin", "Večerja"],
+          "meals": [
+            "Zajtrk",
+            "Kosilo s tartufi",
+            "Degustacija vin",
+            "Večerja"
+          ],
           "host": "Družina Karlić · Družina Kozlović"
         },
         {
@@ -661,12 +849,28 @@
           "title": "Najmanjše mesto",
           "narrative": "Počasen zajtrk, nato sprehod po Humu, najmanjšem mestu na svetu, in dolgo poslovilno kosilo z bisko, humskim žganjem iz bele omele, preden se odpravite domov.",
           "schedule": [
-            { "time": "09:00", "text": "Košara za zajtrk" },
-            { "time": "11:00", "text": "Hum — sprehod po najmanjšem mestu na svetu" },
-            { "time": "13:00", "text": "Poslovilno kosilo v Humu + degustacija biske" },
-            { "time": "15:30", "text": "Odhod z darilnim paketom" }
+            {
+              "time": "09:00",
+              "text": "Košara za zajtrk"
+            },
+            {
+              "time": "11:00",
+              "text": "Hum — sprehod po najmanjšem mestu na svetu"
+            },
+            {
+              "time": "13:00",
+              "text": "Poslovilno kosilo v Humu + degustacija biske"
+            },
+            {
+              "time": "15:30",
+              "text": "Odhod z darilnim paketom"
+            }
           ],
-          "meals": ["Zajtrk", "Kosilo", "Darilo"],
+          "meals": [
+            "Zajtrk",
+            "Kosilo",
+            "Darilo"
+          ],
           "host": ""
         }
       ]
@@ -680,13 +884,13 @@
           "badge": "Mešana skupina",
           "name": "Odprti zimski vikend",
           "slogan": "Fiksni termini — pari in prijatelji dobrodošli.",
-          "price": "od €590",
+          "price": "€590",
           "info": "na osebo · 3 dni / 2 noči",
           "minNote": "Fiksni termini · od 8 gostov",
           "includes": [
             "2 noči v kamniti hiši s kaminom",
             "Zajtrki, dve večerji in kosilo v Humu, s hišnim vinom",
-            "Degustacija tartufov pri družini Karlić",
+            "Kosilo s tartufi pri družini Karlić",
             "Vinarna Kozlović: degustacija v kleti",
             "Sprehodi po Motovunu in Humu",
             "Prevoz in poslovilno darilo"
@@ -699,7 +903,7 @@
           "badge": "Zasebna skupina",
           "name": "Zasebni zimski vikend",
           "slogan": "Cela vas za vašo skupino, v vaših terminih.",
-          "price": "od €490",
+          "price": "€590",
           "info": "na osebo · 3 dni / 2 noči",
           "minNote": "Min. 10 gostov",
           "includesLabel": "Vse iz odprtega vikenda, plus:",
@@ -712,7 +916,7 @@
           "featured": true
         }
       ],
-      "footerNote": "Cene na osebo v skupni hiši. Lasten prihod v Kotli. Zimska sezona november 2026 – marec 2027.",
+      "footerNote": "Cene na osebo v skupni hiši. Zimska sezona november 2026 – marec 2027.",
       "subtitle": "Pridružite se odprtemu vikendu z drugimi gosti ali vzemite celo vas za svojo skupino. Isti program, isti gostitelji.",
       "facts": [
         {
@@ -724,7 +928,7 @@
           "label": "Noči ob kaminu"
         },
         {
-          "value": "8",
+          "value": "9",
           "label": "Obrokov in degustacij"
         },
         {
@@ -742,12 +946,58 @@
         "Izberite odprt termin ali povprašajte za svojega",
         "Potrdimo razpoložljivost in v 24 urah pošljemo celotno ponudbo",
         "Prihod v petek popoldne. Ogenj že gori."
-      ]
+      ],
+      "priceNote": "Uvodna cena · Zima 2026/27",
+      "guaranteed": "Zagotovljen odhod",
+      "datesPolicy": "Odprti vikendi potekajo od 8 gostov, potrdimo jih 14 dni pred prihodom. Če vikend ne poteka, dobite polno vračilo ali zamenjate termin. Zagotovljen odhod poteka ne glede na število gostov.",
+      "cancelTitle": "Predplačilo in odpoved",
+      "cancel": [
+        {
+          "value": "30 %",
+          "label": "Predplačilo ob rezervaciji"
+        },
+        {
+          "value": "60+ dni",
+          "label": "Brezplačna odpoved"
+        },
+        {
+          "value": "30–59 dni",
+          "label": "50 % vračila"
+        },
+        {
+          "value": "Manj kot 30 dni",
+          "label": "Brez vračila"
+        }
+      ],
+      "arrivalTitle": "Kako do Kotlov",
+      "arrival": [
+        {
+          "city": "Trst",
+          "time": "1,5 h"
+        },
+        {
+          "city": "Ljubljana",
+          "time": "2 h"
+        },
+        {
+          "city": "Zagreb",
+          "time": "2,5 h"
+        },
+        {
+          "city": "Gradec",
+          "time": "3 h"
+        },
+        {
+          "city": "Dunaj",
+          "time": "5 h"
+        }
+      ],
+      "arrivalNote": "Čas vožnje z avtomobilom. Parkirišče v vasi."
     },
     "includes": {
       "label": "Kaj je vključeno",
       "title": "All-inclusive od prvega ognja do zadnje degustacije",
-      "subtitle": "Dve noči, dve večerji in poslovilno kosilo, degustacija tartufov in vinarna. Kaj ni vključeno, je navedeno spodaj.",
+      "subtitle": "Dve noči, dve večerji, kosilo s tartufi, poslovilno kosilo in vinarna. Kaj ni vključeno, je navedeno spodaj.",
       "yesTitle": "Vključeno",
       "yesSubtitle": "V obeh zimskih paketih",
       "noTitle": "Ni vključeno",
@@ -756,7 +1006,7 @@
         "2 noči v kamnitih hišah s kaminom",
         "2 zajtrka, 2 večerji in poslovilno kosilo, s hišnim vinom in vodo",
         "Sprejem ob ognju: biska, pršut in domači sir",
-        "Degustacija tartufov pri družini Karlić",
+        "Kosilo s tartufi pri družini Karlić",
         "Degustacija v kleti Kozlović",
         "Sprehodi po Motovunu in Humu",
         "Večerja v konobi v Roču",
@@ -769,6 +1019,41 @@
         "Premium pijače poleg hišnega vina",
         "Potovalno zavarovanje za odpoved (priporočeno)",
         "Osebni stroški in napitnine"
+      ]
+    },
+    "stickyMobile": "Pošljite povpraševanje — €590/osebo",
+    "faq": {
+      "label": "Pogosta vprašanja",
+      "title": "Imate vprašanja?",
+      "items": [
+        {
+          "q": "Ali je potovanje mogoče rezervirati tudi za posameznike?",
+          "a": "Da, zimski vikend je na določene termine odprt za pare in posameznike. Izberite enega od odprtih terminov zgoraj."
+        },
+        {
+          "q": "Kaj če vikend ne poteka?",
+          "a": "Odprti vikendi potekajo od 8 gostov, potrdimo jih 14 dni pred prihodom. Če vikend ne poteka, dobite polno vračilo ali zamenjate termin. Termini z oznako zagotovljen odhod potekajo ne glede na število gostov."
+        },
+        {
+          "q": "Kakšni so pogoji odpovedi?",
+          "a": "Predplačilo: 30 % ob rezervaciji. Brezplačna odpoved do 60 dni pred prihodom. 30–59 dni: 50 % vračila. Manj kot 30 dni: brez vračila."
+        },
+        {
+          "q": "Kako priti do Kotlov?",
+          "a": "Najpogosteje se pride z avtomobilom: Trst 1,5 h, Ljubljana 2 h, Zagreb 2,5 h, Gradec 3 h, Dunaj 5 h. Parkirišče je v vasi."
+        },
+        {
+          "q": "Ali lahko rezerviramo kot zasebna skupina?",
+          "a": "Da, od 10 gostov, na vaše termine od novembra do marca. Cena je enaka, €590 na osebo."
+        },
+        {
+          "q": "Ali obstajajo vegetarijanske / veganske možnosti?",
+          "a": "Da! Istrska kuhinja je bogata z vegetarijanskimi jedmi: testenine s tartufi, zelenjavna Maneštra, žar zelenjava, domači sir. Veganske in brezglutenske možnosti organiziramo na povpraševanje v vseh restavracijah. Prosimo, da nam svoje prehranske zahteve sporočite ob rezervaciji."
+        },
+        {
+          "q": "Ali lahko pripeljem svojega psa?",
+          "a": "Da! Kamnite hiše sprejemajo hišne ljubljenčke (€10/dan). Lastni vrtovi, popolne sprehajalne poti. Prosimo, navedite ob rezervaciji, da vam dodelimo ustrezno hišo."
+        }
       ]
     }
   },
@@ -786,7 +1071,7 @@
       "length": "Trajanje",
       "season": "Sezona",
       "group": "Skupina",
-      "from": "Od",
+      "from": "Cena",
       "highlights": "Vrhunci",
       "days": "Dan za dnem",
       "view": "Celoten program",
@@ -822,7 +1107,7 @@
           "label": "Tartufi",
           "values": {
             "soilAndSoul": "Lov z družino Karlić + kuharski tečaj",
-            "winter": "Degustacija pri družini Karlić"
+            "winter": "Kosilo pri družini Karlić"
           }
         },
         {
@@ -847,10 +1132,10 @@
           }
         },
         {
-          "label": "Cena od",
+          "label": "Cena na osebo",
           "values": {
-            "soilAndSoul": "€1.090 na osebo",
-            "winter": "€490 na osebo"
+            "soilAndSoul": "od €1.090",
+            "winter": "€590"
           }
         }
       ]
@@ -929,9 +1214,23 @@
     },
     "amenities": {
       "houseTitle": "V vsaki hiši",
-      "house": ["Dnevna soba s kaminom", "Popolnoma opremljena kuhinja", "Spalnica in kopalnica", "2–5 gostov, 80–140 m²", "Wi-Fi in TV", "Zasebno parkirišče"],
+      "house": [
+        "Dnevna soba s kaminom",
+        "Popolnoma opremljena kuhinja",
+        "Spalnica in kopalnica",
+        "2–5 gostov, 80–140 m²",
+        "Wi-Fi in TV",
+        "Zasebno parkirišče"
+      ],
       "sharedTitle": "Za vašo skupino",
-      "shared": ["Zunanji bazen", "Velik prostor za žar", "Panoramska terasa", "Kamnite mize pod drevesi", "Pohodne poti od vrat", "Reka in njeni kotli"],
+      "shared": [
+        "Zunanji bazen",
+        "Velik prostor za žar",
+        "Panoramska terasa",
+        "Kamnite mize pod drevesi",
+        "Pohodne poti od vrat",
+        "Reka in njeni kotli"
+      ],
       "note": "Psi in mačke so dobrodošli za €10 na dan — povejte nam ob rezervaciji, da izberemo pravo hišo."
     },
     "around": {
@@ -976,5 +1275,13 @@
       "title": "Pogovorimo se",
       "intro": "Pišite, pokličite ali pošljite WhatsApp — odgovorimo v 24 urah z osebno ponudbo."
     }
+  },
+  "thankYou": {
+    "meta": {
+      "title": "Hvala"
+    },
+    "title": "Hvala za povpraševanje!",
+    "body": "Prejeli smo vaše sporočilo in javili se vam bomo v 24 urah z osebno ponudbo.",
+    "back": "Nazaj na začetno stran"
   }
 }

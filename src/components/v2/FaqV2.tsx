@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
+import { tNs } from '@/lib/packages';
 
 // V2 FAQ — numbered editorial accordion, continuing the ink act.
 // One question open at a time; serif + toggles, hairline rows.
@@ -11,8 +12,8 @@ const IVORY = '#f6f3ec';
 const BRASS = '#b08d57';
 const BRASS_LIGHT = '#d3b787';
 
-export default function FaqV2() {
-  const t = useTranslations('faq');
+export default function FaqV2({ ns = '' }: { ns?: string } = {}) {
+  const t = useTranslations(tNs(ns, 'faq'));
   const items = t.raw('items') as { q: string; a: string }[];
   const [open, setOpen] = useState<number | null>(0);
 

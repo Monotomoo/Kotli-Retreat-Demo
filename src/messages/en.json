@@ -32,8 +32,17 @@
     "price": "From €1,090",
     "pricePer": "per person",
     "people": "10 – 34 guests per group",
-    "tags": ["Truffle hunting", "Wine & world's best olive oil", "Michelin farewell dinner"],
-    "hooks": ["Truffle hunt", "Along Istrian wine roads", "From olive to table", "A stone village all to yourselves"]
+    "tags": [
+      "Truffle hunting",
+      "Wine & world's best olive oil",
+      "Michelin farewell dinner"
+    ],
+    "hooks": [
+      "Truffle hunt",
+      "Along Istrian wine roads",
+      "From olive to table",
+      "A stone village all to yourselves"
+    ]
   },
   "quickFacts": {
     "duration": "5 Days",
@@ -117,11 +126,23 @@
         "title": "Welcome to Kotli",
         "narrative": "You arrive at an abandoned stone village that has come back to life. On the terrace, Biska awaits — the traditional Istrian mistletoe brandy — along with Pršut, cheese, and a glass of Teran.",
         "schedule": [
-          { "time": "15:00", "text": "Check-in at the stone houses" },
-          { "time": "16:30", "text": "Welcome aperitif on the panoramic terrace" },
-          { "time": "18:00", "text": "Dinner at the konoba — Fuži with truffles, Teran wine" }
+          {
+            "time": "15:00",
+            "text": "Check-in at the stone houses"
+          },
+          {
+            "time": "16:30",
+            "text": "Welcome aperitif on the panoramic terrace"
+          },
+          {
+            "time": "18:00",
+            "text": "Dinner at the konoba — Fuži with truffles, Teran wine"
+          }
         ],
-        "meals": ["Aperitif", "Dinner"],
+        "meals": [
+          "Aperitif",
+          "Dinner"
+        ],
         "host": ""
       },
       {
@@ -130,12 +151,28 @@
         "title": "The Gold of Istria",
         "narrative": "A full day with the Karlić family — from the truffle museum to the hunt in the forest to cooking together. You'll shave truffle over handmade pasta.",
         "schedule": [
-          { "time": "08:00", "text": "Breakfast basket delivered to your door" },
-          { "time": "09:30", "text": "Karlić Tartufi: Museum → Truffle hunt → Cooking class → 3-course meal" },
-          { "time": "16:30", "text": "Bocce and courtyard activities" },
-          { "time": "19:00", "text": "Dinner at the konoba" }
+          {
+            "time": "08:00",
+            "text": "Breakfast basket delivered to your door"
+          },
+          {
+            "time": "09:30",
+            "text": "Karlić Tartufi: Museum → Truffle hunt → Cooking class → 3-course meal"
+          },
+          {
+            "time": "16:30",
+            "text": "Bocce and courtyard activities"
+          },
+          {
+            "time": "19:00",
+            "text": "Dinner at the konoba"
+          }
         ],
-        "meals": ["Breakfast", "Lunch", "Dinner"],
+        "meals": [
+          "Breakfast",
+          "Lunch",
+          "Dinner"
+        ],
         "host": "The Karlić Family — Truffle hunters for 3 generations"
       },
       {
@@ -144,14 +181,38 @@
         "title": "The Flavors of Istria",
         "narrative": "Taste olive oils that have captivated the world and discover the \"4 Soils\" of Istrian Malvazija at two wineries. To finish: the smallest town in the world.",
         "schedule": [
-          { "time": "08:00", "text": "Breakfast basket" },
-          { "time": "09:30", "text": "Olive oil tasting (Chiavalon / award-winning producer)" },
-          { "time": "11:00", "text": "Kozlović Winery — Malvazija from red soil, since 1904" },
-          { "time": "13:00", "text": "Roxanich (Motovun) — tasting + lunch with wine pairing", "plus": true },
-          { "time": "18:00", "text": "Walking tour of Hum — the smallest town in the world (23 residents)" },
-          { "time": "18:45", "text": "Dinner at Konoba Hum + Biska tasting", "plus": true }
+          {
+            "time": "08:00",
+            "text": "Breakfast basket"
+          },
+          {
+            "time": "09:30",
+            "text": "Olive oil tasting (Chiavalon / award-winning producer)"
+          },
+          {
+            "time": "11:00",
+            "text": "Kozlović Winery — Malvazija from red soil, since 1904"
+          },
+          {
+            "time": "13:00",
+            "text": "Roxanich (Motovun) — tasting + lunch with wine pairing",
+            "plus": true
+          },
+          {
+            "time": "18:00",
+            "text": "Walking tour of Hum — the smallest town in the world (23 residents)"
+          },
+          {
+            "time": "18:45",
+            "text": "Dinner at Konoba Hum + Biska tasting",
+            "plus": true
+          }
         ],
-        "meals": ["Breakfast", "Lunch", "Dinner"],
+        "meals": [
+          "Breakfast",
+          "Lunch",
+          "Dinner"
+        ],
         "host": "The Kozlović Family · Sandi Chiavalon"
       },
       {
@@ -160,14 +221,41 @@
         "title": "From Hilltop Villages to the Sea",
         "narrative": "Grožnjan — the artists' village. Motovun — the fortress above the truffle forests. And then: Rovinj. Your farewell dinner at Croatia's first Michelin-starred restaurant.",
         "schedule": [
-          { "time": "08:00", "text": "Breakfast basket" },
-          { "time": "09:00", "text": "Grožnjan — artists' village, galleries, studios", "plus": true },
-          { "time": "10:15", "text": "Motovun — fortress, truffle forests, panorama", "plus": true },
-          { "time": "12:00", "text": "Lunch in Motovun", "plus": true },
-          { "time": "15:00", "text": "Rovinj — old town tour, harbor, free time", "plus": true },
-          { "time": "18:30", "text": "Farewell dinner — Michelin-starred restaurant", "plus": true }
+          {
+            "time": "08:00",
+            "text": "Breakfast basket"
+          },
+          {
+            "time": "09:00",
+            "text": "Grožnjan — artists' village, galleries, studios",
+            "plus": true
+          },
+          {
+            "time": "10:15",
+            "text": "Motovun — fortress, truffle forests, panorama",
+            "plus": true
+          },
+          {
+            "time": "12:00",
+            "text": "Lunch in Motovun",
+            "plus": true
+          },
+          {
+            "time": "15:00",
+            "text": "Rovinj — old town tour, harbor, free time",
+            "plus": true
+          },
+          {
+            "time": "18:30",
+            "text": "Farewell dinner — Michelin-starred restaurant",
+            "plus": true
+          }
         ],
-        "meals": ["Breakfast", "Lunch", "Michelin dinner ✦"],
+        "meals": [
+          "Breakfast",
+          "Lunch",
+          "Michelin dinner ✦"
+        ],
         "host": ""
       },
       {
@@ -176,12 +264,27 @@
         "title": "The end, but not goodbye",
         "narrative": "",
         "schedule": [
-          { "time": "08:00", "text": "Final group breakfast" },
-          { "time": "09:00", "text": "Gift package — wine, truffle, olive oil from Istria" },
-          { "time": "09:30", "text": "Group photo on the terrace" },
-          { "time": "10:00", "text": "Check-out — Doviđenja!" }
+          {
+            "time": "08:00",
+            "text": "Final group breakfast"
+          },
+          {
+            "time": "09:00",
+            "text": "Gift package — wine, truffle, olive oil from Istria"
+          },
+          {
+            "time": "09:30",
+            "text": "Group photo on the terrace"
+          },
+          {
+            "time": "10:00",
+            "text": "Check-out — Doviđenja!"
+          }
         ],
-        "meals": ["Breakfast", "Gift"],
+        "meals": [
+          "Breakfast",
+          "Gift"
+        ],
         "host": ""
       }
     ],
@@ -273,7 +376,7 @@
       {
         "icon": "location",
         "title": "Getting There",
-        "text": "Pula Airport 1h · Trieste 1.5h · Ljubljana 2h · Munich 5h · Vienna 7h · Zurich 8h. Airport transfers on request."
+        "text": "Pula Airport 1h · Trieste 1.5h · Ljubljana 2h · Munich 5h · Vienna 5h · Zurich 8h. Airport transfers on request."
       }
     ]
   },
@@ -336,7 +439,13 @@
           "We design a tailored programme",
           "You enjoy, we handle everything"
         ],
-        "tags": ["Team building", "Celebration", "Active holiday", "Gastro travel", "Own transport"],
+        "tags": [
+          "Team building",
+          "Celebration",
+          "Active holiday",
+          "Gastro travel",
+          "Own transport"
+        ],
         "cta": "Start the conversation",
         "featured": false
       }
@@ -373,7 +482,12 @@
         "source": "KARLIĆ TARTUFI"
       }
     ],
-    "badges": ["Flos Olei · 9× World Champion", "Michelin Guide Croatia", "Kozlović · Since 1904", "Karlić · 3 Generations"],
+    "badges": [
+      "Flos Olei · 9× World Champion",
+      "Michelin Guide Croatia",
+      "Kozlović · Since 1904",
+      "Karlić · 3 Generations"
+    ],
     "note": ""
   },
   "contact": {
@@ -388,16 +502,47 @@
       "email": "Email",
       "emailPlaceholder": "john@example.com",
       "groupSize": "Group Size",
-      "groupSizeOptions": ["10–15 guests", "16–24 guests", "25–34 guests"],
+      "groupSizeOptions": [
+        "2 guests",
+        "3–4 guests",
+        "5–7 guests",
+        "8–15 guests",
+        "16–24 guests",
+        "25–34 guests"
+      ],
       "date": "Preferred Date",
       "arrival": "Arrival",
       "departure": "Departure",
       "flexibleDates": "My dates are flexible",
-      "dateOptions": ["December 2026", "January 2027", "February 2027", "March 2027", "April 2027", "May 2027", "June 2027", "September 2027", "October 2027", "November 2027", "Flexible"],
+      "dateOptions": [
+        "December 2026",
+        "January 2027",
+        "February 2027",
+        "March 2027",
+        "April 2027",
+        "May 2027",
+        "June 2027",
+        "September 2027",
+        "October 2027",
+        "November 2027",
+        "Flexible"
+      ],
       "package": "Which package interests you?",
-      "packageOptions": ["Soil and Soul Istria", "Winter at Kotli", "Your Story (custom)", "Accommodation only", "Still deciding"],
+      "packageOptions": [
+        "Soil and Soul Istria",
+        "Winter at Kotli",
+        "Your Story (custom)",
+        "Accommodation only",
+        "Still deciding"
+      ],
       "dietary": "Dietary Requirements",
-      "dietaryOptions": ["None", "Vegetarian", "Vegan", "Gluten-Free", "Other (please specify below)"],
+      "dietaryOptions": [
+        "None",
+        "Vegetarian",
+        "Vegan",
+        "Gluten-Free",
+        "Other (please specify below)"
+      ],
       "message": "Your Message",
       "messagePlaceholder": "Tell us about your group...",
       "submit": "Send Non-Binding Inquiry",
@@ -406,8 +551,7 @@
     "whatsapp": "WhatsApp (preferred)",
     "whatsappCta": "Send WhatsApp Message",
     "emailLabel": "Email",
-    "phoneLabel": "Phone",
-    "trustItems": ["SSL", "Trusted Shops", "SEPA", "Credit Card"]
+    "phoneLabel": "Phone"
   },
   "faq": {
     "label": "FAQ",
@@ -415,11 +559,11 @@
     "items": [
       {
         "q": "Can individuals book this trip?",
-        "a": "Soil and Soul Istria is a group experience for 10–34 guests. You can travel as a group leader with your own group (from 10 guests, you travel free!) — ideal for wine clubs, gourmet travel groups, or team building. On request, we can also match you with an existing group."
+        "a": "Soil and Soul Istria is a group experience for 10–34 guests. You can travel as a group leader with your own group (from 10 guests, you travel free!) — ideal for wine clubs, gourmet travel groups, or team building. On request, we can also match you with an existing group. For Winter at Kotli: yes, the winter weekend is open to couples and individuals on set dates."
       },
       {
         "q": "How do I get to Kotli?",
-        "a": "Most guests drive: Munich 5h, Vienna 7h, Zurich 8h. Alternatively: fly to Pula (1h transfer), Trieste (1.5h), or Ljubljana (2h). On request, we arrange airport transfers."
+        "a": "Most guests drive: Munich 5h, Vienna 5h, Zurich 8h. Alternatively: fly to Pula (1h transfer), Trieste (1.5h), or Ljubljana (2h). On request, we arrange airport transfers."
       },
       {
         "q": "What happens in bad weather?",
@@ -559,7 +703,11 @@
       "poetic": "Eight stone houses in the Mirna valley, yours alone — for a culinary journey, a winter weekend or a company offsite.",
       "cta": "See the packages",
       "ctaSecondary": "Send inquiry",
-      "facts": ["8 stone houses", "10–34 guests", "Open all year"]
+      "facts": [
+        "8 stone houses",
+        "10–34 guests",
+        "Open all year"
+      ]
     },
     "packages": {
       "label": "Packages",
@@ -590,9 +738,10 @@
           "tagline": "Truffles, Malvazija and a fire in every house.",
           "length": "3 days · 2 nights",
           "group": "Groups & individuals",
-          "price": "from €490",
+          "price": "€590",
           "bestFor": "Couples · friends · company teams",
-          "intro": "A short winter escape: two nights in stone houses with the fire lit, a truffle tasting with the Karlić family, Malvazija at Kozlović, dinner in Roč and lunch in Hum. Join an open weekend, or take the whole village for your group."
+          "intro": "A short winter escape: two nights in stone houses with the fire lit, a truffle lunch with the Karlić family, Malvazija at Kozlović, dinner in Roč and lunch in Hum. Join an open weekend, or take the whole village for your group.",
+          "priceNote": "Introductory price · Winter 2026/27"
         }
       },
       "soon": {
@@ -606,7 +755,7 @@
   "winter": {
     "meta": {
       "title": "Winter at Kotli — Truffle & Wine Weekend in Istria | Kotli Retreat",
-      "description": "3 days, 2 nights in a private Istrian stone village: truffle tasting with the Karlić family, Malvazija at Kozlović, Motovun, Roč and Hum, fireside dinners. November to March, for groups and individuals."
+      "description": "3 days, 2 nights in a private Istrian stone village: truffle lunch with the Karlić family, Malvazija at Kozlović, Motovun, Roč and Hum, fireside dinners. November to March, for groups and individuals."
     },
     "hero": {
       "subtitle": "A winter weekend in Istria",
@@ -615,12 +764,19 @@
       "cta": "Choose a date",
       "ctaSecondary": "What's included",
       "daysLabel": "Days",
-      "price": "From €490",
+      "price": "€590",
       "pricePer": "per person",
       "people": "2 nights · November – March",
-      "hooks": ["Truffle tasting with the Karlić family", "Malvazija in the Kozlović cellar", "A fireplace in every house", "Motovun, Roč and Hum"],
+      "hooks": [
+        "Truffle lunch with the Karlić family",
+        "Malvazija in the Kozlović cellar",
+        "A fireplace in every house",
+        "Motovun, Roč and Hum"
+      ],
       "days": "3",
-      "allInclusive": "ALL-INCLUSIVE"
+      "allInclusive": "ALL-INCLUSIVE",
+      "priceNote": "Introductory price · Winter 2026/27",
+      "season": "Winter 2026/27"
     },
     "agenda": {
       "label": "Day by Day",
@@ -633,26 +789,58 @@
           "title": "Fire in the Hearth",
           "narrative": "The fireplaces are already lit when you arrive. Biska, pršut and Istrian cheese by the fire, then dinner at the konoba.",
           "schedule": [
-            { "time": "15:00", "text": "Check-in at the stone houses — fireplaces lit" },
-            { "time": "17:00", "text": "Welcome by the fire: Biska, pršut and local cheese" },
-            { "time": "19:30", "text": "Dinner at the konoba — fuži with truffles, Teran wine" }
+            {
+              "time": "15:00",
+              "text": "Check-in at the stone houses — fireplaces lit"
+            },
+            {
+              "time": "17:00",
+              "text": "Welcome by the fire: Biska, pršut and local cheese"
+            },
+            {
+              "time": "19:30",
+              "text": "Dinner at the konoba — fuži with truffles, Teran wine"
+            }
           ],
-          "meals": ["Aperitif", "Dinner"],
+          "meals": [
+            "Aperitif",
+            "Dinner"
+          ],
           "host": ""
         },
         {
           "number": "2",
           "theme": "Truffles & Wine",
           "title": "The Winter Truffle",
-          "narrative": "Late morning with the Karlić family, tasting the winter truffle the way three generations of truffle hunters serve it. Then a walk on the walls of Motovun above the truffle forests, Malvazija in the Kozlović cellar, and dinner by the fire in a konoba in Roč.",
+          "narrative": "Late morning with the Karlić family: a long lunch built around the winter truffle, the way three generations of truffle hunters serve it. Then a walk on the walls of Motovun above the truffle forests, Malvazija in the Kozlović cellar, and dinner by the fire in a konoba in Roč.",
           "schedule": [
-            { "time": "09:30", "text": "Breakfast basket" },
-            { "time": "11:00", "text": "Karlić Tartufi — truffle tasting with the family" },
-            { "time": "12:00", "text": "Motovun — walk on the town walls above the truffle forests" },
-            { "time": "15:00", "text": "Kozlović winery — cellar tasting, Malvazija from four soils" },
-            { "time": "20:00", "text": "Dinner at a konoba in Roč" }
+            {
+              "time": "09:30",
+              "text": "Breakfast basket"
+            },
+            {
+              "time": "11:00",
+              "text": "Karlić Tartufi — truffle lunch with the family"
+            },
+            {
+              "time": "13:00",
+              "text": "Motovun — walk on the town walls above the truffle forests"
+            },
+            {
+              "time": "15:00",
+              "text": "Kozlović winery — cellar tasting, Malvazija from four soils"
+            },
+            {
+              "time": "20:00",
+              "text": "Dinner at a konoba in Roč"
+            }
           ],
-          "meals": ["Breakfast", "Truffle tasting", "Wine tasting", "Dinner"],
+          "meals": [
+            "Breakfast",
+            "Truffle lunch",
+            "Wine tasting",
+            "Dinner"
+          ],
           "host": "The Karlić Family · The Kozlović Family"
         },
         {
@@ -661,12 +849,28 @@
           "title": "The Smallest Town",
           "narrative": "A slow breakfast, then a walk through Hum, the smallest town in the world, and a long farewell lunch with Biska, the town's mistletoe brandy, before the road home.",
           "schedule": [
-            { "time": "09:00", "text": "Breakfast basket" },
-            { "time": "11:00", "text": "Hum — a walk through the smallest town in the world" },
-            { "time": "13:00", "text": "Farewell lunch in Hum + Biska tasting" },
-            { "time": "15:30", "text": "Departure with your gift package" }
+            {
+              "time": "09:00",
+              "text": "Breakfast basket"
+            },
+            {
+              "time": "11:00",
+              "text": "Hum — a walk through the smallest town in the world"
+            },
+            {
+              "time": "13:00",
+              "text": "Farewell lunch in Hum + Biska tasting"
+            },
+            {
+              "time": "15:30",
+              "text": "Departure with your gift package"
+            }
           ],
-          "meals": ["Breakfast", "Lunch", "Gift"],
+          "meals": [
+            "Breakfast",
+            "Lunch",
+            "Gift"
+          ],
           "host": ""
         }
       ]
@@ -680,13 +884,13 @@
           "badge": "Mixed group",
           "name": "Open Winter Weekend",
           "slogan": "Join a fixed date — couples and friends welcome.",
-          "price": "from €590",
+          "price": "€590",
           "info": "per person · 3 days / 2 nights",
           "minNote": "Fixed dates · runs from 8 guests",
           "includes": [
             "2 nights in a stone house with fireplace",
             "Breakfasts, two dinners and lunch in Hum, with house wine",
-            "Truffle tasting with the Karlić family",
+            "Truffle lunch with the Karlić family",
             "Kozlović winery: cellar tasting",
             "Walks in Motovun and Hum",
             "Transport and farewell gift"
@@ -699,7 +903,7 @@
           "badge": "Private group",
           "name": "Private Winter Weekend",
           "slogan": "The whole village for your group, on your dates.",
-          "price": "from €490",
+          "price": "€590",
           "info": "per person · 3 days / 2 nights",
           "minNote": "Min. 10 guests",
           "includesLabel": "Everything in the Open Weekend, plus:",
@@ -712,7 +916,7 @@
           "featured": true
         }
       ],
-      "footerNote": "Prices per person in a shared house. Own arrival to Kotli. Winter season November 2026 – March 2027.",
+      "footerNote": "Prices per person in a shared house. Winter season November 2026 – March 2027.",
       "subtitle": "Join one of the open weekends with other guests, or take the whole village for your own group. Same programme, same hosts.",
       "facts": [
         {
@@ -724,7 +928,7 @@
           "label": "Nights by the fire"
         },
         {
-          "value": "8",
+          "value": "9",
           "label": "Meals and tastings"
         },
         {
@@ -742,12 +946,58 @@
         "Choose an open date, or ask for your own",
         "We confirm availability and send the full offer within 24 hours",
         "Arrive on Friday afternoon. The fire is already lit."
-      ]
+      ],
+      "priceNote": "Introductory price · Winter 2026/27",
+      "guaranteed": "Guaranteed departure",
+      "datesPolicy": "Open weekends run from 8 guests and are confirmed 14 days before arrival. If a weekend does not run, you get a full refund or move to another date. A guaranteed departure runs whatever the number of guests.",
+      "cancelTitle": "Deposit and cancellation",
+      "cancel": [
+        {
+          "value": "30%",
+          "label": "Deposit at booking"
+        },
+        {
+          "value": "60+ days",
+          "label": "Free cancellation"
+        },
+        {
+          "value": "30–59 days",
+          "label": "50% refund"
+        },
+        {
+          "value": "Under 30 days",
+          "label": "No refund"
+        }
+      ],
+      "arrivalTitle": "Getting to Kotli",
+      "arrival": [
+        {
+          "city": "Trieste",
+          "time": "1.5 h"
+        },
+        {
+          "city": "Ljubljana",
+          "time": "2 h"
+        },
+        {
+          "city": "Zagreb",
+          "time": "2.5 h"
+        },
+        {
+          "city": "Graz",
+          "time": "3 h"
+        },
+        {
+          "city": "Vienna",
+          "time": "5 h"
+        }
+      ],
+      "arrivalNote": "Driving times. Parking in the village."
     },
     "includes": {
       "label": "What's Included",
       "title": "All-inclusive from the first fire to the last tasting",
-      "subtitle": "Two nights, two dinners and a farewell lunch, a truffle tasting and a winery. What isn't included is listed below.",
+      "subtitle": "Two nights, two dinners, a truffle lunch, a farewell lunch and a winery. What isn't included is listed below.",
       "yesTitle": "Included",
       "yesSubtitle": "In both winter packages",
       "noTitle": "Not Included",
@@ -756,7 +1006,7 @@
         "2 nights in stone houses with fireplace",
         "2 breakfasts, 2 dinners and a farewell lunch, with house wine and water",
         "Welcome by the fire: Biska, pršut and local cheese",
-        "Truffle tasting with the Karlić family",
+        "Truffle lunch with the Karlić family",
         "Cellar tasting at Kozlović",
         "Walks in Motovun and Hum",
         "Dinner at a konoba in Roč",
@@ -769,6 +1019,41 @@
         "Premium drinks beyond house wine",
         "Travel cancellation insurance (recommended)",
         "Personal expenses and gratuities"
+      ]
+    },
+    "stickyMobile": "Send Inquiry — €590/person",
+    "faq": {
+      "label": "FAQ",
+      "title": "Still Have Questions?",
+      "items": [
+        {
+          "q": "Can individuals book this trip?",
+          "a": "Yes, the winter weekend is open to couples and individuals on set dates. Choose one of the open dates above."
+        },
+        {
+          "q": "What if a weekend does not run?",
+          "a": "Open weekends run from 8 guests and are confirmed 14 days before arrival. If a weekend does not run, you get a full refund or move to another date. Dates marked guaranteed departure run whatever the number of guests."
+        },
+        {
+          "q": "What is the cancellation policy?",
+          "a": "Deposit: 30% at booking. Free cancellation up to 60 days before arrival. 30–59 days: 50% refund. Under 30 days: no refund."
+        },
+        {
+          "q": "How do I get to Kotli?",
+          "a": "Most guests drive: Trieste 1.5 h, Ljubljana 2 h, Zagreb 2.5 h, Graz 3 h, Vienna 5 h. There is parking in the village."
+        },
+        {
+          "q": "Can we book it as a private group?",
+          "a": "Yes, from 10 guests, on your own dates from November to March. The price is the same, €590 per person."
+        },
+        {
+          "q": "Are there vegetarian / vegan options?",
+          "a": "Yes! Istrian cuisine is rich in vegetarian dishes: truffle pasta, vegetable Maneštra, grilled vegetables, local cheese. Vegan and gluten-free options are arranged on request at all restaurants. Please let us know your dietary requirements when booking."
+        },
+        {
+          "q": "Can I bring my dog?",
+          "a": "Yes! The stone houses are pet-friendly (€10/day). Private gardens, perfect walking trails. Please mention this when booking so we can assign the right house."
+        }
       ]
     }
   },
@@ -786,7 +1071,7 @@
       "length": "Length",
       "season": "Season",
       "group": "Group",
-      "from": "From",
+      "from": "Price",
       "highlights": "Highlights",
       "days": "Day by day",
       "view": "View full programme",
@@ -822,7 +1107,7 @@
           "label": "Truffles",
           "values": {
             "soilAndSoul": "Hunt with the Karlić family + cooking class",
-            "winter": "Tasting with the Karlić family"
+            "winter": "Lunch with the Karlić family"
           }
         },
         {
@@ -847,10 +1132,10 @@
           }
         },
         {
-          "label": "Price from",
+          "label": "Price per person",
           "values": {
-            "soilAndSoul": "€1,090 per person",
-            "winter": "€490 per person"
+            "soilAndSoul": "from €1,090",
+            "winter": "€590"
           }
         }
       ]
@@ -929,9 +1214,23 @@
     },
     "amenities": {
       "houseTitle": "In every house",
-      "house": ["Living room with fireplace", "Fully equipped kitchen", "Bedroom and bathroom", "2–5 guests, 80–140 m²", "Wi-Fi and TV", "Private parking"],
+      "house": [
+        "Living room with fireplace",
+        "Fully equipped kitchen",
+        "Bedroom and bathroom",
+        "2–5 guests, 80–140 m²",
+        "Wi-Fi and TV",
+        "Private parking"
+      ],
       "sharedTitle": "Shared by your group",
-      "shared": ["Outdoor pool", "Large barbecue area", "Panoramic terrace", "Stone tables under the trees", "Walking trails from the door", "The river and its pools"],
+      "shared": [
+        "Outdoor pool",
+        "Large barbecue area",
+        "Panoramic terrace",
+        "Stone tables under the trees",
+        "Walking trails from the door",
+        "The river and its pools"
+      ],
       "note": "Dogs and cats are welcome at €10 per day — tell us when you book, so we can choose the right house."
     },
     "around": {
@@ -976,5 +1275,13 @@
       "title": "Let's talk",
       "intro": "Write, call or send a WhatsApp — we reply within 24 hours with a personal offer."
     }
+  },
+  "thankYou": {
+    "meta": {
+      "title": "Thank you"
+    },
+    "title": "Thank you for your inquiry!",
+    "body": "We've received your message and will get back to you within 24 hours with a personal offer.",
+    "back": "Back to the homepage"
   }
 }

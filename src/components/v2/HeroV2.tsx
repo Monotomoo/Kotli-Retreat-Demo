@@ -12,8 +12,8 @@ import { tNs } from '@/lib/packages';
 //
 // Layout note: the video background is shared, but the content has two tracks.
 // Desktop (md+): one full-viewport bottom row — title+poetic+actions left,
-// ticket right (unchanged). Mobile: the first screen is video + title + poetic
-// only; the actions and ticket are pushed BELOW the fold onto ink.
+// ticket right (unchanged). Mobile: the first screen is media + title + price
+// + actions; the ticket is pushed BELOW the fold onto ink.
 const INK = '#0d120c';
 const IVORY = '#f6f3ec';
 const BRASS = '#b08d57';
@@ -51,14 +51,15 @@ export default function HeroV2({
   const hooks = t.raw('hooks') as string[];
   const poetic = t.has('poetic') ? t('poetic') : POETIC[locale] ?? POETIC.de;
 
+  // A package with its own dates (ns set) sends the CTA to the date list.
   const scrollToContact = () =>
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(ns ? 'pricing' : 'contact')?.scrollIntoView({ behavior: 'smooth' });
   const scrollToIncludes = () =>
     document.getElementById('includes')?.scrollIntoView({ behavior: 'smooth' });
 
   // Hold the hero content back so the video's own "Kotli Istra" intro title
   // has time to clear before the site text fades in. Tune this one number.
-  const REVEAL_DELAY = 1.2;
+  const REVEAL_DELAY = video ? 1.2 : 0.2;
 
   // ---- Reusable content pieces (fresh JSX per call → safe to place twice) ----
   const renderIntro = () => (
@@ -152,7 +153,7 @@ export default function HeroV2({
           Kotli Retreat — Istria
         </span>
         <span className="text-[9px] uppercase tracking-[3.5px]" style={{ color: 'rgba(246,243,236,0.45)' }}>
-          {SEASON}
+          {t.has('season') ? t('season') : SEASON}
         </span>
       </div>
 
@@ -187,6 +188,11 @@ export default function HeroV2({
             {t('people')}
           </span>
         </div>
+        {t.has('priceNote') && (
+          <div className="text-[9px] uppercase tracking-[2px] mt-3" style={{ color: BRASS_LIGHT }}>
+            {t('priceNote')}
+          </div>
+        )}
       </div>
 
       {/* Tasting-menu style hooks */}
@@ -335,25 +341,38 @@ export default function HeroV2({
         </motion.div>
       </div>
 
-      {/* ===== Mobile layout — first screen = video + intro; rest below fold ===== */}
+      {/* ===== Mobile layout — first screen = media + intro + price + actions ===== */}
       <div className="md:hidden relative z-10">
         {/* First screen: intro anchored to the bottom of the video */}
-        <div className="min-h-[100svh] flex flex-col justify-end px-5 pt-28 pb-28">
+        <div className="min-h-[100svh] flex flex-col justify-end px-5 pt-24 pb-24">
           {renderIntro()}
+          <motion.div
+            className="mt-5"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: REVEAL_DELAY + 0.95, ease: 'easeOut' }}
+          >
+            <div className="flex items-baseline gap-2.5">
+              <span className="font-display text-[30px] leading-none" style={{ color: BRASS_LIGHT }}>
+                {t('price')}
+              </span>
+              <span className="text-[10px] uppercase tracking-[2px]" style={{ color: 'rgba(246,243,236,0.7)' }}>
+                {t('pricePer')}
+              </span>
+            </div>
+            {t.has('priceNote') && (
+              <div className="text-[9.5px] uppercase tracking-[1.8px] mt-1.5" style={{ color: 'rgba(246,243,236,0.6)' }}>
+                {t('priceNote')}
+              </div>
+            )}
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-4">
+              {renderActions()}
+            </div>
+          </motion.div>
         </div>
 
-        {/* Below the fold: actions + ticket on ink */}
+        {/* Below the fold: ticket on ink */}
         <div className="px-5 pt-10 pb-16 flex flex-col gap-9">
-          <motion.div
-            className="flex items-center gap-7"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.6 }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
-          >
-            {renderActions()}
-          </motion.div>
-
           <motion.div
             className="w-full"
             initial={{ opacity: 0, y: 30 }}

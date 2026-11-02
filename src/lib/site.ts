@@ -30,6 +30,14 @@ export const HREFLANG: Record<string, string> = {
 export const CONTACT_EMAIL = 'info@kotliretreat.com';
 export const CONTACT_PHONE = '+385 99 256 3862';
 
+// Thank-you page after an inquiry, per locale (the conversion URL for GA4 / Ads).
+export const THANK_YOU_PATH: Record<string, string> = {
+  en: 'thank-you',
+  de: 'danke',
+  hr: 'hvala',
+  sl: 'hvala',
+};
+
 // The season currently on sale — hero ticket stamp.
 export const SEASON = '2027';
 

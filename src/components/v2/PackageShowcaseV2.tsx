@@ -30,6 +30,7 @@ interface CardText {
   length: string;
   group: string;
   price: string;
+  priceNote?: string;
 }
 
 function Spread({ pkg, index }: { pkg: PackageDef; index: number }) {
@@ -83,6 +84,11 @@ function Spread({ pkg, index }: { pkg: PackageDef; index: number }) {
             <div className="text-[9px] uppercase tracking-[2px] mt-1.5" style={{ color: 'rgba(246,243,236,0.75)' }}>
               {c.length}
             </div>
+            {c.priceNote && (
+              <div className="text-[9px] uppercase tracking-[1.5px] mt-1.5" style={{ color: BRASS_LIGHT }}>
+                {c.priceNote}
+              </div>
+            )}
           </div>
         </div>
         <div
@@ -301,6 +307,11 @@ export default function PackageShowcaseV2() {
                       <div className="font-display text-[23px] sm:text-[28px] leading-none mt-1.5" style={{ color: BRASS_LIGHT }}>
                         {priceRow.values[p.cardKey]}
                       </div>
+                      {c.priceNote && (
+                        <div className="text-[9px] uppercase tracking-[1.5px] mt-1.5" style={{ color: 'rgba(246,243,236,0.6)' }}>
+                          {c.priceNote}
+                        </div>
+                      )}
                     </div>
                     <div className="text-right">
                       <div className="font-display italic text-[19px]" style={{ color: IVORY }}>

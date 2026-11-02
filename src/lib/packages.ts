@@ -10,7 +10,7 @@ export interface PackageDef {
   inset: string; // second photo on the /packages spread
   dayImages: { src: string; alt: string }[];
   /** fixed open dates (ISO, arrival → departure); turns on the dated pricing layout */
-  dates?: { from: string; to: string }[];
+  dates?: { from: string; to: string; guaranteed?: boolean }[];
   /** extra Soil-and-Soul-only sections (why, destinations) */
   full?: boolean;
 }
@@ -39,14 +39,18 @@ export const PACKAGES: PackageDef[] = [
     inset: '/images/hosts/vineyard.jpg',
     dayImages: [
       { src: '/images/kotli/interior-fireplace.jpg', alt: 'Fireplace in a Kotli stone house' },
-      { src: '/images/hosts/host-1.png', alt: 'Truffle tasting with the Karlić family' },
+      { src: '/images/hosts/host-1.png', alt: 'Truffle lunch with the Karlić family' },
       { src: '/images/destinations/hum-b.jpg', alt: 'Hum, the smallest town in the world' },
     ],
     dates: [
-      { from: '2026-11-20', to: '2026-11-22' },
       { from: '2026-11-27', to: '2026-11-29' },
-      { from: '2026-12-11', to: '2026-12-13' },
+      { from: '2026-12-11', to: '2026-12-13', guaranteed: true },
       { from: '2026-12-18', to: '2026-12-20' },
+      { from: '2027-01-15', to: '2027-01-17' },
+      { from: '2027-01-29', to: '2027-01-31' },
+      { from: '2027-02-12', to: '2027-02-14', guaranteed: true },
+      { from: '2027-02-26', to: '2027-02-28' },
+      { from: '2027-03-12', to: '2027-03-14' },
     ],
   },
 ];

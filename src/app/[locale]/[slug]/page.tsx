@@ -9,6 +9,9 @@ import HeroV2 from '@/components/v2/HeroV2';
 import WhyV2 from '@/components/v2/WhyV2';
 import AgendaV2 from '@/components/v2/AgendaV2';
 import DestinationsV2 from '@/components/v2/DestinationsV2';
+import AccommodationV2 from '@/components/v2/AccommodationV2';
+import HostsV2 from '@/components/v2/HostsV2';
+import FaqV2 from '@/components/v2/FaqV2';
 import PricingV2 from '@/components/v2/PricingV2';
 import DatedPricingV2 from '@/components/v2/DatedPricingV2';
 import IncludesV2 from '@/components/v2/IncludesV2';
@@ -63,16 +66,19 @@ export default async function PackagePage({
       <HeaderV2 />
       <main>
         <HeroV2 ns={pkg.ns} image={pkg.image} video={!!pkg.full} />
+        {pkg.full && <AccommodationV2 />}
         {pkg.full && <WhyV2 />}
+        {pkg.full && <HostsV2 />}
         <AgendaV2 ns={pkg.ns} images={pkg.dayImages} />
         {pkg.full && <DestinationsV2 />}
         {pkg.dates ? <DatedPricingV2 pkg={pkg} /> : <PricingV2 ns={pkg.ns} />}
         <IncludesV2 ns={pkg.ns} />
         <ContactV2 />
+        <FaqV2 ns={pkg.ns} />
       </main>
       <FooterV2 />
       <WhatsAppFloat />
-      <StickyMobileCta />
+      <StickyMobileCta ns={pkg.ns} />
     </>
   );
 }

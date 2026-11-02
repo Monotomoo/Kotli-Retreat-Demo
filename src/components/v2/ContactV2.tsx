@@ -3,13 +3,15 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Check } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { useRouter } from '@/i18n/navigation';
+import { THANK_YOU_PATH } from '@/lib/site';
+import { LEAD_KEY } from '@/lib/analytics';
 
 // V2 Contact — "Plan your journey", form v2.2.
 // The form sits on a glass card; dropdowns replaced with selectable brass chips.
 // Submits directly to info@kotliretreat.com via Web3Forms (no backend to run)
-// and shows an in-place thank-you confirmation. Needs a free access key in
+// and redirects to the thank-you page (the conversion URL). Needs a free access key in
 // NEXT_PUBLIC_WEB3FORMS_KEY; without it, it falls back to a prefilled mailto so
 // the form is never dead.
 const INK = '#0d120c';
@@ -33,8 +35,6 @@ const LOCAL_UI: Record<
     stepsLabel: string;
     steps: string[];
     sending: string;
-    thankTitle: string;
-    thankBody: string;
     errorText: string;
   }
 > = {
@@ -43,8 +43,6 @@ const LOCAL_UI: Record<
     stepsLabel: "So funktioniert's",
     steps: ['Anfrage senden — unverbindlich', 'Antwort innerhalb von 24 Stunden', 'Individuelles Angebot & Wunschtermin'],
     sending: 'Wird gesendet…',
-    thankTitle: 'Danke für Ihre Anfrage!',
-    thankBody: 'Wir haben Ihre Nachricht erhalten und melden uns innerhalb von 24 Stunden mit einem individuellen Angebot.',
     errorText: 'Etwas ist schiefgelaufen. Bitte schreiben Sie uns direkt an info@kotliretreat.com oder per WhatsApp.',
   },
   en: {
@@ -52,8 +50,6 @@ const LOCAL_UI: Record<
     stepsLabel: 'How it works',
     steps: ['Send an inquiry — no obligation', 'Reply within 24 hours', 'Personal offer & your date'],
     sending: 'Sending…',
-    thankTitle: 'Thank you for your inquiry!',
-    thankBody: "We've received your message and will get back to you within 24 hours with a personal offer.",
     errorText: 'Something went wrong. Please email us directly at info@kotliretreat.com or via WhatsApp.',
   },
   hr: {
@@ -61,8 +57,6 @@ const LOCAL_UI: Record<
     stepsLabel: 'Kako funkcionira',
     steps: ['Pošaljite upit — bez obveze', 'Odgovor unutar 24 sata', 'Osobna ponuda i termin'],
     sending: 'Šalje se…',
-    thankTitle: 'Hvala na upitu!',
-    thankBody: 'Primili smo vašu poruku i javit ćemo se unutar 24 sata s osobnom ponudom.',
     errorText: 'Nešto je pošlo po zlu. Pišite nam izravno na info@kotliretreat.com ili putem WhatsAppa.',
   },
   sl: {
@@ -70,8 +64,6 @@ const LOCAL_UI: Record<
     stepsLabel: 'Kako poteka',
     steps: ['Pošljite povpraševanje — brez obveznosti', 'Odgovor v 24 urah', 'Osebna ponudba in termin'],
     sending: 'Pošiljanje…',
-    thankTitle: 'Hvala za povpraševanje!',
-    thankBody: 'Prejeli smo vaše sporočilo in javili se vam bomo v 24 urah z osebno ponudbo.',
     errorText: 'Nekaj je šlo narobe. Pišite nam neposredno na info@kotliretreat.com ali prek WhatsAppa.',
   },
 };
@@ -139,6 +131,7 @@ export default function ContactV2() {
   const t = useTranslations('contact');
   const tGdpr = useTranslations('gdpr');
   const locale = useLocale();
+  const router = useRouter();
   const ui = LOCAL_UI[locale] ?? LOCAL_UI.de;
 
   const groupSizes = t.raw('form.groupSizeOptions') as string[];
@@ -154,6 +147,13 @@ export default function ContactV2() {
 
   const setChoice = (key: keyof typeof choices) => (v: string) =>
     setChoices((c) => ({ ...c, [key]: v }));
+
+  // Exact dates (arrival → departure), or "flexible". Flexible is the default
+  // so an inquiry never stalls on a date the guest hasn't settled yet.
+  const today = new Date().toISOString().slice(0, 10);
+  const [arrival, setArrival] = useState('');
+  const [departure, setDeparture] = useState('');
+  const [flexible, setFlexible] = useState(true);
 
   // A package CTA elsewhere on the page can preselect its package here, and a
   // fixed-date CTA also its dates: detail is a name or { name, arrival, departure }.
@@ -171,20 +171,13 @@ export default function ContactV2() {
     window.addEventListener('kotli:choose-package', onChoose);
     return () => window.removeEventListener('kotli:choose-package', onChoose);
   }, [packages]);
-
-  // Exact dates (arrival → departure), or "flexible". Flexible is the default
-  // so an inquiry never stalls on a date the guest hasn't settled yet.
-  const today = new Date().toISOString().slice(0, 10);
-  const [arrival, setArrival] = useState('');
-  const [departure, setDeparture] = useState('');
-  const [flexible, setFlexible] = useState(true);
   const fmt = (iso: string) =>
     iso ? new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(iso + 'T12:00:00')) : '';
   const dateText = flexible
     ? t('form.flexibleDates') + (arrival ? ` (${fmt(arrival)}${departure ? ' – ' + fmt(departure) : ''})` : '')
     : `${fmt(arrival)} – ${fmt(departure)}`;
 
-  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+  const [status, setStatus] = useState<'idle' | 'sending' | 'error'>('idle');
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -241,8 +234,15 @@ export default function ContactV2() {
       });
       clearTimeout(timer);
       const json = await res.json();
-      if (json.success) setStatus('success');
-      else setStatus('error');
+      if (json.success) {
+        // The thank-you page reads this to report the conversion exactly once.
+        try {
+          sessionStorage.setItem(LEAD_KEY, choices.package);
+        } catch {
+          // sessionStorage unavailable: the page view still counts
+        }
+        router.push(`/${THANK_YOU_PATH[locale] ?? THANK_YOU_PATH.en}`);
+      } else setStatus('error');
     } catch {
       clearTimeout(timer);
       setStatus('error');
@@ -350,22 +350,10 @@ export default function ContactV2() {
                   <span className="text-[9px] uppercase tracking-[2.5px] font-semibold w-16 shrink-0" style={{ color: 'rgba(246,243,236,0.4)' }}>
                     {t('phoneLabel')}
                   </span>
-                  <span className="text-[14px]" style={{ color: 'rgba(246,243,236,0.85)' }}>
+                  <a href="tel:+385992563862" className="text-[14px] no-underline" style={{ color: 'rgba(246,243,236,0.85)' }}>
                     +385 99 256 3862
-                  </span>
+                  </a>
                 </div>
-              </div>
-
-              <div className="flex flex-wrap gap-2 mt-3">
-                {(t.raw('trustItems') as string[]).map((item, i) => (
-                  <span
-                    key={i}
-                    className="text-[9px] uppercase tracking-[1.5px] font-semibold px-2.5 py-1 rounded-full"
-                    style={{ border: '1px solid rgba(246,243,236,0.15)', color: 'rgba(246,243,236,0.45)' }}
-                  >
-                    {item}
-                  </span>
-                ))}
               </div>
             </div>
           </motion.div>
@@ -386,39 +374,6 @@ export default function ContactV2() {
                 boxShadow: '0 30px 70px rgba(0,0,0,0.35)',
               }}
             >
-              <AnimatePresence mode="wait">
-                {status === 'success' ? (
-                  <motion.div
-                    key="thanks"
-                    className="py-10 md:py-16 flex flex-col items-center text-center"
-                    initial={{ opacity: 0, y: 14 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                  >
-                    <div
-                      className="w-16 h-16 rounded-full flex items-center justify-center mb-6"
-                      style={{ backgroundColor: 'rgba(211,183,135,0.15)', border: '1px solid rgba(211,183,135,0.45)' }}
-                    >
-                      <Check className="w-8 h-8" style={{ color: BRASS_LIGHT }} strokeWidth={1.75} />
-                    </div>
-                    <h3 className="font-display text-[26px] md:text-[30px] leading-tight" style={{ color: IVORY }}>
-                      {ui.thankTitle}
-                    </h3>
-                    <p className="text-[14.5px] leading-relaxed mt-4 max-w-[420px]" style={{ color: 'rgba(246,243,236,0.65)' }}>
-                      {ui.thankBody}
-                    </p>
-                    <a
-                      href="https://wa.me/385992563862"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-7 px-6 py-3 text-[10px] font-semibold uppercase tracking-[2.5px] font-sans no-underline rounded-[3px] transition-colors duration-300"
-                      style={{ border: '1px solid rgba(176,141,87,0.45)', color: BRASS_LIGHT }}
-                    >
-                      WhatsApp →
-                    </a>
-                  </motion.div>
-                ) : (
-                  <motion.div key="form" exit={{ opacity: 0 }}>
                     {/* Card seam */}
                     <div className="flex items-center justify-between mb-7">
                       <span className="text-[9px] uppercase tracking-[3px] font-semibold" style={{ color: BRASS_LIGHT }}>
@@ -596,9 +551,6 @@ export default function ContactV2() {
                   )}
                 </div>
                     </form>
-                  </motion.div>
-                )}
-              </AnimatePresence>
             </div>
           </motion.div>
         </div>

@@ -2,8 +2,9 @@
 
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
+import { tNs } from '@/lib/packages';
 
-export default function StickyMobileCta() {
+export default function StickyMobileCta({ ns = '' }: { ns?: string } = {}) {
   const t = useTranslations();
 
   return (
@@ -17,7 +18,7 @@ export default function StickyMobileCta() {
         onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
         className="bg-white text-coral border-none px-8 py-3 text-sm font-bold font-sans cursor-pointer w-full rounded-sm"
       >
-        {t('stickyMobile')}
+        {t(tNs(ns, 'stickyMobile'))}
       </button>
     </motion.div>
   );

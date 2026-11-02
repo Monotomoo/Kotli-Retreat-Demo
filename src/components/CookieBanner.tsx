@@ -41,11 +41,11 @@ export default function CookieBanner() {
     <AnimatePresence>
       {show && (
         <motion.div
-          initial={{ y: 100, opacity: 0 }}
+          initial={{ y: 24, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          exit={{ y: 100, opacity: 0 }}
+          exit={{ y: 24, opacity: 0 }}
           transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed bottom-3 left-3 right-3 md:left-auto md:right-5 md:bottom-5 md:max-w-[440px] z-[60]"
+          className="fixed top-3 left-3 right-3 md:top-auto md:left-auto md:right-5 md:bottom-5 md:max-w-[440px] z-[1000]"
           role="dialog"
           aria-labelledby="cookie-banner-title"
         >

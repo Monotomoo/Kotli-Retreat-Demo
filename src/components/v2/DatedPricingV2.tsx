@@ -46,6 +46,8 @@ export default function DatedPricingV2({ pkg }: { pkg: PackageDef }) {
   const [open, priv] = t.raw('cards') as Card[];
   const facts = t.raw('facts') as { value: string; label: string }[];
   const steps = t.raw('steps') as string[];
+  const cancel = t.raw('cancel') as { value: string; label: string }[];
+  const arrivals = t.raw('arrival') as { city: string; time: string }[];
   // The name exactly as it appears in the form's package options.
   const formName = (tCard.raw(pkg.cardKey) as { name: string }).name;
   const [picked, setPicked] = useState<string | null>(null);
@@ -146,6 +148,9 @@ export default function DatedPricingV2({ pkg }: { pkg: PackageDef }) {
                   <div className="text-[10px] uppercase tracking-[1.8px] mt-1.5" style={{ color: 'rgba(246,243,236,0.5)' }}>
                     {open.info}
                   </div>
+                  <div className="text-[9px] uppercase tracking-[1.5px] mt-1.5" style={{ color: BRASS_LIGHT }}>
+                    {t('priceNote')}
+                  </div>
                 </div>
               </div>
             </div>
@@ -192,15 +197,16 @@ export default function DatedPricingV2({ pkg }: { pkg: PackageDef }) {
                         </span>
                         <span className="flex-1 min-w-0">
                           <span className="block font-display text-[19px] md:text-[21px] leading-tight" style={{ color: IVORY }}>
-                            {new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'long' }).formatRange(at(d.from), at(d.to))}
+                            {/* Node and browsers use different thin spaces here; normalize so hydration matches */}
+                            {new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'long' }).formatRange(at(d.from), at(d.to)).replace(/\s/g, ' ')}
                           </span>
                           <span className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-1">
                           <span className="text-[11.5px] capitalize" style={{ color: 'rgba(246,243,236,0.55)' }}>
                             {fmt(d.from, { weekday: 'long' })} – {fmt(d.to, { weekday: 'long' })}
                           </span>
-                          <span className="flex items-center gap-1.5 text-[9.5px] uppercase tracking-[1.8px] font-semibold" style={{ color: '#9fc59a' }}>
-                            <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#9fc59a' }} />
-                            {t('dateStatus')}
+                          <span className="flex items-center gap-1.5 text-[9.5px] uppercase tracking-[1.8px] font-semibold" style={{ color: d.guaranteed ? BRASS_LIGHT : '#9fc59a' }}>
+                            <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: d.guaranteed ? BRASS_LIGHT : '#9fc59a' }} />
+                            {d.guaranteed ? t('guaranteed') : t('dateStatus')}
                           </span>
                           </span>
                         </span>
@@ -216,6 +222,10 @@ export default function DatedPricingV2({ pkg }: { pkg: PackageDef }) {
                   );
                 })}
               </ul>
+
+              <p className="text-[12.5px] leading-relaxed mt-4" style={{ color: 'rgba(246,243,236,0.68)' }}>
+                {t('datesPolicy')}
+              </p>
 
               <div className="h-px my-7" style={{ backgroundColor: 'rgba(246,243,236,0.1)' }} />
 
@@ -251,14 +261,14 @@ export default function DatedPricingV2({ pkg }: { pkg: PackageDef }) {
 
           {/* Private weekend */}
           <motion.article
-            className="lg:col-span-5 rounded-[10px] overflow-hidden flex flex-col"
+            className="lg:col-span-5 lg:self-start lg:sticky lg:top-24 rounded-[10px] overflow-hidden flex flex-col"
             style={{ backgroundColor: '#fbf9f3', boxShadow: '0 26px 60px rgba(28,26,21,0.14)' }}
             initial={{ opacity: 0, y: 34 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.8, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
           >
-            <div className="relative h-[240px] lg:h-auto lg:flex-1 lg:min-h-[280px]">
+            <div className="relative h-[240px] lg:h-[280px]">
               <Image src={PRIVATE_IMAGE} alt={priv.name} fill sizes="(min-width:1024px) 40vw, 100vw" className="object-cover" />
               <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(13,18,12,0.6), transparent 55%)' }} />
               <span
@@ -282,6 +292,9 @@ export default function DatedPricingV2({ pkg }: { pkg: PackageDef }) {
                   </div>
                   <div className="text-[10px] uppercase tracking-[1.8px] mt-1.5" style={{ color: 'rgba(28,26,21,0.5)' }}>
                     {priv.info}
+                  </div>
+                  <div className="text-[9px] uppercase tracking-[1.5px] mt-1.5" style={{ color: BRASS_DARK }}>
+                    {t('priceNote')}
                   </div>
                 </div>
                 <span
@@ -334,6 +347,48 @@ export default function DatedPricingV2({ pkg }: { pkg: PackageDef }) {
               </li>
             ))}
           </ol>
+
+          {/* Cancellation + getting here */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 mt-4 md:mt-6">
+            <div className="p-5 md:p-6 rounded-[8px]" style={{ backgroundColor: 'rgba(251,249,243,0.7)', border: '1px solid rgba(28,26,21,0.08)' }}>
+              <div className="text-[10px] uppercase tracking-[3px] font-semibold" style={{ color: BRASS_DARK }}>
+                {t('cancelTitle')}
+              </div>
+              <dl className="m-0 mt-4 grid grid-cols-2 gap-x-6 gap-y-4">
+                {cancel.map((c) => (
+                  <div key={c.value}>
+                    <dt className="font-display text-[20px] md:text-[22px] leading-tight" style={{ color: INK }}>
+                      {c.value}
+                    </dt>
+                    <dd className="m-0 mt-1 text-[12.5px] leading-snug" style={{ color: 'rgba(28,26,21,0.65)' }}>
+                      {c.label}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+            <div className="p-5 md:p-6 rounded-[8px]" style={{ backgroundColor: 'rgba(251,249,243,0.7)', border: '1px solid rgba(28,26,21,0.08)' }}>
+              <div className="text-[10px] uppercase tracking-[3px] font-semibold" style={{ color: BRASS_DARK }}>
+                {t('arrivalTitle')}
+              </div>
+              <ul className="list-none m-0 p-0 mt-4 grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-4">
+                {arrivals.map((a) => (
+                  <li key={a.city}>
+                    <span className="block font-display text-[20px] md:text-[22px] leading-tight" style={{ color: INK }}>
+                      {a.time}
+                    </span>
+                    <span className="block mt-1 text-[12.5px] leading-snug" style={{ color: 'rgba(28,26,21,0.65)' }}>
+                      {a.city}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-[12.5px] leading-snug mt-4" style={{ color: 'rgba(28,26,21,0.65)' }}>
+                {t('arrivalNote')}
+              </p>
+            </div>
+          </div>
+
           <p className="font-serif italic text-[12.5px] mt-6" style={{ color: 'rgba(28,26,21,0.45)' }}>
             {t('footerNote')}
           </p>

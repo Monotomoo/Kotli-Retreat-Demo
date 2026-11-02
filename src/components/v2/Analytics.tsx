@@ -2,12 +2,14 @@
 
 import Script from 'next/script';
 import { useEffect } from 'react';
+import { track } from '@/lib/analytics';
 
 // GDPR-safe Google Analytics 4 + Google Ads via Consent Mode v2.
 //
 // Storage is DENIED by default (mandatory for DE/AT/CH: GA must not set cookies
 // or send identifiable pings before the visitor opts in). When the visitor
-// clicks "accept" in the cookie banner, consent is upgraded to granted.
+// clicks "accept" in the cookie banner, consent is upgraded to granted; returning
+// visitors who accepted start granted.
 //
 // IDs come from env, so nothing loads until they are set in Vercel:
 //   NEXT_PUBLIC_GA_ID          e.g. G-XXXXXXXXXX   (Analytics)
@@ -18,7 +20,7 @@ const CONSENT_KEY = 'ss_cookie_consent';
 
 export default function Analytics() {
   useEffect(() => {
-    const applyConsent = () => {
+    const onConsent = () => {
       let accepted = false;
       try {
         accepted = localStorage.getItem(CONSENT_KEY) === 'accepted';
@@ -26,15 +28,7 @@ export default function Analytics() {
         // localStorage unavailable
       }
       if (!accepted) return;
-
-      const w = window as unknown as {
-        dataLayer?: unknown[];
-        gtag?: (...args: unknown[]) => void;
-      };
-      w.dataLayer = w.dataLayer || [];
-      // Reuse the gtag defined by the init script, or queue until the library loads.
-      w.gtag = w.gtag || ((...args: unknown[]) => w.dataLayer!.push(args));
-      w.gtag('consent', 'update', {
+      (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag?.('consent', 'update', {
         analytics_storage: 'granted',
         ad_storage: 'granted',
         ad_user_data: 'granted',
@@ -42,9 +36,19 @@ export default function Analytics() {
       });
     };
 
-    applyConsent(); // returning visitors who already accepted
-    window.addEventListener('ss-consent-change', applyConsent);
-    return () => window.removeEventListener('ss-consent-change', applyConsent);
+    // Conversions: every WhatsApp and phone link on the site, wherever it sits.
+    const onClick = (e: MouseEvent) => {
+      const href = (e.target as Element).closest?.('a[href]')?.getAttribute('href') ?? '';
+      if (href.includes('wa.me/')) track('whatsapp_click');
+      else if (href.startsWith('tel:')) track('phone_click');
+    };
+
+    window.addEventListener('ss-consent-change', onConsent);
+    document.addEventListener('click', onClick);
+    return () => {
+      window.removeEventListener('ss-consent-change', onConsent);
+      document.removeEventListener('click', onClick);
+    };
   }, []);
 
   if (!GA_ID) return null;
@@ -60,11 +64,13 @@ export default function Analytics() {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           window.gtag = gtag;
+          var consent = 'denied';
+          try { if (localStorage.getItem('${CONSENT_KEY}') === 'accepted') consent = 'granted'; } catch (e) {}
           gtag('consent', 'default', {
-            ad_storage: 'denied',
-            ad_user_data: 'denied',
-            ad_personalization: 'denied',
-            analytics_storage: 'denied',
+            ad_storage: consent,
+            ad_user_data: consent,
+            ad_personalization: consent,
+            analytics_storage: consent,
             wait_for_update: 500
           });
           gtag('js', new Date());
