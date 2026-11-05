@@ -10,6 +10,7 @@
       "hosts": "Naši gostitelji",
       "agenda": "Načrt potovanja",
       "pricing": "Cene",
+      "dates": "Termini",
       "destinations": "Rovinj · Motovun · Hum",
       "contact": "Kontakt",
       "packages": "Paketi",
@@ -559,7 +560,7 @@
     "items": [
       {
         "q": "Ali je potovanje mogoče rezervirati tudi za posameznike?",
-        "a": "Soil and Soul Istria je skupinsko doživetje za 10–34 oseb. Potujete lahko kot vodja skupine s svojo skupino (od 10 oseb potujete brezplačno!) — idealno za vinske klube, gastronomske skupine ali teambuilding. Na povpraševanje vas lahko pridružimo tudi obstoječi skupini. Za Zimo v Kotlih: da, zimski vikend je na določene termine odprt za pare in posameznike."
+        "a": "Soil and Soul Istria je skupinsko doživetje za 10–34 oseb. Potujete lahko kot vodja skupine s svojo skupino (od 10 oseb potujete brezplačno!) — idealno za vinske klube, gastronomske skupine ali teambuilding. Za Zimo v Kotlih: da, zimski vikend je na določene termine odprt za pare in posameznike."
       },
       {
         "q": "Kako priti do Kotlov?",
@@ -614,14 +615,15 @@
     "legal": {
       "impressum": "Impresum",
       "privacy": "Zasebnost",
-      "terms": "Pogoji rezervacije"
+      "terms": "Pogoji rezervacije",
+      "cookies": "Nastavitve piškotkov"
     }
   },
   "whatsappFloat": "Vprašanja? Pišite nam!",
   "stickyMobile": "Pošljite povpraševanje — Od €1.090/osebo",
   "cookies": {
     "title": "Vaša zasebnost",
-    "text": "Uporabljamo nujne piškotke za delovanje strani in, z vašim soglasjem, analitične piškotke za izboljšanje vsebine. Več v ",
+    "text": "Uporabljamo nujne piškotke za delovanje strani in, z vašim soglasjem, analitične in oglaševalske piškotke za izboljšanje vsebine in merjenje naših oglasov. Več v ",
     "policyLink": "Pravilniku o zasebnosti",
     "accept": "Sprejmi vse",
     "decline": "Samo nujni",
@@ -633,32 +635,40 @@
   },
   "privacy": {
     "title": "Pravilnik o zasebnosti",
-    "lastUpdated": "Zadnja sprememba: maj 2026",
+    "lastUpdated": "Zadnja sprememba: november 2026",
     "intro": "Ta pravilnik opisuje, kako Creative idea d.o.o. zbira in obdeluje vaše osebne podatke v skladu s Splošno uredbo o varstvu podatkov (GDPR).",
     "sections": [
       {
         "h": "1. Upravljavec",
-        "p": "Creative idea d.o.o., Zagreb, Hrvaška. OIB: 39151678424. E-pošta: info@kotliretreat.com. Telefon: +385 99 256 3862."
+        "p": "Creative idea d.o.o., Zagreb, Hrvaška. OIB: 39151678424. E-pošta: info@kotliretreat.com. Telefon: +385 99 256 3862. Creative idea d.o.o. upravlja to spletno stranjo in je lastnik kamnitih hiš. Delmata Travel j.d.o.o., Prve Poljanice 7, Zagreb, organizira potovanja. Vaše povpraševanje posredujemo Delmata Travelu, kadar je to potrebno za pripravo ali izvedbo potovanja, Delmata Travel pa odgovarja za podatke, ki jih prejme v ta namen."
       },
       {
         "h": "2. Katere podatke zbiramo",
-        "p": "Ko izpolnite kontaktni obrazec, zbiramo: ime, priimek, e-poštni naslov, velikost skupine, želeni termin, paket, ki vas zanima, prehranske posebnosti in vsebino sporočila. Spletna stran uporablja nujne piškotke za delovanje in, z vašim soglasjem, analitične piškotke."
+        "p": "Ko izpolnite kontaktni obrazec, zbiramo: ime, priimek, e-poštni naslov, velikost skupine, želene termine, paket, ki vas zanima, prehranske posebnosti in vsebino sporočila. Če nam pišete ali nas pokličete po e-pošti, telefonu ali WhatsAppu, prejmemo, kar nam pošljete. Ob obisku strani naš ponudnik gostovanja beleži tehnične podatke, kot so IP-naslov, brskalnik in čas obiska. Vaša izbira piškotkov se shrani v vašem brskalniku."
       },
       {
         "h": "3. Namen in pravna podlaga obdelave",
-        "p": "Vaše podatke obdelujemo izključno za odgovor na vaše povpraševanje in pripravo individualne ponudbe (zakoniti interes / izvajanje predpogodbenih ukrepov po čl. 6(1)(b) GDPR). Ne uporabljamo jih v marketinške namene brez vašega izrecnega soglasja."
+        "p": "Podatke iz povpraševanja uporabljamo, da vam odgovorimo in pripravimo individualno ponudbo (predpogodbeni ukrepi, čl. 6(1)(b) GDPR). Tehnični podatki skrbijo za delovanje in varnost strani (zakoniti interes, čl. 6(1)(f) GDPR). Analitične in oglaševalske piškotke uporabljamo samo z vašim soglasjem (čl. 6(1)(a) GDPR). Podatkov iz povpraševanja ne uporabljamo v marketinške namene brez vašega izrecnega soglasja."
       },
       {
-        "h": "4. Obdobje hrambe",
+        "h": "4. Piškotki, Google Analytics in Google Ads",
+        "p": "Če izberete »Sprejmi vse«, uporabljamo Google Analytics 4, da razumemo uporabo strani, in Google Ads, da merimo, ali naši oglasi vodijo do povpraševanj, ter prikazujemo oglase osebam, ki so obiskale stran. To vključuje dogodke, kot sta oddaja povpraševanja ali klik na povezavo WhatsApp ali telefon. Ponudnik v EGP je Google Ireland Limited. Googlovi piškotki lahko trajajo do 2 leti. Če izberete »Samo nujni«, se Googlove oznake ne naložijo, analitični in oglaševalski piškotki pa se ne nastavijo. Izbiro lahko kadar koli spremenite pod »Nastavitve piškotkov« na dnu vsake strani."
+      },
+      {
+        "h": "5. Ponudniki storitev",
+        "p": "Za delovanje strani in odgovarjanje uporabljamo: Vercel Inc. (gostovanje), Web3Forms (dostava sporočil iz obrazca v naš nabiralnik), Google Workspace (e-pošta) in, če nam pišete tam, WhatsApp (Meta). Partnerskim gostiteljem, ki vam nudijo doživetje, posredujemo, kar je nujno. Nekateri ponudniki lahko obdelujejo podatke zunaj EU/EGP, tudi v ZDA. Takšni prenosi temeljijo na sklepu EU o ustreznosti ali standardnih pogodbenih klavzulah EU."
+      },
+      {
+        "h": "6. Obdobje hrambe",
         "p": "Podatke iz povpraševanja hranimo največ 24 mesecev, nato jih izbrišemo. Pogodbeni podatki se hranijo v skladu z zakonskimi roki (davčna evidenca — 11 let)."
       },
       {
-        "h": "5. Vaše pravice",
-        "p": "Imate pravico do dostopa, popravka, izbrisa, omejitve obdelave, prenosljivosti podatkov in ugovora. Soglasje za analitične piškotke lahko kadar koli prekličete. Zahteve pošljite na info@kotliretreat.com. Imate tudi pravico do pritožbe pri pristojnem nadzornem organu za varstvo podatkov."
+        "h": "7. Vaše pravice",
+        "p": "Imate pravico do dostopa, popravka, izbrisa, omejitve obdelave, prenosljivosti podatkov in ugovora. Soglasje za analitične in oglaševalske piškotke lahko kadar koli prekličete pod »Nastavitve piškotkov«. Druge zahteve pošljite na info@kotliretreat.com. Imate tudi pravico do pritožbe pri pristojnem nadzornem organu za varstvo podatkov."
       },
       {
-        "h": "6. Varnost",
-        "p": "Komunikacija je zaščitena s SSL šifriranjem. Podatkov ne delimo s tretjimi osebami, razen kadar je to nujno za izvedbo storitve (npr. partnerski gostitelji, ki vam nudijo doživetje) ali kadar to zahteva zakon."
+        "h": "8. Varnost",
+        "p": "Komunikacija je zaščitena s SSL šifriranjem. Razen tega, kar je opisano v tem pravilniku, podatke delimo le, kadar to zahteva zakon."
       }
     ]
   },
@@ -666,9 +676,9 @@
     "label": "Pravne informacije",
     "title": "Impresum",
     "country": "Hrvaška",
-    "intro": "Kotli Retreat in potovanja »Soil and Soul Istria« ponujata dve hrvaški podjetji.",
+    "intro": "Potovanja Kotli Retreata ponujata dve hrvaški podjetji.",
     "organiserTitle": "Organizator potovanj",
-    "organiserRole": "Delmata Travel je turistična agencija, ki organizira skupinska potovanja »Soil and Soul Istria«.",
+    "organiserRole": "Delmata Travel je turistična agencija, ki organizira potovanja Kotli Retreata: Soil and Soul Istria in Zima v Kotlih.",
     "operatorTitle": "Nastanitev in spletna stran",
     "operatorRole": "Creative idea d.o.o. je lastnik kamnitih hiš v Kotlih in upravljavec te spletne strani.",
     "fields": {
@@ -683,7 +693,9 @@
     },
     "conditionsTitle": "Pogoji rezervacije",
     "conditions": [
-      "Skupinska potovanja za 10 do 34 oseb. Vse cene so na osebo in vključujejo DDV.",
+      "Zasebna potovanja: cela vas za vašo skupino, od 10 do 34 oseb. To velja za Soil and Soul Istria in za Zimo v Kotlih v vaših terminih.",
+      "Odprti zimski vikendi: pari, prijatelji in posamezniki se v določenih terminih pridružijo drugim gostom. Vikend se izvede od 8 gostov, potrdimo pa ga 14 dni pred prihodom. Če se ne izvede, dobite polno vračilo ali zamenjate termin. Zagotovljen odhod se izvede ne glede na število gostov.",
+      "Vse cene so na osebo in vključujejo DDV.",
       "Povpraševanja so nezavezujoča; rezervacija velja šele z našo pisno potrditvijo.",
       "Predplačilo: 30 % ob rezervaciji. Preostanek je treba plačati 30 dni pred prihodom.",
       "Odpoved: brezplačno do 60 dni pred prihodom (polno vračilo predplačila); 30–59 dni pred prihodom: 50 % vračila; manj kot 30 dni: brez vračila.",
@@ -694,18 +706,18 @@
   },
   "home": {
     "meta": {
-      "title": "Kotli Retreat — zasebna kamnita vas v Istri za skupine",
-      "description": "Osem obnovljenih kamnitih hiš v dolini Mirne, Istra. All-inclusive gastronomska potovanja in zimski vikendi s tartufi za skupine — z družinami, ki stojijo za istrskimi tartufi, vinom in oljčnim oljem."
+      "title": "Kotli Retreat — kamnita vas v Istri za skupine in zimske vikende",
+      "description": "Osem obnovljenih kamnitih hiš v dolini Mirne, Istra. All-inclusive gastronomska potovanja za skupine in odprti zimski vikendi s tartufi — z družinami, ki stojijo za istrskimi tartufi in vinom."
     },
     "hero": {
       "eyebrow": "Istra · Hrvaška",
       "title": "Kotli Retreat",
-      "poetic": "Osem kamnitih hiš v dolini Mirne, samo za vas — za gastronomsko potovanje, zimski vikend ali podjetniški offsite.",
+      "poetic": "Osem kamnitih hiš v dolini Mirne — za gastronomsko potovanje, zimski vikend ali podjetniški offsite.",
       "cta": "Oglejte si pakete",
       "ctaSecondary": "Pošljite povpraševanje",
       "facts": [
         "8 kamnitih hiš",
-        "10–34 gostov",
+        "Do 34 gostov",
         "Odprto vse leto"
       ]
     },
@@ -750,12 +762,55 @@
         "text": "Dva aktivna programa iz iste vasi: podnevi istrske poti, zvečer miza v konobi.",
         "cta": "Obvestite me"
       }
+    },
+    "stickyMobile": "Pošljite povpraševanje — Od €590/osebo",
+    "faq": {
+      "label": "Pogosta vprašanja",
+      "title": "Imate vprašanja?",
+      "items": [
+        {
+          "q": "Kdo lahko rezervira v Kotlih?",
+          "a": "Soil and Soul Istria je zasebno potovanje za skupine od 10 do 34 oseb. Zimo v Kotlih lahko enako rezervirate od 10 gostov ali pa se odprtemu vikendu pridružite kot par, s prijatelji ali sami in si vas delite z drugimi gosti."
+        },
+        {
+          "q": "Ali imamo lahko celo vas samo zase?",
+          "a": "Da, od 10 gostov. Z zasebno rezervacijo ima vaša skupina celo vas v vaših terminih, s programom, prilagojenim vam. Tako rezervirajo tudi podjetja in klubi. Pišite nam za osebno ponudbo."
+        },
+        {
+          "q": "Kaj vključujejo paketi?",
+          "a": "Nastanitev, obroke s hišnim vinom, prevoz do vseh doživetij ter degustacije in obiske iz programa. Pot do Kotlov ni vključena. Celoten seznam je na strani vsakega paketa."
+        },
+        {
+          "q": "Kako priti do Kotlov?",
+          "a": "Najpogosteje se pride z avtomobilom: Ljubljana 2h, Trst 1,5h, Reka 1,5h. Alternativno: let do Pulja (1h transfer), Trsta (1,5h) ali Ljubljane (2h). Na željo organiziramo prevoz z letališča."
+        },
+        {
+          "q": "Kaj če je slabo vreme?",
+          "a": "Večina programa poteka v zaprtih prostorih: obroki, kleti in degustacije. Deli na prostem, kot so sprehodi ali iskanje tartufov, se ob močnem dežju prestavijo ali prilagodijo."
+        },
+        {
+          "q": "Ali obstajajo vegetarijanske / veganske možnosti?",
+          "a": "Da! Istrska kuhinja je bogata z vegetarijanskimi jedmi: testenine s tartufi, zelenjavna Maneštra, žar zelenjava, domači sir. Veganske in brezglutenske možnosti organiziramo na povpraševanje v vseh restavracijah. Prosimo, da nam svoje prehranske zahteve sporočite ob rezervaciji."
+        },
+        {
+          "q": "Kakšni so pogoji odpovedi?",
+          "a": "Brezplačna odpoved do 60 dni pred prihodom (polno vračilo predplačila). 30–59 dni: 50% vračila. Manj kot 30 dni: brez vračila. Priporočamo potovalno zavarovanje za odpoved. Predplačilo: 30% ob rezervaciji, preostanek 30 dni pred prihodom."
+        },
+        {
+          "q": "Katere načine plačila sprejemate?",
+          "a": "SEPA bančno nakazilo in kreditna kartica (Visa, Mastercard). Vse cene vključujejo DDV. Brez skritih pristojbin."
+        },
+        {
+          "q": "Ali lahko pripeljem svojega psa?",
+          "a": "Da! Kamnite hiše sprejemajo hišne ljubljenčke (€10/dan). Lastni vrtovi, popolne sprehajalne poti. Prosimo, navedite ob rezervaciji, da vam dodelimo ustrezno hišo."
+        }
+      ]
     }
   },
   "winter": {
     "meta": {
       "title": "Zima v Kotlih — vikend s tartufi in vinom v Istri | Kotli Retreat",
-      "description": "3 dni, 2 noči v zasebni kamniti vasi v Istri: kosilo s tartufi pri družini Karlić, malvazija pri Kozloviću, Motovun, Roč in Hum, večeri ob kaminu. Od novembra do marca, za skupine in posameznike."
+      "description": "3 dni, 2 noči v kamniti vasi v Istri: kosilo s tartufi pri družini Karlić, malvazija pri Kozloviću, Motovun, Roč in Hum, večeri ob kaminu. Od novembra do marca, za skupine in posameznike."
     },
     "hero": {
       "subtitle": "Zimski vikend v Istri",
@@ -1055,6 +1110,60 @@
           "a": "Da! Kamnite hiše sprejemajo hišne ljubljenčke (€10/dan). Lastni vrtovi, popolne sprehajalne poti. Prosimo, navedite ob rezervaciji, da vam dodelimo ustrezno hišo."
         }
       ]
+    },
+    "accommodation": {
+      "label": "Vaša nastanitev",
+      "title": "Kamnite hiše v Kotlih",
+      "subtitle": "Zapuščena kamnita vas, oživljena kot edinstveno zatočišče v srcu Istre.",
+      "intro": "Kotli so majhna kamnita vas v srcu Istre, tam kjer reka Mirna pada v slapovih in izdolbe kotlaste kotanje, po katerih je vas dobila ime. Nekoč glavna mlinarska vas na Humštini, danes stari mlin še kljubuje času, kamnite hiše pa ohranjajo toplino istrskega načina življenja.",
+      "features": [
+        {
+          "icon": "house",
+          "title": "8 avtentičnih kamnitih hiš",
+          "text": "Hiše od 80–140 m² z dnevno sobo, kuhinjo, spalnico in kopalnico. Za 2–5 oseb. Kamin, Wi-Fi, TV, lastno parkirišče."
+        },
+        {
+          "icon": "fire",
+          "title": "Ogenj ob prihodu",
+          "text": "Kamin v vsaki hiši, prižgan še pred vašim prihodom. Panoramska terasa nad dolino Mirne je tik pred vrati."
+        },
+        {
+          "icon": "pet",
+          "title": "Hišni ljubljenčki dobrodošli",
+          "text": "Psi in mačke so dobrodošli (€10/dan). Popolne sprehajalne poti tik pred vrati."
+        },
+        {
+          "icon": "location",
+          "title": "Prihod",
+          "text": "Letališče Pulj 1h · Trst 1,5h · Ljubljana 2h · München 5h · Dunaj 5h · Zürich 8h. Letališki prevoz na povpraševanje."
+        }
+      ]
+    },
+    "why": {
+      "label": "Zakaj to potovanje?",
+      "title": "5 razlogov za zimski vikend v Istri",
+      "points": [
+        {
+          "title": "Zimski tartuf — dolgo kosilo pri družini Karlić",
+          "text": "Pozno dopoldne pri družini Karlić, iskalcih tartufov v tretji generaciji: dolgo kosilo z zimskim tartufom, tako kot ga strežejo oni."
+        },
+        {
+          "title": "Vina iz ‘4 zemelj’ — ena Malvazija, štirje okusi",
+          "text": "Koncept ‘4 zemlje’ (rdeča, bela, siva, črna zemlja) ustvarja štiri različne značaje Malvazije. V kleti Kozlović, vinarjev od leta 1904, boste začutili to razliko."
+        },
+        {
+          "title": "Ogenj gori še pred vašim prihodom",
+          "text": "V vsaki hiši je kamin, in ko prispete, že gori. Biska, pršut in istrski sir ob ognju, nato dve noči v kamniti hiši."
+        },
+        {
+          "title": "Tri mesta na gričih: Motovun, Roč in Hum",
+          "text": "Sprehodite se po obzidju Motovuna nad tartufovimi gozdovi, večerjajte v konobi v Roču in končajte z dolgim kosilom v Humu, najmanjšem mestu na svetu."
+        },
+        {
+          "title": "Kamnita vas v dolini Mirne",
+          "text": "Kotli so popolnoma obnovljena srednjeveška vas: 8 kamnitih hiš in brez sosedov. Pridružite se odprtemu vikendu ali vzemite celo vas za svojo skupino."
+        }
+      ]
     }
   },
   "packagesPage": {
@@ -1154,7 +1263,7 @@
     "hero": {
       "eyebrow": "O Kotlih",
       "title": "Vas ob reki",
-      "intro": "Osem obnovljenih kamnitih hiš, kjer Mirna pada skozi kamnite kotle — vedno samo za eno skupino."
+      "intro": "Osem obnovljenih kamnitih hiš, kjer Mirna pada skozi kamnite kotle — zasebno za vašo skupino ali skupaj na odprtem zimskem vikendu."
     },
     "story": {
       "label": "Vas",
@@ -1171,7 +1280,7 @@
         },
         {
           "title": "Ponovno oživljena",
-          "text": "Ko so mlini utihnili, se je vas izpraznila. Kamnite hiše so od takrat obnavljali eno za drugo, danes pa Kotli sprejemajo samo eno skupino naenkrat."
+          "text": "Ko so mlini utihnili, se je vas izpraznila. Kamnite hiše so od takrat obnavljali eno za drugo, danes pa Kotli vse leto sprejemajo zasebne skupine, pozimi pa tudi odprte vikende."
         }
       ],
       "caption": "Mirna v Kotlih"
@@ -1190,8 +1299,8 @@
         "label": "Gostov na hišo"
       },
       {
-        "value": "1",
-        "label": "Skupina naenkrat"
+        "value": "34",
+        "label": "Gostov največ"
       },
       {
         "value": "1 h",
@@ -1201,7 +1310,7 @@
     "houses": {
       "label": "Kamnite hiše",
       "title": "Osem hiš, ena vas",
-      "text": "Vsaka hiša ima svojo dnevno sobo, kuhinjo, spalnico in kopalnico, s kaminom za hladnejše večere. Vaša skupina si deli bazen, teraso in ulice med njimi.",
+      "text": "Vsaka hiša ima svojo dnevno sobo, kuhinjo, spalnico in kopalnico, s kaminom za hladnejše večere. Gostje si delijo bazen, teraso in ulice med njimi.",
       "captions": {
         "exterior": "Kamnita hiša z vrtom",
         "fireplace": "Dnevna soba s kaminom",
@@ -1222,7 +1331,7 @@
         "Wi-Fi in TV",
         "Zasebno parkirišče"
       ],
-      "sharedTitle": "Za vašo skupino",
+      "sharedTitle": "Za vse goste",
       "shared": [
         "Zunanji bazen",
         "Velik prostor za žar",

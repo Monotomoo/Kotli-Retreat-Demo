@@ -20,6 +20,10 @@ export default function CookieBanner() {
     } catch {
       // localStorage not available
     }
+    // Footer "Cookie settings": reopen so a choice can be changed or withdrawn.
+    const reopen = () => setShow(true);
+    window.addEventListener('ss-open-cookie-settings', reopen);
+    return () => window.removeEventListener('ss-open-cookie-settings', reopen);
   }, []);
 
   const set = (value: 'accepted' | 'declined') => {

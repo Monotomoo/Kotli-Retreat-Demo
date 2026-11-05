@@ -3,7 +3,7 @@ import { SITE_URL, SITE_NAME, CONTACT_EMAIL, CONTACT_PHONE, localeUrl } from './
 // Build schema.org JSON-LD for the landing page from the locale's messages.
 // Emits Organization (TravelAgency) + TouristTrip + FAQPage → eligible for
 // rich results (especially the FAQ accordion) in Google.
-export async function buildJsonLd(locale: string) {
+export async function buildJsonLd(locale: string, faqFrom: 'root' | 'home' = 'root') {
   const messages = (await import(`../messages/${locale}.json`)).default as Record<string, unknown>;
   const url = localeUrl(locale);
 
@@ -11,7 +11,9 @@ export async function buildJsonLd(locale: string) {
   const hero = (messages.hero ?? {}) as { people?: string };
   const agenda = (messages.agenda ?? {}) as { days?: { theme: string; title: string }[] };
   const pricing = (messages.pricing ?? {}) as { cards?: { name: string }[] };
-  const faq = (messages.faq ?? {}) as { items?: { q: string; a: string }[] };
+  // The FAQ markup must match the FAQ shown on the page.
+  const faqSource = faqFrom === 'home' ? (messages.home as Record<string, unknown>).faq : messages.faq;
+  const faq = (faqSource ?? {}) as { items?: { q: string; a: string }[] };
 
   const organization = {
     '@type': 'TravelAgency',

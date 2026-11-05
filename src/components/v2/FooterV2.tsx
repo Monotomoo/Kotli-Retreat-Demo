@@ -214,6 +214,16 @@ export default function FooterV2() {
                 {t(`legal.${key}`)}
               </Link>
             ))}
+            <button
+              type="button"
+              onClick={() => window.dispatchEvent(new Event('ss-open-cookie-settings'))}
+              className="text-[11px] bg-transparent border-none p-0 cursor-pointer transition-colors duration-300"
+              style={{ color: 'rgba(246,243,236,0.45)' }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = 'rgba(246,243,236,0.75)')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(246,243,236,0.45)')}
+            >
+              {t('legal.cookies')}
+            </button>
           </div>
         </div>
 

@@ -45,7 +45,7 @@ export default async function HomePage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const jsonLd = await buildJsonLd(locale);
+  const jsonLd = await buildJsonLd(locale, 'home');
 
   return (
     <>
@@ -60,11 +60,11 @@ export default async function HomePage({
         <PackagesV2 />
         <HostsV2 />
         <ContactV2 />
-        <FaqV2 />
+        <FaqV2 ns="home" />
       </main>
       <FooterV2 />
       <WhatsAppFloat />
-      <StickyMobileCta />
+      <StickyMobileCta ns="home" />
     </>
   );
 }

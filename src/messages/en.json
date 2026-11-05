@@ -10,6 +10,7 @@
       "hosts": "Our Hosts",
       "agenda": "Itinerary",
       "pricing": "Prices",
+      "dates": "Dates",
       "destinations": "Rovinj · Motovun · Hum",
       "contact": "Contact",
       "packages": "Packages",
@@ -559,7 +560,7 @@
     "items": [
       {
         "q": "Can individuals book this trip?",
-        "a": "Soil and Soul Istria is a group experience for 10–34 guests. You can travel as a group leader with your own group (from 10 guests, you travel free!) — ideal for wine clubs, gourmet travel groups, or team building. On request, we can also match you with an existing group. For Winter at Kotli: yes, the winter weekend is open to couples and individuals on set dates."
+        "a": "Soil and Soul Istria is a group experience for 10–34 guests. You can travel as a group leader with your own group (from 10 guests, you travel free!) — ideal for wine clubs, gourmet travel groups, or team building. For Winter at Kotli: yes, the winter weekend is open to couples and individuals on set dates."
       },
       {
         "q": "How do I get to Kotli?",
@@ -614,14 +615,15 @@
     "legal": {
       "impressum": "Legal Notice",
       "privacy": "Privacy Policy",
-      "terms": "Booking Terms"
+      "terms": "Booking Terms",
+      "cookies": "Cookie settings"
     }
   },
   "whatsappFloat": "Questions? Write to us!",
   "stickyMobile": "Send Inquiry — From €1,090/person",
   "cookies": {
     "title": "Your privacy",
-    "text": "We use essential cookies to run the site and, with your consent, analytics cookies to improve content. More in our ",
+    "text": "We use essential cookies to run the site and, with your consent, analytics and advertising cookies to improve content and measure our ads. More in our ",
     "policyLink": "Privacy Policy",
     "accept": "Accept all",
     "decline": "Essential only",
@@ -633,32 +635,40 @@
   },
   "privacy": {
     "title": "Privacy Policy",
-    "lastUpdated": "Last updated: May 2026",
+    "lastUpdated": "Last updated: November 2026",
     "intro": "This policy describes how Creative idea d.o.o. collects and processes your personal data in accordance with the General Data Protection Regulation (GDPR).",
     "sections": [
       {
         "h": "1. Data Controller",
-        "p": "Creative idea d.o.o., Zagreb, Croatia. VAT ID: 39151678424. Email: info@kotliretreat.com. Phone: +385 99 256 3862."
+        "p": "Creative idea d.o.o., Zagreb, Croatia. VAT ID: 39151678424. Email: info@kotliretreat.com. Phone: +385 99 256 3862. Creative idea d.o.o. operates this website and owns the stone houses. Delmata Travel j.d.o.o., Prve Poljanice 7, Zagreb, organises the journeys. We pass your inquiry to Delmata Travel when it is needed to prepare or carry out your journey, and Delmata Travel is responsible for the data it receives for that purpose."
       },
       {
         "h": "2. Data we collect",
-        "p": "When you submit the contact form we collect: first name, last name, email address, group size, preferred date, package of interest, dietary requirements, and message content. The website uses essential cookies and, with your consent, analytics cookies."
+        "p": "When you submit the contact form we collect: first name, last name, email address, group size, preferred dates, package of interest, dietary requirements, and message content. If you write or call us by email, phone or WhatsApp, we receive what you send us. When you visit the site, our hosting provider records technical data such as IP address, browser and time of visit. Your cookie choice is stored in your browser."
       },
       {
         "h": "3. Purpose and legal basis",
-        "p": "We process your data solely to respond to your inquiry and prepare an individual offer (legitimate interest / pre-contractual measures, Art. 6(1)(b) GDPR). We do not use it for marketing without your explicit consent."
+        "p": "We use inquiry data to respond to you and prepare an individual offer (pre-contractual measures, Art. 6(1)(b) GDPR). Technical data keeps the site running and secure (legitimate interest, Art. 6(1)(f) GDPR). Analytics and advertising cookies are used only with your consent (Art. 6(1)(a) GDPR). We do not use your inquiry data for marketing without your explicit consent."
       },
       {
-        "h": "4. Retention period",
+        "h": "4. Cookies, Google Analytics and Google Ads",
+        "p": "If you choose \"Accept all\", we use Google Analytics 4 to understand how the site is used, and Google Ads to measure whether our ads lead to inquiries and to show our ads to people who have visited the site. This includes events such as sending an inquiry or clicking a WhatsApp or phone link. The provider in the EEA is Google Ireland Limited. Google cookies can last up to 2 years. If you choose \"Essential only\", Google's tags are not loaded and no analytics or advertising cookies are set. You can change your choice at any time under \"Cookie settings\" at the bottom of every page."
+      },
+      {
+        "h": "5. Service providers",
+        "p": "We use these providers to run the site and answer you: Vercel Inc. (hosting), Web3Forms (delivers contact form messages to our mailbox), Google Workspace (email) and, if you write to us there, WhatsApp (Meta). We also share what is necessary with partner hosts who provide your experience. Some providers may process data outside the EU/EEA, including in the USA. Such transfers rely on an EU adequacy decision or the EU standard contractual clauses."
+      },
+      {
+        "h": "6. Retention period",
         "p": "Inquiry data is retained for a maximum of 24 months, after which it is deleted. Contractual data is retained per statutory deadlines (tax records — 11 years)."
       },
       {
-        "h": "5. Your rights",
-        "p": "You have the right to access, rectify, erase, restrict processing of, port, and object to the processing of your data. Consent for analytics cookies can be withdrawn at any time. Send requests to info@kotliretreat.com. You also have the right to lodge a complaint with the supervisory authority (AZOP, Croatian Data Protection Agency, Zagreb)."
+        "h": "7. Your rights",
+        "p": "You have the right to access, rectify, erase, restrict processing of, port, and object to the processing of your data. You can withdraw consent for analytics and advertising cookies at any time under \"Cookie settings\". Send other requests to info@kotliretreat.com. You also have the right to lodge a complaint with the supervisory authority (AZOP, Croatian Data Protection Agency, Zagreb)."
       },
       {
-        "h": "6. Security",
-        "p": "Communication is protected by SSL encryption. We do not share your data with third parties except when necessary to deliver the service (e.g. partner hosts providing your experience) or when required by law."
+        "h": "8. Security",
+        "p": "Communication is protected by SSL encryption. We do not share your data with anyone beyond what this policy describes, unless required by law."
       }
     ]
   },
@@ -666,9 +676,9 @@
     "label": "Legal",
     "title": "Legal Notice",
     "country": "Croatia",
-    "intro": "Kotli Retreat and the Soil and Soul Istria journeys are offered by two Croatian companies.",
+    "intro": "Kotli Retreat journeys are offered by two Croatian companies.",
     "organiserTitle": "Tour organiser",
-    "organiserRole": "Delmata Travel is the travel agency that organises the Soil and Soul Istria group journeys.",
+    "organiserRole": "Delmata Travel is the travel agency that organises the Kotli Retreat journeys: Soil and Soul Istria and Winter at Kotli.",
     "operatorTitle": "Accommodation & website",
     "operatorRole": "Creative idea d.o.o. owns the stone houses in Kotli and operates this website.",
     "fields": {
@@ -683,7 +693,9 @@
     },
     "conditionsTitle": "Booking terms",
     "conditions": [
-      "Group journeys for 10 to 34 guests. All prices are per person and include VAT.",
+      "Private journeys: the whole village for your group, from 10 to 34 guests. This applies to Soil and Soul Istria, and to Winter at Kotli on your own dates.",
+      "Open winter weekends: couples, friends and individuals join other guests on fixed dates. A weekend runs from 8 guests and is confirmed 14 days before arrival. If it does not run, you get a full refund or move to another date. A guaranteed departure runs whatever the number of guests.",
+      "All prices are per person and include VAT.",
       "Inquiries are non-binding; a booking is valid only with our written confirmation.",
       "Deposit: 30% on booking. The balance is due 30 days before arrival.",
       "Cancellation: free up to 60 days before arrival (full refund of the deposit); 30–59 days before arrival: 50% refund; under 30 days: no refund.",
@@ -694,18 +706,18 @@
   },
   "home": {
     "meta": {
-      "title": "Kotli Retreat — A Private Stone Village in Istria for Groups",
-      "description": "Eight restored stone houses in the Mirna valley, Istria. All-inclusive culinary journeys and winter truffle weekends for groups, with the families behind Istria's truffles, wine and olive oil."
+      "title": "Kotli Retreat — A Stone Village in Istria for Groups and Winter Weekends",
+      "description": "Eight restored stone houses in the Mirna valley, Istria. All-inclusive culinary journeys for groups and winter truffle weekends open to everyone, with the families behind Istria's truffles and wine."
     },
     "hero": {
       "eyebrow": "Istria · Croatia",
       "title": "Kotli Retreat",
-      "poetic": "Eight stone houses in the Mirna valley, yours alone — for a culinary journey, a winter weekend or a company offsite.",
+      "poetic": "Eight stone houses in the Mirna valley — for a culinary journey, a winter weekend or a company offsite.",
       "cta": "See the packages",
       "ctaSecondary": "Send inquiry",
       "facts": [
         "8 stone houses",
-        "10–34 guests",
+        "Up to 34 guests",
         "Open all year"
       ]
     },
@@ -750,12 +762,55 @@
         "text": "Two active programmes from the same village: Istrian trails by day, the konoba table at night.",
         "cta": "Get notified"
       }
+    },
+    "stickyMobile": "Send Inquiry — From €590/person",
+    "faq": {
+      "label": "FAQ",
+      "title": "Still Have Questions?",
+      "items": [
+        {
+          "q": "Who can book at Kotli?",
+          "a": "Soil and Soul Istria is a private journey for groups of 10–34. Winter at Kotli can be booked the same way from 10 guests, or you can join an open weekend as a couple, with friends or on your own, sharing the village with other guests."
+        },
+        {
+          "q": "Can we have the whole village to ourselves?",
+          "a": "Yes, from 10 guests. A private booking gives your group the whole village on your own dates, with the programme adjusted to you. Companies and clubs book this way too. Write to us for a personal offer."
+        },
+        {
+          "q": "What do the packages include?",
+          "a": "Accommodation, meals with house wine, transport to every experience, and the tastings and visits in the programme. Travel to Kotli is not included. Each package page has the full list."
+        },
+        {
+          "q": "How do I get to Kotli?",
+          "a": "Most guests drive: Munich 5h, Vienna 5h, Zurich 8h. Alternatively: fly to Pula (1h transfer), Trieste (1.5h), or Ljubljana (2h). On request, we arrange airport transfers."
+        },
+        {
+          "q": "What happens in bad weather?",
+          "a": "Most of the programme is indoors: meals, cellars and tastings. Outdoor parts, such as walks or the truffle hunt, are moved or adjusted in heavy rain."
+        },
+        {
+          "q": "Are there vegetarian / vegan options?",
+          "a": "Yes! Istrian cuisine is rich in vegetarian dishes: truffle pasta, vegetable Maneštra, grilled vegetables, local cheese. Vegan and gluten-free options are arranged on request at all restaurants. Please let us know your dietary requirements when booking."
+        },
+        {
+          "q": "What is the cancellation policy?",
+          "a": "Free cancellation up to 60 days before arrival (full refund of deposit). 30–59 days: 50% refund. Under 30 days: no refund. We recommend travel cancellation insurance. Deposit: 30% at booking, balance due 30 days before arrival."
+        },
+        {
+          "q": "What payment methods do you accept?",
+          "a": "SEPA bank transfer and credit card (Visa, Mastercard). All prices include VAT. No hidden fees."
+        },
+        {
+          "q": "Can I bring my dog?",
+          "a": "Yes! The stone houses are pet-friendly (€10/day). Private gardens, perfect walking trails. Please mention this when booking so we can assign the right house."
+        }
+      ]
     }
   },
   "winter": {
     "meta": {
       "title": "Winter at Kotli — Truffle & Wine Weekend in Istria | Kotli Retreat",
-      "description": "3 days, 2 nights in a private Istrian stone village: truffle lunch with the Karlić family, Malvazija at Kozlović, Motovun, Roč and Hum, fireside dinners. November to March, for groups and individuals."
+      "description": "3 days, 2 nights in an Istrian stone village: truffle lunch with the Karlić family, Malvazija at Kozlović, Motovun, Roč and Hum, fireside dinners. November to March, for groups and individuals."
     },
     "hero": {
       "subtitle": "A winter weekend in Istria",
@@ -1055,6 +1110,60 @@
           "a": "Yes! The stone houses are pet-friendly (€10/day). Private gardens, perfect walking trails. Please mention this when booking so we can assign the right house."
         }
       ]
+    },
+    "accommodation": {
+      "label": "Your Accommodation",
+      "title": "Stone Houses in Kotli",
+      "subtitle": "An abandoned stone village, revived as a unique retreat in the heart of Istria.",
+      "intro": "Kotli is a tiny stone village in the heart of Istria, where the Mirna river cascades into the basin-shaped hollows that gave the place its name. Once the main mill village of the Hum region, today the old mill still stands against time and the stone houses carry the warmth of Istrian life.",
+      "features": [
+        {
+          "icon": "house",
+          "title": "8 Authentic Stone Houses",
+          "text": "80–140 m² houses with living room, kitchen, bedroom, and bathroom. For 2–5 guests. Fireplace, Wi-Fi, TV, private parking."
+        },
+        {
+          "icon": "fire",
+          "title": "Fire Lit on Arrival",
+          "text": "A fireplace in every house, lit before you arrive. The panoramic terrace over the Mirna valley is right outside."
+        },
+        {
+          "icon": "pet",
+          "title": "Pet-Friendly",
+          "text": "Dogs and cats welcome (€10/day). Perfect walking trails right at your doorstep."
+        },
+        {
+          "icon": "location",
+          "title": "Getting There",
+          "text": "Pula Airport 1h · Trieste 1.5h · Ljubljana 2h · Munich 5h · Vienna 5h · Zurich 8h. Airport transfers on request."
+        }
+      ]
+    },
+    "why": {
+      "label": "Why This Trip?",
+      "title": "5 Reasons to Spend Your Winter Weekend in Istria",
+      "points": [
+        {
+          "title": "Winter Truffle — A Long Lunch with the Karlić Family",
+          "text": "Late morning with the Karlić family, truffle hunters for three generations: a long lunch built around the winter truffle, the way they serve it."
+        },
+        {
+          "title": "Wines from \"4 Soils\" — One Malvazija, Four Characters",
+          "text": "The \"4 Soils\" concept (red, white, grey, black earth) produces four distinct Malvazija characters. In the cellar at Kozlović, winemakers since 1904, you'll taste the difference."
+        },
+        {
+          "title": "A Fire Lit Before You Arrive",
+          "text": "There is a fireplace in every house, already burning when you check in. Biska, pršut and Istrian cheese by the fire, then two nights in a stone house."
+        },
+        {
+          "title": "Three Hill Towns: Motovun, Roč and Hum",
+          "text": "Walk the walls of Motovun above the truffle forests, have dinner in a konoba in Roč, and finish with a long lunch in Hum, the smallest town in the world."
+        },
+        {
+          "title": "A Stone Village in the Mirna Valley",
+          "text": "Kotli is a fully restored medieval village: 8 stone houses and no neighbours. Join an open weekend, or take the whole village for your group."
+        }
+      ]
     }
   },
   "packagesPage": {
@@ -1154,7 +1263,7 @@
     "hero": {
       "eyebrow": "About Kotli",
       "title": "A village by the river",
-      "intro": "Eight restored stone houses where the Mirna falls through rock basins — one group at a time."
+      "intro": "Eight restored stone houses where the Mirna falls through rock basins — private for your group, or shared on an open winter weekend."
     },
     "story": {
       "label": "The village",
@@ -1171,7 +1280,7 @@
         },
         {
           "title": "Brought back to life",
-          "text": "When the mills fell silent, the village emptied. Its stone houses have since been restored one by one, and today Kotli welcomes one group at a time."
+          "text": "When the mills fell silent, the village emptied. Its stone houses have since been restored one by one, and today Kotli welcomes private groups all year and open weekends in winter."
         }
       ],
       "caption": "The Mirna at Kotli"
@@ -1190,8 +1299,8 @@
         "label": "Guests per house"
       },
       {
-        "value": "1",
-        "label": "Group at a time"
+        "value": "34",
+        "label": "Guests at most"
       },
       {
         "value": "1 h",
@@ -1201,7 +1310,7 @@
     "houses": {
       "label": "The stone houses",
       "title": "Eight houses, one village",
-      "text": "Each house has its own living room, kitchen, bedroom and bathroom, with a fireplace for cool evenings. Your group shares the pool, the terrace and the lanes between them.",
+      "text": "Each house has its own living room, kitchen, bedroom and bathroom, with a fireplace for cool evenings. Guests share the pool, the terrace and the lanes between them.",
       "captions": {
         "exterior": "Stone house and garden",
         "fireplace": "Living room with fireplace",
@@ -1222,7 +1331,7 @@
         "Wi-Fi and TV",
         "Private parking"
       ],
-      "sharedTitle": "Shared by your group",
+      "sharedTitle": "Shared by guests",
       "shared": [
         "Outdoor pool",
         "Large barbecue area",

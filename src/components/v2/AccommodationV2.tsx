@@ -4,7 +4,8 @@ import { useRef, useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
-import { Home, Waves, PawPrint, MapPin, ChevronLeft, ChevronRight, X, ZoomIn } from 'lucide-react';
+import { tNs } from '@/lib/packages';
+import { Home, Waves, Flame, PawPrint, MapPin, ChevronLeft, ChevronRight, X, ZoomIn } from 'lucide-react';
 
 // V2 Accommodation — "The Estate Spread". Light editorial magazine layout
 // directly below the dark hero: giant headline, the village hero photo LARGE
@@ -20,6 +21,7 @@ const BRASS_LIGHT = '#d3b787';
 const FEATURE_ICONS: Record<string, React.ReactNode> = {
   house: <Home className="w-[18px] h-[18px]" strokeWidth={1.5} />,
   pool: <Waves className="w-[18px] h-[18px]" strokeWidth={1.5} />,
+  fire: <Flame className="w-[18px] h-[18px]" strokeWidth={1.5} />,
   pet: <PawPrint className="w-[18px] h-[18px]" strokeWidth={1.5} />,
   location: <MapPin className="w-[18px] h-[18px]" strokeWidth={1.5} />,
 };
@@ -41,8 +43,10 @@ const STRIP: { src: string; w: number }[] = [
   { src: '/images/kotli/houses-overview.jpg', w: 420 },
 ];
 
-export default function AccommodationV2() {
-  const t = useTranslations('accommodation');
+export default function AccommodationV2({ ns = '' }: { ns?: string } = {}) {
+  const t = useTranslations(tNs(ns, 'accommodation'));
+  // A package's own copy means its own season: winter drops the pool photo.
+  const strip = ns ? STRIP.filter((item) => item.src !== '/images/kotli/pool.jpg') : STRIP;
   const features = t.raw('features') as { icon: string; title: string; text: string }[];
 
   const sectionRef = useRef<HTMLElement | null>(null);
@@ -54,8 +58,8 @@ export default function AccommodationV2() {
   const [lightbox, setLightbox] = useState<number | null>(null);
   const touchX = useRef<number | null>(null);
   const close = () => setLightbox(null);
-  const prev = () => setLightbox((i) => (i === null ? i : (i - 1 + STRIP.length) % STRIP.length));
-  const next = () => setLightbox((i) => (i === null ? i : (i + 1) % STRIP.length));
+  const prev = () => setLightbox((i) => (i === null ? i : (i - 1 + strip.length) % strip.length));
+  const next = () => setLightbox((i) => (i === null ? i : (i + 1) % strip.length));
 
   useEffect(() => {
     if (lightbox === null) return;
@@ -240,10 +244,10 @@ export default function AccommodationV2() {
       >
         <div className="overflow-hidden">
           <div className="ssv2-marquee flex w-max">
-            {[...STRIP, ...STRIP].map((item, i) => (
+            {[...strip, ...strip].map((item, i) => (
               <button
                 key={i}
-                onClick={() => setLightbox(i % STRIP.length)}
+                onClick={() => setLightbox(i % strip.length)}
                 aria-label="Open photo"
                 className="group relative shrink-0 mr-3.5 h-[160px] md:h-[210px] rounded-[4px] overflow-hidden cursor-zoom-in border-none bg-transparent p-0"
                 style={{ width: `${Math.round(item.w * 0.62)}px` }}
@@ -325,7 +329,7 @@ export default function AccommodationV2() {
               transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
               onClick={(e) => e.stopPropagation()}
             >
-              <Image src={STRIP[lightbox].src} alt="Kotli" fill className="object-contain" sizes="92vw" priority />
+              <Image src={strip[lightbox].src} alt="Kotli" fill className="object-contain" sizes="92vw" priority />
             </motion.div>
 
             {/* Next */}
@@ -346,7 +350,7 @@ export default function AccommodationV2() {
               className="absolute bottom-5 left-1/2 -translate-x-1/2 text-[11px] uppercase tracking-[3px] font-semibold"
               style={{ color: 'rgba(246,243,236,0.7)' }}
             >
-              <span style={{ color: BRASS_LIGHT }}>{lightbox + 1}</span> / {STRIP.length}
+              <span style={{ color: BRASS_LIGHT }}>{lightbox + 1}</span> / {strip.length}
             </div>
           </motion.div>
         )}

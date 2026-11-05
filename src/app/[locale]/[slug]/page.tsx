@@ -65,9 +65,9 @@ export default async function PackagePage({
       )}
       <HeaderV2 />
       <main>
-        <HeroV2 ns={pkg.ns} image={pkg.image} video={!!pkg.full} />
-        {pkg.full && <AccommodationV2 />}
-        {pkg.full && <WhyV2 />}
+        <HeroV2 ns={pkg.ns} image={pkg.image} video={!!pkg.full} hasDates={!!pkg.dates} />
+        {(pkg.full || pkg.whyLayers) && <AccommodationV2 ns={pkg.ns} />}
+        {(pkg.full || pkg.whyLayers) && <WhyV2 ns={pkg.ns} layers={pkg.whyLayers} />}
         {pkg.full && <HostsV2 />}
         <AgendaV2 ns={pkg.ns} images={pkg.dayImages} />
         {pkg.full && <DestinationsV2 />}

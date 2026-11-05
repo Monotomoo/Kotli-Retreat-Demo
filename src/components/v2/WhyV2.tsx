@@ -12,6 +12,7 @@ import {
   useSpring,
   AnimatePresence,
 } from 'framer-motion';
+import { tNs } from '@/lib/packages';
 
 // V2 "5 Reasons" — editorial depth stage.
 // Left: numbered hover-index + description on solid ivory (max legibility).
@@ -32,8 +33,14 @@ const LAYERS: { main: string; accent: string }[] = [
   { main: '/images/kotli/village-street.jpg', accent: '/images/kotli/river-mill.jpg' },
 ];
 
-export default function WhyV2() {
-  const t = useTranslations('why');
+export default function WhyV2({
+  ns = '',
+  layers = LAYERS,
+}: {
+  ns?: string;
+  layers?: { main: string; accent: string }[];
+} = {}) {
+  const t = useTranslations(tNs(ns, 'why'));
   const points = t.raw('points') as { title: string; text: string }[];
   const [active, setActive] = useState(0);
   const [hovering, setHovering] = useState(false);
@@ -236,7 +243,7 @@ export default function WhyV2() {
                   className="relative h-[470px] rounded-[4px] overflow-hidden shadow-[0_34px_80px_rgba(28,26,21,0.28)]"
                   style={{ x: mainMX, y: mainMY }}
                 >
-                  {LAYERS.map((layer, i) => (
+                  {layers.map((layer, i) => (
                     <motion.div
                       key={layer.main}
                       className="absolute inset-0"
@@ -270,7 +277,7 @@ export default function WhyV2() {
                   className="relative w-[200px] h-[250px] rounded-[3px] overflow-hidden shadow-[0_26px_60px_rgba(28,26,21,0.38)]"
                   style={{ y: accentMY, rotate: -2, border: '5px solid #f6f3ec' }}
                 >
-                  {LAYERS.map((layer, i) => (
+                  {layers.map((layer, i) => (
                     <motion.div
                       key={layer.accent}
                       className="absolute inset-0"
@@ -296,7 +303,7 @@ export default function WhyV2() {
               style={{ backgroundColor: '#ffffff', border: '1px solid rgba(28,26,21,0.08)' }}
             >
               <div className="relative aspect-[16/10]">
-                <Image src={LAYERS[i].main} alt={point.title} fill className="object-cover" sizes="84vw" />
+                <Image src={layers[i].main} alt={point.title} fill className="object-cover" sizes="84vw" />
                 <span
                   className="absolute top-3 left-3 font-serif italic text-[13px] px-2.5 py-1 rounded-full"
                   style={{ backgroundColor: 'rgba(13,18,12,0.72)', color: '#d3b787' }}

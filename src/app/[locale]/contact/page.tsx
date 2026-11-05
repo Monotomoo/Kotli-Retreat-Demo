@@ -41,7 +41,7 @@ export default async function Page({
       <main>
         <PageHeroV2 image="/images/kotli/terrace.jpg" eyebrow={t('eyebrow')} title={t('title')} intro={t('intro')} />
         <ContactV2 />
-        <FaqV2 />
+        <FaqV2 ns="home" />
       </main>
       <FooterV2 />
       <WhatsAppFloat />

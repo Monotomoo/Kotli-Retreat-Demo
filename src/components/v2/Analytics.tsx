@@ -1,15 +1,15 @@
 'use client';
 
 import Script from 'next/script';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { track } from '@/lib/analytics';
 
-// GDPR-safe Google Analytics 4 + Google Ads via Consent Mode v2.
+// GDPR-safe Google Analytics 4 + Google Ads.
 //
-// Storage is DENIED by default (mandatory for DE/AT/CH: GA must not set cookies
-// or send identifiable pings before the visitor opts in). When the visitor
-// clicks "accept" in the cookie banner, consent is upgraded to granted; returning
-// visitors who accepted start granted.
+// Nothing from Google loads until the visitor clicks "accept" in the cookie
+// banner; returning visitors who accepted load it straight away. If they later
+// withdraw from the footer's cookie settings, consent goes to denied and
+// Google's cookies are removed.
 //
 // IDs come from env, so nothing loads until they are set in Vercel:
 //   NEXT_PUBLIC_GA_ID          e.g. G-XXXXXXXXXX   (Analytics)
@@ -18,21 +18,42 @@ const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 const ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
 const CONSENT_KEY = 'ss_cookie_consent';
 
+const hasConsent = () => {
+  try {
+    return localStorage.getItem(CONSENT_KEY) === 'accepted';
+  } catch {
+    return false; // localStorage unavailable
+  }
+};
+
+// Expire Google's cookies on this host and on the bare domain.
+const clearGoogleCookies = () => {
+  const bare = location.hostname.replace(/^www\./, '');
+  document.cookie.split(';').forEach((c) => {
+    const name = c.split('=')[0].trim();
+    if (!/^(_ga|_gid|_gat|_gcl)/.test(name)) return;
+    const gone = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`;
+    document.cookie = gone;
+    document.cookie = `${gone}; domain=.${bare}`;
+  });
+};
+
 export default function Analytics() {
+  const [load, setLoad] = useState(false);
+
   useEffect(() => {
+    if (hasConsent()) setLoad(true);
+
     const onConsent = () => {
-      let accepted = false;
-      try {
-        accepted = localStorage.getItem(CONSENT_KEY) === 'accepted';
-      } catch {
-        // localStorage unavailable
-      }
-      if (!accepted) return;
+      const accepted = hasConsent();
+      if (accepted) setLoad(true);
+      else clearGoogleCookies();
+      const state = accepted ? 'granted' : 'denied';
       (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag?.('consent', 'update', {
-        analytics_storage: 'granted',
-        ad_storage: 'granted',
-        ad_user_data: 'granted',
-        ad_personalization: 'granted',
+        analytics_storage: state,
+        ad_storage: state,
+        ad_user_data: state,
+        ad_personalization: state,
       });
     };
 
@@ -51,7 +72,7 @@ export default function Analytics() {
     };
   }, []);
 
-  if (!GA_ID) return null;
+  if (!GA_ID || !load) return null;
 
   return (
     <>

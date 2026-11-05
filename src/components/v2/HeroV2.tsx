@@ -37,12 +37,15 @@ export default function HeroV2({
   ns = '',
   image = '/images/kotli/village-street.jpg',
   video = true,
+  hasDates = false,
 }: {
   ns?: string;
   image?: string;
   video?: boolean;
+  hasDates?: boolean;
 } = {}) {
   const t = useTranslations(tNs(ns, 'hero'));
+  const tNav = useTranslations('header.nav');
   const locale = useLocale();
   const { scrollY } = useScroll();
   const videoY = useTransform(scrollY, [0, 500], ['0%', '20%']);
@@ -54,8 +57,15 @@ export default function HeroV2({
   // A package with its own dates (ns set) sends the CTA to the date list.
   const scrollToContact = () =>
     document.getElementById(ns ? 'pricing' : 'contact')?.scrollIntoView({ behavior: 'smooth' });
-  const scrollToIncludes = () =>
-    document.getElementById('includes')?.scrollIntoView({ behavior: 'smooth' });
+
+  // The package's own agenda. A package without a date list gets "Prices" for
+  // the same section, so the link doesn't promise dates that aren't there.
+  const agenda = [
+    { href: '#agenda', label: tNav('agenda') },
+    { href: '#pricing', label: tNav(hasDates ? 'dates' : 'pricing') },
+    { href: '#includes', label: t('ctaSecondary') },
+    { href: '#contact', label: tNav('contact') },
+  ];
 
   // Hold the hero content back so the video's own "Kotli Istra" intro title
   // has time to clear before the site text fades in. Tune this one number.
@@ -118,25 +128,18 @@ export default function HeroV2({
     </>
   );
 
-  const renderActions = () => (
-    <>
-      <button
-        onClick={scrollToContact}
-        className="px-8 py-4 text-[11px] font-semibold uppercase tracking-[2.5px] font-sans cursor-pointer border-none rounded-[2px] transition-colors duration-300"
-        style={{ backgroundColor: IVORY, color: '#141a12' }}
-        onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = BRASS_LIGHT)}
-        onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = IVORY)}
-      >
-        {t('cta')} →
-      </button>
-      <span
-        onClick={scrollToIncludes}
-        className="text-[10px] uppercase tracking-[2.5px] cursor-pointer pb-1 border-b transition-colors duration-300"
-        style={{ color: 'rgba(246,243,236,0.65)', borderColor: 'rgba(246,243,236,0.3)' }}
-      >
-        {t('ctaSecondary')} ↓
-      </span>
-    </>
+  const renderAgenda = () => (
+    <nav aria-label={t('title')} className="flex flex-wrap items-center gap-x-6 md:gap-x-8 gap-y-3">
+      {agenda.map((item) => (
+        <a
+          key={item.href}
+          href={item.href}
+          className="text-[12px] md:text-[13px] uppercase tracking-[2.5px] no-underline pb-1 border-b transition-colors duration-300 text-[#f6f3ec]/80 border-[#f6f3ec]/30 hover:text-[#d3b787] hover:border-[#d3b787]"
+        >
+          {item.label} ↓
+        </a>
+      ))}
+    </nav>
   );
 
   const renderTicket = () => (
@@ -322,12 +325,12 @@ export default function HeroV2({
         <div className="max-w-[680px]">
           {renderIntro()}
           <motion.div
-            className="flex items-center gap-7 mt-9"
+            className="mt-9"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: REVEAL_DELAY + 0.95, ease: 'easeOut' }}
           >
-            {renderActions()}
+            {renderAgenda()}
           </motion.div>
         </div>
 
@@ -365,9 +368,7 @@ export default function HeroV2({
                 {t('priceNote')}
               </div>
             )}
-            <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-4">
-              {renderActions()}
-            </div>
+            <div className="mt-4">{renderAgenda()}</div>
           </motion.div>
         </div>
 

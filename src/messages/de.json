@@ -10,6 +10,7 @@
       "hosts": "Unsere Gastgeber",
       "agenda": "Reiseplan",
       "pricing": "Preise",
+      "dates": "Termine",
       "destinations": "Rovinj · Motovun · Hum",
       "contact": "Kontakt",
       "packages": "Pakete",
@@ -559,7 +560,7 @@
     "items": [
       {
         "q": "Ist die Reise auch für Einzelpersonen buchbar?",
-        "a": "Soil and Soul Istria ist ein Gruppenerlebnis für 10–34 Personen. Sie können als Gruppenleiter mit Ihrer eigenen Gruppe reisen (ab 10 Personen reisen Sie kostenlos!) — ideal für Wine-Klubs, Genussreise-Gruppen oder Teambuilding. Auf Anfrage können wir Sie auch einer bestehenden Gruppe zuordnen. Für Winter in Kotli gilt: Ja, das Winterwochenende ist an festen Terminen für Paare und Einzelgäste offen."
+        "a": "Soil and Soul Istria ist ein Gruppenerlebnis für 10–34 Personen. Sie können als Gruppenleiter mit Ihrer eigenen Gruppe reisen (ab 10 Personen reisen Sie kostenlos!) — ideal für Wine-Klubs, Genussreise-Gruppen oder Teambuilding. Für Winter in Kotli gilt: Ja, das Winterwochenende ist an festen Terminen für Paare und Einzelgäste offen."
       },
       {
         "q": "Wie komme ich nach Kotli?",
@@ -614,14 +615,15 @@
     "legal": {
       "impressum": "Impressum",
       "privacy": "Datenschutz",
-      "terms": "AGB & Reisebedingungen"
+      "terms": "AGB & Reisebedingungen",
+      "cookies": "Cookie-Einstellungen"
     }
   },
   "whatsappFloat": "Fragen? Schreiben Sie uns!",
   "stickyMobile": "Anfrage senden — Ab €1.090/Person",
   "cookies": {
     "title": "Ihre Privatsphäre",
-    "text": "Wir verwenden notwendige Cookies für den Betrieb der Seite und mit Ihrer Einwilligung Analyse-Cookies zur Verbesserung der Inhalte. Mehr in unserer ",
+    "text": "Wir verwenden notwendige Cookies für den Betrieb der Seite und mit Ihrer Einwilligung Analyse- und Werbe-Cookies, um Inhalte zu verbessern und unsere Anzeigen zu messen. Mehr in unserer ",
     "policyLink": "Datenschutzerklärung",
     "accept": "Alle akzeptieren",
     "decline": "Nur notwendige",
@@ -633,32 +635,40 @@
   },
   "privacy": {
     "title": "Datenschutzerklärung",
-    "lastUpdated": "Letzte Aktualisierung: Mai 2026",
+    "lastUpdated": "Letzte Aktualisierung: November 2026",
     "intro": "Diese Erklärung beschreibt, wie Creative idea d.o.o. Ihre personenbezogenen Daten gemäß der Datenschutz-Grundverordnung (DSGVO) erhebt und verarbeitet.",
     "sections": [
       {
         "h": "1. Verantwortlicher",
-        "p": "Creative idea d.o.o., Zagreb, Kroatien. UID: 39151678424. E-Mail: info@kotliretreat.com. Telefon: +385 99 256 3862."
+        "p": "Creative idea d.o.o., Zagreb, Kroatien. UID: 39151678424. E-Mail: info@kotliretreat.com. Telefon: +385 99 256 3862. Creative idea d.o.o. betreibt diese Website und ist Eigentümerin der Steinhäuser. Delmata Travel j.d.o.o., Prve Poljanice 7, Zagreb, organisiert die Reisen. Wir leiten Ihre Anfrage an Delmata Travel weiter, wenn dies zur Vorbereitung oder Durchführung Ihrer Reise erforderlich ist. Für die dazu erhaltenen Daten ist Delmata Travel verantwortlich."
       },
       {
         "h": "2. Welche Daten wir erheben",
-        "p": "Beim Ausfüllen des Kontaktformulars erheben wir: Vor- und Nachname, E-Mail-Adresse, Gruppengröße, Wunschtermin, gewünschtes Paket, Ernährungsbesonderheiten und Inhalt der Nachricht. Die Website verwendet notwendige Cookies und mit Ihrer Einwilligung Analyse-Cookies."
+        "p": "Beim Ausfüllen des Kontaktformulars erheben wir: Vor- und Nachname, E-Mail-Adresse, Gruppengröße, Wunschtermine, gewünschtes Paket, Ernährungsbesonderheiten und Inhalt der Nachricht. Wenn Sie uns per E-Mail, Telefon oder WhatsApp kontaktieren, erhalten wir, was Sie uns mitteilen. Beim Besuch der Website erfasst unser Hosting-Anbieter technische Daten wie IP-Adresse, Browser und Zeitpunkt des Besuchs. Ihre Cookie-Auswahl wird in Ihrem Browser gespeichert."
       },
       {
         "h": "3. Zweck und Rechtsgrundlage",
-        "p": "Wir verarbeiten Ihre Daten ausschließlich zur Beantwortung Ihrer Anfrage und zur Vorbereitung eines individuellen Angebots (berechtigtes Interesse / vorvertragliche Maßnahmen, Art. 6 Abs. 1 lit. b DSGVO). Eine Nutzung zu Marketingzwecken erfolgt nur mit Ihrer ausdrücklichen Einwilligung."
+        "p": "Anfragedaten nutzen wir, um Ihnen zu antworten und ein individuelles Angebot vorzubereiten (vorvertragliche Maßnahmen, Art. 6 Abs. 1 lit. b DSGVO). Technische Daten dienen dem sicheren Betrieb der Website (berechtigtes Interesse, Art. 6 Abs. 1 lit. f DSGVO). Analyse- und Werbe-Cookies setzen wir nur mit Ihrer Einwilligung ein (Art. 6 Abs. 1 lit. a DSGVO). Eine Nutzung Ihrer Anfragedaten zu Marketingzwecken erfolgt nur mit Ihrer ausdrücklichen Einwilligung."
       },
       {
-        "h": "4. Speicherdauer",
+        "h": "4. Cookies, Google Analytics und Google Ads",
+        "p": "Wenn Sie „Alle akzeptieren“ wählen, nutzen wir Google Analytics 4, um die Nutzung der Website zu verstehen, und Google Ads, um zu messen, ob unsere Anzeigen zu Anfragen führen, und um Besuchern der Website unsere Anzeigen zu zeigen. Dazu gehören Ereignisse wie das Absenden einer Anfrage oder ein Klick auf einen WhatsApp- oder Telefon-Link. Anbieter im EWR ist Google Ireland Limited. Google-Cookies können bis zu 2 Jahre gespeichert bleiben. Wenn Sie „Nur notwendige“ wählen, werden die Google-Tags nicht geladen und keine Analyse- oder Werbe-Cookies gesetzt. Sie können Ihre Auswahl jederzeit unter „Cookie-Einstellungen“ unten auf jeder Seite ändern."
+      },
+      {
+        "h": "5. Dienstleister",
+        "p": "Für den Betrieb der Website und die Beantwortung Ihrer Anfragen nutzen wir: Vercel Inc. (Hosting), Web3Forms (Zustellung der Formularnachrichten an unser Postfach), Google Workspace (E-Mail) und, wenn Sie uns dort schreiben, WhatsApp (Meta). Außerdem geben wir das Nötige an Partner-Gastgeber weiter, die Ihr Erlebnis durchführen. Einige Anbieter verarbeiten Daten möglicherweise außerhalb der EU/des EWR, auch in den USA. Solche Übermittlungen stützen sich auf einen Angemessenheitsbeschluss der EU oder die EU-Standardvertragsklauseln."
+      },
+      {
+        "h": "6. Speicherdauer",
         "p": "Anfragedaten werden maximal 24 Monate gespeichert und danach gelöscht. Vertragsdaten werden nach den gesetzlichen Fristen aufbewahrt (Steuerunterlagen — 11 Jahre)."
       },
       {
-        "h": "5. Ihre Rechte",
-        "p": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Die Einwilligung für Analyse-Cookies können Sie jederzeit widerrufen. Anfragen senden Sie bitte an info@kotliretreat.com. Sie haben außerdem das Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde (AZOP, kroatische Datenschutzbehörde, Zagreb)."
+        "h": "7. Ihre Rechte",
+        "p": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Ihre Einwilligung für Analyse- und Werbe-Cookies können Sie jederzeit unter „Cookie-Einstellungen“ widerrufen. Andere Anfragen senden Sie bitte an info@kotliretreat.com. Sie haben außerdem das Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde (AZOP, kroatische Datenschutzbehörde, Zagreb)."
       },
       {
-        "h": "6. Sicherheit",
-        "p": "Die Kommunikation ist durch SSL-Verschlüsselung geschützt. Wir geben Ihre Daten nur an Dritte weiter, wenn dies zur Erbringung der Leistung notwendig ist (z. B. Partner-Gastgeber für Ihr Erlebnis) oder wenn dies gesetzlich vorgeschrieben ist."
+        "h": "8. Sicherheit",
+        "p": "Die Kommunikation ist durch SSL-Verschlüsselung geschützt. Über das in dieser Erklärung Beschriebene hinaus geben wir Ihre Daten nur weiter, wenn dies gesetzlich vorgeschrieben ist."
       }
     ]
   },
@@ -666,9 +676,9 @@
     "label": "Rechtliches",
     "title": "Impressum",
     "country": "Kroatien",
-    "intro": "Kotli Retreat und die Reisen „Soil and Soul Istria“ werden von zwei kroatischen Unternehmen angeboten.",
+    "intro": "Die Reisen von Kotli Retreat werden von zwei kroatischen Unternehmen angeboten.",
     "organiserTitle": "Reiseveranstalter",
-    "organiserRole": "Delmata Travel ist die Reiseagentur, die die Gruppenreisen „Soil and Soul Istria“ organisiert.",
+    "organiserRole": "Delmata Travel ist die Reiseagentur, die die Reisen von Kotli Retreat organisiert: Soil and Soul Istria und Winter in Kotli.",
     "operatorTitle": "Unterkunft & Website",
     "operatorRole": "Creative idea d.o.o. ist Eigentümerin der Steinhäuser in Kotli und Betreiberin dieser Website.",
     "fields": {
@@ -683,7 +693,9 @@
     },
     "conditionsTitle": "AGB & Reisebedingungen",
     "conditions": [
-      "Gruppenreisen für 10 bis 34 Personen. Alle Preise verstehen sich pro Person inkl. MwSt.",
+      "Private Reisen: das ganze Dorf für Ihre Gruppe, von 10 bis 34 Personen. Das gilt für Soil and Soul Istria und für Winter in Kotli zu Ihren eigenen Terminen.",
+      "Offene Winterwochenenden: Paare, Freunde und Einzelgäste reisen zu festen Terminen gemeinsam mit anderen Gästen. Ein Wochenende findet ab 8 Gästen statt und wird 14 Tage vor Anreise bestätigt. Findet es nicht statt, erhalten Sie den vollen Betrag zurück oder wechseln den Termin. Ein garantierter Termin findet unabhängig von der Gästezahl statt.",
+      "Alle Preise verstehen sich pro Person inkl. MwSt.",
       "Anfragen sind unverbindlich; eine Buchung wird erst mit unserer schriftlichen Bestätigung gültig.",
       "Anzahlung: 30 % bei Buchung. Der Restbetrag ist 30 Tage vor Anreise fällig.",
       "Stornierung: kostenlos bis 60 Tage vor Anreise (volle Rückerstattung der Anzahlung); 30–59 Tage vor Anreise: 50 % Erstattung; unter 30 Tagen: keine Erstattung.",
@@ -694,18 +706,18 @@
   },
   "home": {
     "meta": {
-      "title": "Kotli Retreat — Ein privates Steindorf in Istrien für Gruppen",
-      "description": "Acht restaurierte Steinhäuser im Mirna-Tal, Istrien. All-inclusive Genussreisen und Winter-Trüffelwochenenden für Gruppen – mit den Familien hinter Istriens Trüffeln, Wein und Olivenöl."
+      "title": "Kotli Retreat — Ein Steindorf in Istrien für Gruppen und Winterwochenenden",
+      "description": "Acht restaurierte Steinhäuser im Mirna-Tal, Istrien. All-inclusive Genussreisen für Gruppen und offene Trüffel-Winterwochenenden – mit den Familien hinter Istriens Trüffeln und Wein."
     },
     "hero": {
       "eyebrow": "Istrien · Kroatien",
       "title": "Kotli Retreat",
-      "poetic": "Acht Steinhäuser im Mirna-Tal, nur für Sie – für eine Genussreise, ein Winterwochenende oder ein Firmen-Offsite.",
+      "poetic": "Acht Steinhäuser im Mirna-Tal – für eine Genussreise, ein Winterwochenende oder ein Firmen-Offsite.",
       "cta": "Zu den Paketen",
       "ctaSecondary": "Anfrage senden",
       "facts": [
         "8 Steinhäuser",
-        "10–34 Gäste",
+        "Bis zu 34 Gäste",
         "Ganzjährig geöffnet"
       ]
     },
@@ -750,12 +762,55 @@
         "text": "Zwei aktive Programme aus demselben Dorf: tagsüber istrische Wege, abends der Tisch in der Konoba.",
         "cta": "Benachrichtigen"
       }
+    },
+    "stickyMobile": "Anfrage senden — Ab 590 €/Person",
+    "faq": {
+      "label": "Häufige Fragen",
+      "title": "Noch Fragen?",
+      "items": [
+        {
+          "q": "Wer kann in Kotli buchen?",
+          "a": "Soil and Soul Istria ist eine private Reise für Gruppen von 10–34 Personen. Winter in Kotli lässt sich ab 10 Gästen ebenso buchen, oder Sie kommen als Paar, mit Freunden oder allein zu einem offenen Wochenende und teilen das Dorf mit anderen Gästen."
+        },
+        {
+          "q": "Können wir das ganze Dorf für uns haben?",
+          "a": "Ja, ab 10 Gästen. Bei einer privaten Buchung hat Ihre Gruppe das ganze Dorf zu Ihren eigenen Terminen, mit einem auf Sie abgestimmten Programm. Auch Unternehmen und Clubs buchen so. Schreiben Sie uns für ein persönliches Angebot."
+        },
+        {
+          "q": "Was ist in den Paketen enthalten?",
+          "a": "Unterkunft, Mahlzeiten mit Hauswein, Transport zu allen Erlebnissen sowie die Verkostungen und Besuche im Programm. Die Anreise nach Kotli ist nicht enthalten. Die vollständige Liste finden Sie auf der Seite jedes Pakets."
+        },
+        {
+          "q": "Wie komme ich nach Kotli?",
+          "a": "Die meisten DACH-Gäste reisen mit dem Auto an: München 5h, Wien 5h, Zürich 8h. Alternativ: Flug nach Pula (1h Transfer), Triest (1,5h) oder Ljubljana (2h). Auf Wunsch organisieren wir den Flughafentransfer."
+        },
+        {
+          "q": "Was passiert bei schlechtem Wetter?",
+          "a": "Der Großteil des Programms findet drinnen statt: Mahlzeiten, Weinkeller und Verkostungen. Programmpunkte im Freien, etwa Spaziergänge oder die Trüffelsuche, werden bei starkem Regen verschoben oder angepasst."
+        },
+        {
+          "q": "Gibt es vegetarische / vegane Optionen?",
+          "a": "Ja! Istrische Küche ist reich an vegetarischen Gerichten: Trüffel-Pasta, Gemüse-Maneštra, gegrilltes Gemüse, lokaler Käse. Vegane und glutenfreie Optionen werden auf Anfrage bei allen Restaurants organisiert. Bitte teilen Sie uns Ihre Ernährungsanforderungen bei der Buchung mit."
+        },
+        {
+          "q": "Wie ist die Stornierungspolitik?",
+          "a": "Kostenlose Stornierung bis 60 Tage vor Anreise (volle Rückerstattung der Anzahlung). 30–59 Tage: 50% Erstattung. Unter 30 Tage: keine Erstattung. Wir empfehlen eine Reiserücktrittsversicherung. Anzahlung: 30% bei Buchung, Restzahlung 30 Tage vor Anreise."
+        },
+        {
+          "q": "Welche Zahlungsmethoden akzeptieren Sie?",
+          "a": "SEPA-Überweisung und Kreditkarte (Visa, Mastercard). Alle Preise verstehen sich inklusive MwSt. Keine versteckten Gebühren."
+        },
+        {
+          "q": "Kann ich meinen Hund mitbringen?",
+          "a": "Ja! Die Steinhäuser sind haustierfreundlich (€10/Tag). Eigene Gärten, perfekte Spazierwege. Bitte bei der Buchung angeben, damit wir das passende Haus zuweisen können."
+        }
+      ]
     }
   },
   "winter": {
     "meta": {
       "title": "Winter in Kotli — Trüffel- & Weinwochenende in Istrien | Kotli Retreat",
-      "description": "3 Tage, 2 Nächte in einem privaten Steindorf in Istrien: Trüffel-Mittagessen bei der Familie Karlić, Malvazija bei Kozlović, Motovun, Roč und Hum, Abende am Kamin. November bis März, für Gruppen und Einzelgäste."
+      "description": "3 Tage, 2 Nächte in einem Steindorf in Istrien: Trüffel-Mittagessen bei der Familie Karlić, Malvazija bei Kozlović, Motovun, Roč und Hum, Abende am Kamin. November bis März, für Gruppen und Einzelgäste."
     },
     "hero": {
       "subtitle": "Ein Winterwochenende in Istrien",
@@ -1055,6 +1110,60 @@
           "a": "Ja! Die Steinhäuser sind haustierfreundlich (€10/Tag). Eigene Gärten, perfekte Spazierwege. Bitte bei der Buchung angeben, damit wir das passende Haus zuweisen können."
         }
       ]
+    },
+    "accommodation": {
+      "label": "Ihre Unterkunft",
+      "title": "Steinhäuser in Kotli",
+      "subtitle": "Ein verlassenes Steindorf, wiederbelebt als einzigartiger Rückzugsort im Herzen Istriens.",
+      "intro": "Kotli ist ein kleines Steindorf im Herzen Istriens, dort, wo die Mirna in Wasserfällen fällt und jene kesselförmigen Mulden formt, denen das Dorf seinen Namen verdankt. Einst das wichtigste Müllerdorf der Hum-Region, heute trotzt die alte Mühle noch der Zeit, und die Steinhäuser bewahren die Wärme istrischen Lebens.",
+      "features": [
+        {
+          "icon": "house",
+          "title": "8 authentische Steinhäuser",
+          "text": "80–140 m² große Häuser mit Wohnzimmer, Küche, Schlafzimmer und Bad. Für 2–5 Personen. Kamin, WLAN, TV, eigener Parkplatz."
+        },
+        {
+          "icon": "fire",
+          "title": "Kaminfeuer bei der Ankunft",
+          "text": "Ein Kamin in jedem Haus, schon angezündet, wenn Sie ankommen. Die Panoramaterrasse über dem Tal der Mirna liegt direkt vor der Tür."
+        },
+        {
+          "icon": "pet",
+          "title": "Haustierfreundlich",
+          "text": "Hunde und Katzen willkommen (€10/Tag). Perfekte Spazierwege direkt vor der Tür."
+        },
+        {
+          "icon": "location",
+          "title": "Anreise",
+          "text": "Flughafen Pula 1h · Triest 1,5h · Ljubljana 2h · München 5h · Wien 5h · Zürich 8h. Flughafentransfer auf Anfrage."
+        }
+      ]
+    },
+    "why": {
+      "label": "Warum diese Reise?",
+      "title": "5 Gründe für Ihr Winterwochenende in Istrien",
+      "points": [
+        {
+          "title": "Wintertrüffel — ein langes Mittagessen bei der Familie Karlić",
+          "text": "Am späten Vormittag bei der Familie Karlić, Trüffeljäger in dritter Generation: ein langes Mittagessen rund um den Wintertrüffel, so wie sie ihn servieren."
+        },
+        {
+          "title": "Weine aus „4 Erden“ — eine Malvazija, vier Geschmäcker",
+          "text": "Das Konzept der „4 Erden“ (rote, weiße, graue, schwarze Erde) erzeugt vier verschiedene Malvazija-Charaktere. Im Keller von Kozlović, Winzern seit 1904, erleben Sie den Unterschied."
+        },
+        {
+          "title": "Der Kamin brennt schon, wenn Sie ankommen",
+          "text": "Jedes Haus hat einen Kamin, und er brennt bereits bei Ihrer Ankunft. Biska, Pršut und istrischer Käse am Feuer, dann zwei Nächte im Steinhaus."
+        },
+        {
+          "title": "Drei Hügelstädte: Motovun, Roč und Hum",
+          "text": "Spazieren Sie auf den Mauern von Motovun über den Trüffelwäldern, essen Sie zu Abend in einer Konoba in Roč und beschließen Sie die Reise mit einem langen Mittagessen in Hum, der kleinsten Stadt der Welt."
+        },
+        {
+          "title": "Ein Steindorf im Tal der Mirna",
+          "text": "Kotli ist ein komplett restauriertes mittelalterliches Dorf: 8 Steinhäuser und keine Nachbarn. Kommen Sie zu einem offenen Wochenende, oder nehmen Sie das ganze Dorf für Ihre Gruppe."
+        }
+      ]
     }
   },
   "packagesPage": {
@@ -1154,7 +1263,7 @@
     "hero": {
       "eyebrow": "Über Kotli",
       "title": "Ein Dorf am Fluss",
-      "intro": "Acht restaurierte Steinhäuser, wo die Mirna durch Felsbecken fällt — immer nur für eine Gruppe."
+      "intro": "Acht restaurierte Steinhäuser, wo die Mirna durch Felsbecken fällt — privat für Ihre Gruppe oder gemeinsam an einem offenen Winterwochenende."
     },
     "story": {
       "label": "Das Dorf",
@@ -1171,7 +1280,7 @@
         },
         {
           "title": "Zu neuem Leben erweckt",
-          "text": "Als die Mühlen verstummten, leerte sich das Dorf. Seitdem wurden die Steinhäuser eines nach dem anderen restauriert, und heute empfängt Kotli immer nur eine Gruppe."
+          "text": "Als die Mühlen verstummten, leerte sich das Dorf. Seitdem wurden die Steinhäuser eines nach dem anderen restauriert, und heute empfängt Kotli das ganze Jahr private Gruppen und im Winter offene Wochenenden."
         }
       ],
       "caption": "Die Mirna bei Kotli"
@@ -1190,8 +1299,8 @@
         "label": "Gäste pro Haus"
       },
       {
-        "value": "1",
-        "label": "Gruppe zur Zeit"
+        "value": "34",
+        "label": "Gäste maximal"
       },
       {
         "value": "1 h",
@@ -1201,7 +1310,7 @@
     "houses": {
       "label": "Die Steinhäuser",
       "title": "Acht Häuser, ein Dorf",
-      "text": "Jedes Haus hat eigenes Wohnzimmer, Küche, Schlafzimmer und Bad, mit Kamin für kühle Abende. Ihre Gruppe teilt den Pool, die Terrasse und die Gassen dazwischen.",
+      "text": "Jedes Haus hat eigenes Wohnzimmer, Küche, Schlafzimmer und Bad, mit Kamin für kühle Abende. Die Gäste teilen sich den Pool, die Terrasse und die Gassen dazwischen.",
       "captions": {
         "exterior": "Steinhaus mit Garten",
         "fireplace": "Wohnzimmer mit Kamin",
@@ -1222,7 +1331,7 @@
         "WLAN und TV",
         "Privater Parkplatz"
       ],
-      "sharedTitle": "Für Ihre Gruppe",
+      "sharedTitle": "Für alle Gäste",
       "shared": [
         "Außenpool",
         "Großer Grillplatz",
