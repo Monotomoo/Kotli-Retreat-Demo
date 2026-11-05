@@ -3,14 +3,14 @@
 import { Fragment } from 'react';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { SEASON } from '@/lib/site';
 import { tNs } from '@/lib/packages';
 
 // V2 Hero — Editorial × Dark, with soul: film grain, warm brass glow,
 // poetic serif line, coordinates rail. Luxury "trip ticket" card.
 //
-// Layout note: the video background is shared, but the content has two tracks.
+// Layout note: the photo background is shared, but the content has two tracks.
 // Desktop (md+): one full-viewport bottom row — title+poetic+actions left,
 // ticket right (unchanged). Mobile: the first screen is media + title + price
 // + actions; the ticket is pushed BELOW the fold onto ink.
@@ -36,19 +36,15 @@ const GRAIN =
 export default function HeroV2({
   ns = '',
   image = '/images/kotli/village-street.jpg',
-  video = true,
   hasDates = false,
 }: {
   ns?: string;
   image?: string;
-  video?: boolean;
   hasDates?: boolean;
 } = {}) {
   const t = useTranslations(tNs(ns, 'hero'));
   const tNav = useTranslations('header.nav');
   const locale = useLocale();
-  const { scrollY } = useScroll();
-  const videoY = useTransform(scrollY, [0, 500], ['0%', '20%']);
 
   const titleWords = (t('title') as string).split(' ');
   const hooks = t.raw('hooks') as string[];
@@ -67,9 +63,8 @@ export default function HeroV2({
     { href: '#contact', label: tNav('contact') },
   ];
 
-  // Hold the hero content back so the video's own "Kotli Istra" intro title
-  // has time to clear before the site text fades in. Tune this one number.
-  const REVEAL_DELAY = video ? 1.2 : 0.2;
+  // How long the hero content waits before it fades in.
+  const REVEAL_DELAY = 0.2;
 
   // ---- Reusable content pieces (fresh JSX per call → safe to place twice) ----
   const renderIntro = () => (
@@ -253,7 +248,6 @@ export default function HeroV2({
     <section className="relative md:h-screen md:min-h-[720px] overflow-hidden" style={{ backgroundColor: INK }}>
       {/* Shared media — covers the first screen on mobile, the full hero on desktop */}
       <div className="absolute top-0 left-0 right-0 h-[100svh] md:h-full overflow-hidden">
-        {/* Fallback image (paints under the video) */}
         <Image
           src={image}
           alt="Kotli stone village"
@@ -262,20 +256,6 @@ export default function HeroV2({
           priority
           sizes="100vw"
         />
-        {/* Video with parallax */}
-        {video && <motion.div className="absolute inset-0 w-full h-full" style={{ y: videoY }}>
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover"
-            poster={image}
-          >
-            <source src="/images/hero/kotli-hero-web.mp4" type="video/mp4" />
-          </video>
-        </motion.div>}
-
         {/* Cinematic overlays */}
         <div className="absolute inset-x-0 top-0 h-44 bg-gradient-to-b from-black/60 to-transparent" />
         <div
@@ -346,7 +326,7 @@ export default function HeroV2({
 
       {/* ===== Mobile layout — first screen = media + intro + price + actions ===== */}
       <div className="md:hidden relative z-10">
-        {/* First screen: intro anchored to the bottom of the video */}
+        {/* First screen: intro anchored to the bottom of the photo */}
         <div className="min-h-[100svh] flex flex-col justify-end px-5 pt-24 pb-24">
           {renderIntro()}
           <motion.div

@@ -122,17 +122,18 @@ export default function DatedPricingV2({ pkg }: { pkg: PackageDef }) {
             viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            <div className="relative h-[220px] md:h-[250px]">
+            {/* In normal flow, so the photo grows when the text wraps on a phone. */}
+            <div className="relative min-h-[220px] md:min-h-[250px] flex flex-col justify-between gap-10">
               <Image src={OPEN_IMAGE} alt={open.name} fill sizes="(min-width:1024px) 58vw, 100vw" className="object-cover" />
-              <div className="absolute inset-0" style={{ background: `linear-gradient(to top, ${DARK} 2%, rgba(13,18,12,0.35) 60%, rgba(13,18,12,0.2))` }} />
+              <div className="absolute inset-0" style={{ background: `linear-gradient(to top, ${DARK} 2%, rgba(13,18,12,0.6) 60%, rgba(13,18,12,0.25))` }} />
               <span
-                className="absolute top-5 left-6 flex items-center gap-2 text-[9.5px] uppercase tracking-[2.5px] font-bold px-3.5 py-1.5 rounded-full"
+                className="relative self-start mt-5 ml-6 flex items-center gap-2 text-[9.5px] uppercase tracking-[2.5px] font-bold px-3.5 py-1.5 rounded-full"
                 style={{ backgroundColor: BRASS_LIGHT, color: '#141a12' }}
               >
                 <Users size={12} strokeWidth={2.2} />
                 {open.badge}
               </span>
-              <div className="absolute inset-x-0 bottom-0 px-6 md:px-9 pb-2 flex flex-wrap items-end justify-between gap-4">
+              <div className="relative px-6 md:px-9 pb-2 flex flex-wrap items-end justify-between gap-4">
                 <div>
                   <h3 className="font-display font-light text-[34px] md:text-[42px] leading-none" style={{ color: IVORY }}>
                     {open.name}
@@ -141,7 +142,7 @@ export default function DatedPricingV2({ pkg }: { pkg: PackageDef }) {
                     {open.slogan}
                   </p>
                 </div>
-                <div className="text-right">
+                <div className="ml-auto text-right">
                   <div className="font-display text-[34px] leading-none" style={{ color: BRASS_LIGHT }}>
                     {open.price}
                   </div>

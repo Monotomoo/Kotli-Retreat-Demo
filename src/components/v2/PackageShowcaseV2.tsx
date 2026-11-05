@@ -65,38 +65,53 @@ function Spread({ pkg, index }: { pkg: PackageDef; index: number }) {
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       >
-        <div className="relative aspect-[4/5] rounded-[6px] overflow-hidden" style={{ boxShadow: '0 34px 80px rgba(28,26,21,0.22)' }}>
-          <Image src={pkg.image} alt={c.name} fill sizes="(min-width:1024px) 46vw, 100vw" className="object-cover" />
+        <Link
+          href={`/${pkg.slug}`}
+          aria-label={c.name}
+          className="group block relative aspect-[4/5] rounded-[6px] overflow-hidden no-underline"
+          style={{ boxShadow: '0 34px 80px rgba(28,26,21,0.22)' }}
+        >
+          <Image
+            src={pkg.image}
+            alt={c.name}
+            fill
+            sizes="(min-width:1024px) 46vw, 100vw"
+            className="object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
+          />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(13,18,12,0.35), transparent 35%)' }} />
-          <span
-            className="absolute top-5 left-5 text-[9px] uppercase tracking-[2.5px] font-bold px-3 py-1.5 rounded-full"
-            style={{ backgroundColor: 'rgba(246,243,236,0.92)', color: '#141a12' }}
-          >
-            {c.badge}
-          </span>
-          <div
-            className="absolute top-5 right-5 text-right rounded-[3px] px-4 py-3 backdrop-blur-md"
-            style={{ backgroundColor: 'rgba(13,18,12,0.55)', border: '1px solid rgba(211,183,135,0.3)' }}
-          >
-            <div className="font-display text-[22px] leading-none" style={{ color: BRASS_LIGHT }}>
-              {c.price}
-            </div>
-            <div className="text-[9px] uppercase tracking-[2px] mt-1.5" style={{ color: 'rgba(246,243,236,0.75)' }}>
-              {c.length}
-            </div>
-            {c.priceNote && (
-              <div className="text-[9px] uppercase tracking-[1.5px] mt-1.5" style={{ color: BRASS_LIGHT }}>
-                {c.priceNote}
+          <div className="absolute top-5 inset-x-5 flex flex-wrap items-start justify-between gap-3">
+            <span
+              className="text-[9px] uppercase tracking-[2.5px] font-bold px-3 py-1.5 rounded-full whitespace-nowrap"
+              style={{ backgroundColor: 'rgba(246,243,236,0.92)', color: '#141a12' }}
+            >
+              {c.badge}
+            </span>
+            <div
+              className="ml-auto text-right rounded-[3px] px-4 py-3 backdrop-blur-md"
+              style={{ backgroundColor: 'rgba(13,18,12,0.55)', border: '1px solid rgba(211,183,135,0.3)' }}
+            >
+              <div className="font-display text-[22px] leading-none" style={{ color: BRASS_LIGHT }}>
+                {c.price}
               </div>
-            )}
+              <div className="text-[9px] uppercase tracking-[2px] mt-1.5" style={{ color: 'rgba(246,243,236,0.75)' }}>
+                {c.length}
+              </div>
+              {c.priceNote && (
+                <div className="text-[9px] uppercase tracking-[1.5px] mt-1.5" style={{ color: BRASS_LIGHT }}>
+                  {c.priceNote}
+                </div>
+              )}
+            </div>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link
+          href={`/${pkg.slug}`}
+          aria-label={c.name}
           className={`hidden md:block absolute -bottom-10 ${flip ? '-left-8' : '-right-8'} w-[42%] aspect-[4/3] rounded-[4px] overflow-hidden border-[6px]`}
           style={{ borderColor: IVORY, boxShadow: '0 24px 50px rgba(28,26,21,0.25)' }}
         >
           <Image src={inset} alt="" fill sizes="20vw" className="object-cover" />
-        </div>
+        </Link>
       </motion.div>
 
       {/* Story + facts */}
@@ -279,8 +294,14 @@ export default function PackageShowcaseV2() {
                   transition={{ duration: 0.75, delay: pi * 0.12, ease: [0.22, 1, 0.36, 1] }}
                 >
                   {/* Photo header */}
-                  <div className="relative h-[230px]">
-                    <Image src={p.image} alt={c.name} fill sizes="(min-width:768px) 45vw, 100vw" className="object-cover" />
+                  <Link href={`/${p.slug}`} className="group block relative h-[230px] overflow-hidden no-underline">
+                    <Image
+                      src={p.image}
+                      alt={c.name}
+                      fill
+                      sizes="(min-width:768px) 45vw, 100vw"
+                      className="object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
+                    />
                     <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(13,18,12,0.88), rgba(13,18,12,0.05) 60%)' }} />
                     <span
                       className="absolute top-5 left-5 text-[9px] uppercase tracking-[2.5px] font-bold px-3 py-1.5 rounded-full"
@@ -296,10 +317,10 @@ export default function PackageShowcaseV2() {
                         {c.tagline}
                       </p>
                     </div>
-                  </div>
+                  </Link>
 
-                  {/* Price band */}
-                  <div className="flex items-center justify-between gap-4 px-6 py-5" style={{ backgroundColor: DARK }}>
+                  {/* Price band: stacked until the card is wide enough for two columns */}
+                  <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 px-6 py-5" style={{ backgroundColor: DARK }}>
                     <div>
                       <div className="text-[9px] uppercase tracking-[2.5px]" style={{ color: 'rgba(246,243,236,0.5)' }}>
                         {priceRow.label}
@@ -313,8 +334,8 @@ export default function PackageShowcaseV2() {
                         </div>
                       )}
                     </div>
-                    <div className="text-right">
-                      <div className="font-display italic text-[19px]" style={{ color: IVORY }}>
+                    <div className="lg:text-right shrink-0">
+                      <div className="font-display italic text-[19px] whitespace-nowrap" style={{ color: IVORY }}>
                         {c.length}
                       </div>
                       <div className="text-[9px] uppercase tracking-[2px] mt-1" style={{ color: 'rgba(246,243,236,0.5)' }}>

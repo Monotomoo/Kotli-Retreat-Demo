@@ -58,8 +58,11 @@ function FeaturedCard({ pkg }: { pkg: PackageDef }) {
       />
       <div className="absolute -left-24 bottom-0 w-[70%] h-[60%] pointer-events-none" style={{ background: 'radial-gradient(ellipse at bottom left, rgba(176,141,87,0.28), transparent 65%)' }} />
 
+      {/* The whole card opens the package; the text above it lets clicks through, only the buttons catch them. */}
+      <Link href={`/${pkg.slug}`} aria-label={c.name} className="absolute inset-0" />
+
       {/* Now booking */}
-      <div className="absolute top-6 left-6 right-6 flex flex-wrap items-center justify-between gap-3">
+      <div className="absolute top-6 left-6 right-6 flex flex-wrap items-center justify-between gap-3 pointer-events-none">
         <span
           className="flex items-center gap-2.5 text-[10px] uppercase tracking-[2.5px] font-bold px-4 py-2 rounded-full"
           style={{ backgroundColor: BRASS_LIGHT, color: '#141a12' }}
@@ -78,7 +81,7 @@ function FeaturedCard({ pkg }: { pkg: PackageDef }) {
         </span>
       </div>
 
-      <div className="relative p-7 md:p-10">
+      <div className="relative p-7 md:p-10 pointer-events-none">
         <div className="flex items-center gap-3 mb-4">
           <span className="w-8 h-px" style={{ backgroundColor: BRASS }} />
           <span className="text-[10px] uppercase tracking-[3px] font-semibold" style={{ color: BRASS_LIGHT }}>
@@ -118,7 +121,7 @@ function FeaturedCard({ pkg }: { pkg: PackageDef }) {
               {t('featured.note')}
             </div>
           </div>
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3 pointer-events-auto">
             <button
               onClick={() => {
                 // Preselect this package in the inquiry form, then go there.

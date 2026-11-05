@@ -6,7 +6,8 @@ export interface PackageDef {
   slug: string;
   ns: string; // '' = root namespace (hero, agenda, …)
   cardKey: string; // home.packages.cards.<cardKey>
-  image: string; // card + hero fallback image
+  image: string; // package card image, and the hero unless heroImage is set
+  heroImage?: string;
   inset: string; // second photo on the /packages spread
   dayImages: { src: string; alt: string }[];
   /** fixed open dates (ISO, arrival → departure); turns on the dated pricing layout */
@@ -23,6 +24,7 @@ export const PACKAGES: PackageDef[] = [
     ns: '',
     cardKey: 'soilAndSoul',
     image: '/images/agenda/day3.png',
+    heroImage: '/images/kotli/houses-overview.jpg',
     inset: '/images/agenda/day2.jpg',
     full: true,
     dayImages: [
