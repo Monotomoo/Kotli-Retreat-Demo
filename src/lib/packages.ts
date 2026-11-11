@@ -64,6 +64,49 @@ export const PACKAGES: PackageDef[] = [
       { from: '2027-03-12', to: '2027-03-14' },
     ],
   },
+  {
+    slug: 'hiking-istria',
+    ns: 'hiking',
+    cardKey: 'hiking',
+    image: '/images/kotli/river-mill.jpg',
+    heroImage: '/images/destinations/motovun-hilltop.jpg',
+    inset: '/images/destinations/hum-b.jpg',
+    whyLayers: [
+      { main: '/images/kotli/river-mill.jpg', accent: '/images/kotli/village-street.jpg' },
+      { main: '/images/destinations/hum-stone.jpg', accent: '/images/destinations/hum-c.jpg' },
+      { main: '/images/destinations/motovun-b.jpg', accent: '/images/destinations/motovun-c.jpg' },
+      { main: '/images/destinations/hum-a-v2.jpg', accent: '/images/hosts/vineyard.jpg' },
+      { main: '/images/kotli/houses-overview.jpg', accent: '/images/kotli/stone-tables.jpg' },
+    ],
+    dayImages: [
+      { src: '/images/kotli/river-mill.jpg', alt: 'The old mill on the Mirna in Kotli' },
+      { src: '/images/destinations/hum-a.jpg', alt: 'Hum, at the end of the Glagolitic Alley' },
+      { src: '/images/destinations/motovun-a.jpg', alt: 'Motovun above the Parenzana trail' },
+      { src: '/images/hosts/vineyard.jpg', alt: 'Vineyards of the Mirna valley' },
+      { src: '/images/kotli/terrace.jpg', alt: 'Breakfast on the terrace in Kotli' },
+    ],
+  },
+  {
+    slug: 'wine-istria',
+    ns: 'wine',
+    cardKey: 'wine',
+    image: '/images/hosts/vineyard.jpg',
+    inset: '/images/kotli/stone-tables.jpg',
+    whyLayers: [
+      { main: '/images/hosts/vineyard.jpg', accent: '/images/agenda/day3.png' },
+      { main: '/images/destinations/motovun-hilltop.jpg', accent: '/images/hosts/host-2.png' },
+      { main: '/images/hosts/host-1.png', accent: '/images/destinations/hum-b.jpg' },
+      { main: '/images/hosts/truffle-hunt.jpg', accent: '/images/hosts/olive-oil.jpg' },
+      { main: '/images/kotli/houses-overview.jpg', accent: '/images/kotli/village-street.jpg' },
+    ],
+    dayImages: [
+      { src: '/images/kotli/terrace.jpg', alt: 'Welcome aperitif on the terrace in Kotli' },
+      { src: '/images/hosts/vineyard.jpg', alt: 'Malvazija vineyards at Kozlović' },
+      { src: '/images/destinations/motovun-d.jpg', alt: 'The hills of northern Istria' },
+      { src: '/images/hosts/truffle-hunt.jpg', alt: 'Truffles with the Karlić family' },
+      { src: '/images/kotli/stone-tables.jpg', alt: 'Farewell morning in Kotli' },
+    ],
+  },
 ];
 
 export const packageBySlug = (slug: string) => PACKAGES.find((p) => p.slug === slug);

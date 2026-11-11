@@ -532,6 +532,8 @@
       "packageOptions": [
         "Soil and Soul Istria",
         "Winter at Kotli",
+        "Istria on Foot",
+        "Istrian Wine Journey",
         "Your Story (custom)",
         "Accommodation only",
         "Still deciding"
@@ -754,6 +756,26 @@
           "bestFor": "Couples · friends · company teams",
           "intro": "A short winter escape: two nights in stone houses with the fire lit, a truffle lunch with the Karlić family, Malvazija at Kozlović, dinner in Roč and lunch in Hum. Join an open weekend, or take the whole village for your group.",
           "priceNote": "Introductory price · Winter 2026/27"
+        },
+        "hiking": {
+          "badge": "All year",
+          "name": "Istria on Foot",
+          "tagline": "Old railways, hilltop towns and a long table at the end.",
+          "length": "5 days · 4 nights",
+          "group": "Groups of 10–34",
+          "price": "from €890",
+          "bestFor": "Walking clubs · friends · active teams",
+          "intro": "Five days of guided walks from Kotli: the Glagolitic Alley from Roč to Hum, the old Parenzana railway below Motovun and the vineyards of the Mirna valley — with lunch wherever the walk ends."
+        },
+        "wine": {
+          "badge": "All year",
+          "name": "Istrian Wine Journey",
+          "tagline": "Malvazija, Teran and Muškat, with the people who make them.",
+          "length": "5 days · 4 nights",
+          "group": "Groups of 10–34",
+          "price": "from €1,190",
+          "bestFor": "Wine clubs · gourmet groups · companies",
+          "intro": "Five days among Istria's winemakers: Malvazija from four soils at Kozlović, Muškat and Teran in the Momjan hills, truffles, Chiavalon olive oil and a winemaker's dinner in Kotli. A driver every day, so everyone can taste."
         }
       },
       "soon": {
@@ -1195,56 +1217,72 @@
           "label": "Length",
           "values": {
             "soilAndSoul": "5 days · 4 nights",
-            "winter": "3 days · 2 nights"
+            "winter": "3 days · 2 nights",
+            "hiking": "5 days · 4 nights",
+            "wine": "5 days · 4 nights"
           }
         },
         {
           "label": "Season",
           "values": {
             "soilAndSoul": "All year round",
-            "winter": "November – March"
+            "winter": "November – March",
+            "hiking": "All year round",
+            "wine": "All year round"
           }
         },
         {
           "label": "Who can book",
           "values": {
             "soilAndSoul": "Groups of 10–34",
-            "winter": "Groups of 10+, or couples and individuals on an open weekend"
+            "winter": "Groups of 10+, or couples and individuals on an open weekend",
+            "hiking": "Groups of 10–34",
+            "wine": "Groups of 10–34"
           }
         },
         {
           "label": "Truffles",
           "values": {
             "soilAndSoul": "Hunt with the Karlić family + cooking class",
-            "winter": "Lunch with the Karlić family"
+            "winter": "Lunch with the Karlić family",
+            "hiking": "Lunch below Motovun",
+            "wine": "Tasting with the Karlić family"
           }
         },
         {
           "label": "Wineries",
           "values": {
             "soilAndSoul": "Kozlović; Roxanich in Spirit of Istria",
-            "winter": "Kozlović"
+            "winter": "Kozlović",
+            "hiking": "Kozlović",
+            "wine": "Kozlović + two in Momjan"
           }
         },
         {
           "label": "Olive oil",
           "values": {
             "soilAndSoul": "Chiavalon tasting",
-            "winter": "—"
+            "winter": "—",
+            "hiking": "—",
+            "wine": "Chiavalon tasting"
           }
         },
         {
           "label": "Michelin dinner",
           "values": {
             "soilAndSoul": "In Spirit of Istria",
-            "winter": "—"
+            "winter": "—",
+            "hiking": "—",
+            "wine": "—"
           }
         },
         {
           "label": "Price per person",
           "values": {
             "soilAndSoul": "from €1,090",
-            "winter": "€590"
+            "winter": "€590",
+            "hiking": "from €890",
+            "wine": "from €1,190"
           }
         }
       ]
@@ -1392,5 +1430,668 @@
     "title": "Thank you for your inquiry!",
     "body": "We've received your message and will get back to you within 24 hours with a personal offer.",
     "back": "Back to the homepage"
+  },
+  "hiking": {
+    "meta": {
+      "title": "Hiking in Istria — 5 Days on Foot from a Stone Village | Kotli Retreat",
+      "description": "5 days, 4 nights of guided walks through inland Istria: the Parenzana trail, the Glagolitic Alley to Hum, the Mirna valley and Motovun. Stone houses in Kotli, all meals included. Groups of 10–34."
+    },
+    "hero": {
+      "title": "Istria on Foot",
+      "subtitle": "Five days of walking through the green heart of Istria",
+      "poetic": "Old railway lines, hilltop towns and a river that falls into stone basins — and a long table waiting at the end of every walk.",
+      "cta": "Choose a Date",
+      "ctaSecondary": "What's Included",
+      "days": "5",
+      "daysLabel": "Days",
+      "allInclusive": "ALL-INCLUSIVE",
+      "price": "From €890",
+      "pricePer": "per person",
+      "people": "10 – 34 guests per group",
+      "season": "All year · best in spring and autumn",
+      "hooks": [
+        "Guided walks every day",
+        "The Parenzana trail",
+        "Glagolitic Alley to Hum",
+        "Lunch where the walk ends"
+      ]
+    },
+    "agenda": {
+      "label": "Day by Day",
+      "title": "Five days, four walks",
+      "dayLabel": "Day",
+      "days": [
+        {
+          "number": "1",
+          "theme": "Arrival",
+          "title": "Welcome to Kotli",
+          "narrative": "You arrive in a stone village on the Mirna, where the river drops into the round basins that gave Kotli its name. A first short walk along the water, then dinner on the terrace.",
+          "schedule": [
+            {
+              "time": "15:00",
+              "text": "Check-in at the stone houses"
+            },
+            {
+              "time": "16:30",
+              "text": "Easy walk to the Kotli waterfalls and the old mill (1 h)"
+            },
+            {
+              "time": "19:00",
+              "text": "Welcome dinner — Biska, Pršut, Istrian stew"
+            }
+          ],
+          "meals": [
+            "Dinner"
+          ],
+          "host": ""
+        },
+        {
+          "number": "2",
+          "theme": "The Glagolitic Alley",
+          "title": "Roč to Hum on foot",
+          "narrative": "Seven kilometres between two walled towns, past eleven stone monuments to the old Glagolitic script. You finish in Hum, the smallest town in the world, with lunch in its konoba.",
+          "schedule": [
+            {
+              "time": "09:00",
+              "text": "Transfer to Roč, guided walk along the Glagolitic Alley (7 km, 2.5 h)"
+            },
+            {
+              "time": "13:00",
+              "text": "Lunch in Hum with a Biska tasting"
+            },
+            {
+              "time": "16:00",
+              "text": "Back to Kotli, free afternoon"
+            },
+            {
+              "time": "19:30",
+              "text": "Dinner in the village"
+            }
+          ],
+          "meals": [
+            "Breakfast",
+            "Lunch",
+            "Dinner"
+          ],
+          "host": ""
+        },
+        {
+          "number": "3",
+          "theme": "The Parenzana",
+          "title": "The old railway to Motovun",
+          "narrative": "The narrow-gauge line that once ran from Trieste to Poreč is now a trail of viaducts and tunnels. You walk the stretch below Motovun, then climb into the town for the view over the truffle forests.",
+          "schedule": [
+            {
+              "time": "09:00",
+              "text": "Guided walk on the Parenzana trail (12 km, mostly flat)"
+            },
+            {
+              "time": "13:30",
+              "text": "Lunch below Motovun — fuži with truffles"
+            },
+            {
+              "time": "15:30",
+              "text": "Walk up into Motovun and around its walls"
+            },
+            {
+              "time": "19:30",
+              "text": "Dinner in the village"
+            }
+          ],
+          "meals": [
+            "Breakfast",
+            "Lunch",
+            "Dinner"
+          ],
+          "host": ""
+        },
+        {
+          "number": "4",
+          "theme": "Mirna Valley",
+          "title": "Vineyards and a winemaker's table",
+          "narrative": "A walk through the vineyards and oak woods of the Mirna valley that ends at the Kozlović winery, for a tasting of Malvazija and lunch with a view.",
+          "schedule": [
+            {
+              "time": "09:30",
+              "text": "Guided walk through the Mirna valley (10 km)"
+            },
+            {
+              "time": "13:00",
+              "text": "Tasting and lunch at the Kozlović winery"
+            },
+            {
+              "time": "16:00",
+              "text": "Back to Kotli, free afternoon by the pool or the fire"
+            },
+            {
+              "time": "19:30",
+              "text": "Farewell dinner"
+            }
+          ],
+          "meals": [
+            "Breakfast",
+            "Lunch",
+            "Dinner"
+          ],
+          "host": "Kozlović winery"
+        },
+        {
+          "number": "5",
+          "theme": "Farewell",
+          "title": "A last morning by the river",
+          "narrative": "An early walk for those who want one, breakfast on the terrace and a small package of local food for the road.",
+          "schedule": [
+            {
+              "time": "08:00",
+              "text": "Optional morning walk along the Mirna"
+            },
+            {
+              "time": "09:30",
+              "text": "Breakfast on the terrace"
+            },
+            {
+              "time": "11:00",
+              "text": "Check-out"
+            }
+          ],
+          "meals": [
+            "Breakfast"
+          ],
+          "host": ""
+        }
+      ]
+    },
+    "pricing": {
+      "label": "Packages",
+      "title": "Walk with us",
+      "subtitle": "",
+      "cards": [
+        {
+          "variant": "standard",
+          "badge": "All year",
+          "name": "Istria on Foot",
+          "slogan": "Four guided walks, five long tables.",
+          "price": "from €890",
+          "info": "per person · 5 days / 4 nights",
+          "minNote": "Min. 10 guests",
+          "includes": [
+            "4 nights in stone houses with pool & fireplace",
+            "All meals + house wine",
+            "4 guided walks with a local guide",
+            "Glagolitic Alley, Roč to Hum",
+            "Parenzana trail and Motovun",
+            "Tasting and lunch at Kozlović winery",
+            "Daily transport to every trailhead"
+          ],
+          "cta": "Reserve your date",
+          "featured": true
+        },
+        {
+          "variant": "custom",
+          "badge": "Bespoke",
+          "name": "Your Walk",
+          "slogan": "Easier, longer, faster — tell us your group.",
+          "price": "Price on request",
+          "info": "based on Istria on Foot",
+          "minNote": "Min. 10 guests",
+          "steps": [
+            "Tell us who's coming and how far you like to walk",
+            "We adapt the routes and the days",
+            "You walk, we carry the rest"
+          ],
+          "tags": [
+            "Walking club",
+            "Team building",
+            "Gentle walks",
+            "Longer routes",
+            "Own transport"
+          ],
+          "cta": "Start the conversation",
+          "featured": false
+        }
+      ],
+      "footerNote": "Prices per person. Own arrival to the accommodation — flight not included. Walks are 7–12 km on easy to moderate paths; we adapt them to the group."
+    },
+    "includes": {
+      "label": "What's Included",
+      "title": "All-inclusive from the first walk to the last",
+      "subtitle": "Guided walks, meals, house wine and daily transport are covered for all five days. What isn't included is listed below.",
+      "yesTitle": "Included",
+      "yesSubtitle": "Everything in Istria on Foot (from €890)",
+      "noTitle": "Not Included",
+      "noSubtitle": "Please arrange yourself",
+      "yes": [
+        "4 nights in stone houses (80–140 m²) with pool & fireplace",
+        "All meals: breakfast, lunch, dinner + house wine and water",
+        "4 guided walks with a local guide",
+        "Glagolitic Alley from Roč to Hum + lunch in Hum",
+        "Parenzana trail + Motovun",
+        "Tasting and lunch at Kozlović winery",
+        "Daily transport to every trailhead and back",
+        "Farewell package of local food"
+      ],
+      "no": [
+        "Travel to Kotli (car, flight, train)",
+        "Walking boots and rain gear",
+        "Travel cancellation insurance (recommended)",
+        "Personal expenses and gratuities"
+      ]
+    },
+    "accommodation": {
+      "label": "Your Base",
+      "title": "Stone Houses in Kotli",
+      "subtitle": "A restored stone village on the Mirna, with trails starting at the door.",
+      "intro": "Kotli is a tiny stone village in the heart of Istria, where the Mirna river cascades into the basin-shaped hollows that gave the place its name. After a day on the trails you come back to your own stone house, a pool in summer and a fire in winter.",
+      "features": [
+        {
+          "icon": "house",
+          "title": "8 Stone Houses",
+          "text": "80–140 m² houses with living room, kitchen, bedroom and bathroom. For 2–5 guests. Fireplace, Wi-Fi, private parking."
+        },
+        {
+          "icon": "fire",
+          "title": "Pool and Fireplace",
+          "text": "A pool for summer evenings and a fireplace in every house for the cooler months."
+        },
+        {
+          "icon": "pet",
+          "title": "Dogs Welcome",
+          "text": "Bring the dog on the walks (€10/day). The river paths start right outside."
+        },
+        {
+          "icon": "location",
+          "title": "Getting There",
+          "text": "Pula Airport 1h · Trieste 1.5h · Ljubljana 2h · Munich 5h · Vienna 5h. Airport transfers on request."
+        }
+      ]
+    },
+    "why": {
+      "label": "Why Walk Here",
+      "title": "Inland Istria, at walking pace",
+      "points": [
+        {
+          "title": "Trails from the Door",
+          "text": "The Mirna, the waterfalls and the old mill are a few steps from your house. Some days the walk starts right in the village."
+        },
+        {
+          "title": "Stories in Stone",
+          "text": "The Glagolitic Alley and the walled towns of Roč and Hum: a thousand years of history on a seven-kilometre path."
+        },
+        {
+          "title": "An Old Railway",
+          "text": "The Parenzana once carried trains from Trieste to Poreč. Today its viaducts and tunnels carry walkers and cyclists."
+        },
+        {
+          "title": "Lunch Where You Finish",
+          "text": "Every walk ends at a table: a konoba in Hum, truffles below Motovun, Malvazija at Kozlović."
+        },
+        {
+          "title": "Paced for the Group",
+          "text": "Routes of 7–12 km on easy to moderate paths. We shorten, lengthen or swap them to suit who's coming."
+        }
+      ]
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Questions about walking in Istria",
+      "items": [
+        {
+          "q": "How fit do we need to be?",
+          "a": "The walks are 7–12 km a day on easy to moderate paths with some climbs. Anyone who walks regularly will be fine. We can shorten any route or add an easier option."
+        },
+        {
+          "q": "Is there a guide?",
+          "a": "Yes. A local guide walks with you every day, tells the stories along the way and knows where to stop."
+        },
+        {
+          "q": "When is the best time?",
+          "a": "Spring (March–June) and autumn (September–November) are ideal. Summer walks start early to avoid the heat, and winter days are cool and clear."
+        },
+        {
+          "q": "What if it rains?",
+          "a": "We move the walk to another day or swap it for a shorter route, a winery or a visit to a hilltop town."
+        },
+        {
+          "q": "Do we need a car?",
+          "a": "No. Daily transport to every trailhead and back to Kotli is included. You only need to get to Kotli."
+        },
+        {
+          "q": "How big must the group be?",
+          "a": "From 10 to 34 guests. For smaller groups, write to us and we'll see what we can do."
+        }
+      ]
+    },
+    "stickyMobile": "Send Inquiry — From €890/person"
+  },
+  "wine": {
+    "meta": {
+      "title": "Istrian Wine Journey — 5 Days of Malvazija & Teran | Kotli Retreat",
+      "description": "5 days, 4 nights among Istria's winemakers: Malvazija at Kozlović, Teran, the Momjan hills, a winemaker's dinner and the hilltop towns. Stone houses in Kotli, all meals. Groups of 10–34."
+    },
+    "hero": {
+      "title": "Istrian Wine Journey",
+      "subtitle": "Five days with the winemakers of Istria",
+      "poetic": "Malvazija from four soils, Teran from red earth, Muškat in the Momjan hills — tasted where it grows, with the people who make it.",
+      "cta": "Choose a Date",
+      "ctaSecondary": "What's Included",
+      "days": "5",
+      "daysLabel": "Days",
+      "allInclusive": "ALL-INCLUSIVE",
+      "price": "From €1,190",
+      "pricePer": "per person",
+      "people": "10 – 34 guests per group",
+      "season": "All year · harvest in September",
+      "hooks": [
+        "Four wineries",
+        "Malvazija, Teran, Muškat",
+        "A winemaker's dinner",
+        "Driven every day"
+      ]
+    },
+    "agenda": {
+      "label": "Day by Day",
+      "title": "Five days on the Istrian wine roads",
+      "dayLabel": "Day",
+      "days": [
+        {
+          "number": "1",
+          "theme": "Arrival",
+          "title": "A first glass in Kotli",
+          "narrative": "You arrive in a stone village on the Mirna. On the terrace: Biska, Pršut, local cheese and a first glass of Malvazija.",
+          "schedule": [
+            {
+              "time": "15:00",
+              "text": "Check-in at the stone houses"
+            },
+            {
+              "time": "17:00",
+              "text": "Welcome aperitif on the terrace"
+            },
+            {
+              "time": "19:00",
+              "text": "Dinner — fuži with truffles and Teran"
+            }
+          ],
+          "meals": [
+            "Aperitif",
+            "Dinner"
+          ],
+          "host": ""
+        },
+        {
+          "number": "2",
+          "theme": "Malvazija",
+          "title": "Four soils at Kozlović",
+          "narrative": "At Kozlović you taste Malvazija grown on four different soils, side by side, then lunch overlooking the Mirna valley. In the afternoon, Motovun and its walls.",
+          "schedule": [
+            {
+              "time": "10:00",
+              "text": "Vineyard walk and tasting at Kozlović"
+            },
+            {
+              "time": "13:00",
+              "text": "Lunch at the winery"
+            },
+            {
+              "time": "16:00",
+              "text": "Motovun — the fortress above the truffle forests"
+            },
+            {
+              "time": "19:30",
+              "text": "Dinner in the village"
+            }
+          ],
+          "meals": [
+            "Breakfast",
+            "Lunch",
+            "Dinner"
+          ],
+          "host": "Kozlović winery"
+        },
+        {
+          "number": "3",
+          "theme": "The Momjan Hills",
+          "title": "Muškat and Teran in the north",
+          "narrative": "The hills around Momjan, near the Slovenian border, are home to Istria's sweet Muškat. Two family wineries, a long lunch in between and the artists' village of Grožnjan on the way back.",
+          "schedule": [
+            {
+              "time": "10:00",
+              "text": "Tasting at a family winery in Momjan"
+            },
+            {
+              "time": "13:00",
+              "text": "Lunch in a konoba with wine pairing"
+            },
+            {
+              "time": "15:30",
+              "text": "Second tasting — Teran and Muškat"
+            },
+            {
+              "time": "17:30",
+              "text": "Grožnjan, the village of artists"
+            }
+          ],
+          "meals": [
+            "Breakfast",
+            "Lunch",
+            "Dinner"
+          ],
+          "host": ""
+        },
+        {
+          "number": "4",
+          "theme": "Winemaker's Dinner",
+          "title": "Truffles, olive oil and a long table",
+          "narrative": "A morning with the Karlić family and their truffles, an olive oil tasting at Chiavalon, and in the evening a winemaker's dinner in Kotli, each course paired with a different Istrian wine.",
+          "schedule": [
+            {
+              "time": "10:00",
+              "text": "Truffle tasting with the Karlić family"
+            },
+            {
+              "time": "13:00",
+              "text": "Olive oil tasting at Chiavalon"
+            },
+            {
+              "time": "16:00",
+              "text": "Free afternoon"
+            },
+            {
+              "time": "19:30",
+              "text": "Winemaker's dinner — five courses, five wines"
+            }
+          ],
+          "meals": [
+            "Breakfast",
+            "Lunch",
+            "Dinner"
+          ],
+          "host": "Karlić family · Chiavalon"
+        },
+        {
+          "number": "5",
+          "theme": "Farewell",
+          "title": "Bottles for the road",
+          "narrative": "Breakfast on the terrace, and a wine package to take home so the trip lasts a little longer.",
+          "schedule": [
+            {
+              "time": "09:30",
+              "text": "Breakfast on the terrace"
+            },
+            {
+              "time": "11:00",
+              "text": "Check-out with a farewell wine package"
+            }
+          ],
+          "meals": [
+            "Breakfast"
+          ],
+          "host": ""
+        }
+      ]
+    },
+    "pricing": {
+      "label": "Packages",
+      "title": "Taste Istria with us",
+      "subtitle": "",
+      "cards": [
+        {
+          "variant": "standard",
+          "badge": "All year",
+          "name": "Istrian Wine Journey",
+          "slogan": "Four wineries, one long table.",
+          "price": "from €1,190",
+          "info": "per person · 5 days / 4 nights",
+          "minNote": "Min. 10 guests",
+          "includes": [
+            "4 nights in stone houses with pool & fireplace",
+            "All meals + house wine",
+            "Kozlović — Malvazija from four soils + lunch",
+            "Two family wineries in the Momjan hills",
+            "Winemaker's dinner, five courses and five wines",
+            "Truffle tasting + Chiavalon olive oil",
+            "Daily transport with a driver — nobody drives after a tasting"
+          ],
+          "cta": "Reserve your date",
+          "featured": true
+        },
+        {
+          "variant": "custom",
+          "badge": "Bespoke",
+          "name": "Your Cellar",
+          "slogan": "Wine club, company or friends — tell us what you drink.",
+          "price": "Price on request",
+          "info": "based on Istrian Wine Journey",
+          "minNote": "Min. 10 guests",
+          "steps": [
+            "Tell us who's coming and what you like",
+            "We choose the wineries and the days",
+            "You taste, we drive"
+          ],
+          "tags": [
+            "Wine club",
+            "Harvest",
+            "Team building",
+            "Celebration",
+            "Own transport"
+          ],
+          "cta": "Start the conversation",
+          "featured": false
+        }
+      ],
+      "footerNote": "Prices per person. Own arrival to the accommodation — flight not included. Wine purchases at the wineries are not included."
+    },
+    "includes": {
+      "label": "What's Included",
+      "title": "All-inclusive, and nobody has to drive",
+      "subtitle": "Tastings, meals, house wine and a driver for all five days are covered. What isn't included is listed below.",
+      "yesTitle": "Included",
+      "yesSubtitle": "Everything in Istrian Wine Journey (from €1,190)",
+      "noTitle": "Not Included",
+      "noSubtitle": "Please arrange yourself",
+      "yes": [
+        "4 nights in stone houses (80–140 m²) with pool & fireplace",
+        "All meals: breakfast, lunch, dinner + house wine and water",
+        "Tasting and lunch at Kozlović winery",
+        "Two family wineries in the Momjan hills + konoba lunch with pairing",
+        "Winemaker's dinner in Kotli, five courses and five wines",
+        "Truffle tasting with the Karlić family",
+        "Olive oil tasting at Chiavalon",
+        "Motovun and Grožnjan",
+        "Daily transport with a driver, all 5 days",
+        "Farewell wine package"
+      ],
+      "no": [
+        "Travel to Kotli (car, flight, train)",
+        "Wine you buy at the wineries",
+        "Travel cancellation insurance (recommended)",
+        "Personal expenses and gratuities"
+      ]
+    },
+    "accommodation": {
+      "label": "Your Base",
+      "title": "Stone Houses in Kotli",
+      "subtitle": "A restored stone village in the middle of Istria's wine country.",
+      "intro": "Kotli is a tiny stone village in the heart of Istria, on the Mirna river below Hum. Kozlović is twenty minutes away and the Momjan hills under an hour, so every day ends back in your own stone house.",
+      "features": [
+        {
+          "icon": "house",
+          "title": "8 Stone Houses",
+          "text": "80–140 m² houses with living room, kitchen, bedroom and bathroom. For 2–5 guests. Fireplace, Wi-Fi, private parking."
+        },
+        {
+          "icon": "fire",
+          "title": "Pool and Fireplace",
+          "text": "A pool for summer evenings and a fireplace in every house for the cooler months."
+        },
+        {
+          "icon": "pet",
+          "title": "Pet-Friendly",
+          "text": "Dogs and cats welcome (€10/day)."
+        },
+        {
+          "icon": "location",
+          "title": "Getting There",
+          "text": "Pula Airport 1h · Trieste 1.5h · Ljubljana 2h · Munich 5h · Vienna 5h. Airport transfers on request."
+        }
+      ]
+    },
+    "why": {
+      "label": "Why Istria",
+      "title": "A small region with big wines",
+      "points": [
+        {
+          "title": "Malvazija from Four Soils",
+          "text": "At Kozlović the same grape grows on four soils. Tasting them side by side shows why Istrian Malvazija is so varied."
+        },
+        {
+          "title": "Teran and Muškat",
+          "text": "Teran from the red earth, sweet Muškat from the Momjan hills: two wines you rarely find outside Istria."
+        },
+        {
+          "title": "Families, Not Factories",
+          "text": "Most Istrian wineries are family-run. You taste with the people who make the wine."
+        },
+        {
+          "title": "Food to Match",
+          "text": "Truffles from the Karlić family, olive oil from Chiavalon and a winemaker's dinner in Kotli."
+        },
+        {
+          "title": "Nobody Drives",
+          "text": "A driver takes you to every winery and back, so everyone can taste."
+        }
+      ]
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Questions about the wine journey",
+      "items": [
+        {
+          "q": "Do we need to know about wine?",
+          "a": "No. The winemakers explain everything, and the tastings are relaxed. Wine clubs and beginners are equally welcome."
+        },
+        {
+          "q": "Who drives?",
+          "a": "We do. Daily transport with a driver is included, so nobody has to drive after a tasting."
+        },
+        {
+          "q": "When is the best time?",
+          "a": "All year. September brings the harvest, spring the new Malvazija, and winter quiet cellars and lit fireplaces."
+        },
+        {
+          "q": "Can we buy wine to take home?",
+          "a": "Yes, at every winery. Purchases aren't included in the price. We can help you ship larger orders."
+        },
+        {
+          "q": "What about guests who don't drink?",
+          "a": "We prepare non-alcoholic pairings and local juices. Just tell us in your inquiry."
+        },
+        {
+          "q": "How big must the group be?",
+          "a": "From 10 to 34 guests. For smaller groups, write to us and we'll see what we can do."
+        }
+      ]
+    },
+    "stickyMobile": "Send Inquiry — From €1,190/person"
   }
 }

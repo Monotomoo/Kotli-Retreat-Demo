@@ -30,7 +30,7 @@ interface CardText {
 
 const scrollToContact = () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
 
-function FeaturedCard({ pkg }: { pkg: PackageDef }) {
+function FeaturedCard({ pkg, wide }: { pkg: PackageDef; wide: boolean }) {
   const t = useTranslations('home.packages');
   const tHero = useTranslations(tNs(pkg.ns, 'hero'));
   const c = t.raw(`cards.${pkg.cardKey}`) as CardText;
@@ -38,7 +38,7 @@ function FeaturedCard({ pkg }: { pkg: PackageDef }) {
 
   return (
     <motion.article
-      className="lg:col-span-7 relative min-h-[800px] sm:min-h-[640px] lg:min-h-[680px] rounded-[10px] overflow-hidden flex flex-col justify-end group"
+      className={`${wide ? 'lg:col-span-12 lg:min-h-[560px]' : 'lg:col-span-7 lg:min-h-[680px]'} relative min-h-[800px] sm:min-h-[640px] rounded-[10px] overflow-hidden flex flex-col justify-end group`}
       style={{ boxShadow: '0 40px 90px rgba(13,18,12,0.35)' }}
       initial={{ opacity: 0, y: 34 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -259,8 +259,9 @@ export default function PackagesV2() {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 mt-12">
-          <FeaturedCard pkg={featured} />
-          <div className="lg:col-span-5 flex flex-col gap-6 lg:gap-8">
+          {/* With more than two packages the featured card spans the row and the rest sit in a row below. */}
+          <FeaturedCard pkg={featured} wide={others.length > 1} />
+          <div className={others.length > 1 ? 'lg:col-span-12 grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8' : 'lg:col-span-5 flex flex-col gap-6 lg:gap-8'}>
             {others.map((p, i) => (
               <SideCard key={p.slug} pkg={p} index={i} />
             ))}
