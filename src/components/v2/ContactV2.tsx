@@ -11,17 +11,18 @@ import { LEAD_KEY } from '@/lib/analytics';
 // V2 Contact — "Plan your journey", form v2.2.
 // The form sits on a glass card; dropdowns replaced with selectable brass chips.
 // Submits directly to info@kotliretreat.com via Web3Forms (no backend to run)
-// and redirects to the thank-you page (the conversion URL). Needs a free access key in
-// NEXT_PUBLIC_WEB3FORMS_KEY; without it, it falls back to a prefilled mailto so
-// the form is never dead.
+// and redirects to the thank-you page (the conversion URL). Without an access key
+// it falls back to a prefilled mailto so the form is never dead.
 const INK = '#0d120c';
 const IVORY = '#f6f3ec';
 const BRASS = '#b08d57';
 const BRASS_LIGHT = '#d3b787';
 
-// Web3Forms access key. Safe to ship in client code — it only routes submissions
-// to info@kotliretreat.com; it cannot read past submissions. Env var overrides it.
-const WEB3FORMS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY || 'c1d2f99d-0782-40f2-a192-fd4047bf1a8f';
+// Web3Forms access key registered to info@kotliretreat.com: submissions are
+// delivered to the address the key was created with. Safe to ship in client code;
+// it cannot read past submissions. Deliberately not read from env, so an old key
+// left in Vercel can't send inquiries to the wrong inbox.
+const WEB3FORMS_KEY = 'edc02170-a08a-4d5e-a2a2-dc567d764ab2';
 
 const GRAIN =
   "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E\")";
