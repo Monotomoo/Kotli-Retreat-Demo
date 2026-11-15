@@ -50,7 +50,7 @@ export const PACKAGES: PackageDef[] = [
     ],
     dayImages: [
       { src: '/images/kotli/interior-fireplace.jpg', alt: 'Fireplace in a Kotli stone house' },
-      { src: '/images/hosts/host-1.png', alt: 'Truffle tasting with the Karlić family' },
+      { src: '/images/hosts/host-1.png', alt: 'Truffle lunch with the Karlić family' },
       { src: '/images/destinations/hum-b.jpg', alt: 'Hum, the smallest town in the world' },
     ],
     dates: [

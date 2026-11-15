@@ -752,7 +752,7 @@
           "group": "Gruppen & Einzelgäste",
           "price": "590 €",
           "bestFor": "Paare · Freunde · Firmenteams",
-          "intro": "Eine kurze Winterauszeit: zwei Nächte in Steinhäusern am Kaminfeuer, Trüffelverkostung bei der Familie Karlić, Malvazija bei Kozlović, Abendessen in Roč und Mittagessen in Hum. Buchen Sie ein offenes Wochenende oder das ganze Dorf für Ihre Gruppe.",
+          "intro": "Eine kurze Winterauszeit: zwei Nächte in Steinhäusern am Kaminfeuer, Trüffel-Mittagessen bei der Familie Karlić, Malvazija bei Kozlović, Abendessen in Roč und Mittagessen in Hum. Buchen Sie ein offenes Wochenende oder das ganze Dorf für Ihre Gruppe.",
           "priceNote": "Einführungspreis · Winter 2026/27"
         }
       },
@@ -810,7 +810,7 @@
   "winter": {
     "meta": {
       "title": "Winter in Kotli — Trüffel- & Weinwochenende in Istrien | Kotli Retreat",
-      "description": "3 Tage, 2 Nächte in einem Steindorf in Istrien: Trüffelverkostung bei der Familie Karlić, Malvazija bei Kozlović, Motovun, Roč und Hum, Abende am Kamin. November bis März, für Gruppen und Einzelgäste."
+      "description": "3 Tage, 2 Nächte in einem Steindorf in Istrien: Trüffel-Mittagessen bei der Familie Karlić, Malvazija bei Kozlović, Motovun, Roč und Hum, Abende am Kamin. November bis März, für Gruppen und Einzelgäste."
     },
     "hero": {
       "subtitle": "Ein Winterwochenende in Istrien",
@@ -823,7 +823,7 @@
       "pricePer": "pro Person",
       "people": "2 Nächte · November – März",
       "hooks": [
-        "Trüffelverkostung bei der Familie Karlić",
+        "Trüffel-Mittagessen bei der Familie Karlić",
         "Malvazija im Keller von Kozlović",
         "Ein Kamin in jedem Haus",
         "Motovun, Roč und Hum"
@@ -867,7 +867,7 @@
           "number": "2",
           "theme": "Trüffel & Wein",
           "title": "Der Wintertrüffel",
-          "narrative": "Am späten Vormittag bei der Familie Karlić: eine Verkostung rund um den Wintertrüffel, so wie ihn drei Generationen Trüffeljäger servieren. Danach ein Spaziergang auf den Mauern von Motovun über den Trüffelwäldern, Malvazija im Keller von Kozlović und ein Abendessen am Feuer in einer Konoba in Roč.",
+          "narrative": "Am späten Vormittag bei der Familie Karlić: ein langes Mittagessen rund um den Wintertrüffel, so wie ihn drei Generationen Trüffeljäger servieren. Danach ein Spaziergang auf den Mauern von Motovun über den Trüffelwäldern, Malvazija im Keller von Kozlović und ein Abendessen am Feuer in einer Konoba in Roč.",
           "schedule": [
             {
               "time": "09:30",
@@ -875,7 +875,7 @@
             },
             {
               "time": "11:00",
-              "text": "Karlić Tartufi — Trüffelverkostung mit der Familie"
+              "text": "Karlić Tartufi — Trüffel-Mittagessen mit der Familie"
             },
             {
               "time": "13:00",
@@ -892,7 +892,7 @@
           ],
           "meals": [
             "Frühstück",
-            "Trüffelverkostung",
+            "Trüffel-Mittagessen",
             "Weinprobe",
             "Abendessen"
           ],
@@ -945,7 +945,7 @@
           "includes": [
             "2 Nächte in einem Steinhaus mit Kamin",
             "Frühstück, zwei Abendessen und Mittagessen in Hum, mit Hauswein",
-            "Trüffelverkostung bei der Familie Karlić",
+            "Trüffel-Mittagessen bei der Familie Karlić",
             "Weingut Kozlović: Kellerverkostung",
             "Spaziergänge in Motovun und Hum",
             "Transfers und Abschiedsgeschenk"
@@ -1052,7 +1052,7 @@
     "includes": {
       "label": "Leistungen",
       "title": "All-inclusive vom ersten Feuer bis zur letzten Verkostung",
-      "subtitle": "Zwei Nächte, zwei Abendessen, eine Trüffelverkostung, ein Abschiedsmittagessen und ein Weingut. Was nicht enthalten ist, steht unten.",
+      "subtitle": "Zwei Nächte, zwei Abendessen, ein Trüffel-Mittagessen, ein Abschiedsmittagessen und ein Weingut. Was nicht enthalten ist, steht unten.",
       "yesTitle": "Inklusive",
       "yesSubtitle": "In beiden Winterpaketen",
       "noTitle": "Nicht inklusive",
@@ -1061,7 +1061,7 @@
         "2 Nächte in Steinhäusern mit Kamin",
         "2 Frühstücke, 2 Abendessen und ein Abschiedsmittagessen, mit Hauswein und Wasser",
         "Empfang am Kamin: Biska, Pršut und regionaler Käse",
-        "Trüffelverkostung bei der Familie Karlić",
+        "Trüffel-Mittagessen bei der Familie Karlić",
         "Kellerverkostung bei Kozlović",
         "Spaziergänge in Motovun und Hum",
         "Abendessen in einer Konoba in Roč",
@@ -1144,8 +1144,8 @@
       "title": "5 Gründe für Ihr Winterwochenende in Istrien",
       "points": [
         {
-          "title": "Wintertrüffel — eine Verkostung bei der Familie Karlić",
-          "text": "Am späten Vormittag bei der Familie Karlić, Trüffeljäger in dritter Generation: eine Verkostung rund um den Wintertrüffel, so wie sie ihn servieren."
+          "title": "Wintertrüffel — ein langes Mittagessen bei der Familie Karlić",
+          "text": "Am späten Vormittag bei der Familie Karlić, Trüffeljäger in dritter Generation: ein langes Mittagessen rund um den Wintertrüffel, so wie sie ihn servieren."
         },
         {
           "title": "Weine aus „4 Erden“ — eine Malvazija, vier Geschmäcker",
@@ -1216,7 +1216,7 @@
           "label": "Trüffel",
           "values": {
             "soilAndSoul": "Trüffeljagd mit der Familie Karlić + Kochkurs",
-            "winter": "Verkostung bei der Familie Karlić"
+            "winter": "Mittagessen bei der Familie Karlić"
           }
         },
         {
